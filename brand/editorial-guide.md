@@ -2,13 +2,15 @@
 layout: document
 category: Brand
 published: false
-title: Textpattern editorial style guide
+title: Editorial style guidelines
 description: Editorial guidelines for content published on Textpattern platforms.
 ---
 
-# Textpattern editorial style guide
+# Editorial style guide
 
-This style guide concerns all written materials published on Textpattern platforms, and any outbound content for promotional reasons. The guide is effective by itself for general copy production. It will help you produce clear, concise, and interesting copy.
+Use these guidelines to write and format all written content published in, or downloadable from, Textpattern project websites. Textpattern uses the *Oxford Style Manual* and *Oxford English Dictionary* as baseline references, therefor this guide is intentionally brief. Specifics are only added here as it becomes clear what guidelines are actually needed. 
+
+For documentation development, the accompanying [docs development guidelines](/brand/user-docs-guide) must also be used, which is specifically written for that platform. 
 
 **Contents**
 
@@ -17,80 +19,96 @@ This style guide concerns all written materials published on Textpattern platfor
 
 ## Baseline references
 
-The Textpattern project uses British-English conventions for English writing and styling of content elements. Instead of writing everything in this guide from scratch, we adopt style conventions from a notable authority on the English-language, Oxford University. Two resources in particular are used:
+The Textpattern project uses two notable references for guiding how project content is styled:
 
-* *Oxford Style Manual* (*OSM*), for grammar, punction, and style conventions.
-* *Oxford English Dictionary* (*OED*), for word spelling conventions.
+* *Oxford Style Manual* (*OSM*) for structure, style, and punctuation (also available as *New Hart’s Rules*)
+* *Oxford English Dictionary* (*OED*) for spelling (any abridged version will do).
 
-You are not expected to pay for these resources in order to contribute to Textpattern material. But if you already have the *OSM* on hand,[^osm] or even an abridged version of the *OED*,[^oed] all the better.
+Therefore current guidelines only attempt to detail conventions that:
 
-This guide will make clear what topics to especially focus on. If you don’t find something addressed here, see if it’s addressed in an extension reference for the platform content you are working on. All reference aides for Textpattern platforms and products are listed in the the [brand index](/brand/).
+1. address the most common situations that trip up authors
+2. are overridden by Textpattern’s own rules for handling a situation if different from the baseline references.
 
-If a topic is not addressed in an extension document either, the *OSM* is the assumed reference. You may contact the [editing team](https://github.com/orgs/textpattern/teams/documentation-team)) with any questions about style or spelling conventions. At least one editor there has these Oxford references on hand.
-
-[^osm]: The latest Oxford guide is available by itself as [*New Hart’s Rules*](https://global.oup.com/academic/product/new-harts-rules-9780199570027), or combined with an editor’s dictionary as [*New Oxford Style Manual*](https://global.oup.com/academic/product/new-oxford-style-manual-9780198767251). If you already have access to the *Oxford English Dictionary*, or one of its abridged versions, then get *New Hart’s Rules*.
-
-[^oed] The *Oxford Dictionary for English* app for iOS is extremely handy. This author uses it daily.
+**You are not expected to own the Oxford references in order to contribute to Textpattern content**. Rather, [pose questions](https://github.com/textpattern/textpattern.github.io/issues/17) you have about style conventions, and they will be answered here with new guidelines. In this way we develop guidelines together that are catered to collaborator needs, rather than start with a big, bloated mess that is hard to write, wade through, and maintain.
 
 ## Author perspective
 
-Author perspective refers to first-, second-, or third-person point of view when addressing the reader. Thus is concerns which pronouns you will use in writing.
+Author perspective refers to what point of view is used when writing for the reader thus what pronouns to use in writing. 
 
-First-person
-: Singular: I, me, my, mine
-: Plural: we, us, our
+<div class="tabular-data" tabindex="0" aria-labelledby="tablen-caption" itemscope itemtype="https://schema.org/Table">
+<table>
+<caption id="tablen-caption" itemprop="about">Table 1. Author perspective and pronouns</caption>
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col">1st person</th>
+<th scope="col">2nd person</th>
+<th scope="col">3rd person</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Singular</th>
+<td>I, me, my, mine</td>
+<td>you, your</td>
+<td>she/him, hers/his</td>
+</tr>
+<tr>
+<th scope="row">Singular neutral</th>
+<td>–</td>
+<td>–</td>
+<td>they, them, theirs</td>
+</tr>
+<tr>
+<th scope="row">Plural</th>
+<td>we, us, our</td>
+<td>you, your</td>
+<td>they, them, theirs</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-Second-person
-: Singular: you, your
-: Plural: you, your
+Perspective is dictated by what platform and audience the content is for.
 
-Third-person
-: Singular: she/him, hers/his
-: Singular neutral: they, them, theirs
-: Plural: they, them, theirs
+### Textpattern perspective
 
-The author perspective to use depends on what Textpattern product you're writing for and who the audience is (public or collaborators).
+The main [Textpattern](https://textpattern.com) site primarily uses persuasive marketing and promotion types of content, and a little general steering to help people along. The audience is principally the general public. The voice is collectively  Textpattern, and the tone friendly and inviting. Thus The perspectives to use are first person plural and second person singular and plural.
 
-General web copy
-: Content for which no specific author is identified.
-: Audience: Public
-: Author voice is: Textpattern
-: Perspective to use: first-person plural and/or second-person.
+### User Docs perspective
 
-Promotional content
-: Ads, presentations, marketing buzzspeak…
-: Audience: Public
-: Author voice: Textpattern
-: Perspective to use: first-person plural _and_ second-person.
+The [User Documentation](https://docs.textpattern.com) site is largely general expository/explanatory information. This content is Textpattern’s voice, but it does not have the same personable tone as the marketing-speak on the origin site. Content here impartially helps and explains, but otherwise keeps an arm’s distance.
 
-Blog posts and magazine articles
-: Content on which the author is identified.
-: Audience: Public
-: Author voice is: their own, personal
-: Perspective to use: first-person singular and/or second person.
+There are four distinctive audiences of user docs based on the reasons people might read documentation:
 
-User documentation
-: Instructions and examples.
-: Audience: public
-: Author voice is: anonymous and impersonal but friendly
-: Perspective to use: second person, primarily; third-person plural in rare contexts
-: (See [Author perspective](/brand/user-documentation-guidelines#author-perspective) in the user documentation guidelines.)
+1. end users
+2. site administrators
+3. plugin developers
+4. collaborators (like you reading this now).
 
-Community guidelines
-: Explanations.
-: Audience: collaborators
-: Author voice is: personal, familiar
-: Perspective to use: first-person plural and/or second-person
+**For all four audiences, second person singular and plural will be relevant**. After that it depends:
+
+* Site administrators: possibly third person plural in rare occasions (e.g. using *they* in context of the administrator’s own site’s users)
+* Plugin developers: first person plural is warranted
+* Collaborators: Well, here *we* are, so first person plural is  certainly acceptable.
+
+Don’t get carried away with pronouns in user docs. Second person works well enough.
+
+### Plugins and Themes perspective
+
+The [Plugins](https://plugins.textpattern.com) and [Themes](https://theme.textpattern.com) websites use minimal content, but it’s directed at end users who have already committed to using Textpattern, so second person singular and plural is appropriate, if any pronouns are needed at all.
 
 ## Spelling
 
-You will find this at the head of all platform web pages:
+In the head of all platform web pages, you will find the following:
 
 ``` html
 <html lang="en-GB-oxendict">
 ```
 
-If you're rusty on spelling conventions used by the *OED* versus other British-English conventions and those of other regions, Table 1 should help. The words shown are representative examples of all possible words having those patterns. Always use the *OED* conventions when writing Textpattern content.
+That’s literally telling machines (and observant humans) that Textpattern websites use words as defined and spelled in the *Oxford English Dictionary* (*OED*). You should always use the *OED* conventions when writing Textpattern content.
+
+Table 2 shows some representative examples and comparisons. 
 
 <div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
@@ -157,9 +175,9 @@ If you're rusty on spelling conventions used by the *OED* versus other British-E
     </table>
 </div>
 
-The main thing to realize is, there's little difference between general British English (en-GB) spelling and academic Oxford spelling (en-GB-oxendict). One of the big exceptions, however, is for words ending in *-ize/-ise* and their related grammatical forms. British contributors may be inclined to type ‘organisation’, for example, but it’s _organization_ here.
+*Oxford English Dictionary* spelling is somewhat a compromise between general British English (en-GB) and American English (en-US), which makes it a good choice for a collaborating international community.
 
-That will benefit American contributors, who are accustomed to using *-ize* across the board. But, Americans, not all words _you_ consistently spell that way are spelled the same way here (e.g. use _analyse_, not _analyze_).
+For example, American authors will be comfortable with words ending in *-ize* because *OED* English recognizes that ending on most such words (the *OED* takes a more etymological stance to how words should be spelled versus general British English). On the other hand, British authors will be more comfortable with *centre*, *colour*, and so forth, which are also defined by the OED, though the American spellings are used in code (e.g. `text-align:center;`). Be careful of words like *analyse*, Americans, which do not use *-yze*.
 
 ### Common spelling mistakes
 
