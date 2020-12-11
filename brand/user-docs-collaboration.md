@@ -311,7 +311,9 @@ We then bring our attention to one of two places:
 * the [running list of topics](https://forum.textpattern.com/viewtopic.php?id=51220) being kicked around by all those who want to help with documentation
 * the open Issues list for any proposed docs that are approved for development but not yet assigned to anyone.
 
-In the latter case you can self-assign to any available issue and get started. We continue this example with the former situation.
+In the latter case you can self-assign to any available issue and get started. Such issues should bear the **writer needed** or **editor needed** labels (indicating the stage of editorial workflow), but they could also have no labels at all if people forget to us them.
+
+We continue this example with the first situation above.
 
 In that topics discussion linked above, an attentive community member offers a corker that garners a few *here, heres*: [develop an explanatory doc on building a blog](https://forum.textpattern.com/viewtopic.php?pid=327293#p327293).
 
