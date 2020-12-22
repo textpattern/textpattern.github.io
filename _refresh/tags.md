@@ -6,9 +6,9 @@
 author
 author_email
 authors
-breadcrumb
 category
 category_list
+
 comment_anchor
 comment_email
 comment_email_input
@@ -31,12 +31,11 @@ comments_form
 comments_help
 comments_invite
 comments_preview
+
 css
 email
-error_message
-error_status
 feed_link
-header
+
 if_article_author
 if_article_category
 if_article_id
@@ -80,38 +79,43 @@ if_status
 if_thumbnail
 if_variable
 if_yield
+
 item
 lang
+
 page_title
 page_url
 pages
+
 password_protect
 php
 popup
 popup_comments
+
 recent_articles
 recent_comments
 related_articles
+
 rsd
 text
-thumbnail
-txp_die
 ```
 
 ## Scheduled
 
 ```
-permlink
 article
 article_custom
 article_id
 article_image
 article_url_title
 body
+breadcrumb
 category1
 category2
 custom_field
 else
+error_message
+error_status
 evaluate
 excerpt
 expires
@@ -127,6 +131,7 @@ file_download_list
 file_download_modified
 file_download_name
 file_download_size
+header
 hide
 image
 image_author
@@ -161,6 +166,7 @@ next_title
 older
 output_form
 permlink
+permlink
 posted
 prev_title
 search_input
@@ -175,6 +181,8 @@ section_list
 site_name
 site_slogan
 site_url
+thumbnail
+txp_die
 variable
 yield
 ```
