@@ -3,9 +3,6 @@
 ## To Schedule
 
 ```
-article_id
-article_image
-article_url_title
 author
 author_email
 authors
@@ -89,17 +86,13 @@ page_title
 page_url
 pages
 password_protect
-permlink
 php
 popup
 popup_comments
-prev_title
 recent_articles
 recent_comments
 related_articles
 rsd
-section
-section_list
 text
 thumbnail
 txp_die
@@ -108,8 +101,12 @@ txp_die
 ## Scheduled
 
 ```
+permlink
 article
 article_custom
+article_id
+article_image
+article_url_title
 body
 category1
 category2
@@ -173,6 +170,8 @@ search_result_excerpt
 search_result_title
 search_result_url
 search_term
+section
+section_list
 site_name
 site_slogan
 site_url
