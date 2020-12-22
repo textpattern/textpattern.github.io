@@ -1,45 +1,20 @@
 # Tags
 
-## To Schedule
-
-```
-css
-email
-feed_link
-
-page_title
-page_url
-pages
-
-password_protect
-php
-
-popup
-popup_comments
-```
-
 ## Scheduled
 
 ```
-author
-author_email
-authors
-category
-category_list
-recent_articles
-recent_comments
-related_articles
-item
-lang
-rsd
-text
 article
 article_custom
 article_id
 article_image
 article_url_title
+author
+author_email
+authors
 body
 breadcrumb
+category
+category_list
 category1
 category2
 comment_anchor
@@ -64,13 +39,16 @@ comments_form
 comments_help
 comments_invite
 comments_preview
+css
 custom_field
 else
+email
 error_message
 error_status
 evaluate
 excerpt
 expires
+feed_link
 file_download
 file_download_author
 file_download_category
@@ -137,7 +115,9 @@ image_info
 image_list
 image_url
 images
+item
 keywords
+lang
 link
 link_author
 link_category
@@ -160,10 +140,20 @@ newer
 next_title
 older
 output_form
+page_title
+page_url
+pages
+password_protect
 permlink
 permlink
+php
+popup
 posted
 prev_title
+recent_articles
+recent_comments
+related_articles
+rsd
 search_input
 search_result_count
 search_result_date
@@ -176,6 +166,7 @@ section_list
 site_name
 site_slogan
 site_url
+text
 thumbnail
 txp_die
 variable

@@ -10,17 +10,17 @@
 | 2021 W02 | `site_name`<br/>`site_slogan`<br/>`site_url` | | January: miscellaneous. |
 | 2021 W03 | `category1`<br/>`category2`<br/>`custom_field` | | January: miscellaneous. |
 | 2021 W04 | `item`<br/>`lang`<br/>`rsd`<br/>`text` | | January: article accessories, site attributes. |
-| 2021 W05 | `newer`<br/>`next_title`<br/>`older`<br/>`prev_title` | | February: navigation, search. |
+| 2021 W05 | `newer`<br/>`next_title`<br/>`older`<br/>`prev_title`<br/>`popup` | | February: navigation, search. |
 | 2021 W06 | `search_input`<br/>`search_result_count`<br/>`search_result_date`<br/>`search_result_excerpt` | | February: navigation, search. |
 | 2021 W07 | `breadcrumb`<br/>`search_result_title`<br/>`search_result_url`<br/>`search_term` | | February: navigation, search. |
 | 2021 W08 | `recent_articles`<br/>`recent_comments`<br/>`related_articles` | | February: navigation, search. |
 | 2021 W09 | `hide`<br/>`evaluate` | | March: behind the scenes, internals. |
-| 2021 W10 | `yield` | | March: behind the scenes, internals. |
+| 2021 W10 | `yield`<br/>`php` | | March: behind the scenes, internals. |
 | 2021 W11 | `variable` | | March: behind the scenes, internals. |
-| 2021 W12 | | | March: behind the scenes, internals. |
+| 2021 W12 | `page_title`<br/>`page_url`<br/>`pages`<br/>`css` | | March: behind the scenes, internals. |
 | 2021 W13 | `comment_email`<br/>`comment_message`<br/>`comment_name`<br/>`comment_web` | | April: comments. |
 | 2021 W14 | `comment_email_input`<br/>`comment_message_input`<br/>`comment_name_input`<br/>`comment_web_input` | | April: comments. |
-| 2021 W15 | `comment_anchor`<br/>`comment_id`<br/>`comment_permlink`<br/>`comment_time` | | April: comments. |
+| 2021 W15 | `comment_anchor`<br/>`comment_id`<br/>`comment_permlink`<br/>`comment_time`<br/>`popup_comments` | | April: comments. |
 | 2021 W16 | `comments_invite`<br/>`comment_preview`<br/>`comment_remember`<br/>`comment_submit` | | April: comments. |
 | 2021 W17 | `comments`<br/>`comments_count`<br/>`comments_error`<br/>`comments_form`<br/>`comments_help`<br/>`comments_preview` | | April: comments. |
 | 2021 W18 | `file_download`<br/>`file_download_author`<br/>`file_download_category` | | May: files. |
@@ -52,9 +52,9 @@
 | 2021 W44 | `if_first_article`<br/>`if_first_category`<br/>`if_first_file`<br/>`if_last_article`<br/>`if_last_category`<br/>`if_last_file` | | November: conditionals. |
 | 2021 W45 | `if_first_image`<br/>`if_first_link`<br/>`if_first_section`<br/>`if_last_image`<br/>`if_last_link`<br/>`if_last_section` | | November: conditionals. |
 | 2021 W46 | `if_individual_article`<br/>`if_keywords`<br/>`if_logged_in`<br/>`if_plugin` | | November: conditionals. |
-| 2021 W47 | `if_request``if_search`<br/>`if_search_results`<br/>`if_section` | | November: conditionals. |
+| 2021 W47 | `if_request`<br/>`if_search`<br/>`if_search_results`<br/>`if_section` | | November: conditionals. |
 | 2021 W48 | `if_status`<br/>`if_thumbnail`<br/>`if_variable`<br/>`if_yield` | | November: conditionals. |
 | 2021 W49 | `author`<br/>`author_email`<br/>`authors` | | December: any other business. |
-| 2021 W50 | | | December: any other business. |
+| 2021 W50 | `email`<br/>`feed_link`<br/>`password_protect`| | December: any other business. |
 | 2021 W51 | `error_message`<br/>`error_status` | | December: any other business. |
 | 2021 W52 | `header`<br/>`txp_die` | | December: any other business. |
