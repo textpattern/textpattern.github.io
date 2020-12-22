@@ -10,7 +10,7 @@ tags:
 
 # Comment id
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

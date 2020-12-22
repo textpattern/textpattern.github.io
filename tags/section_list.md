@@ -12,7 +12,7 @@ tags:
 
 # Section list
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

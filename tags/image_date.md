@@ -10,7 +10,7 @@ tags:
 
 # Image date
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

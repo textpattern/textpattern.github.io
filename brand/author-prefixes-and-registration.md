@@ -10,7 +10,7 @@ description: Anyone in the community wanting to build and share themes and/or pl
 
 Anyone in the Textpattern community who wants to build and share themes and/or plugins must register and use an ‘author’ prefix. A prefix is a three-character (alphanumeric) indication of who the author is, and precedes a theme or plugin name as an assurance that no two themes or plugins will have the same Name value and trip up the software.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

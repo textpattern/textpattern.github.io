@@ -10,7 +10,7 @@ description: This article offers guidance and tips for administrators wishing to
 
 Textpattern will function with any appropriate HTTP (web) server running PHP and MySQL. This article offers guidance and tips for configuring such a web server. This article does *not* address the installation of web server software, the security procedures for a production server, or any considerations toward performance optimization.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

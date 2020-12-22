@@ -10,7 +10,7 @@ description: Since Textpattern 4.7.0, all Textpattern tags can be written and us
 
 Beginning with Textpattern release 4.7.0, it’s possible to further reduce — on top of [integrated notation](/tags/tag-basics/integrated-tag-notation) — the amount of typing involved when writing Textpattern tags.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

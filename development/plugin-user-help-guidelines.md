@@ -12,7 +12,7 @@ Use this template and its associated guidelines when writing your plugin's user 
 
 Equally important to help file structure is writing concisely (without sacrificing clarity). Complex plugins require larger help files due to more explanatory detail, which adds to the size of the plugin file overall. So keep your copy clear and concise to help reduce total plugin file size.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

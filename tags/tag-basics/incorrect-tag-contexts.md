@@ -26,8 +26,9 @@ Similarly, 'Comment' form tags may only be used in the form that is used to disp
 
 The following contexts are recognised by Textpattern:
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table1-caption" itemprop="about">List of Textpattern contexts.</caption>
         <thead>
             <tr>
                 <th class="t25" scope="col">Context</th>

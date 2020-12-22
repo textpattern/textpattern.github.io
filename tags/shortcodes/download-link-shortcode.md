@@ -10,7 +10,7 @@ description: Shortcode for a file download snippet with optional SHA256 checksum
 
 Shortcode for a file download snippet with optional SHA256 checksum and including Schema.org microdata.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

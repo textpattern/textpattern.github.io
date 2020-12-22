@@ -10,7 +10,7 @@ tags:
 
 # Error message
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

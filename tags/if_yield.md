@@ -11,7 +11,7 @@ tags:
 
 # If yield
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

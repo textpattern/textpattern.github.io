@@ -12,7 +12,7 @@ A common discussion point raised in the Textpattern CMS support forum - again an
 
 Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says *should* be in core. We attempt to break that idea down here. Of all the plugin development documentation, this page is more about perspective than how-to.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

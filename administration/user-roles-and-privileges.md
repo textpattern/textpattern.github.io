@@ -10,7 +10,7 @@ description: In addition to the administrator, several pre-defined user roles ar
 
 In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you are building a website for yourself (single user), you wouldn't be concerned with these roles. But if you are building a platform to support multi-user contributions, user roles and privileges are likely important factors to consider in your collaborative process.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
@@ -64,19 +64,19 @@ Default panels represent all existing panels in a fresh install of the software.
 
 #### Content panels
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 1: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Content panels.</caption>
+        <caption id="table1-caption" itemprop="about">Table 1: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Content panels.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/write-panel">Write</a></th>
-                <th scope="col"><a /administration/articles-panel">Articles</a></th>
-                <th scope="col"><a /administration/images-panel">Images</a></th>
-                <th scope="col"><a /administration/files-panel">Files</a></th>
-                <th scope="col"><a /administration/links-panel">Links</a></th>
-                <th scope="col"><a /administration/categories-panel">Categories</a></th>
-                <th scope="col"><a /administration/comments-panel">Comments</a></th>
+                <th scope="col"><a href="/administration/write-panel">Write</a></th>
+                <th scope="col"><a href="/administration/articles-panel">Articles</a></th>
+                <th scope="col"><a href="/administration/images-panel">Images</a></th>
+                <th scope="col"><a href="/administration/files-panel">Files</a></th>
+                <th scope="col"><a href="/administration/links-panel">Links</a></th>
+                <th scope="col"><a href="/administration/categories-panel">Categories</a></th>
+                <th scope="col"><a href="/administration/comments-panel">Comments</a></th>
             </tr>
         </thead>
         <tbody>
@@ -165,17 +165,17 @@ Default panels represent all existing panels in a fresh install of the software.
 
 #### Presentation panels
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table2-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 2: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Presenation panels.</caption>
+        <caption id="table2-caption" itemprop="about">Table 2: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Presenation panels.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/themes-panel">Themes</a></th>
-                <th scope="col"><a /administration/sections-panel">Sections</a></th>
-                <th scope="col"><a /administration/pages-panel">Pages</a></th>
-                <th scope="col"><a /administration/forms-panel">Forms</a></th>
-                <th scope="col"><a /administration/styles-panel">Styles</a></th>
+                <th scope="col"><a href="/administration/themes-panel">Themes</a></th>
+                <th scope="col"><a href="/administration/sections-panel">Sections</a></th>
+                <th scope="col"><a href="/administration/pages-panel">Pages</a></th>
+                <th scope="col"><a href="/administration/forms-panel">Forms</a></th>
+                <th scope="col"><a href="/administration/styles-panel">Styles</a></th>
             </tr>
         </thead>
         <tbody>
@@ -250,18 +250,18 @@ Default panels represent all existing panels in a fresh install of the software.
 
 #### Admin panels
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table3-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 3: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Admin panels.</caption>
+        <caption id="table3-caption" itemprop="about">Table 3: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Admin panels.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/diagnosticss-panel">Diagnosticss</a></th>
-                <th scope="col"><a /administration/preferences-panel">Preferences</a></th>
-                <th scope="col"><a /administration/languages-panel">Languages</a></th>
-                <th scope="col"><a /administration/users-panel">Users</a></th>
-                <th scope="col"><a /administration/plugins-panel">Plugins</a></th>
-                <th scope="col"><a /administration/visitor-logs-panel">Visitor logs</a></th>
+                <th scope="col"><a href="/administration/diagnosticss-panel">Diagnosticss</a></th>
+                <th scope="col"><a href="/administration/preferences-panel">Preferences</a></th>
+                <th scope="col"><a href="/administration/languages-panel">Languages</a></th>
+                <th scope="col"><a href="/administration/users-panel">Users</a></th>
+                <th scope="col"><a href="/administration/plugins-panel">Plugins</a></th>
+                <th scope="col"><a href="/administration/visitor-logs-panel">Visitor logs</a></th>
             </tr>
         </thead>
         <tbody>
@@ -352,14 +352,14 @@ These regions will appear in the navigation alongside Content, Presentation, and
 
 Table 4 represents the two extended regions. Unlike with default panels, the extended panels are generally not treated individually; rather, rights of access are treated at the top region level, thus why individual panels are not show here. A given role will either have access to the regions (thus all child panels) or won't see them at all.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table4-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 4: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for the extended regions, Home and Extensions.</caption>
+        <caption id="table4-caption" itemprop="about">Table 4: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for the extended regions, Home and Extensions.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/home-region">Home</a></th>
-                <th scope="col"><a /administration/extensions-region">Extensions</a></th>
+                <th scope="col"><a href="/administration/home-region">Home</a></th>
+                <th scope="col"><a href="/administration/extensions-region">Extensions</a></th>
             </tr>
         </thead>
         <tbody>

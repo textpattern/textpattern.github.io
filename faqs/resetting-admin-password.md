@@ -10,7 +10,7 @@ description: Resetting an administrator password stored in the database via SQL.
 
 Your options for resetting a forgotten Textpattern account password.
 
-**On this page:**
+**Contents**
 
 * Table of contents
 {:toc}

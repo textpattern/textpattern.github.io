@@ -18,8 +18,9 @@ CSP rules for a Textpattern CMS instance will vary according to its content, HTM
 
 These rules relate to Textpattern core and should be used as a starting point for production sites, paying particular attention to existing content as outlined in the paragraph above.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table1-caption" itemprop="about">CSP policies list.</caption>
         <thead>
             <tr>
                 <th scope="col">CSP header</th>
@@ -36,7 +37,7 @@ These rules relate to Textpattern core and should be used as a starting point fo
             <tr>
                 <th scope="row">font-src</th>
                 <td></td>
-                <td>Front side theme uses Google-hosted font and associated CSS.</td>
+                <td>Front side theme may use Google-hosted font and associated CSS.</td>
             </tr>
             <tr>
                 <th scope="row">img-src</th>

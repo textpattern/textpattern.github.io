@@ -71,8 +71,9 @@ You open the Section property editor when creating a new section or by tapping t
 
 Sections can be given any arbitrary name, except for a few labels already reserved for Textpattern's special functions. Avoid the following, or undesirable results will likely occur:
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table1-caption" itemprop="about">Table 1: List of section names to avoid.</caption>
         <thead>
             <tr>
                 <th class="t33" scope="col">Section</th>

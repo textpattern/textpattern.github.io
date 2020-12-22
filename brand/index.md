@@ -8,47 +8,46 @@ description: The brand identity resources for Textpattern. Use these resources w
 
 # Textpattern brand and voice
 
-The following resources (more are in development) are used by the Textpattern project for all of its platforms and associated content. We are grateful if you use these resources too, where reasonable, whenever you write, speak, or present about Textpattern.
+The following resources are available to help with the development of Textpattern content, design, and code. We appreciate you using them when contributing Textpattern products and platforms, and [suggesting how to make them better](https://github.com/textpattern/textpattern.github.io/issues).
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
 
 ## Project-wide resources
 
-These baseline resources are used across all Textpattern platforms and project initiatives. Thus must be followed in all cases.
+The baseline resources for *all* Textpattern platforms and project initiatives.
 
 ### Editorial style
 
-* [Editorial style guide](/brand/editorial-style-guide): Baseline guidelines for all written content.
+* [Editorial style guide](/brand/editorial-style-guide) (for all Textpattern project content)
 
 ### Visual identity and style
 
 * [Brand logomark and logotext](/brand/textpattern-logopack.zip) (Zip file)
-* [Textpattern design patterns](https://textpattern.com/design-patterns.html)
-* [Default theme design patterns](https://default-theme.textpattern.com/) 
+* [Design patterns for Textpattern brand](https://textpattern.com/design-patterns.html)
+* [Design patterns for default theme](https://default-theme.textpattern.com/) 
 
 ## Platform-specific resources
 
-These resources are extensions of the baseline resources, or otherwise relevant to community collaboration. Use these in addition to the baselines, respective to the platform or project you are working on.
+The references respective to platforms. Use them in addition to the baselines.
 
 ### Plugins
 
-* [Author prefixes and registration](/brand/author-prefixes-and-registration)
 * [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
+* [Author prefix registration](/brand/author-prefixes-and-registration)
 
 ### Themes
 
-* [Author prefixes and registration](/brand/author-prefixes-and-registration)
-* [Default theme design patterns](https://default-theme.textpattern.com/)
+* [Design patterns for default theme](https://default-theme.textpattern.com/)
+* [Author prefix registration](/brand/author-prefixes-and-registration)
 
 ### User documentation
  
-* [User documentation guidelines](/brand/user-docs-guide)
-  * [Documentation collaboration procedures](/brand/user-docs-procedures)
-  * [Documentation page template](/brand/user-docs-page-template)
-* [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
+* [Collaboration procedures](/brand/user-docs-collaboration)
+* [Content development guidelines](/brand/user-docs-guide)
+* [Template for new pages](/brand/user-docs-page-template)
 
 
 

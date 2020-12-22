@@ -11,7 +11,7 @@ tags:
 
 # If first section
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

@@ -10,7 +10,7 @@ description: Textpattern form templates define discrete packages of information 
 
 Textpattern **Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into page templates, or nested into other forms that are in turn *pulled* into page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](/administration/plugins-panel) you might use.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

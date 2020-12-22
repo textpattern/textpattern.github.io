@@ -10,7 +10,7 @@ tags:
 
 # Error status
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

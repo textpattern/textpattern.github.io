@@ -11,7 +11,7 @@ tags:
 
 # File download list
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

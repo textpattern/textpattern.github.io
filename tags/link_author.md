@@ -10,7 +10,7 @@ tags:
 
 # Link author
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

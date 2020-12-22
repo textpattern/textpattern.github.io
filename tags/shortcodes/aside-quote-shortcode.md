@@ -10,7 +10,7 @@ description: A flexible shortcode and short-tag combo to add quotations as aside
 
 A flexible shortcode and short-tag combo to add various quotations as asides in your articles, which pull data from Textpattern links.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
@@ -117,8 +117,9 @@ Create the Tweet links:
 
 In the [Links panel](/administration/links-panel), create your Tweets using this association to the Textpattern link fields:
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table1-caption" itemprop="about">Link field values.</caption>
         <thead>
             <tr>
                 <th class="t25" scope="col">Link field</th>
@@ -174,7 +175,7 @@ The above hypothetical tag might output a Tweet as follows, depending on how you
 
 ## Notes and explainers
 
-The `escape="tidy,textile,ltrim"` attribute used in the link description tag allows using Textile formatting in your link descriptions (notably the `tidy,textile` values). For example, to get the bold formatting on the word “SMASHED,” as depicted above, the description could be written as `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](/tags/tag-basics/tag-escaping) doc to learn about all `escape=“”` attribute uses.)
+The `escape="tidy,textile,ltrim"` attribute used in the link description tag allows using Textile formatting in your link descriptions (notably the `tidy,textile` values). For example, to get the bold formatting on the word “SMASHED,” as depicted above, the description could be written as `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](/tags/learning/#tag-escaping) doc to learn about all `escape=“”` attribute uses.)
 
 The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
 

@@ -1,16 +1,25 @@
 ---
-name: Discuss existing page
-about: Raise concerns or issues with an existing doc page
+name: Existing page
+about: Use to discuss or update task objective for an existing doc page that does not already have a dedicated Issue (i.e. search Issues before using this template)
 title: 'page: '
 labels: ''
 assignees: ''
 
 ---
 
-### Absolute URL of front-end page
+#### URLs
 
-{URL here}
+- Back: {repo URL here (.md file)}
+- Front: {website URL here}
 
-### The question/problem
+#### Explanation of immediate task
 
-{Put it here}
+{Explain here}
+
+#### Resources to support effort
+
+(add as a bulleted list)
+
+#### Current to-dos
+
+(to add as a checkbox list)

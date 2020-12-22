@@ -10,6 +10,8 @@ description: When your needs cannot be met by core ingenuity alone, you can exte
 
 Textpattern by itself is capable of doing a lot, especially as you learn to use pages, forms and [core tags](/tags/) in increasingly sophisticated ways. Sometimes your needs cannot be met (or met easily) by core ingenuity alone, so you can extend the base functionality with plugins, whether to produce content and behaviour, enhance configurability or usability, add new features and panels to the back-end, and much more.
 
+**Contents**
+
 * Table of contents
 {:toc}
 

@@ -10,7 +10,7 @@ tags:
 
 # Thumbnail
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
@@ -31,7 +31,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.0.4+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
-: **Values:** See the [tag escaping](/tags/tag-basics/tag-escaping) documentation for all possible values.
+: **Values:** See the [tag escaping](/tags/learning/#tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `height="integer"` <span class="footnote warning">v4.3.0+</span>

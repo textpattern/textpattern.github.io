@@ -10,7 +10,7 @@ tags:
 
 # Link feed link
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

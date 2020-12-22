@@ -10,7 +10,7 @@ tags:
 
 # Site slogan
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

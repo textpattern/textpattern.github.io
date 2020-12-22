@@ -10,7 +10,7 @@ tags:
 
 # If plugin
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

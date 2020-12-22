@@ -10,7 +10,7 @@ tags:
 
 # Comment anchor
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

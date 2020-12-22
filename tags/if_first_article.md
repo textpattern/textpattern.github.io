@@ -11,7 +11,7 @@ tags:
 
 # If first article
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

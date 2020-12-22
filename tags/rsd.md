@@ -13,7 +13,7 @@ tags:
 **Deprecated in Textpattern 4.6.0**
 {: .alert-block .error}
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

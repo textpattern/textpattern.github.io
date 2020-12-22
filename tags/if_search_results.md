@@ -11,7 +11,7 @@ tags:
 
 # If search results
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

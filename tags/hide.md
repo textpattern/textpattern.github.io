@@ -10,7 +10,7 @@ tags:
 
 # Hide
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

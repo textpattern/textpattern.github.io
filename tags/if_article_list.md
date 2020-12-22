@@ -11,7 +11,7 @@ tags:
 
 # If article list
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

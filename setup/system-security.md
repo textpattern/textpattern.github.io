@@ -10,7 +10,7 @@ description: Textpattern security has a very good track record and developers ai
 
 The developers of Textpattern take system security very seriously. Let us try to put your mind at relative ease.
 
-**One this page**:
+**Contents**
 
 * Table of contents
 {:toc}

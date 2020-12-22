@@ -10,21 +10,21 @@ description: A quick-start template for quickly structuring a new page in user d
 
 This page provides a quick-start template for new documentation pages. Be sure to review the [documentation collaboration procedures](/brand/user-docs-procedures) and the [user documentation guidelines](/brand/user-docs-guide) before creating any new pages.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
 
-## Template markup
+## Using the template
 
 To use the template:
 
-1) Create a new Markdown page (having file extension, *.md*).
+1) Create a new Markdown page having file extension, *.md*.
 
-2) Save it in the appropriate directory location using one of these file-name patterns, as required:
+2) Save it in the appropriate directory location using one of the following file-name patterns, respectively:
 
-* If it’s a page for a new Textpattern tag, use this underscore pattern: *file_name_for_page.md*.
-* For all other pages in the documentation website, use this hyphenated pattern: *file-name-for-page.md*.
+* If a tag page in the Tag Reference, use underscores: *file_name_for_page.md*.
+* For all other pages in user docs, use hyphens: *file-name-for-page.md*.
 
 3) Copy the following block of code (the minimum template markup) and paste it in your new blank page. Adjust to your needs.
 
@@ -43,7 +43,7 @@ description:
 
 A single paragraph to overview the page's subject goes here. It can be multiple sentences, of course.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
@@ -72,9 +72,9 @@ Normal text.
 ```
 
 
-## Template explanation
+## Explanation
 
-A quick breakdown of the markup elements.
+Elaboration on each template element.
 
 ### Metadata
 
@@ -107,8 +107,8 @@ As example, the metadata block for the user documentation guidelines:
 layout: document
 category: brand
 published: true
-title: Textpattern user documentation guidelines
-description: Guidelines for contributions to Textpattern CMS user documentation.
+title: Development guidelines for Textpattern documentation
+description: Guidelines for the development of Textpattern user documentation.
 ---
 ```
 
@@ -137,7 +137,7 @@ The contents list begins with a consistent lead line, followed by the Kramdown s
 ```
 **On this page:**
 
-* Table of contents
+* Contents
 {:toc}
 ```
 

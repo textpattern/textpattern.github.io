@@ -10,7 +10,7 @@ description: How to move a Textpattern installation between two server locations
 
 Moving Textpattern means relocating the installation between two directories; either on the same server (local or hosted) or between two servers, such as when changing web hosts. Each scenario is described here.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

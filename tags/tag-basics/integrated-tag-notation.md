@@ -10,7 +10,7 @@ description: Integrating HTML markup into Textpattern tags has the benefit of be
 
 Textpattern and HTML tags can be mixed together to achieve various objectives. While the distinction makes it easier to see the two tag types, it can make for more verbose markup. As you get more famililar with Textpattern tags, you can choose to write markup in a more _integrated_ way, where HTML is defined in Textpattern tag attributes instead of used as separate tags. This page describes the general idea.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
@@ -153,4 +153,4 @@ More important than character count is your understanding of the resulting marku
 
 In summary, mixed markup is generally easier for new Textpattern users to get up to speed with, until they've become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the integrated notation because it saves character space. But it doesn't matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions.
 
-[Next: Tag escaping](/tags/tag-basics/tag-escaping)
+[Next: Tag escaping](/tags/learning/#tag-escaping)

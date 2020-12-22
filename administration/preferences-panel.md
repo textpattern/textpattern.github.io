@@ -10,7 +10,7 @@ description: The Preferences panel is where you configure the everyday operation
 
 The Preferences panel is where you configure the everyday operation of your Textpattern site. Along with the [Languages panel](/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

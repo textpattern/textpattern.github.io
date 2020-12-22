@@ -10,7 +10,7 @@ description: Everything you need to know to develop or fix Textpattern plugins.
 
 This information is for those who are thinking about developing Textpattern plugins; that is to say, extend the functionality of Textpattern beyond its core abilities. As the years have passed and the software has matured, growing ever more capable out-of-the-box, the need for plugins has diminished, or at the very least has evolved to where new plugins have become light-weight specializations. This offers exciting, if challenging, opportunities for new plugin developers. What can you bring to the table that is both irrefutably useful and not already possible with core?
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

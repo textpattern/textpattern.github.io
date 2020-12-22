@@ -10,7 +10,7 @@ tags:
 
 # Article custom
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
