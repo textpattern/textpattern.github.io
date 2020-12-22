@@ -38,8 +38,6 @@ css
 email
 error_message
 error_status
-evaluate
-expires
 feed_link
 header
 if_article_author
@@ -86,12 +84,7 @@ if_thumbnail
 if_variable
 if_yield
 item
-keywords
 lang
-meta_author
-meta_description
-meta_keywords
-output_form
 page_title
 page_url
 pages
@@ -110,8 +103,6 @@ section_list
 text
 thumbnail
 txp_die
-variable
-yield
 ```
 
 ## Scheduled
@@ -124,7 +115,9 @@ category1
 category2
 custom_field
 else
+evaluate
 excerpt
+expires
 file_download
 file_download_author
 file_download_category
@@ -147,6 +140,7 @@ image_info
 image_list
 image_url
 images
+keywords
 link
 link_author
 link_category
@@ -161,10 +155,14 @@ link_to_prev
 link_url
 linkdesctitle
 linklist
+meta_author
+meta_description
+meta_keywords
 modified
 newer
 next_title
 older
+output_form
 permlink
 posted
 prev_title
@@ -178,4 +176,6 @@ search_term
 site_name
 site_slogan
 site_url
+variable
+yield
 ```

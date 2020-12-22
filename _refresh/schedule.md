@@ -2,11 +2,11 @@
 
 ## Tags
 
-| Year Week | Primary | Secondary | Comments |
+| Year Week | Tasks | Status | Comments |
 |-----------|---------|-----------|----------|
 | 2020 W52 | Scheduling | | Preflight: planning. |
 | 2020 W53 | People | Tag recon | Preflight: planning. |
-| 2021 W01 | `posted`<br/>`modified` | Tag recon | January: article accessories, site attributes |
+| 2021 W01 | `posted`<br/>`modified`<br/>`expires` | Tag recon | January: article accessories, site attributes |
 | 2021 W02 | `site_name`<br/>`site_slogan`<br/>`site_url` | | January: article accessories, site attributes. |
 | 2021 W03 | `category1`<br/>`category2` | | January: article accessories, site attributes. |
 | 2021 W04 | `custom_field` | | January: article accessories, site attributes. |
@@ -14,9 +14,9 @@
 | 2021 W06 | `search_input`<br/>`search_result_count`<br/>`search_result_date`<br/>`search_result_excerpt`<br/>`search_result_title`<br/>`search_result_url`<br/>`search_term` | | February: navigation, search. |
 | 2021 W07 | | | February: navigation, search. |
 | 2021 W08 | | | February: navigation, search. |
-| 2021 W09 | `hide` | | March: behind the scenes, internals. |
-| 2021 W10 | | | March: behind the scenes, internals. |
-| 2021 W11 | | | March: behind the scenes, internals. |
+| 2021 W09 | `hide`<br/>`evaluate` | | March: behind the scenes, internals. |
+| 2021 W10 | `yield` | | March: behind the scenes, internals. |
+| 2021 W11 | `variable` | | March: behind the scenes, internals. |
 | 2021 W12 | | | March: behind the scenes, internals. |
 | 2021 W13 | | | April: comments. |
 | 2021 W14 | | | April: comments. |
@@ -39,12 +39,12 @@
 | 2021 W31 | `link_date`<br/>`link_description`<br/>`link_feed_link` | | August: links. |
 | 2021 W32 | `link_id`<br/>`link_name`<br/>`link_url` | | August: links. |
 | 2021 W33 | `link_to_home`<br/>`link_to_next`<br/>`link_to_prev`<br/>`linkdesctitle` | | August: links. |
-| 2021 W34 | `body`<br/>`excerpt` | | September: articles. |
+| 2021 W34 | `body`<br/>`excerpt`<br/>`keywords` | | September: articles. |
 | 2021 W35 | `title`<br/>`permlink` | | September: articles. |
 | 2021 W36 | `article`<br/>`article_custom` | | September: articles. |
 | 2021 W37 | | | September: articles. |
-| 2021 W38 | | | September: articles. |
-| 2021 W39 | | | October: scaffold. |
+| 2021 W38 | `meta_author`<br/>`meta_description`<br/>`meta_keywords`| | September: articles. |
+| 2021 W39 | `output_form` | | October: scaffold. |
 | 2021 W40 | | | October: scaffold. |
 | 2021 W41 | | | October: scaffold. |
 | 2021 W42 | | | October: scaffold. |
