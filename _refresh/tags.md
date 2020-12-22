@@ -6,13 +6,12 @@
 author
 author_email
 authors
+
 category
 category_list
 css
 email
 feed_link
-item
-lang
 
 page_title
 page_url
@@ -23,17 +22,19 @@ php
 popup
 popup_comments
 
-recent_articles
-recent_comments
-related_articles
 
-rsd
-text
 ```
 
 ## Scheduled
 
 ```
+recent_articles
+recent_comments
+related_articles
+item
+lang
+rsd
+text
 article
 article_custom
 article_id

@@ -6,14 +6,14 @@
 |-----------|---------|-----------|----------|
 | 2020 W52 | Scheduling</br>Tag recon | | Preflight: planning. |
 | 2020 W53 | Rabble rousing</br>Tag recon | | Preflight: planning. |
-| 2021 W01 | `posted`<br/>`modified`<br/>`expires` | | January: article accessories, site attributes |
-| 2021 W02 | `site_name`<br/>`site_slogan`<br/>`site_url` | | January: article accessories, site attributes. |
-| 2021 W03 | `category1`<br/>`category2`<br/>`custom_field` | | January: article accessories, site attributes. |
-| 2021 W04 | | | January: article accessories, site attributes. |
+| 2021 W01 | `posted`<br/>`modified`<br/>`expires` | | January: miscellaneous. |
+| 2021 W02 | `site_name`<br/>`site_slogan`<br/>`site_url` | | January: miscellaneous. |
+| 2021 W03 | `category1`<br/>`category2`<br/>`custom_field` | | January: miscellaneous. |
+| 2021 W04 | `item`<br/>`lang`<br/>`rsd`<br/>`text` | | January: article accessories, site attributes. |
 | 2021 W05 | `newer`<br/>`next_title`<br/>`older`<br/>`prev_title` | | February: navigation, search. |
 | 2021 W06 | `search_input`<br/>`search_result_count`<br/>`search_result_date`<br/>`search_result_excerpt` | | February: navigation, search. |
-| 2021 W07 | `search_result_title`<br/>`search_result_url`<br/>`search_term` | | February: navigation, search. |
-| 2021 W08 | `breadcrumb` | | February: navigation, search. |
+| 2021 W07 | `breadcrumb`<br/>`search_result_title`<br/>`search_result_url`<br/>`search_term` | | February: navigation, search. |
+| 2021 W08 | `recent_articles`<br/>`recent_comments`<br/>`related_articles` | | February: navigation, search. |
 | 2021 W09 | `hide`<br/>`evaluate` | | March: behind the scenes, internals. |
 | 2021 W10 | `yield` | | March: behind the scenes, internals. |
 | 2021 W11 | `variable` | | March: behind the scenes, internals. |
