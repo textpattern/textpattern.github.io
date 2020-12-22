@@ -1,5 +1,7 @@
 # Tags
 
+## To Schedule
+
 ```
 article
 article_custom
@@ -133,7 +135,6 @@ linklist
 meta_author
 meta_description
 meta_keywords
-modified
 newer
 next_title
 older
@@ -146,7 +147,6 @@ permlink
 php
 popup
 popup_comments
-posted
 prev_title
 recent_articles
 recent_comments
@@ -170,4 +170,14 @@ title
 txp_die
 variable
 yield
+```
+
+## Scheduled
+
+```
+modified
+posted
+site_name
+site_slogan
+site_url
 ```

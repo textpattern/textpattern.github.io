@@ -2,8 +2,10 @@
 
 | Year Week | Primary | Secondary | Tertiary | Comments |
 |-----------|---------|-----------|----------|----------|
-| 2021 W01 |         |           |          |          |
-| 2021 W02 |         |           |          |          |
+| 2020 W52 | Scheduling |           |          |          |
+| 2020 W53 |         |           |          |          |
+| 2021 W01 | Git primer | Tag recon |          |          |
+| 2021 W02 | `posted`<br/>`modified` | `site_name`<br/>`site_slogan`<br/>`site_url` | Tag recon | January: article accessories & site attributes |
 | 2021 W03 |         |           |          |          |
 | 2021 W04 |         |           |          |          |
 | 2021 W05 |         |           |          |          |
