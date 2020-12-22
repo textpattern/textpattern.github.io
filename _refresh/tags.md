@@ -107,10 +107,10 @@ if_yield
 image
 image_author
 image_date
-image_display Deprecated
-image_index Deprecated
+image_display
+image_index
 image_info
-image_list Deprecated
+image_list
 image_url
 images
 item
@@ -151,7 +151,7 @@ prev_title
 recent_articles
 recent_comments
 related_articles
-rsd Deprecated
+rsd
 search_input
 search_result_count
 search_result_date
