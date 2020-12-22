@@ -31,10 +31,10 @@
 | 2021 W23 | `image_date`<br/>`image_display` | | June: images. |
 | 2021 W24 | `image_index`<br/>`image_info`<br/>`image_list` | | June: images. |
 | 2021 W25 | `image_url`<br/>`images` | | June: images. |
-| 2021 W26 | `else` | | July: conditionals. |
-| 2021 W27 | | | July: conditionals. |
-| 2021 W28 | | | July: conditionals. |
-| 2021 W29 | | | July: conditionals. |
+| 2021 W26 | `else`<br/>`if_author`<br/>`if_category` | | July: conditionals. |
+| 2021 W27 | `if_article_author`<br/>`if_article_category`<br/>`if_article_id`<br/>`if_article_image`<br/>`if_article_list`<br/>`if_article_section` | | July: conditionals. |
+| 2021 W28 | `if_comments`<br/>`if_comments_allowed`<br/>`if_comments_disallowed`<br/>`if_comments_error`<br/>`if_comments_preview` | | July: conditionals. |
+| 2021 W29 | `if_custom_field`<br/>`if_description`<br/>`if_different`<br/>`if_excerpt`<br/>`if_expired`<br/>`if_expires` | | July: conditionals. |
 | 2021 W30 | `link`<br/>`linklist`<br/>`link_author`<br/>`link_category` | | August: links. |
 | 2021 W31 | `link_date`<br/>`link_description`<br/>`link_feed_link` | | August: links. |
 | 2021 W32 | `link_id`<br/>`link_name`<br/>`link_url` | | August: links. |
@@ -49,11 +49,11 @@
 | 2021 W41 | | | October: scaffold, organization. |
 | 2021 W42 | | | October: scaffold, organization. |
 | 2021 W43 | | | October: scaffold, organization. |
-| 2021 W44 | | | November: conditionals. |
-| 2021 W45 | | | November: conditionals. |
-| 2021 W46 | | | November: conditionals. |
-| 2021 W47 | | | November: conditionals. |
-| 2021 W48 | | | November: conditionals. |
+| 2021 W44 | `if_first_article`<br/>`if_first_category`<br/>`if_first_file`<br/>`if_last_article`<br/>`if_last_category`<br/>`if_last_file` | | November: conditionals. |
+| 2021 W45 | `if_first_image`<br/>`if_first_link`<br/>`if_first_section`<br/>`if_last_image`<br/>`if_last_link`<br/>`if_last_section` | | November: conditionals. |
+| 2021 W46 | `if_individual_article`<br/>`if_keywords`<br/>`if_logged_in`<br/>`if_plugin` | | November: conditionals. |
+| 2021 W47 | `if_request``if_search`<br/>`if_search_results`<br/>`if_section` | | November: conditionals. |
+| 2021 W48 | `if_status`<br/>`if_thumbnail`<br/>`if_variable`<br/>`if_yield` | | November: conditionals. |
 | 2021 W49 | | | December: any other business. |
 | 2021 W50 | | | December: any other business. |
 | 2021 W51 | `error_message`<br/>`error_status` | | December: any other business. |
