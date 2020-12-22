@@ -135,9 +135,6 @@ linklist
 meta_author
 meta_description
 meta_keywords
-newer
-next_title
-older
 output_form
 page_title
 page_url
@@ -161,9 +158,6 @@ search_result_url
 search_term
 section
 section_list
-site_name
-site_slogan
-site_url
 text
 thumbnail
 title
@@ -176,7 +170,11 @@ yield
 
 ```
 modified
+newer
+next_title
+older
 posted
+prev_title
 site_name
 site_slogan
 site_url

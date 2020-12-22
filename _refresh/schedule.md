@@ -8,10 +8,10 @@
 | 2021 W02 | `posted`<br/>`modified` | `site_name`<br/>`site_slogan`<br/>`site_url` | Tag recon | January: article accessories & site attributes, warm up the brain farm. |
 | 2021 W03 |         |           |          | January: article accessories & site attributes, warm up the brain farm. |
 | 2021 W04 |         |           |          | January: article accessories & site attributes, warm up the brain farm. |
-| 2021 W05 |         |           |          |          |
-| 2021 W06 |         |           |          |          |
-| 2021 W07 |         |           |          |          |
-| 2021 W08 |         |           |          |          |
+| 2021 W05 | `newer`<br/>`next_title`<br/>`older`<br/>`prev_title` |           |          | February: nagivation. |
+| 2021 W06 |         |           |          | February: nagivation. |
+| 2021 W07 |         |           |          | February: nagivation. |
+| 2021 W08 |         |           |          | February: nagivation. |
 | 2021 W09 |         |           |          |          |
 | 2021 W10 |         |           |          |          |
 | 2021 W11 |         |           |          |          |
