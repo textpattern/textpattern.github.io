@@ -18,11 +18,11 @@
 | 2021 W10 | `yield` | | March: behind the scenes, internals. |
 | 2021 W11 | `variable` | | March: behind the scenes, internals. |
 | 2021 W12 | | | March: behind the scenes, internals. |
-| 2021 W13 | `comment_email``comment_message``comment_name``comment_web` | | April: comments. |
-| 2021 W14 | `comment_email_input``comment_message_input``comment_name_input``comment_web_input` | | April: comments. |
-| 2021 W15 | `comment_anchor``comment_id``comment_permlink``comment_time`| | April: comments. |
-| 2021 W16 | `comments_invite``comment_preview``comment_remember``comment_submit`| | April: comments. |
-| 2021 W17 | `comments``comments_count``comments_error``comments_form``comments_help``comments_preview` | | April: comments. |
+| 2021 W13 | `comment_email`<br/>`comment_message`<br/>`comment_name`<br/>`comment_web` | | April: comments. |
+| 2021 W14 | `comment_email_input`<br/>`comment_message_input`<br/>`comment_name_input`<br/>`comment_web_input` | | April: comments. |
+| 2021 W15 | `comment_anchor`<br/>`comment_id`<br/>`comment_permlink`<br/>`comment_time` | | April: comments. |
+| 2021 W16 | `comments_invite`<br/>`comment_preview`<br/>`comment_remember`<br/>`comment_submit` | | April: comments. |
+| 2021 W17 | `comments`<br/>`comments_count`<br/>`comments_error`<br/>`comments_form`<br/>`comments_help`<br/>`comments_preview` | | April: comments. |
 | 2021 W18 | `file_download`<br/>`file_download_author`<br/>`file_download_category` | | May: files. |
 | 2021 W19 | `file_download_created`<br/>`file_download_description`<br/>`file_download_downloads` | | May: files. |
 | 2021 W20 | `file_download_id`<br/>`file_download_link`<br/>`file_download_list` | | May: files. |
