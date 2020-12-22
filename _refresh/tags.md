@@ -15,8 +15,6 @@ body
 breadcrumb
 category
 category_list
-category1
-category2
 comment_anchor
 comment_email
 comment_email_input
@@ -62,7 +60,6 @@ file_download_modified
 file_download_name
 file_download_size
 header
-hide
 if_article_author
 if_article_category
 if_article_id
@@ -169,6 +166,9 @@ yield
 ## Scheduled
 
 ```
+category1
+hide
+category2
 modified
 newer
 next_title
