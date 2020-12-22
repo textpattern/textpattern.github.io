@@ -3,12 +3,6 @@
 ## To Schedule
 
 ```
-author
-author_email
-authors
-
-category
-category_list
 css
 email
 feed_link
@@ -19,15 +13,19 @@ pages
 
 password_protect
 php
+
 popup
 popup_comments
-
-
 ```
 
 ## Scheduled
 
 ```
+author
+author_email
+authors
+category
+category_list
 recent_articles
 recent_comments
 related_articles

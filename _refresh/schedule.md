@@ -46,7 +46,7 @@
 | 2021 W38 | `meta_author`<br/>`meta_description`<br/>`meta_keywords`| | September: articles. |
 | 2021 W39 | `output_form` | | October: scaffold, organization. |
 | 2021 W40 | `section`<br/>`section_list` | | October: scaffold, organization. |
-| 2021 W41 | | | October: scaffold, organization. |
+| 2021 W41 | `category`<br/>`category_list` | | October: scaffold, organization. |
 | 2021 W42 | | | October: scaffold, organization. |
 | 2021 W43 | | | October: scaffold, organization. |
 | 2021 W44 | `if_first_article`<br/>`if_first_category`<br/>`if_first_file`<br/>`if_last_article`<br/>`if_last_category`<br/>`if_last_file` | | November: conditionals. |
@@ -54,7 +54,7 @@
 | 2021 W46 | `if_individual_article`<br/>`if_keywords`<br/>`if_logged_in`<br/>`if_plugin` | | November: conditionals. |
 | 2021 W47 | `if_request``if_search`<br/>`if_search_results`<br/>`if_section` | | November: conditionals. |
 | 2021 W48 | `if_status`<br/>`if_thumbnail`<br/>`if_variable`<br/>`if_yield` | | November: conditionals. |
-| 2021 W49 | | | December: any other business. |
+| 2021 W49 | `author`<br/>`author_email`<br/>`authors` | | December: any other business. |
 | 2021 W50 | | | December: any other business. |
 | 2021 W51 | `error_message`<br/>`error_status` | | December: any other business. |
 | 2021 W52 | `header`<br/>`txp_die` | | December: any other business. |
