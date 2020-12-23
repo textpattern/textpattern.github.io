@@ -4,7 +4,7 @@
 
 | Year Week | Tasks | Status | Comments |
 |-----------|---------|-----------|----------|
-| 2020 W52 | [Scheduling](https://forum.textpattern.com/viewtopic.php?pid=327758)</br>Tag recon | | Preflight: planning. |
+| 2020 W52 | [Scheduling](https://forum.textpattern.com/viewtopic.php?pid=327758)</br>Tag recon | Underway<br/>– | Preflight: planning. |
 | 2020 W53 | Rabble rousing</br>Tag recon | | Preflight: planning. |
 | 2021 W01 | `posted`<br/>`modified`<br/>`expires` | | January: miscellaneous. |
 | 2021 W02 | `site_name`<br/>`site_slogan`<br/>`site_url` | | January: miscellaneous. |
