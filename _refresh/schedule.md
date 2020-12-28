@@ -7,7 +7,7 @@
 | 2020 W52 | [Scheduling](https://forum.textpattern.com/viewtopic.php?pid=327758)</br>[Tag recon](https://forum.textpattern.com/viewtopic.php?id=51301) | Underway<br/>Underway | Preflight: planning. |
 | 2020 W53 | [Tag recon](https://forum.textpattern.com/viewtopic.php?id=51301) | Underway | Preflight: planning. |
 | 2021 W01 | [`posted`](https://docs.textpattern.com/tags/posted)<br/>[`modified`](https://docs.textpattern.com/tags/modified)<br/>[`expires`](https://docs.textpattern.com/tags/expires) | | January: miscellaneous. |
-| 2021 W02 | `site_name`<br/>`site_slogan`<br/>`site_url` | | January: miscellaneous. |
+| 2021 W02 | [`site_name`](https://docs.textpattern.com/tags/site_name)<br/>[`site_slogan`](https://docs.textpattern.com/tags/site_slogan)<br/>[`site_url`](https://docs.textpattern.com/tags/site_url) | | January: miscellaneous. |
 | 2021 W03 | `category1`<br/>`category2`<br/>`custom_field` | | January: miscellaneous. |
 | 2021 W04 | `item`<br/>`lang`<br/>`rsd`<br/>`text` | | January: article accessories, site attributes. |
 | 2021 W05 | `newer`<br/>`next_title`<br/>`older`<br/>`prev_title`<br/>`popup` | | February: navigation, search. |
