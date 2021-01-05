@@ -384,13 +384,13 @@ See also `authors_deleted`.
 ### Plugins panel
 
 `txp.plugin > data.fetch`
-* **When it occurs:** As a plugin's internal Textpack is fetched from the database.
-* **What it allows:** To fetch the Textpack from somewhere other than the database column.
+* **When it occurs:** As a plugin's internal data is fetched from the database.
+* **What it allows:** To fetch the data from somewhere other than the database column.
 * **Additional parameter:** The name of the plugin.
 
 `txp.plugin > textpack.fetch`
-* **When it occurs:** As a plugin's internal data is fetched from the database.
-* **What it allows:** To fetch the data from somewhere other than the database column.
+* **When it occurs:** As a plugin's internal Textpack is fetched from the database.
+* **What it allows:** To fetch the Textpack from somewhere other than the database column.
 * **Additional parameter:** The name of the plugin.
 
 ### Admin-side criteria callbacks
