@@ -448,6 +448,7 @@ Also, there are certain names **reserved** by Textpattern, which should *not* be
 * comments_invite
 * excerpt
 * form
+* id
 * keywords
 * limit
 * offset
