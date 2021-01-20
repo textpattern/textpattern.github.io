@@ -4,6 +4,10 @@
 <p>These attributes are shared by all tags - and plugins, provided they do not override the functionality.</p>
 {% endif %}
 <dl>
+    <dt><code>break="value"</code></dt>
+    <dd>Where value is an HTML element, specified without brackets (e.g. <code>break="li"</code>) or some string to separate list items.</dd>
+    <dd><strong>Default:</strong> {% if include.break == null %}br{% else %}{{ include.break }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#break">break cross-reference</a>).</dd>
+    
     <dt><code>class="class name"</code></dt>
     <dd>HTML <code>class</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
