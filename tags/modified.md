@@ -21,7 +21,7 @@ tags:
 <txp:modified />
 ~~~
 
-The **modified** tag is a *single* tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the Preferences panel.
+The **modified** tag is a *single* tag which is used to return the modification date of the article being displayed. The default format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the Preferences panel. It can be overridden with the `format` attribute.
 
 ## Attributes
 
@@ -42,17 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** locales adhere to [ISO-639](https://en.wikipedia.org/wiki/ISO_639-2).
 : **Default:** unset (time format set in the Preferences panel.
 
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`class="class name"` <span class="footnote warning">v4.5.0+</span>
-: HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`wraptag="element"` <span class="footnote warning">v4.5.0+</span>
-: HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+{% include atts-global.html %}
 
 ## Examples
 
