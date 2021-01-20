@@ -21,7 +21,7 @@ tags:
 <txp:posted />
 ~~~
 
-The **posted** tag is a *single* tag which is used to return the publish date of the article being displayed. The format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the [Preferences panel](/administration/preferences-panel).
+The **posted** tag is a *single* tag which is used to return the publish date of the article being displayed. The default format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the [Preferences panel](/administration/preferences-panel). It can be overridden with the `format` attribute.
 
 ## Attributes
 
@@ -42,15 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** locales adhere to [ISO-639](https://en.wikipedia.org/wiki/ISO_639-2).
 : **Default:** unset (time format set in the [Preferences panel](/administration/preferences-panel).
 
-### Common presentational attributes
-
-`class="class name"` <span class="footnote warning">v4.0.4+</span>
-: HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`wraptag="element"` <span class="footnote warning">v4.0.4+</span>
-: HTML element to wrap (markup) the posted date, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+{% include atts-global.html %}
 
 ## Examples
 
@@ -97,7 +89,7 @@ This would result in the following HTML output:
 </p>
 ~~~
 
-This would result in the following HTML output:
+This would result in the following HTML output, which provides styling hooks for each date part:
 
 ~~~ html
 <p>
@@ -109,8 +101,6 @@ This would result in the following HTML output:
     </time>
 </p>
 ~~~
-
-This provides styling hooks for each date part.
 
 ## Genealogy
 
