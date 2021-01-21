@@ -38,3 +38,9 @@ This tag has no attributes of its own.
     <txp:site_name />
 </h1>
 ~~~
+
+## Genealogy
+
+### Version 4.0.6
+
+Tag renamed from `<txp:sitename />` to `<txp:site_name />`.
