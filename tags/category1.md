@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Category1
-description: The category1 tag will display information of the category as defined by 'Category 1' of the article being displayed.
+description: The category1 tag will display the category as defined by 'Category 1' in the article being displayed.
 tags:
   - Article tags
   - Navigation tags
@@ -22,7 +22,7 @@ tags:
 <txp:category1 />
 ~~~
 
-The **category1** tag can be used as either a *single* tag or *container* tag. It will display information of the category as defined by **Category 1** of the article being displayed. When used as a containing tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
+The **category1** tag can be used as either a *single* tag or *container* tag. It will display the category as defined by **Category 1** in the article being displayed. When used as a container tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
 
 This tag may be used within either an article form, or in a page, wrapped in an [if_individual_article](/tags/if_individual_article) conditional tag.
 
@@ -50,17 +50,9 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no, allow from any section) or `1` (yes).
 : **Default:** `0`.
 
-### Common presentational attributes
+{% include atts-common.html breakby="" %}
 
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`class="class name"` <span class="footnote warning">v4.0.4+</span>
-: HTML `class attribute` to be applied to `wraptag`.
-: **Default:** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`wraptag="tag"` <span class="footnote warning">v4.0.4+</span>
-: HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+{% include atts-global.html %}
 
 ## Examples
 
@@ -76,28 +68,36 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 ~~~ html
 <p>
-    <txp:category1 link="1" title="1" />
+    <txp:category1 link title />
 </p>
 ~~~
 
-If **category1** is 'General stuff', this tag will display the words 'General stuff' as a hyperlink to a list of articles in the same category.
+If **category1** is defined with a title 'Dogs', this tag will display the words 'Dogs' as a hyperlink to a list of articles in the same category.
 
-### Example 3: Container example
+### Example 3: Category link using custom container content
+
+~~~ html
+<txp:category1 wraptag="p">Other articles in category:
+<txp:category1 title /></txp:category1>
+~~~
+
+Might display this HTML:
 
 ~~~ html
 <p>
-    <txp:category1>Other articles in category:
-    <txp:category1 title="1" /></txp:category1>
-</p>
+    <a rel="tag" href="https://example.com/category/dogs/">
+        Other articles in category: Dogs
+    </a>
+<p>
 ~~~
 
 ### Example 4: Category 1 and 2
 
 ~~~ html
 <p>
-    Filed in: <txp:category1 link="1" title="1" />
+    Filed in: <txp:category1 link title />
     <txp:if_article_category number="2">
-        and <txp:category2 link="1" title="1" />
+        and <txp:category2 link title />
     </txp:if_article_category>
 </p>
 ~~~
