@@ -13,7 +13,7 @@
     <dt><code>breakby="integer(s)"</code></dt>
     <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items).</dd>
     <dd><strong>Default:</strong> {% if include.breakby == null %}1 (unset){% else %}{{ include.breakby }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakby">breakby cross-reference</a>). </dd>
-{% endif %}
+{% endunless %}
     <dt><code>class="class name"</code></dt>
     <dd>HTML <code>class</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
@@ -70,7 +70,7 @@
     <dd>Switch <code><txp:else /></code> parts.</dd>
     <dd><strong>Values:</strong> 0 (no) or 1 (yes).</dd>
     <dd><strong>Default:</strong> {% if include.not == null %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
-{% endif %}
+{% endunless %}
     <dt><code>replace="string"</code></dt>
     <dd>Replace the content stripped via the <code>trim</code> attribute.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
