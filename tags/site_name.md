@@ -39,6 +39,19 @@ This tag has no attributes of its own.
 </h1>
 ~~~
 
+### Example 2: Using global attributes to wrap and label the tag
+
+~~~ html
+<txp:site_name labeltag="h2" label="Welcome" wraptag="h3" class="heading" />
+~~~
+
+Would render this HTML:
+
+~~~ html
+<h2>Welcome</h2>
+<h3 class="heading">My site</h3>
+~~~
+
 ## Genealogy
 
 ### Version 4.0.6
