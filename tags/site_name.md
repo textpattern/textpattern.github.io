@@ -21,11 +21,13 @@ tags:
 <txp:site_name />
 ~~~
 
-The **site_name** tag is a *single* tag that returns the site's name as defined within the [Preferences panel](/administration/preferences-panel).
+The **site_name** tag is a *single* tag that returns the site's name as defined within the Preferences panel.
 
 ## Attributes
 
-This tag has no attributes
+This tag has no attributes of its own.
+
+{% include atts-global.html %}
 
 ## Examples
 
