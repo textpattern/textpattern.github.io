@@ -21,13 +21,15 @@ tags:
 <txp:site_slogan />
 ~~~
 
-The **site_slogan** is a *single* tag which is used to output the site's tagline (labeled as 'Site slogan' in the [Preferences panel](/administration/preferences-panel)).
+The **site_slogan** is a *single* tag which is used to output the site's tagline (labeled as 'Site slogan' in the Preferences panel).
 
-The slogan is a brief (255 characters maximum) tagline or description of your site which can be used, for example, in XML feeds.
+The slogan is a brief (255 characters maximum) tagline or description of your site which can be used, for example, in XML feeds or site browser headers.
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own.
+
+{% include atts-global.html %}
 
 ## Examples
 
