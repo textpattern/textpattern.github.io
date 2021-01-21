@@ -21,7 +21,9 @@ tags:
 <txp:site_url />
 ~~~
 
-The **site_url** tag is a *single* tag which returns the full URL of the site (as defined in the [Preferences panel](/administration/preferences-panel)) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
+The **site_url** tag is a *single* tag which returns the full URL of the site (as defined in the Preferences panel) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
+
+For more general purpose access to URLs and their components, please see the [page_url](/tags/page_url) tag, which includes admin (back-end) site links for both regular and multi-site installations, theme links and paths, and URL parameters.
 
 ## Attributes
 
@@ -30,6 +32,8 @@ Tag will accept the following attribute (**case-sensitive**):
 `type="admin"` <span class="footnote warning">v4.7.0+</span>
 : Specify this if you wish to return the URL to the admin-side instead of the public site.
 : **Default:** unset.
+
+{% include atts-global.html break="" %}
 
 ## Examples
 
@@ -74,6 +78,19 @@ In the `<head>` section of your HTML pages you might have a variety of links to 
 
 ~~~ html
 <a href="<txp:site_url trim="/" />">Login to Textpattern here</a>
+~~~
+
+### Example 6: Using global attributes to wrap and label the tag
+
+~~~ html
+<txp:site_name labeltag="h2" label="Welcome" wraptag="h3" class="heading" />
+~~~
+
+Would render this HTML:
+
+~~~ html
+<h2>Welcome</h2>
+<h3 class="heading">My site</h3>
 ~~~
 
 ## Genealogy
