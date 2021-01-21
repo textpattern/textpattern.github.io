@@ -80,19 +80,6 @@ In the `<head>` section of your HTML pages you might have a variety of links to 
 <a href="<txp:site_url trim="/" />">Login to Textpattern here</a>
 ~~~
 
-### Example 6: Using global attributes to wrap and label the tag
-
-~~~ html
-<txp:site_name labeltag="h2" label="Welcome" wraptag="h3" class="heading" />
-~~~
-
-Would render this HTML:
-
-~~~ html
-<h2>Welcome</h2>
-<h3 class="heading">My site</h3>
-~~~
-
 ## Genealogy
 
 ### Version 4.7.0
