@@ -4,12 +4,16 @@
 <p>These attributes are shared by all tags - and plugins, provided they do not override the functionality.</p>
 {% endif %}
 <dl>
-    {% unless include.break == "" %}
-        <dt><code>break="value"</code></dt>
-        <dd>Where value is an HTML element, specified without brackets (e.g. <code>break="li"</code>) or some string to separate list items.</dd>
-        <dd><strong>Default:</strong> {% if include.break == null %}br{% else %}{{ include.break }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#break">break cross-reference</a>).</dd>
-    {% endunless %}
-
+{% unless include.break == "" %}
+    <dt><code>break="value"</code></dt>
+    <dd>Where value is an HTML element, specified without brackets (e.g. <code>break="li"</code>) or some string to separate list items.</dd>
+    <dd><strong>Default:</strong> {% if include.break == null %}br{% else %}{{ include.break }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#break">break cross-reference</a>).</dd>
+{% endunless %}
+{% unless include.breakby == "" %}
+    <dt><code>breakby="integer(s)"</code></dt>
+    <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items).</dd>
+    <dd><strong>Default:</strong> {% if include.breakby == null %}1 (unset){% else %}{{ include.breakby }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakby">breakby cross-reference</a>). </dd>
+{% endif %}
     <dt><code>class="class name"</code></dt>
     <dd>HTML <code>class</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
@@ -42,6 +46,11 @@
         _any tag_</dd>
     <dd><strong>Default:</strong> {% if include.escape == null %}html{% else %}{{ include.escape }}{% endif %}.</dd>
 
+    <dt><code>evaluate="number list"</code></dt>
+    <dd>Alter the processing order of top-level tags inside a form/container. Tags are normally executed from top to bottom. If you wish to change this, imagine tags are numbered incrementally from 1 inside a container. To run tags 3 and 5 first, then 1, 2, and 4 in order, specify `evaluate="3, 5"` in your container tag.</dd>
+    <dd><strong>Values:</strong> Any comma-separated numbers corresponding with the numerical position of primary (top-level) tags inside the container.</dd>
+    <dd><strong>Default:</strong> {% if include.evaluate == null %}unset{% else %}{{ include.evaluate }}{% endif %}.</dd>
+
     <dt><code>html_id="value"</code></dt>
     <dd>HTML <code>id</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
@@ -56,12 +65,12 @@
     <dd>The tag (without angle brackets) to wrap the label.</dd>
     <dd><strong>Values:</strong> Any valid HTML tag, e.g. <code>h3</code> or <code>div</code>.</dd>
     <dd><strong>Default:</strong> {% if include.labeltag == null %}unset{% else %}{{ include.labeltag }}{% endif %}.</dd>
-
+{% unless include.not == "" %}
     <dt><code>not="boolean"</code></dt>
     <dd>Switch <code><txp:else /></code> parts.</dd>
     <dd><strong>Values:</strong> 0 (no) or 1 (yes).</dd>
     <dd><strong>Default:</strong> {% if include.not == null %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
-
+{% endif %}
     <dt><code>replace="string"</code></dt>
     <dd>Replace the content stripped via the <code>trim</code> attribute.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
