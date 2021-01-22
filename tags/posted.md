@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Posted
-description: The posted tag is a single tag which is used to return the publish date of the article being displayed.
+description: The posted tag is a single tag which is used to return the publication date of the article being displayed.
 tags:
   - Article tags
 ---
@@ -21,7 +21,7 @@ tags:
 <txp:posted />
 ~~~
 
-The **posted** tag is a *single* tag which is used to return the publish date of the article being displayed. The default format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the Preferences panel. It can be overridden with the `format` attribute.
+The **posted** tag is a *single* tag which is used to return the publication date of the article being displayed. The default format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the Preferences panel. It can be overridden with the `format` attribute.
 
 ## Attributes
 
