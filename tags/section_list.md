@@ -33,7 +33,7 @@ The **section_list** tag is a *single* or *container* tag which is used to produ
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes as well as the {% include atts-global-link.html %} (**case-sensitive**):
 
 `active_class="class name"` (only works in the *single* tag without the `form` attribute)
 : HTML `class` to apply to the 'active' or current link in a list.
@@ -85,8 +85,6 @@ Tag will accept the following attributes (**case-sensitive**):
 Each field in the `textpattern` database table can be used as a sort key. \\
 When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
 : **Default:** `name asc`.
-
-{% include atts-global.html class="tag name or unset" %}
 
 ## Examples
 
