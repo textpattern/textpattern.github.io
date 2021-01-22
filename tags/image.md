@@ -55,6 +55,10 @@ Tag will accept the following attributes (**case-sensitive**):
 `name="image name"`
 : Specifies which image to display by its image `name` as shown on the Images panel.
 
+`style="style rule"`
+: Inline CSS `style` rule. It's recommended that you assign CSS rules via the `class` attribute instead.
+: **Default:** unset.
+
 `thumbnail="boolean"` <span class="footnote warning">v4.8.0+</span>
 : Whether to display the full-size (0) or thumbnail-size (1) image.
 : **Default:** 0.
@@ -66,21 +70,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
 : **Default:** width of image stored in the database.
 
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`class="class name"`
-: HTML `class` to apply to the `wraptag` attribute value, if set, otherwise to the `<img>` tag.
-: **Default:** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`style="style rule"`
-: Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
-: **Default:** unset.
-
-`wraptag="element"` <span class="footnote warning">v4.0.4+</span>
-: HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+{% include atts-global.html %}
 
 ## Examples
 
