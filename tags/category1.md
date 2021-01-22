@@ -50,8 +50,6 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no, allow from any section) or `1` (yes).
 : **Default:** `0`.
 
-{% include atts-common.html breakby="" %}
-
 {% include atts-global.html %}
 
 ## Examples
