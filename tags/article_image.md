@@ -48,6 +48,10 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `lazy` (defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser), `eager` (loads the image immediately, regardless of whether or not the image is currently within the visible viewport).
 : **Default:** unset.
 
+`style="style rule"`
+: Inline CSS `style` rule. It's recommended that you assign CSS rules via the `class` attribute instead.
+: **Default:** unset.
+
 `thumbnail="boolean"` <span class="footnote warning">v4.0.4+</span>
 : Use the thumbnail rather than full-size image.
 : **Values:** `0` (no) or `1` (yes).
@@ -57,21 +61,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
 : **Default:** width of image stored in the database.
 
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`class="class name"` <span class="footnote warning">v4.0.4+</span>
-: CSS `class` attribute to apply to the image (or to the `wraptag`, if set).
-: **Default:** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`style="style rule"`
-: Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
-: **Default:** unset.
-
-`wraptag="tag"` <span class="footnote warning">v4.0.4+</span>
-: HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+{% include atts-global.html %}
 
 ## Examples
 
