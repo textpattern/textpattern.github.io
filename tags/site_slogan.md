@@ -27,9 +27,7 @@ The slogan is a brief (255 characters maximum) tagline or description of your si
 
 ## Attributes
 
-This tag has no attributes of its own.
-
-{% include atts-global.html break="" %}
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 
