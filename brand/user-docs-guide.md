@@ -167,7 +167,7 @@ These types of strings are uniquely preferences labels (a.k.a. settings) in the 
 Widowed words happen when the last word of a title wraps to a new line by itself. You may not like it. Prevent widowed words from happening by selecting ‘Yes’ for the *Prevent widowed words in article titles?* preference in the Publish section of the Preferences panel.
 {:.example}
 
-As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string were concerned with here is the preference label posed as a question, distinguished by emphasized text. Without the emphasis, the string would be much harder to see and understand.
+As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string we're concerned with here is the preference label posed as a question, distinguished by emphasized text. Without the emphasis, the string would be much harder to see and understand.
 
 ### Option strings
 
