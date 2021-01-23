@@ -33,7 +33,7 @@ The **section_list** tag is a *single* or *container* tag which is used to produ
 
 ## Attributes
 
-Tag will accept the following attributes as well as the {% include atts-global-link.html %} (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `active_class="class name"` (only works in the *single* tag without the `form` attribute)
 : HTML `class` to apply to the 'active' or current link in a list.
