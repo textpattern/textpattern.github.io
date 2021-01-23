@@ -28,7 +28,7 @@ This tag may be used within either an article form, or in a page, wrapped in an 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `link="boolean"`
 : Whether to link to articles from the same category. Works only in the *single* tag.
@@ -49,8 +49,6 @@ Tag will accept the following attributes (**case-sensitive**):
 : Whether to only link to articles from the section containing the current article.
 : **Values:** `0` (no, allow from any section) or `1` (yes).
 : **Default:** `0`.
-
-{% include atts-global.html %}
 
 ## Examples
 
