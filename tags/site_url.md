@@ -27,13 +27,11 @@ For more general purpose access to URLs and their components, please see the [pa
 
 ## Attributes
 
-Tag will accept the following attribute (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `type="admin"` <span class="footnote warning">v4.7.0+</span>
 : Specify this if you wish to return the URL to the admin-side instead of the public site.
 : **Default:** unset.
-
-{% include atts-global.html break="" %}
 
 ## Examples
 
