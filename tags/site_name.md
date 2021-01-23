@@ -25,9 +25,7 @@ The **site_name** tag is a *single* tag that returns the site's name as defined 
 
 ## Attributes
 
-This tag has no attributes of its own.
-
-{% include atts-global.html break="" %}
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 
