@@ -23,24 +23,13 @@ tags:
 
 The **custom_field** tag is a *single* tag and used to display the contents of a custom field.
 
-Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences panel](/administration/preferences-panel), and used in the [Write panel](/administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
-
-1. [Defining custom fields](/administration/preferences-panel#custom-fields-preferences)
-2. @@Adding custom field data@@
+Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the Preferences panel, and used in the Write panel. There are conditions to be aware of in each case, so be sure to read the [Defining custom fields](/build/content-types#defining-custom-fields) information.
 
 Also see the [if_custom_field](/tags/if_custom_field) conditional tag, which provides more flexibility and power using custom fields.
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
-
-`default="value"`
-: Default value to use when field is empty.
-
-`escape="html"`
-: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` prior to echoing the field contents.
-: **Values:** See the [tag escaping](/tags/learning/#tag-escaping) documentation for all possible values.
-: **Default:** `html`.
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name="fieldname"`
 : Display specified custom field.
