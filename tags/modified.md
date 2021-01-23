@@ -25,7 +25,7 @@ The **modified** tag is a *single* tag which is used to return the modification 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `format="format string"`
 : Override the default date format set in the Preferences panel.
@@ -41,8 +41,6 @@ Tag will accept the following attributes (**case-sensitive**):
 : Format time string suitable for the specified language (locale).
 : **Values:** locales adhere to [ISO-639](https://en.wikipedia.org/wiki/ISO_639-2).
 : **Default:** unset (time format set in the Preferences panel.
-
-{% include atts-global.html %}
 
 ## Examples
 
