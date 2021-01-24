@@ -63,14 +63,14 @@ HTML returned would be:
 </p>
 ~~~
 
-### Example 2: Power A linklog
+### Example 2: Power a linklog
 
-With an article title of `Textpattern`, an excerpt of `Textpattern is awesome!`, a custom field named `link` containing `https://textpattern.com/`, and an 'article' type form like the following:
+With an article title of `Textpattern`, an excerpt of `Textpattern is awesome!`, a custom field named `Link_url` containing `https://textpattern.com/`, and an 'article' type form like the following:
 
 ~~~ html
 <article class="linklog-entry">
     <h1>
-        <a href="<txp:custom_field name="Link" />"><txp:title /></a>
+        <a href="<txp:custom_field name="Link_url" />"><txp:title /></a>
     </h1>
     <p>
         <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished">
