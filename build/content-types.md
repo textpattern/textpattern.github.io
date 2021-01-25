@@ -53,24 +53,58 @@ An article is published in one section only. Choose the desired section from tho
 
 Location: **Sort and display** area.
 
-Articles have a status that governs their public visibility. Draft, Hidden, and Pending articles are not visible to public site visitors, so use these indicators while an article is in development (Draft), ready for publishing review (Pending), or pulled from the site for any reason (Hidden). The remaining two status values are used to make an article Live (visible to all) or Sticky (usually used to display at the head of every page in the section, or on landing page lists). Users with sufficient privileges logged into the back-end of Textpattern can preview articles of any status.
+Articles have a status that governs their public visibility. Draft, Hidden, and Pending articles are not visible to public site visitors, so use these indicators while an article is in development (Draft), ready for publishing review (Pending), or pulled from the site for any reason (Hidden).
+
+The remaining two status values are used to make an article Live (visible to all) or Sticky (usually used to display at the head of every page in the section, or on landing page lists). Users with sufficient privileges logged into the back-end of Textpattern can preview articles of any status.
 
 #### Publish date <span class="footnote warning">(required)</span>
 
 Location: **Date and time** area.
 
-An article has a publication date. By default for articles that are being published for the first time, the **Set timestamp to now** checkbox is set. If you wish to alter the publication date for any reason (e.g. to schedule a post for future publication, or to adjust the order of articles in a date-ordered list) you may uncheck the checkbox and manually adjust the year, month, day, hour, minute and second values.
+An article has a publication date. By default for articles that are being published for the first time, the **Set timestamp to now** checkbox is checked, which sets the article publication date/time to the moment the Publish button is clicked.
+
+If you wish to alter the publication date for any reason (e.g. to schedule a post for future publication, or to adjust the order of articles in a date-ordered list) you may uncheck the checkbox and manually adjust the year, month, day, hour, minute and second values.
 
 #### Url-only title <span class="footnote warning">(required)</span>
 
 Location: **Meta** area.
-The title of the article that appears in the browser location URL bar and, thus, is visible to search engine spiders. It should closely align with your article title and content for maximum search engine ranking opportunity. Each time you save an article with Draft status, the URL-only title is automatically deduced from your article title and changes to reflect it. Whenever you first publish an article, however (make it Live/Sticky) the URL-only title is set and stays that way. If you subsequently change the title, the URL-only title will *not* change, as that would invalidate any search engine results. If you wish to alter it by hand, you may do so, but it's advised to set up a redirect (via a plugin or in your server rules) so search engines can update their links.
 
-Body
-: 
+The title of the article that appears in the browser location URL bar and is, thus, visible to search engines. It should closely align with your article title and content for maximum search engine ranking opportunity.
 
-Excerpt
-: 
+Notes:
+
+* Each time you save an article with Draft status, the URL-only title is automatically deduced from your article title and changes to reflect it.
+* Whenever you first publish an article (make it Live/Sticky) the URL-only title is set and stays that way.
+* If you subsequently change the title, the URL-only title will *not* change, as that would invalidate any search engine results.
+* If you wish to alter the Url-only title by hand after publication, you may do so, but it's advised to set up a redirect (via a plugin or in your server rules) so search engines can update their links.
+
+#### Body
+
+The article's main content.
+
+By default, text entered here is processed via [Textile](https://textile-lang.com/) - a textfilter that is similar to Markdown (which is also available via a plugin). It allows you to write content using a shorthand syntax. As you write, you may preview your Textile-processed content by popping up the Preview subpanel by clicking the link above the text area. Your content will be processed through Textile and displayed. If you wish to have the content update as you type, check the Live checkbox in the Preview subpanel. Toolbar plugins are also available to assist with Textile markup in a manner similar to word processors.
+
+If for any reason you wish to not process the content through a textfilter, you can choose one of other options. **Convert linebreaks** will just respect newlines and convert them to HTML line breaks. **Leave text untouched** does what you would expect and leaves your content exactly as you type it, using no textfilters at all.
+
+#### Excerpt
+
+A precis of the article's content. Useful for summarising the article or providing a lead-in. This content is often used on article landing pages to entice readers to click through and read the entire article.
+
+Just like the article Body, it processes its content through a textfilter with optional preview, so see the [Body field](#Body) for details.
+
+#### Description
+
+Location: **Meta** area.
+
+A short summary of the article, designed for use by search engines to display in search results. Limited to 255 characters, this is a very concise description of the page content.
+
+#### Expiry date
+
+Location: **Date and time** area.
+
+Just like the [Publish date](#Publish date) which governs when an article appears on the site, an article can be set to automatically expire (disappear for the site) at a given date/time in the future. This is useful for time-bound content such as events or short promotional campaigns.
+
+If the values in this field are left blank, the article never expires. Otherwise, adjust the year, month, day, hour, minute and second values to set an expiry. Check the **Set expiry to now** checkbox as a shortcut to set the article expiry to the moment the Save/Publish button is clicked.
 
 ## Images
 
