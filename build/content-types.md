@@ -1,7 +1,7 @@
 ---
 layout: document
 category: Construction and Presentation
-published: false
+published: true
 title: Content types
 description: Core content types, custom content types, and designing site architectures with these kinds of content needs in mind.
 ---
@@ -16,6 +16,40 @@ Intro...
 {:toc}
 
 ## Articles
+
+Articles are the lifeblood of Textpattern and contain content you wish to publish. Each article can appear in one - and only one - section of your site; visitors read it on the front-end website. There is thus a one-to-one mapping of an article to its corresponding browser URL. Examples articles include:
+
+* "How to bake the best loaf" -> example.org/recipes/how-to-bake-the-best-loaf
+* "Easy chocolate brownies" -> example.org/recipes/easy-chocolate-brownies
+* "Our company history" -> example.org/about/our-company-history
+* "Ode to Textpattern" -> example.org/poems/ode-to-textpattern
+* "Day 59 of being a zombie" -> example.org/blog/day-59-of-being-a-zombie
+* "Who's Donald Swain?" -> example.org/articles/who-s-donald-swain
+{:.example}
+
+Note the above URLs are in the default section/title format, showing that the relevant articles are in the recipes, about, poems, blog, and articles sections, respectively.
+
+All articles written by all site authors are visible from the Content>Articles panel. Bulk operations can be performed there via the **With selected** tool or, to edit an individual article, click its title to open it in the Write panel.
+
+You may also start a new article via the **New article** button or by visiting the Contet>Write panel from the menu.
+
+### Article structure
+
+Every article has the following components. Some are required, most are optional.
+
+Title (required)
+: The title is an accurate representation of the content within your article. It will draw readers and search engines to it. The title itself will form the basis of the **URL-only title** which is the title as it will appear in the browser's URL bar.
+Section (required)
+: 
+Status (required)
+: 
+Publish date (required)
+: 
+Body
+: 
+Excerpt
+: 
+
 
 ## Images
 
