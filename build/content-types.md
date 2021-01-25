@@ -45,13 +45,13 @@ The title is an accurate representation of the content within your article. It w
 
 #### Section
 
-Location: **Sort and display**
+In: **Sort and display** area.
 
 An article is published in one section only. Choose the desired section from those available in the list. The default section is defined in the **Default publishing section** selector at the top of the Presentation>Sections panel.
 
 #### Status
 
-Location: **Sort and display**
+In: **Sort and display** area.
 
 Articles have a status that governs their public visibility. Draft, Hidden, and Pending articles are not visible to public site visitors, so use these indicators while an article is in development (Draft), ready for publishing review (Pending), or pulled from the site for any reason (Hidden).
 
@@ -59,7 +59,7 @@ The remaining two status values are used to make an article Live (visible to all
 
 #### Publish date
 
-Location: **Date and time**
+In: **Date and time** area.
 
 An article has a publication date. By default for articles that are being published for the first time, the **Set timestamp to now** checkbox is checked, which sets the article publication date/time to the moment the Save/Publish button is clicked. From that point on, the timestamp will remain static, regardless of the number of times the article is saved and its publication status.
 
@@ -69,7 +69,7 @@ If you wish to alter the publication date for any reason (e.g. to schedule a pos
 
 #### Url-only title
 
-Location: **Meta**
+In: **Meta** area.
 
 The title of the article that appears in the browser location URL bar and is, thus, visible to search engines. It should closely align with your article title and content for maximum search engine ranking opportunity.
 
@@ -97,13 +97,13 @@ Just like the article Body, it processes its content through a textfilter with o
 
 #### Description
 
-Location: **Meta**
+In: **Meta** area.
 
 A short summary of the article, designed for use by search engines to display in search results. Limited to 255 characters, this is a very concise description of the page content.
 
 #### Expiry date
 
-Location: **Date and time**
+In: **Date and time** area.
 
 Just like the [Publish date](#publish-date) which governs when an article appears on the site, an article can be set to automatically expire (disappear for the site) at a given date/time in the future. This is useful for time-bound content such as events or short promotional campaigns.
 
@@ -111,13 +111,13 @@ If the values in this field are left blank, the article never expires. Otherwise
 
 #### Keywords
 
-Location: **Meta**
+In: **Meta** area.
 
 A comma-separated list of keywords or tags that represent this article. This was historically where document keywords were housed that search engines used to build an idea of what your page was about, before semantic content took over. As such, this field is not used very often and is likely to be repurpossed as a general purpose tagging system in a future version of Textpattern.
 
 #### Category 1 and Category 2
 
-Location: **Categories**
+In: **Categories** area.
 
 Up to two categories may be assigned to an article to indicate what its content represents. This information can be used to filter articles grouped by category that may be from many sections.
 
@@ -125,17 +125,32 @@ Select a category from the dropdown lists for either Category 1 or 2. The nearby
 
 #### Article images
 
-Location: **Article image**
+In: **Article image** area.
+
+The Article image field associates one or more (comma-separated) images with an article. Instead of adding an image inline with the body text itself, this feature is commonly used in conjunction with the [article_image](/tags/article_image) tag to display a thumbnail on the article listing page and a full-size version of the image on the individual article.
+
+The article image could power:
+
+* A photoblog, where a photo or gallery of shots is associated with an article, which might contain details about where the images were taken, or what kind of equipment was used to take it.
+* A portfolio, where an illustration or a screenshot of a website is associated with an article, which contains details about the project or the client involved.
+* A news site, where each article has, optionally, one main image that is always placed at the top of the article, and maybe other images used throughout the text (you can use the `offset` attribute of the [images](/tags/images) tag to skip images you have already displayed).
+
+There are two ways to assign an image to an article:
+
+1. By ID (as it appears in the Images panel; this only works for images managed through the Textpattern Images panel.
+2. By an absolute URL to the image, such as `/images/my-dog.jpg`.
+
+To harness the additional features provided by Textpattern tags such as `<txp:images />`, it is recommended to list image IDs to reference article images. This means managing Images and articles separately, ensuring images are uploaded first. If you prefer to upload images at the same time as creating articles, as well as offering drag/drop image editing and reordering, there are plugins available (such as [com_article_image](https://github.com/textpattern/com_article_image)) for this purpose.
 
 #### Custom content
 
-Location: **Custom fields**
+In: **Custom fields** area.
 
 
 
 #### Article level comments
 
-Location: **Comment options**
+In: **Comment options** area.
 
 If the **Accept comments** preference is enabled, this area allows you to override the site-wide commenting options on a per article basis.
 
@@ -152,8 +167,8 @@ If an article has yet to be published (i.e. it is Draft, Pending or Hidden) clic
 
 There are two ways to duplicate an article:
 
-1. Individually. Open an article you wish to duplicate in the Write panel, and click the Duplicate link near the Save button. This will copy the article as it is, with any changes you have made and append the new article's ID so it is easily distinguishable from the original. It will also set it to Draft status, ready for immediate editing.
-2. En masse. From the Articles panel, select one or more article checkboxes. Using the **With selected** dropdown, select Duplicate. The selected articles will all be cloned, have their new IDs appended to the titles so they are easily distinguishable from the originals, and have their status set to Draft. Click to edit as normal.
+1. *Individually*. Open an article you wish to duplicate in the Write panel, and click the Duplicate link near the Save button. This will copy the article as it is, with any changes you have made and append the new article's ID so it is easily distinguishable from the original. It will also set it to Draft status, ready for immediate editing.
+2. *En masse*. From the Articles panel, select one or more article checkboxes. Using the **With selected** dropdown, select Duplicate. The selected articles will all be cloned, have their new IDs appended to the titles so they are easily distinguishable from the originals, and have their status set to Draft. Click to edit as normal.
 
 You should remove the article ID from the title field prior to publishing the cloned articles.
 
