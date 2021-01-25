@@ -113,7 +113,13 @@ Location: **Meta** area.
 
 A comma-separated list of keywords or tags that represent this article. This was historically where document keywords were housed that search engines used to build an idea of what your page was about, before semantic content took over. As such, this field is not used very often and is likely to be repurpossed as a general purpose tagging system in a future version of Textpattern.
 
-#### Category1 and Category2
+#### Category 1 and Category 2
+
+Location: **Categories** area.
+
+Up to two categories may be assigned to an article to indicate what its content represents. This information can be used to filter articles grouped by category that may be from many sections.
+
+Select a category from the dropdown lists for either Category 1 or 2. The nearby 'Edit' link will jump to the [Categories panel](#Categories) so the category tree may be manipulated.
 
 #### Article images
 
