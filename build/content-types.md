@@ -119,7 +119,7 @@ A comma-separated list of keywords or tags that represent this article. This was
 
 #### Custom fields area
 
-## Saving, publishing and duplicating articles
+### Saving, publishing and duplicating articles
 
 From the Content>Write panel, articles can be modified at any time by the original author or other authors with enough privileges. If it is already published, the act of clicking Save will store any changes and display them immedaitely on the website to all visitors.
 
