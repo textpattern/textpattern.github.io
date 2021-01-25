@@ -45,13 +45,13 @@ The title is an accurate representation of the content within your article. It w
 
 #### Section
 
-Location: **Sort and display** area.
+Location: **Sort and display**
 
 An article is published in one section only. Choose the desired section from those available in the list. The default section is defined in the **Default publishing section** selector at the top of the Presentation>Sections panel.
 
 #### Status
 
-Location: **Sort and display** area.
+Location: **Sort and display**
 
 Articles have a status that governs their public visibility. Draft, Hidden, and Pending articles are not visible to public site visitors, so use these indicators while an article is in development (Draft), ready for publishing review (Pending), or pulled from the site for any reason (Hidden).
 
@@ -59,15 +59,17 @@ The remaining two status values are used to make an article Live (visible to all
 
 #### Publish date
 
-Location: **Date and time** area.
+Location: **Date and time**
 
-An article has a publication date. By default for articles that are being published for the first time, the **Set timestamp to now** checkbox is checked, which sets the article publication date/time to the moment the Publish button is clicked.
+An article has a publication date. By default for articles that are being published for the first time, the **Set timestamp to now** checkbox is checked, which sets the article publication date/time to the moment the Save/Publish button is clicked. From that point on, the timestamp will remain static, regardless of the number of times the article is saved and its publication status.
 
-If you wish to alter the publication date for any reason (e.g. to schedule a post for future publication, or to adjust the order of articles in a date-ordered list) you may uncheck the checkbox and manually adjust the year, month, day, hour, minute and second values.
+If you rather want the current time *when finally publishing* (or re-publishing) the article, ensure to check the **Reset timestamp to now** checkbox before you press 'Publish' or 'Save'. This option will always set the date and time at the moment you save the article.
+
+If you wish to alter the publication date for any reason (e.g. to schedule a post for future publication, or to adjust the order of articles in a date-ordered list) ensure the checkbox is clear and manually adjust the year, month, day, hour, minute and second values.
 
 #### Url-only title
 
-Location: **Meta** area.
+Location: **Meta**
 
 The title of the article that appears in the browser location URL bar and is, thus, visible to search engines. It should closely align with your article title and content for maximum search engine ranking opportunity.
 
@@ -95,13 +97,13 @@ Just like the article Body, it processes its content through a textfilter with o
 
 #### Description
 
-Location: **Meta** area.
+Location: **Meta**
 
 A short summary of the article, designed for use by search engines to display in search results. Limited to 255 characters, this is a very concise description of the page content.
 
 #### Expiry date
 
-Location: **Date and time** area.
+Location: **Date and time**
 
 Just like the [Publish date](#publish-date) which governs when an article appears on the site, an article can be set to automatically expire (disappear for the site) at a given date/time in the future. This is useful for time-bound content such as events or short promotional campaigns.
 
@@ -109,13 +111,13 @@ If the values in this field are left blank, the article never expires. Otherwise
 
 #### Keywords
 
-Location: **Meta** area.
+Location: **Meta**
 
 A comma-separated list of keywords or tags that represent this article. This was historically where document keywords were housed that search engines used to build an idea of what your page was about, before semantic content took over. As such, this field is not used very often and is likely to be repurpossed as a general purpose tagging system in a future version of Textpattern.
 
 #### Category 1 and Category 2
 
-Location: **Categories** area.
+Location: **Categories**
 
 Up to two categories may be assigned to an article to indicate what its content represents. This information can be used to filter articles grouped by category that may be from many sections.
 
@@ -123,7 +125,24 @@ Select a category from the dropdown lists for either Category 1 or 2. The nearby
 
 #### Article images
 
-#### Custom fields area
+Location: **Article image**
+
+#### Custom content
+
+Location: **Custom fields**
+
+
+
+#### Article level comments
+
+Location: **Comment options**
+
+If the **Accept comments** preference is enabled, this area allows you to override the site-wide commenting options on a per article basis.
+
+The site-wide **Comments** preferences govern how comments are managed, attached to articles, and the comment invitation message that's displayed to visitors to encourage them to comment on your article. Two of these settings can be overridden for an individual article:
+
+* **On by default?** Allows you to turn comments on or off for a particular article. The default value is the same as the site-wide **Comments on by default?** preference.
+* **Default invite** Allows you to change the comment invitation message for this article. The default message is the same as the site-wide **Default comments invite** preference.
 
 ### Saving, publishing and duplicating articles
 
