@@ -37,22 +37,34 @@ You may also start a new article via the **New article** button or by visiting t
 
 ### Article structure
 
-Every article has the following components. Some are required, most are optional.
+Every article has the following components. Some are required as indicated, many are optional.
 
-Title (required)
-: The title is an accurate representation of the content within your article. It will draw readers and search engines to it. The title itself will form the basis of the **URL-only title** which is the title as it will appear in the browser's URL bar.
+#### Title <span class="footnote warning">(required)</span>
 
-Section (required)
-: An article is published in one section only. Choose the desired section from those available in the list given in the **Sort and display** area. The default section is defined in the **Default publishing section** selector at the top of the Presentation>Sections panel.
+The title is an accurate representation of the content within your article. It will draw readers and search engines to it. The title itself will form the basis of the **URL-only title** which is the title as it will appear in the browser's URL bar.
 
-Status (required)
-: Articles have a status that governs their public visibility. Draft, Hidden, and Pending articles are not visible to public site visitors, so use these indicators while an article is in development (Draft), ready for publishing review (Pending), or pulled from the site for any reason (Hidden). The remaining two status values are used to make an article Live (visible to all) or Sticky (usually used to display at the head of every page in the section, or on landing page lists). Users with sufficient privileges logged into the back-end of Textpattern can preview articles of any status.
+#### Section <span class="footnote warning">(required)</span>
 
-Publish date (required)
-: 
+Location: **Sort and display** area.
 
-Url-only title (required)
-: The title of the article that appears in the browser location URL bar and, thus, is visible to search engine spiders. It should closely align with your article title and content for maximum search engine ranking opportunity. Each time you save an article with Draft status, the URL-only title is automatically deduced from your article title and changes to reflect it. Whenever you first publish an article, however (make it Live/Sticky) the URL-only title is set and stays that way. If you subsequently change the title, the URL-only title will *not* change, as that would invalidate any search engine results. If you wish to alter it by hand, you may do so, but it's advised to set up a redirect (via a plugin or in your server rules) so search engines can update their links.
+An article is published in one section only. Choose the desired section from those available in the list. The default section is defined in the **Default publishing section** selector at the top of the Presentation>Sections panel.
+
+#### Status <span class="footnote warning">(required)</span>
+
+Location: **Sort and display** area.
+
+Articles have a status that governs their public visibility. Draft, Hidden, and Pending articles are not visible to public site visitors, so use these indicators while an article is in development (Draft), ready for publishing review (Pending), or pulled from the site for any reason (Hidden). The remaining two status values are used to make an article Live (visible to all) or Sticky (usually used to display at the head of every page in the section, or on landing page lists). Users with sufficient privileges logged into the back-end of Textpattern can preview articles of any status.
+
+#### Publish date <span class="footnote warning">(required)</span>
+
+Location: **Date and time** area.
+
+An article has a publication date. By default for articles that are being published for the first time, the **Set timestamp to now** checkbox is set. If you wish to alter the publication date for any reason (e.g. to schedule a post for future publication, or to adjust the order of articles in a date-ordered list) you may uncheck the checkbox and manually adjust the year, month, day, hour, minute and second values.
+
+#### Url-only title <span class="footnote warning">(required)</span>
+
+Location: **Meta** area.
+The title of the article that appears in the browser location URL bar and, thus, is visible to search engine spiders. It should closely align with your article title and content for maximum search engine ranking opportunity. Each time you save an article with Draft status, the URL-only title is automatically deduced from your article title and changes to reflect it. Whenever you first publish an article, however (make it Live/Sticky) the URL-only title is set and stays that way. If you subsequently change the title, the URL-only title will *not* change, as that would invalidate any search engine results. If you wish to alter it by hand, you may do so, but it's advised to set up a redirect (via a plugin or in your server rules) so search engines can update their links.
 
 Body
 : 
