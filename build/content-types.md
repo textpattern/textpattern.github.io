@@ -119,6 +119,19 @@ A comma-separated list of keywords or tags that represent this article. This was
 
 #### Custom fields area
 
+## Saving, publishing and duplicating articles
+
+From the Content>Write panel, articles can be modified at any time by the original author or other authors with enough privileges. If it is already published, the act of clicking Save will store any changes and display them immedaitely on the website to all visitors.
+
+If an article has yet to be published (i.e. it is Draft, Pending or Hidden) clicking Save will store any changes that are viewable only by authors who are logged into the back-end. If an article is currently in one of the three unpublished states and the Status field is altered to Live or Sticky, the Save button text changes to **Publish** as a visual reminder that if you click it, the article will be made live.
+
+There are two ways to duplicate an article:
+
+1. Individually. Open an article you wish to duplicate in the Write panel, and click the Duplicate link near the Save button. This will copy the article as it is, with any changes you have made and append the new article's ID so it is easily distinguishable from the original. It will also set it to Draft status, ready for immediate editing.
+2. En masse. From the Articles panel, select one or more article checkboxes. Using the **With selected** dropdown, select Duplicate. The selected articles will all be cloned, have their new IDs appended to the titles so they are easily distinguishable from the originals, and have their status set to Draft. Click to edit as normal.
+
+You should remove the article ID from the title field prior to publishing the cloned articles.
+
 ## Images
 
 ## Files
