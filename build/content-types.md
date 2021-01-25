@@ -6,7 +6,7 @@ title: Content types
 description: Core content types, custom content types, and designing site architectures with these kinds of content needs in mind.
 ---
 
-# Content Types
+# Content types
 
 Intro...
 
@@ -39,17 +39,20 @@ You may also start a new article via the **New article** button or by visiting t
 
 Every article has the following components. Some are required as indicated, many are optional.
 
-#### Title <span class="footnote warning">(required)</span>
+#### Title
+<span class="footnote warning">(required)</span>
 
 The title is an accurate representation of the content within your article. It will draw readers and search engines to it. The title itself will form the basis of the **URL-only title** which is the title as it will appear in the browser's URL bar.
 
-#### Section <span class="footnote warning">(required)</span>
+#### Section
+<span class="footnote warning">(required)</span>
 
 Location: **Sort and display** area.
 
 An article is published in one section only. Choose the desired section from those available in the list. The default section is defined in the **Default publishing section** selector at the top of the Presentation>Sections panel.
 
-#### Status <span class="footnote warning">(required)</span>
+#### Status
+<span class="footnote warning">(required)</span>
 
 Location: **Sort and display** area.
 
@@ -57,7 +60,8 @@ Articles have a status that governs their public visibility. Draft, Hidden, and 
 
 The remaining two status values are used to make an article Live (visible to all) or Sticky (usually used to display at the head of every page in the section, or on landing page lists). Users with sufficient privileges logged into the back-end of Textpattern can preview articles of any status.
 
-#### Publish date <span class="footnote warning">(required)</span>
+#### Publish date
+<span class="footnote warning">(required)</span>
 
 Location: **Date and time** area.
 
@@ -65,7 +69,8 @@ An article has a publication date. By default for articles that are being publis
 
 If you wish to alter the publication date for any reason (e.g. to schedule a post for future publication, or to adjust the order of articles in a date-ordered list) you may uncheck the checkbox and manually adjust the year, month, day, hour, minute and second values.
 
-#### Url-only title <span class="footnote warning">(required)</span>
+#### Url-only title
+<span class="footnote warning">(required)</span>
 
 Location: **Meta** area.
 
@@ -90,7 +95,7 @@ If for any reason you wish to not process the content through a textfilter, you 
 
 A precis of the article's content. Useful for summarising the article or providing a lead-in. This content is often used on article landing pages to entice readers to click through and read the entire article.
 
-Just like the article Body, it processes its content through a textfilter with optional preview, so see the [Body field](#Body) for details.
+Just like the article Body, it processes its content through a textfilter with optional preview, so see the [Body field](#body) for details.
 
 #### Description
 
@@ -102,7 +107,7 @@ A short summary of the article, designed for use by search engines to display in
 
 Location: **Date and time** area.
 
-Just like the [Publish date](#Publish date) which governs when an article appears on the site, an article can be set to automatically expire (disappear for the site) at a given date/time in the future. This is useful for time-bound content such as events or short promotional campaigns.
+Just like the [Publish date](#publish-date) which governs when an article appears on the site, an article can be set to automatically expire (disappear for the site) at a given date/time in the future. This is useful for time-bound content such as events or short promotional campaigns.
 
 If the values in this field are left blank, the article never expires. Otherwise, adjust the year, month, day, hour, minute and second values to set an expiry. Check the **Set expiry to now** checkbox as a shortcut to set the article expiry to the moment the Save/Publish button is clicked.
 
