@@ -37,7 +37,7 @@ You may also start a new article via the **New article** button or by visiting t
 
 ### Article structure
 
-Every article has the following components. Some are required as indicated, many are optional.
+Every article has the following components.
 
 #### Title
 
@@ -77,6 +77,7 @@ Notes:
 * Whenever you first publish an article (make it Live/Sticky) the URL-only title is set and stays that way.
 * If you subsequently change the title, the URL-only title will *not* change, as that would invalidate any search engine results.
 * If you wish to alter the Url-only title by hand after publication, you may do so, but it's advised to set up a redirect (via a plugin or in your server rules) so search engines can update their links.
+* The format of the article URL can be altered via the **Permalink title URL pattern** preference. Article permlinks can either by hyphenated-like-this or intercappedLikeThis.
 
 #### Body
 
@@ -105,6 +106,12 @@ Location: **Date and time** area.
 Just like the [Publish date](#publish-date) which governs when an article appears on the site, an article can be set to automatically expire (disappear for the site) at a given date/time in the future. This is useful for time-bound content such as events or short promotional campaigns.
 
 If the values in this field are left blank, the article never expires. Otherwise, adjust the year, month, day, hour, minute and second values to set an expiry. Check the **Set expiry to now** checkbox as a shortcut to set the article expiry to the moment the Save/Publish button is clicked.
+
+#### Keywords
+
+Location: **Meta** area.
+
+A comma-separated list of keywords or tags that represent this article.
 
 ## Images
 
