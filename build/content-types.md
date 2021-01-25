@@ -40,19 +40,16 @@ You may also start a new article via the **New article** button or by visiting t
 Every article has the following components. Some are required as indicated, many are optional.
 
 #### Title
-<span class="footnote warning">(required)</span>
 
 The title is an accurate representation of the content within your article. It will draw readers and search engines to it. The title itself will form the basis of the **URL-only title** which is the title as it will appear in the browser's URL bar.
 
 #### Section
-<span class="footnote warning">(required)</span>
 
 Location: **Sort and display** area.
 
 An article is published in one section only. Choose the desired section from those available in the list. The default section is defined in the **Default publishing section** selector at the top of the Presentation>Sections panel.
 
 #### Status
-<span class="footnote warning">(required)</span>
 
 Location: **Sort and display** area.
 
@@ -61,7 +58,6 @@ Articles have a status that governs their public visibility. Draft, Hidden, and 
 The remaining two status values are used to make an article Live (visible to all) or Sticky (usually used to display at the head of every page in the section, or on landing page lists). Users with sufficient privileges logged into the back-end of Textpattern can preview articles of any status.
 
 #### Publish date
-<span class="footnote warning">(required)</span>
 
 Location: **Date and time** area.
 
@@ -70,7 +66,6 @@ An article has a publication date. By default for articles that are being publis
 If you wish to alter the publication date for any reason (e.g. to schedule a post for future publication, or to adjust the order of articles in a date-ordered list) you may uncheck the checkbox and manually adjust the year, month, day, hour, minute and second values.
 
 #### Url-only title
-<span class="footnote warning">(required)</span>
 
 Location: **Meta** area.
 
