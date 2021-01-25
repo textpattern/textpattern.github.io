@@ -83,7 +83,7 @@ Notes:
 
 The article's main content.
 
-By default, text entered here is processed via [Textile](https://textile-lang.com/) - a textfilter that is similar to Markdown (which is also available via a plugin). It allows you to write content using a shorthand syntax. As you write, you may preview your Textile-processed content by popping up the Preview subpanel by clicking the link above the text area. Your content will be processed through Textile and displayed. If you wish to have the content update as you type, check the Live checkbox in the Preview subpanel. Toolbar plugins are also available to assist with Textile markup in a manner similar to word processors.
+By default, text entered here is processed via [Textile](https://textile-lang.com/) - a textfilter that is similar to Markdown (which is also available via a plugin). It allows you to write content using a shorthand syntax for bold, italic, links and so forth. As you write, you may preview your Textile-processed content by popping up the Preview subpanel: click the link above the text area. Your content will be processed through Textile and displayed. If you wish to have the content update as you type, check the Live checkbox in the Preview subpanel. Toolbar plugins are also available to assist with Textile markup in a manner similar to word processors.
 
 If for any reason you wish to not process the content through a textfilter, you can choose one of other options. **Convert linebreaks** will just respect newlines and convert them to HTML line breaks. **Leave text untouched** does what you would expect and leaves your content exactly as you type it, using no textfilters at all.
 
@@ -111,7 +111,13 @@ If the values in this field are left blank, the article never expires. Otherwise
 
 Location: **Meta** area.
 
-A comma-separated list of keywords or tags that represent this article.
+A comma-separated list of keywords or tags that represent this article. This was historically where document keywords were housed that search engines used to build an idea of what your page was about, before semantic content took over. As such, this field is not used very often and is likely to be repurpossed as a general purpose tagging system in a future version of Textpattern.
+
+#### Category1 and Category2
+
+#### Article images
+
+#### Custom fields area
 
 ## Images
 
