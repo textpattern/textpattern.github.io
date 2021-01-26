@@ -144,6 +144,18 @@ There are two ways to assign an image to an article:
 
 To harness the additional features provided by Textpattern tags such as `<txp:images />`, it is recommended to list image IDs to reference article images. This means managing Images and articles separately, ensuring images are uploaded first. If you prefer to upload images at the same time as creating articles, as well as offering drag/drop image editing and reordering, there are plugins available (such as [com_article_image](https://github.com/textpattern/com_article_image)) for this purpose.
 
+#### Override form
+
+In: **Sort and display** area.
+
+When articles are displayed on the front-end website, they are processed through a page template linked to that section, which usually contains an [article tag](/tags/article). That tag passes its contents to a form for rendering article components as a list or an individual article. The form the tag uses is set by the site designer, but if you wish to override this and use a different form, you can do so using the Override form selector.
+
+As long as the preference **Allow form override?** is on, and at least one of the entries in the **Override form types** select list is chosen, authors will see a dropdown list of available forms on the Write panel beneath **Override form**. Whichever one you select will be used to process the article.
+
+A simple example of how to use this: imagine in your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body, etc. On every first day of the month however, you publish a photo of your garden. For this, you need the [article_image](/tags/article_image) tag in your form. So you create a form called `garden_image` which, among other tags, contains `<txp:article_image />`. Whenever you want to publish a photo along with your text, you choose 'Override form' and then `garden_image` from the drop-down list. This way, just this article will use the form `garden_image` for being displayed whereas all other articles will continue to use the default form.
+
+That is a very simplistic example. It is perfectly possible to conditionally display the article image using the `<txp:if_article_image>` container tag in the default form. Then you do not need the Override form feature at all. But there are other instances where it is very handy to allow content authors to divert article processing to one of a number of pre-determined forms based on the type of content written. Articles can then take on completely different layouts if you wish, based on the needs of the content.
+
 #### Custom content
 
 In: **Custom fields** area.
