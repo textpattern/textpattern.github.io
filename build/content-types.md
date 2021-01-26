@@ -91,7 +91,7 @@ If for any reason you wish to not process the content through a textfilter, you 
 
 #### Excerpt
 
-A precis of the article's content. Useful for summarising the article or providing a lead-in. This content is often used on article landing pages to entice readers to click through and read the entire article.
+A precis of the article's content. Useful for summarising the article or providing a lead-in. This content, along with the title, is often used on article landing pages to entice readers to click through and read the entire article.
 
 Just like the article Body, it processes its content through a textfilter with optional preview, so see the [Body field](#body) for details.
 
@@ -113,7 +113,9 @@ If the values in this field are left blank, the article never expires. Otherwise
 
 In: **Meta** area.
 
-A comma-separated list of keywords or tags that represent this article. This was historically where document keywords were housed that search engines used to build an idea of what your page was about, before semantic content took over. As such, this field is not used very often and is likely to be repurpossed as a general purpose tagging system in a future version of Textpattern.
+A comma-separated list of keywords or tags that represent this article. This was historically where document keywords were housed that search engines used to build an idea of what your page was about, before semantic content took over. You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find an article.
+
+As such, this field is not used very often and is likely to be repurpossed as a general purpose tagging system in a future version of Textpattern.
 
 #### Category 1 and Category 2
 
