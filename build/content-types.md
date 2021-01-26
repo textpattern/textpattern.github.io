@@ -186,6 +186,30 @@ There are two ways to duplicate an article:
 
 You should remove the article ID from the title field prior to publishing the cloned articles.
 
+### Context awareness: tags and content interaction
+
+Textpattern is context aware, based on information given in the URL, among other signals at the individual tag level. Although there are many URL schemes - one default scheme set in Preferences, that can be optionally overridden per section - the general principle is that Textpattern knows the difference between a landing page (list of content) and an individual article. This allows you to display different content based on what the visitor wants to see.
+
+example.org/recipes/
+: This is a landing page that will put Textpattern in _article list_ context. You might elect to display 6 of your most recent articles here as a lists, with title, excerpt and a thumbnail extracted from the article content.
+example.org/recipes/scrumptious-bannoffe-pie
+: This triggers _individual article_ context, perhaps clicked by a visitor from the landing page in the recipes section. Here, you might showy one or more photographs in a gallery of the pie in various stages of completion, and display the ingredients and method from the Body of the article.
+example.org/category/puddings
+: This might be a landing page when someone clicked the 'Puddings' category from the individual article above. It would put the site in _category list_ context and you could show a list of all recipes that have the 'puddings' category selected.
+example.org/author/Kim+Supercake
+: This triggers _author list_ context. Perhaps you have a number of contributors to the site, and on your article list or individual article page you use the `<txp:author />` tag to show who each recipe is by. If the bannoffe pie was weritten by Kim Supercake, the visitor could then be shown a list of other recipes by this cook.
+
+All of the the above examples use the same `<txp:article />` tag, but it behaves differently depending on what type of content the URL indicates. The conditional tags such as:
+
+* `<txp:if_article_list>`
+* `<txp:if_individual article>`
+* `<txp:if_catgeory>`
+* `<txp:if_author>`
+
+can be used to choose what your pages do based on their context, so you can switch between displaying article, category, and author lists or individual article content.
+
+Content thus goes hand in hand with the design and layout of the site, and you can select which parts of an article are displayed in each context to allow visitors to more easily find information.
+
 ## Images
 
 ## Files
