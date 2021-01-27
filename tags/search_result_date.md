@@ -26,7 +26,7 @@ The **search_result_date** tag is a *single* tag. This tag will provide the arti
 ## Attributes
 
 `format="format string"`
-: Override the default date format set in the [Preferences panel](/administration/preferences-panel).
+: Override the default date format set in the Preferences panel.
 : **Values:** any valid [strftime](https://secure.php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](https://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](https://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](https://www.w3.org/Protocols/rfc822/#z28)).
 : **Default:** the 'Archive date format' set in preferences.
 

@@ -22,7 +22,7 @@ tags:
 <txp:authors>
 ~~~
 
-The **authors** tag is a *single* or *container* tag that Textpattern will use to gather a list of authors designated within the Textpattern [Users panel](/administration/users-panel).
+The **authors** tag is a *single* or *container* tag that Textpattern will use to gather a list of authors designated within the Textpattern Users panel.
 
 If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 

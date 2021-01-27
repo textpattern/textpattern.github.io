@@ -110,12 +110,12 @@ Tweets are essentially short quotations from people that can be brought into con
 
 Create the link categories:
 
-1. In the [Categories panel](/administration/categories-panel), create a new link category called “Asides”. This will become the parent category for all types of aside-quote links.
+1. In the Categories panel, create a new link category called “Asides”. This will become the parent category for all types of aside-quote links.
 2. Create a second link category called “Tweets” and assign the “Asides” category as the parent.
 
 Create the Tweet links:
 
-In the [Links panel](/administration/links-panel), create your Tweets using this association to the Textpattern link fields:
+In the Links panel, create your Tweets using this association to the Textpattern link fields:
 
 <div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>

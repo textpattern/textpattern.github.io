@@ -35,7 +35,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the article `id`, assigned at creation of the article, to link. Can be found on the [Articles panel](/administration/articles-panel).
+: Specifies the article `id`, assigned at creation of the article, to link. Can be found on the Articles panel.
 : **Default:** unset (current article).
 
 `style="style rule"`

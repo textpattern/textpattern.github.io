@@ -37,7 +37,7 @@ It will execute the contained statement if the category name associated with a p
 Tag will accept the following attributes (**case-sensitive**):
 
 `name="category"`
-: Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the [Categories panel](/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.
+: Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the Categories panel. Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.
 : **Default:** unset.
 
 `number="number"`

@@ -33,11 +33,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `html`.
 
 `id="integer"`
-: An `id` assigned at upload of an image to display. The IDs can be found on the [Images panel](/administration/images-panel).
+: An `id` assigned at upload of an image to display. The IDs can be found on the Images panel.
 : **Default:** unset.
 
 `name="image name"`
-: An image to display, given by its image name as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: An image to display, given by its image name as shown on the Images panel. If both `name` and `id` are specified, the `id` takes precedence.
 : **Default:** unset.
 
 `type="information type"`

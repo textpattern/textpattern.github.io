@@ -21,7 +21,7 @@ tags:
 <txp:images />
 ~~~
 
-The **images** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the [Images panel](/administration/images-panel). Utilising the other image tags in the suite [image_info](/tags/image_info), [image_url](/tags/image_url), [image_date](/tags/image_date) and [if_thumbnail](/tags/if_thumbnail)) you can display simple image galleries from this list.
+The **images** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the Images panel. Utilising the other image tags in the suite [image_info](/tags/image_info), [image_url](/tags/image_url), [image_date](/tags/image_date) and [if_thumbnail](/tags/if_thumbnail)) you can display simple image galleries from this list.
 
 If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -56,7 +56,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `article, category, author`.
 
 `category="image category"`
-: Filter the images by this list of category names as defined in the [Categories panel](/administration/categories-panel).
+: Filter the images by this list of category names as defined in the Categories panel.
 
 `extension=".extension"`
 : Filter the images by this list of image extensions, including the leading dot. Example: `extension=".jpg, .png"`.
@@ -71,7 +71,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Filter the images by this list of `id`s assigned at upload. The IDs can be found on the [Images panel](/administration/images-panel).
+: Filter the images by this list of `id`s assigned at upload. The IDs can be found on the Images panel.
 : The order of the ids overrides the default `sort` attribute.
 : **Default:** unset.
 
@@ -80,7 +80,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0` (unlimited).
 
 `name="image name"`
-: Filter the images by this list of image names as shown on the [Images panel](/administration/images-panel).
+: Filter the images by this list of image names as shown on the Images panel.
 : **Default:** unset.
 
 `offset="integer"`

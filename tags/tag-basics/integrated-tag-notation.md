@@ -81,7 +81,7 @@ And again in the line after:
 
 In each instance of `<txp:image_info />`, the tag is pulling a specific data value for the image in context. The first line pulls the image’s ID number and file extension. Note there’s no `.` added between the ID and extension values because the `ext` value for the `type=""` attribute already includes the required period.
 
-In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the [Image edit panel](/administration/images-panel) area for the image.
+In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the Image edit panel area for the image.
 
 While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.
 

@@ -73,7 +73,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `category="category name"`
-: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](/administration/categories-panel) to ensure you are using the correct names.
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the Categories panel to ensure you are using the correct names.
 : **Values:** (comma separated list of) category name(s).
 : **Default:** unset, retrieves from all categories.
 
@@ -101,7 +101,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `default`.
 
 `frontpage="boolean"`
-: Include only those articles with 'Section appears on front page?' set on the [Sections panel](/administration/sections-panel). If set to `1`, only such articles are displayed, otherwise they are all displayed.
+: Include only those articles with 'Section appears on front page?' set on the Sections panel. If set to `1`, only such articles are displayed, otherwise they are all displayed.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 

@@ -28,7 +28,7 @@ The **recent_articles** tag is a *single* tag which is used to produce a list of
 Tag will accept the following attributes (**case-sensitive**):
 
 `category="category name"`
-: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](/administration/categories-panel) to ensure you are using the correct names.
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the Categories panel to ensure you are using the correct names.
 : **Values:** (comma separated list of) category name(s).
 : **Default:** unset, retrieves from all categories.
 
@@ -37,9 +37,9 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `10`.
 
 `no_widow="boolean"`
-: Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences panel](/administration/preferences-panel).
+: Control widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences panel.
 : **Values:** `0` allow the last word in the title to appear on its own line, i.e. the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
-: **Default:** as set in the [Preferences panel](/administration/preferences-panel).
+: **Default:** as set in the Preferences panel.
 
 `offset="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to skip.

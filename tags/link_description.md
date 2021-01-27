@@ -21,7 +21,7 @@ tags:
 <txp:link_description />
 ~~~
 
-The **link_description** tag is a *single* tag which is used to return the text from the 'Description' field as defined within the [Links panel](/administration/links-panel). This tag is used in a 'links' type form or inside a [linklist](/tags/linklist) container tag to display information about the current link.
+The **link_description** tag is a *single* tag which is used to return the text from the 'Description' field as defined within the Links panel. This tag is used in a 'links' type form or inside a [linklist](/tags/linklist) container tag to display information about the current link.
 
 ## Attributes
 

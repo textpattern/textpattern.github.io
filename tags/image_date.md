@@ -28,16 +28,16 @@ The **image_date** tag is a *single* tag that Textpattern will replace with the 
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
-: An `id` assigned at upload of an image to display. The IDs can be found on the [Images panel](/administration/images-panel).
+: An `id` assigned at upload of an image to display. The IDs can be found on the Images panel.
 : **Default:** unset.
 
 `format="format string"`
-: Override the default date format set in the [Preferences panel](/administration/preferences-panel).
+: Override the default date format set in the Preferences panel.
 : **Values:** any valid [strftime](https://secure.php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](https://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](https://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](https://www.w3.org/Protocols/rfc822/#z28)).
 : **Default:** the 'Archive date format' set in preferences.
 
 `name="image name"`
-: An image to display, given by its image name as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: An image to display, given by its image name as shown on the Images panel. If both `name` and `id` are specified, the `id` takes precedence.
 : **Default:** unset.
 
 ## Examples

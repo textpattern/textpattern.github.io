@@ -46,7 +46,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `category, author`.
 
 `category="category name"`
-: Restrict to files from the specified category. Allows a comma separated list of category names. Note: category names may be different to the Title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](/administration/categories-panel) to ensure you are using the correct names.
+: Restrict to files from the specified category. Allows a comma separated list of category names. Note: category names may be different to the Title you typed when you created the category, as the names are sanitized for URL use. Check the Categories panel to ensure you are using the correct names.
 : **Default:** unset.
 
 `form="form name"`

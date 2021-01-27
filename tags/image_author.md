@@ -28,7 +28,7 @@ The **image_author** tag is a *single* tag that Textpattern will replace with th
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"` <span class="footnote warning">v4.7.0+</span>
-: Specifies which image to query by its image `id` as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies which image to query by its image `id` as shown on the Images panel. If both `name` and `id` are specified, `name` is used while `id` is ignored.
 : **Default:** unset.
 
 `link="link type (boolean)"`
@@ -37,7 +37,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `name="image name"` <span class="footnote warning">v4.7.0+</span>
-: Specifies which image to query by its image `name` as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies which image to query by its image `name` as shown on the Images panel. If both `name` and `id` are specified, `name` is used while `id` is ignored.
 : **Default:** unset.
 
 `section="section name"`
