@@ -33,7 +33,7 @@ It is used to display (a link to) the commenter's web address, if entered at the
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

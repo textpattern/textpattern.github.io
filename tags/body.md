@@ -25,7 +25,7 @@ The **body** tag is a *single* tag which is used to return the text, or content,
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

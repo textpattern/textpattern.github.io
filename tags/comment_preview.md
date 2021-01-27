@@ -25,7 +25,7 @@ The **comment_preview** tag is a *single* tag which is used to display a 'Previe
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

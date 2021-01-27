@@ -25,7 +25,7 @@ The **comment_id** tag is a *single* tag which is used to display the comment's 
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

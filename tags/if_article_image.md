@@ -35,7 +35,7 @@ The tag will execute the contained statements if an image is associated (through
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

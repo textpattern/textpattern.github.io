@@ -36,7 +36,7 @@ Note: [article_custom](/tags/article_custom) always displays an article list, ev
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

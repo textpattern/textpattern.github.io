@@ -35,7 +35,7 @@ Visually, this is the general structure in which it is used:
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

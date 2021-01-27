@@ -40,7 +40,7 @@ This tag is mainly used in combination with [if_comments_disallowed](/tags/if_co
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

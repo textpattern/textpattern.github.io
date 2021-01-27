@@ -25,7 +25,7 @@ The **comment_email** tag is a *single* tag which is used to display the comment
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

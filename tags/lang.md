@@ -26,7 +26,7 @@ The **lang** tag is a *single* tag. Textpattern will replace this tag with the 2
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

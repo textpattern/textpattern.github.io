@@ -33,7 +33,7 @@ Control over where this tag is allowed to appear (i.e. the privileges required t
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Notes on use
 

@@ -25,7 +25,7 @@ The **search_term** tag is a *single* tag which returns the expression the user 
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

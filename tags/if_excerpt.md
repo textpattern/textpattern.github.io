@@ -34,7 +34,7 @@ The tag will execute the contained statements if an excerpt is associated with t
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

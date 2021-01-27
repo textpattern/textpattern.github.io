@@ -25,7 +25,7 @@ The **file_download_downloads** tag is a *single* tag that Textpattern will repl
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

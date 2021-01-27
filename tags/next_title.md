@@ -25,7 +25,7 @@ The **next_title** tag is a *single* tag which Textpattern will replace with the
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

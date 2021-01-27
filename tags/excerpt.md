@@ -27,7 +27,7 @@ The conditional tag [if_excerpt](/tags/if_excerpt) can be used to check if there
 
 ## Attributes
 
-This tag has no attributes (apart from [global attributes](https://docs.textpattern.com/tags/learning/#global-attributes)).
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

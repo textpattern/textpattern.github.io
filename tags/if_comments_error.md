@@ -34,7 +34,7 @@ The tag will execute the contained statements when an error exists with the comm
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

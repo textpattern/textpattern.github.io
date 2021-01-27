@@ -25,7 +25,7 @@ The **file_download_id** tag is a *single* tag that Textpattern will replace wit
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

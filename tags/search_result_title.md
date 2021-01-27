@@ -25,7 +25,7 @@ The **search_result_title** tag is a *single* tag that will provide a hyperlinke
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

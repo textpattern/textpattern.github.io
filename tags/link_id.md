@@ -25,7 +25,7 @@ The **link_id** tag is a *single* tag which returns the numerical ID of the link
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 
