@@ -25,7 +25,7 @@ The **page_url** tag is a *single* tag that is used to return a particular compo
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `context="list"` <span class="footnote warning">v4.7.2+</span>
 : Specifies which Textpattern URL parameters must be retained. For example, `<txp:page_url />` without `context` will produce something like `index.php?s=somesec&c=somecat&pg=2` on the corresponding page, while `<txp:page_url context="c, s" />` will result in `index.php?s=somesec&c=somecat`.

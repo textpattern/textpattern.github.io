@@ -33,7 +33,7 @@ Note: As the image category is passed into [image_display](/tags/image_display),
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `category="category name"`
 : Category of images to display.

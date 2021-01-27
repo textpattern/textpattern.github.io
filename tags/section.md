@@ -28,7 +28,7 @@ When used as a containing tag, it will turn the contents into a link to that sec
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `link="boolean"` (works only in the *single* tag)
 : Display as plain text or a link.

@@ -25,7 +25,7 @@ The **link_category** tag is a *single* tag which returns the link category as t
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `title="boolean"`
 : Whether to display the category name or its title.

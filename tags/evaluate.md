@@ -29,7 +29,7 @@ At its most basic level when used as a container, this tag wraps content you wan
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `query="expression"`
 : A numerical, logical or string [XPath](https://www.edankert.com/xpathfunctions.html) expression to evaluate.

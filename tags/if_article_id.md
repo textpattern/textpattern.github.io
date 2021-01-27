@@ -34,7 +34,7 @@ The tag will execute the contained statement if the article id associated with a
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `id="integer"`
 : Comma delimited integer article ID list.

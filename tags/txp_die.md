@@ -28,7 +28,7 @@ The status can be displayed by the [error_status](/tags/error_status) tag. A tex
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `msg="message"`
 : Textual representation of the error condition.

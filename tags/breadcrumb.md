@@ -27,7 +27,7 @@ The main part of the breadcrumb (as obtained with `label="" section=""` attribut
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `category="category name"` <span class="footnote warning">v4.7.0+</span>
 : Category to be used as the breadcrumb base.

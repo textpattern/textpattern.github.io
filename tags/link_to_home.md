@@ -33,7 +33,7 @@ In this mode it operates identically to [site_url](/tags/site_url).
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 ### Common presentational attributes
 

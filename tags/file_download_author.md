@@ -25,7 +25,7 @@ The **file_download_author** tag is a *single* tag that Textpattern will replace
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `link="link type (boolean)"`
 : Whether to hyperlink the author or not.

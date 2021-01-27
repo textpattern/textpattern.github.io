@@ -25,7 +25,7 @@ The **hide** tag is a *container* tag which is used to suppress or postpone the 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `process="integer"` <span class="footnote warning">v4.7.0+</span>
 : Whether and when to process the enclosed contents. If unset, no tag processing nor output will be done. If set without a value, the contents will be processes but not output. If set to an empty value (`""` or `"0"`), the contents will be output as is without processing. Finally, a positive value `"n"` means process and output on the `n`th pass.

@@ -33,7 +33,7 @@ The tag will execute the contained statements if a page request variable matches
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `match="match type"`
 : How you wish your value to be tested. Choose from: \\

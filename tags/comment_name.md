@@ -27,7 +27,7 @@ Commenter's name and/or email address can be set as a requirement. Should be use
 
 ## Attributes
 
-This tag will accept the following attributes (**case-sensitive**):
+This Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `link="boolean"`
 : Make text a link to the author's URL/email (depending on the information given).

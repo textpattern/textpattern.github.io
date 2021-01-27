@@ -34,7 +34,7 @@ When used as a single tag, Textpattern will replace the tag with a download link
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `filename="text"`
 : Specifies which file to display by its `filename` as shown on the Files panel.

@@ -42,7 +42,7 @@ Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you ca
 
 ## Attributes
 
-Tag will accept content/behaviour and presentation attributes (**case-sensitive**):
+Tag will accept content/behaviour and presentation attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `allowoverride="boolean"`
 : Whether to use override forms for the generated article list.

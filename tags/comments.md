@@ -25,7 +25,7 @@ The **comments** tag can be used as a *single* tag or a *container* tag and is u
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `form="form name"`
 : Use specified form template to process each comment.

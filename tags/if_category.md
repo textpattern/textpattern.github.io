@@ -35,7 +35,7 @@ Should be used in a page template; if checking the category in an article form, 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `category="category"` <span class="footnote warning">v4.7.0+</span>
 : Category name. Note the category name is specified in lower case regardless of how you typed its title in the Categories panel. Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.

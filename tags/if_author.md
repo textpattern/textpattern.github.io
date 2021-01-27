@@ -37,7 +37,7 @@ Note: This is **not** the same as checking if the current article was written (p
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name="author"`
 : Comma-separated list of author names.

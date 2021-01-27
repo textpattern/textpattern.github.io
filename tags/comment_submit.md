@@ -25,7 +25,7 @@ The **comment_submit** tag is a *single* tag which is used to display a 'Submit'
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `label="text"` <span class="footnote warning">v4.6.0+</span>
 : Label that appears on the 'Submit' button.

@@ -25,7 +25,7 @@ The **author** tag is a *single* tag that is used to return the name of the auth
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `escape="html"` <span class="footnote warning">v4.6.0+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.

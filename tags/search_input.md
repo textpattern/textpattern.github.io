@@ -25,7 +25,7 @@ The **search_input** tag can be used as either a *single* or *container* tag. Th
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `aria_label="text"` <span class="footnote warning">v4.7.2+</span>
 : HTML `aria-label` attribute to be applied to search `input` field.

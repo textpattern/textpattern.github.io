@@ -34,7 +34,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `author="author name"` <span class="footnote warning">v4.3.0+</span>
 : Restrict to links with the specified author login name.

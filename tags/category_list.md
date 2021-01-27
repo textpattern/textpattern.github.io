@@ -27,7 +27,7 @@ The **category_list** tag can be used as either a *single* tag or *container* ta
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `active_class="class name"` <span class="footnote warning">v4.0.4+</span>
 : HTML `class` attribute to be applied to the `active` or current link in a list. Only works in the *single* tag without the `form` attribute.

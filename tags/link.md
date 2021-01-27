@@ -27,7 +27,7 @@ This tag is used in 'links' type forms or inside the [linklist](/tags/linklist) 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `id="integer"` <span class="footnote warning">v4.6.0+</span>
 : Specifies the `id`, assigned at creation of the link, to display. Can be found on the Links panel. If both `name` and `id` are specified, `name` is used while `id` is ignored.

@@ -25,7 +25,7 @@ The **password_protect** tag can be used as either a *single* tag or *container*
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `login="text"`
 : The username the user has to enter.

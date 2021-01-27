@@ -27,7 +27,7 @@ The tag works in unison with the [output_form](/tags/output_form) tag; You place
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `default="string"` <span class="footnote warning">v4.7.0+</span>
 : The default value (see examples below). If unset, the enclosed content (if any) will be used.

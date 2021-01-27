@@ -25,7 +25,7 @@ The **email** tag is both a *single* tag and a *container* tag. Textpattern will
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `email="value"`
 : The email address from which to make the link.

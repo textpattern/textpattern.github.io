@@ -42,7 +42,7 @@ By default, the tag is context-sensitive, which means that in the absence of any
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `author="author name"`
 : Filter the images by this list of author IDs who uploaded the pictures to Textpattern.

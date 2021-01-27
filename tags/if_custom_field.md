@@ -36,7 +36,7 @@ If used a *single* tag, the tag will return `1` if the named custom field contai
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `match="match type"` <span class="footnote warning">v4.3.0+</span>
 : How you wish your value to be tested. Choose from: \\

@@ -25,7 +25,7 @@ The **file_download_category** tag is a *single* tag that Textpattern will repla
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `title="boolean"`
 : Whether to display the category name or its title.

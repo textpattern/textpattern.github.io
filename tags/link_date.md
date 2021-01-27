@@ -25,7 +25,7 @@ The **link_date** tag is a *single* tag which returns the date the link was crea
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `format="format string"`
 : Override the default date format set in the Preferences panel.

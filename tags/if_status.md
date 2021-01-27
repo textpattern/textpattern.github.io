@@ -36,7 +36,7 @@ This tag provides a method of sharing one page template between common pages and
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `status="number"`
 : Numerical [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).

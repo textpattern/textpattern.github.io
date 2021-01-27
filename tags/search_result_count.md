@@ -28,7 +28,7 @@ Note: The [if_search](/tags/if_search) conditional tag is required to recognize 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `text="text"`
 : Text to display with the number of matches.

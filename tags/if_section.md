@@ -33,7 +33,7 @@ The tag will execute the contained statements if the called page is part of the 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name="section"`
 : Comma-separated list of section names. For the default section, either use the text `default` or a single comma `,` (for example, both `name=", other_section"` and `name="default, other_section"` are equivalent).

@@ -34,7 +34,7 @@ The tag will execute the contained statements if the section name associated wit
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name=""`
 : One or more section names separated by a comma.

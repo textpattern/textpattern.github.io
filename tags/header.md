@@ -28,7 +28,7 @@ Note: Usage of this tag assumes you have a good working knowledge of [HTTP heade
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name="string"`
 : Header name/type.

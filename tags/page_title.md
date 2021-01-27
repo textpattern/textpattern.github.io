@@ -36,7 +36,7 @@ Page numbers are included in paginated pages (e.g. search results extending to >
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `separator="character(s)"`
 : The character sequence you want between each piece of information.

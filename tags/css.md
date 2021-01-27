@@ -25,7 +25,7 @@ The basic **css** tag is a *single* tag used to output the URL of the stylesheet
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `format="value"` <span class="footnote warning">v4.0.4+</span>
 : How to format output: either return complete [HTML link tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) with necessary HTML attributes, or only the stylesheet's URL. As of Textpattern 4.7.2 you can specify using physical (flat) files.

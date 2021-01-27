@@ -25,7 +25,7 @@ The **comment_name_input** tag is a *single* tag which is used to display a text
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `aria_label="text"` <span class="footnote warning">v4.7.2+</span>
 : HTML `aria-label` attribute to be applied to HTML form text `input` field.

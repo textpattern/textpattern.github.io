@@ -25,7 +25,7 @@ The **file_download** tag is a *single* tag which Textpattern will replace with 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `filename="name"`
 : Filename of the file to link to.

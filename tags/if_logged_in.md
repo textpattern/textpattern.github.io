@@ -33,7 +33,7 @@ The tag will execute the contained statements if the current or given user is lo
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `group="user group"`
 : Comma-separated list of user groups (publishing roles that the author belongs to).

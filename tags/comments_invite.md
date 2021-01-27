@@ -27,7 +27,7 @@ This tag can be used in both Textpattern [Page templates](/themes/page-templates
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `showalways="boolean"`
 : Whether to display invite on individual article page.

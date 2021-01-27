@@ -34,7 +34,7 @@ It tests the existence and/or value of a content set with the [yield](/tags/yiel
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name="string"` <span class="footnote warning">v4.7.0+</span>
 : The (optional) name.

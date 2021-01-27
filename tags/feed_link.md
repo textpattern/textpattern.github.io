@@ -25,7 +25,7 @@ The **feed_link** tag can be used as either a *single* or *container* tag and is
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `category="category name"`
 : Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the Categories panel to ensure you are using the correct names.

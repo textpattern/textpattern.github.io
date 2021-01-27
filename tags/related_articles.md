@@ -42,7 +42,7 @@ If category 1 of the individual article being displayed is left blank and catego
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `form="form name"` <span class="footnote warning">v4.0.7+</span>
 : Use specified form.

@@ -25,7 +25,7 @@ The **image_author** tag is a *single* tag that Textpattern will replace with th
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `id="integer"` <span class="footnote warning">v4.7.0+</span>
 : Specifies which image to query by its image `id` as shown on the Images panel. If both `name` and `id` are specified, `name` is used while `id` is ignored.

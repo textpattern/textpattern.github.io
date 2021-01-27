@@ -37,7 +37,7 @@ Note: In case you are getting unexpected results in an **if_variable** evaluatio
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `match="match type"` <span class="footnote warning">v4.8.0+</span>
 : How you wish your value to be tested. Choose from: \\

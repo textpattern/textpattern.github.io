@@ -51,7 +51,7 @@ However, you can have the added features and functionality of `<txp:article_cust
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `allowoverride="boolean"`
 : Whether to use override forms for the generated article list.

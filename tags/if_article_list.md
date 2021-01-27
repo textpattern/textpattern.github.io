@@ -34,7 +34,7 @@ The tag will execute the contained statement if an article list is being display
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `type="list"` <span class="footnote warning">v4.7.0+</span>
 : Check whether some of Textpattern’s filters are set.

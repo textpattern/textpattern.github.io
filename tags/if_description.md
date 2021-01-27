@@ -34,7 +34,7 @@ The tag will execute the contained statement if the current article/section/cate
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `type="context"`
 : Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): \\

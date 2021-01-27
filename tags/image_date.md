@@ -25,7 +25,7 @@ The **image_date** tag is a *single* tag that Textpattern will replace with the 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `id="integer"`
 : An `id` assigned at upload of an image to display. The IDs can be found on the Images panel.

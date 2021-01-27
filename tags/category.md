@@ -28,7 +28,7 @@ May be used in any context.
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `link="boolean"`
 : Whether to display as link. Works only in the *single* tag, **not** in the *containing* tag variant.

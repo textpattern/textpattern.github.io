@@ -25,7 +25,7 @@ The **comment_time** tag is a *single* tag which is used to display the time and
 
 ## Attributes
 
-This tag will accept the following attributes (**case-sensitive**):
+This Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `format="format string"`
 : Override the default date format set in the Preferences panel.

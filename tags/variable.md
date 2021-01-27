@@ -36,7 +36,7 @@ Note: Avoid entering white space characters for better code readability between 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `add="value"` <span class="footnote warning">v4.7.2+</span>
 : Adds `value` to the current variable value. If both are numeric and `separator` is not set, the result is their sum. Otherwise, `value` is appended as a string, optionally separated by `separator` (see below).

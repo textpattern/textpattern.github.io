@@ -25,7 +25,7 @@ The **file_download_size** tag is a *single* tag which Textpattern will replace 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `decimals="places"`
 : Number of decimal places to format the value to.

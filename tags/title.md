@@ -25,7 +25,7 @@ The **title** tag is a *single* tag which is used to return the title of the art
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `no_widow="boolean"`
 : Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the Preferences panel.

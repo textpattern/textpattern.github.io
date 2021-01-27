@@ -25,7 +25,7 @@ The **popup_comments** tag can be used as a *single* tag or a *container* tag. T
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `form="form name"`
 : Use specified form template to show comments within the `popup_comments` form template.

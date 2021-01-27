@@ -34,7 +34,7 @@ It will execute the contained statement if the category name associated with a p
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name="category"`
 : Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the Categories panel. Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.

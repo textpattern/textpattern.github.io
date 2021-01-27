@@ -39,7 +39,7 @@ Note: You cannot use this tag directly inside an [if_search](/tags/if_search) ta
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `max="number"`
 : If the search results count is no higher than `max`, the tags enclosed by this conditional tag are rendered.

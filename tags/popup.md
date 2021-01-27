@@ -25,7 +25,7 @@ The **popup** tag is a *single* tag. Textpattern will replace this tag with a po
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `section="section_name"`
 : Jump to the selected category for the named section.
