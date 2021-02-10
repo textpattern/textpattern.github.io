@@ -58,26 +58,6 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `w`: image width.
 : **Default:** `caption`.
 
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`break="value"`
-: Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** unset.
-
-`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
-: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: **Default:** `1` (actually unset).
-
-`class="class name"`
-: CSS `class` attribute to apply to the `wraptag`, if set.
-: **Default:** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`wraptag="tag"`
-: HTML element to wrap the items grabbed from the `type` attribute, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
-
 ## Examples
 
 ### Example 1: Gallery thumbnail and caption
@@ -90,6 +70,12 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ~~~
 
 Grabs all images from the 'mammals' category and displays the image thumbnail itself along with the image caption surrounded with HTML `<div>` tags. Note that the image IDs/names are not specified inside the container because they are automatically assigned from the `<txp:images>` tag for each image in the given category.
+
+If you had multi-line captions separated by a blank line, you could pass the caption through the `textile` filter to retain paragraph breaks:
+
+~~~ html
+<txp:image_info type="caption" wraptag="div" escape="textile" />
+~~~
 
 Other tags used: [images](/tags/images), [thumbnail](/tags/thumbnail).
 
