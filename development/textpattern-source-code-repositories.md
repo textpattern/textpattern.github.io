@@ -21,7 +21,7 @@ The current stable release, the latest bleeding-edge development code, and the o
 
 ### Production release
 
-The production release - or *latest stable release* - is for the average user who wants the most secure version of Textpattern available. They are terminal branches (or 'snapshots') from the master repo at particular development milestones. When new production releases are available, the previous release becomes obsolete in terms of developer support, so always update your Textpattern installations to the latest stable release when they're available.
+The production release - or *latest stable release* - is for the average user who wants the most secure version of Textpattern available. They are terminal branches (or 'snapshots') from the main repo at particular development milestones. When new production releases are available, the previous release becomes obsolete in terms of developer support, so always update your Textpattern installations to the latest stable release when they're available.
 
 * [Zip file download](https://textpattern.com/latest.zip) (an immediate .zip package download from textpattern.com, no messing around)
 * [Zip package options](https://textpattern.com/start) (choose either `.zip` or `.tar.gz`, as you prefer)
@@ -52,7 +52,7 @@ Where any of the `.zip` and `.tar.gz` packages are concerned, you won't need to 
 
 When working with a repo in GitHub, you need to decide if you're going to *clone* it or *fork* it:
 
-**Clone:** When cloning a repo, you've made the decision to contribute back to the dev repo branch, or whatever repo you may have cloned from. Cloning puts a copy of the repo on your local drive, where you can work on code (or copy, like this page, for example) on your own time and at your own pace. When ready to share back, you make a *pull request*, which is basically a request to the branch manager to merge your edits to the master repo's code. The branch manager can choose not to if your code is sketchy, but generally the intent is to collaborate harmoniously toward the good of all things.
+**Clone:** When cloning a repo, you've made the decision to contribute back to the dev repo branch, or whatever repo you may have cloned from. Cloning puts a copy of the repo on your local drive, where you can work on code (or copy, like this page, for example) on your own time and at your own pace. When ready to share back, you make a *pull request*, which is basically a request to the branch manager to merge your edits to the main repo's code. The branch manager can choose not to if your code is sketchy, but generally the intent is to collaborate harmoniously toward the good of all things.
 
 **Fork:** When forking a repo, you've essentially made the decision to run rogue with the code. You can change code however you want, but it won't get merged back to the repo you forked from. You're on your own.
 

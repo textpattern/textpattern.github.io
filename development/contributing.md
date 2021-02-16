@@ -18,7 +18,7 @@ Anyone can contribute. You do not have to ask for permission.
 
 ### Help with translations
 
-To make corrections to existing translations, or to add new ones, [please follow these instructions](https://github.com/textpattern/textpacks/blob/master/README.md).
+To make corrections to existing translations, or to add new ones, [please follow these instructions](https://github.com/textpattern/textpacks/blob/main/README.md).
 
 ### Write documentation
 
@@ -28,7 +28,7 @@ The page you're reading now is part of the documentation project. Spot any error
 
 Core developers and project maintainers accept Pull Requests. The [main code repository](https://github.com/textpattern/textpattern) uses [Git](https://www.sitepoint.com/git-for-beginners/) for its version control and is split into at least three branches:
 
-* `master`: for stable releases only. Core devs only ever merge production-ready code here at release time.
+* `main`: for stable releases only. Core devs only ever merge production-ready code here at release time.
 * `maint-x.y.z`: for patching the most recent stable release.
 * `dev`: for development of the next major version.
 
@@ -86,7 +86,7 @@ Sure, we break our own rules sometimes. But, as a rule, we err on the side of si
 
 ## License
 
-[GNU General Public License, version 2](https://github.com/textpattern/textpattern/blob/master/LICENSE.txt). By contributing to the project, you agree to license your additions under the GPLv2 license.
+[GNU General Public License, version 2](https://github.com/textpattern/textpattern/blob/main/LICENSE.txt). By contributing to the project, you agree to license your additions under the GPLv2 license.
 
 ## Code of conduct
 

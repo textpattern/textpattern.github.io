@@ -101,7 +101,7 @@ Active plugins
 Admin-side theme
 : The name and version number of the active administration side theme. The default is 'Hive'.
 
-The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/master/.htaccess) below:
+The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/main/.htaccess) below:
 
 ~~~ apacheconf
 # BEGIN Textpattern
