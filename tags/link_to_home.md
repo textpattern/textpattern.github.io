@@ -33,15 +33,7 @@ In this mode it operates identically to [site_url](/tags/site_url).
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
-
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-* `class="class name"`
-CSS class attribute to apply to the anchor. Will be ignored if used as a single tag.
-Default: unset.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 
