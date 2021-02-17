@@ -52,7 +52,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 ### Example 1: Link to previous article using its title
 
 ~~~ html
-<txp:link_to_prev wraptag="div" class="nav_next">
+<txp:link_to_prev wraptag="div" class="nav_prev">
     <txp:title />
 </txp:link_to_prev>
 ~~~
