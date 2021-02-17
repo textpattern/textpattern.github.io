@@ -52,10 +52,15 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 ### Example 1: Link to previous article using its title
 
 ~~~ html
-<txp:link_to_prev>
+<txp:link_to_prev wraptag="div" class="nav_next">
     <txp:title />
 </txp:link_to_prev>
 ~~~
+
+Important: The `<txp:link_to_prev>` tag automatically has its container context set to *the previous article*. Thus to retrieve the article title of this article, use the `<txp:title />` tag and *not* the `<txp:prev_title />` tag. Using the latter tag in the `<txp:link_to_prev>` container would 'skip' an article title. Compare this usage to Example 3 where the single tag is used and the `<txp:prev_title />` is therefore appropriate to fetch information from the previous document.
+{: .alert-block .information}
+
+Other tags used: [prev_title](/tags/prev_title), [title](/tags/title).
 
 ### Example 2: Link to previous article using static text
 
@@ -65,16 +70,24 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 </txp:link_to_prev>
 ~~~
 
+or to display the text in the current site language:
+
+~~~ html
+<txp:link_to_prev showalways="1">
+    <txp:text item="prev" />
+</txp:link_to_prev>
+~~~
+
 This will always display the text 'Previous', even when there is no previous article.
 
-Note: While `showalways` will enable this tag to display what is wrapped inside it, [prev_title](/tags/prev_title) returns nothing if there is no previous title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+Note: While `showalways` will enable this tag to display what is wrapped inside it, [prev_title](/tags/prev_title) returns nothing if there is no previous title, so nothing is displayed. Use fixed text instead in this case.
 {: .alert-block .information}
 
 ### Example 3: Customising links
 
-The container tag returns only a very basic link, which doesn't allow for customising the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
+The container tag returns only a very basic link, which doesn't allow for customising the link title. Using the tag in its single tag capacity opens up more possibilities.
 
-For example, to give the link an HTML `title` attribute of the previous article's title, and also apply a `class` to it:
+To give the link an HTML `title` attribute of the previous article's title:
 
 ~~~ html
 <a class="link--prev" href="<txp:link_to_prev />" title="<txp:prev_title />">
@@ -82,7 +95,7 @@ For example, to give the link an HTML `title` attribute of the previous article'
 </a>
 ~~~
 
-Other tags used: [prev_title](/tags/prev_title), [title](/tags/title).
+Other tags used: [prev_title](/tags/prev_title).
 
 ## Genealogy
 
