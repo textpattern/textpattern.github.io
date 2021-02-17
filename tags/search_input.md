@@ -36,12 +36,8 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : **Default:** unset (no button is created).
 
 `form="form name"`
-: Use specified form template to build a customized HTML form.
+: Use the specified form template to build a customized HTML form.
 : **Default:** `search_input` (if no form template is specified and no other attributes are used), otherwise unset (uses a built-in HTML `<form>`).
-
-`html_id="id"` <span class="footnote warning">v4.0.7+</span>
-: The HTML `id` attribute assigned to the search form.
-: **Default:** unset.
 
 `match="match type"` <span class="footnote warning">v4.3.0+</span>
 : Set the search mode. Choose from: \\
@@ -51,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : Default `exact`.
 
 `placeholder="text"` <span class="footnote warning">v4.7.2+</span>
-: HTML `placeholder` attribute to be applied to search `input` field.
+: HTML `placeholder` attribute to be applied to the search `input` field.
 : **Default:** unset.
 
 `section="section name"`
@@ -61,22 +57,6 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `size="integer"`
 : Sets the `size` attribute of the search `input` field.
 : **Default:** `15`.
-
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`class="class name"`
-: HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`label="text"`
-: Label prepended to item.
-: **Default:** unset (but see [label cross-reference](/tags/tag-attributes-cross-reference#label) for exceptions).
-
-`wraptag="element"`
-: HTML element to wrap markup, specified without brackets (e.g. `wraptag="div"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 
@@ -88,13 +68,13 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 ### Example 2: Elements required for building a customized HTML search form
 
-You can build your own custom search form by specifying `form="form-name"` inside the `<txp:search_input />` tag:
+Build your own custom search form by specifying `form="your-form-name"` inside the `<txp:search_input />` tag:
 
 ~~~ html
-<txp:search_input form="form-name" />
+<txp:search_input form="search_box" />
 ~~~
 
-You would then need to build your Form (i.e. `form-name`), and the absolute minimum Textpattern tags and attributes required would be:
+You would then need to build your Form called `search_box`. It could contain any fields and markup you wish to suit your site. The absolute minimum Textpattern tags and attributes required would be:
 
 ~~~ html
 <form action="<txp:site_url />">
@@ -106,10 +86,10 @@ When using a customized form template, Textpattern doesn't automatically wrap th
 
 Other tags used: [site_url](/tags/site_url).
 
-Note: Textpattern will use a user defined form named `search_results`, or an internally defined default form if no search result form is defined by you.
+Note: When displaying search results, Textpattern will use a user defined form named `search_results`, or an internally defined default form if no search result form is nominated/defined.
 {: .alert-block .information}
 
-### Example 3: Minimal search input form without label or button (but still accessible)
+### Example 3: Minimal search input form without label or button (yet still accessible)
 
 ~~~ html
 <txp:search_input aria_label="Search" placeholder="Search…" />
