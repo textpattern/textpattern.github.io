@@ -32,16 +32,16 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 
 `name="string"`
 : Header name/type.
-: **Default:** `Content-Type`.
+: **Default:** unset.
 
 `replace="boolean"`
-: Whether the existing HTTP header must be replaced entirely, or added to.
-: **Values:** `0` (no) or `1` (yes).
+: Whether the existing HTTP header must be preserved, replaced entirely, or added to.
+: **Values:** `0` (preserve) or `1` (replace) or other (add).
 : **Default:** `1`.
 
 `value="string"`
 : Header value.
-: **Default:** `text/html; charset=utf-8`.
+: **Default:** unset.
 
 ## Examples
 
@@ -58,7 +58,7 @@ If you don't want an article to be cached by the browser, then the corresponding
 If you need to output the articles from a section as a JSON document, the corresponding page template could be:
 
 ~~~ html
-<txp:header value="application/json; charset=utf-8" />
+<txp:header name="Content-Type" value="application/json; charset=utf-8" />
 [<txp:article break=",">
 {
   "title": "<txp:title escape="json" />",
@@ -72,6 +72,10 @@ The served page will be interpreted by browsers as a JSON application.
 Other tags used: [article](/tags/article), [title](/tags/title).
 
 ## Genealogy
+
+### Version 4.8.5
+
+Default attribute values modified.
 
 ### Version 4.7.0
 
