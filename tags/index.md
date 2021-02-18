@@ -220,7 +220,6 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [image_list](/tags/image_list) <span class="footnote error">**Deprecated**</span>
 * [image_url](/tags/image_url)
 * [images](/tags/images)
-* [item](/tags/item) <span class="footnote warning">**New v4.8.0**</span>
 {: .list--no-bullets}
 
 </div>
