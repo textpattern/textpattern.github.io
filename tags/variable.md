@@ -222,7 +222,7 @@ The expression `^([6-9]|\d\d)` means: does the page value start with a 6, 7, 8, 
 </txp:evaluate>
 ~~~
 
-Other tags used: [else](/tags/else), [evaluate]/tags/evaluate, [if_variable](/tags/if_variable), [page_url](/tags/page_url).
+Other tags used: [else](/tags/else), [evaluate](/tags/evaluate), [if_variable](/tags/if_variable), [page_url](/tags/page_url).
 
 ### Example 7: Link to the latest article in a section
 
