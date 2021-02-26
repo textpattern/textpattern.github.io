@@ -214,7 +214,7 @@ To take action if the article list is greater than the fifth page of results, yo
 
 The expression `^([6-9]|\d\d)` means: does the page value start with a 6, 7, 8, or 9, or is double digits.
 
-**Option 2: Use <txp:evaluate>**
+**Option 2: Use evaluate**
 
 ~~~ html
 <txp:evaluate query='<txp:variable name="page" /> > 5'>
