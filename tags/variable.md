@@ -164,7 +164,7 @@ There are two parts to making this work. First a variable is created that stores
 Note: A Textpattern tag, used as an attribute (a parsed attribute), must be surrounded with single quotes.
 {: .alert-block .information}
 
-Alternatively, to avoid complicated quote escaping inside the `value` attribute, you can use the tag as a container:
+Alternatively, to avoid complicated [quote escaping](/tags/learning/#attribute-value-escaping) inside the `value` attribute, you can use the tag as a container:
 
 ~~~ html
 <txp:variable name="foo"><txp:permlink /></txp:variable>
@@ -239,6 +239,35 @@ Other tags used: [else](/tags/else), [evaluate](/tags/evaluate), [if_variable](/
 Using the above code in a page template would permit you to use example.org/articles?latest=1 as a URL and have Textpattern capture the 'latest' parameter and take action to display just the most recent article in that section.
 
 Other tags used: [article](/tags/article), [else](/tags/else), [if_variable](/tags/if_variable), [page_url](/tags/page_url).
+
+### Example 8: Using default values
+
+You may want to make up a variable that contains the value of some dynamic content and display a default value if that content is empty. Conceptually, this seems easy but you need to bear in mind that the primary purpose of the `<txp:variable>` when used with a `value` is to _store_ the content and when used without a `value` it will _display_ any stored content.
+
+To use default values you must therefore only use them when you intend to display what is stored and **not** when you assign the value to the variable. Viz:
+
+~~~ html
+<!-- Variable assignment: displays nothing -->
+<txp:variable name="primary_section" value="about"  />
+
+<!-- Variable display: default overrides the value attribute (it's ignored)
+     and the tag will display _articles_ -->
+<txp:variable name="primary_section" value="about" default="articles" />
+~~~
+
+This demonstrates it even more clearly:
+
+~~~ html
+<!-- Variable has a value so is output by the 2nd tag
+     Result: about -->
+<txp:variable name="primary_section" value="about" />
+<txp:variable name="primary_section" default="articles" />
+
+<!-- Variable has no value so default value is output by the 2nd tag
+     Result: articles -->
+<txp:variable name="primary_section" value="" />
+<txp:variable name="primary_section" default="articles" />
+~~~
 
 ## Genealogy
 
