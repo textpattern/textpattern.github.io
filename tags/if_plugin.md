@@ -58,7 +58,7 @@ Applies the tag `<txp:com_connect />` if the 'com_connect' plugin is installed, 
 version="4.6"
 ~~~
 
-…means equal to or greater than version @4.6@ (i.e. @4.6.1@, @4.7@, @5@).
+…means equal to or greater than version `4.6` (i.e. `4.6.1`, `4.7`, `5`).
 
 ## Genealogy
 
