@@ -19,7 +19,7 @@ tags:
 <txp:keywords />
 ~~~
 
-The **keywords** tag can be used as a *single* tag or a *container* tag that Textpattern will replace with the keywords associated with the article being displayed. For keywords metadata, see [meta_keywords](/tags/meta_keywords) tag.
+The **keywords** tag can be used as a *single* tag that Textpattern will replace with the keywords associated with the article being displayed. For keywords metadata, see [meta_keywords](/tags/meta_keywords) tag.
 
 Note: Textpattern 4.6.x warns this tag is deprecated and to use the [meta_keywords](/tags/meta_keywords) tag instead. This is incorrect advice; the tag is reinstated as of Textpattern 4.7.0. Please ignore the warning.
 {: .alert-block .information}
@@ -65,5 +65,4 @@ Other tags used: [if_keywords](/tags/if_keywords).
 
 ### Version 4.7.0
 
-Can be used as a container tag. \\
 `break`, `breakby`, `class` and `wraptag` attributes added.
