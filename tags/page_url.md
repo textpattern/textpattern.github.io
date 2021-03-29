@@ -132,7 +132,7 @@ This would result in the following, for example:
 ### Example 6: Link to the latest article in a section
 
 ~~~ html
-<txp:variable name="is_latest"><txp:page_url type="most-recent" /></txp:variable>
+<txp:variable name="is_latest"><txp:page_url type="latest" /></txp:variable>
 ...
 <txp:if_variable name="is_latest" value="1">
     <txp:article limit="1" />
@@ -145,7 +145,7 @@ Using the above code in a page template would permit you to use example.org/arti
 
 Other tags used: [article](/tags/article), [else](/tags/else), [if_variable](/tags/if_variable), [variable](/tags/variable).
 
-As an alternative, in the Advanced options of the Preferences panel, create a custom form type 'html' of type `mediatype="text/html"`. Then in the Forms panel, create a new form called 'most-recent' of this new 'html' type and make the following its contents:
+As an alternative, in the Advanced options of the Preferences panel, create a custom form type 'html' of type `mediatype="text/html"`. Then in the Forms panel, create a new form called 'latest' of this new 'html' type and make the following its contents:
 
 ``` html
 <txp:article limit="1">
@@ -153,7 +153,7 @@ As an alternative, in the Advanced options of the Preferences panel, create a cu
 </txp:article>
 ```
 
-Now each hit of /any-section/?f=most-recent will 302-redirect the visitor to the latest article in that section.
+Now each hit of /any-section/?f=latest will 302-redirect the visitor to the latest article in that section.
 
 ## Genealogy
 
