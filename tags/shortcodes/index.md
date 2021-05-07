@@ -3,7 +3,7 @@ layout: landing
 category: Shortcodes
 published: true
 title: Shortcode examples
-description: A collection of useful shortcodes that are ready to use
+description: A collection of useful shortcodes that are ready to use.
 ---
 
 # Shortcode examples
