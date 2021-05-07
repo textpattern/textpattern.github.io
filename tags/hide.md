@@ -18,10 +18,18 @@ tags:
 ## Syntax
 
 ~~~ html
-<txp:hide />
+<txp:hide>
 ~~~
 
-The **hide** tag is a *container* tag which is used to suppress or postpone the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
+The **hide** tag is a *conditional* tag and always used as an opening and closing pair, like this…
+
+~~~ html
+<txp:hide>
+    …conditional statement…
+</txp:hide>
+~~~
+
+The **hide** tag is used to suppress or postpone the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
 
 ## Attributes
 
