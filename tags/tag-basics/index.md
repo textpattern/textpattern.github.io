@@ -1,9 +1,9 @@
 ---
 layout: landing
-category: Tags and attributes
+category: Tag basics
 published: true
-title: Learning Textpattern tags
-description: Textpattern tags are shorthand method for calling functions defined inside Textpattern core. Modelled after standard HTML tag syntax, Textpattern’s native tags are easy to learn and work interchangeably with HTML.
+title: Tag basics
+description: The fundamentals of the Textpattern tag syntax explained. How to structure your tags and how they are parsed by the CMS.
 ---
 
 # Learning Textpattern tags
