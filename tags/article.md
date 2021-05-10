@@ -96,7 +96,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Default:** `0`.
 
 `searchall="boolean"`
-: When outputting search results, include only those articles with 'Include in site search' set on the Sections panel. If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
+: When outputting search results, include only those articles with 'Include in site search' set on the Sections panel. If set to `0`, only articles in the current section are displayed.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
 
