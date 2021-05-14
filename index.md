@@ -46,7 +46,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 
 <section>
 
-### Core tags
+#### Core tags
 
 * [Tags reference](/tags/)
 * [Tag use basics](/tags/learning/)
@@ -56,7 +56,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 </section>
 <section>
 
-### Custom tags
+#### Custom tags
 
 * [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](/tags/shortcodes/)
