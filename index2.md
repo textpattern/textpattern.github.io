@@ -15,7 +15,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 <div class="layout-container index-docs">
 <section class="layout-3col">
 
-### Setup and Configuration
+## Setup and Configuration
 {: .index-docs-admin}
 
 {% include index-lists-setup.html %}
@@ -23,7 +23,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 </section>
 <section class="layout-3col">
 
-### Construction and Presentation
+## Construction and Presentation
 {: .index-docs-start}
 
 {% include index-lists-build.html %}
@@ -31,7 +31,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 </section>
 <section class="layout-3col">
 
-### Tags and Attributes
+## Tags and Attributes
 {: .index-docs-tags}
 
 {% include index-lists-tags.html %}
