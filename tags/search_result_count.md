@@ -47,12 +47,13 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
         <txp:search_result_count text="articles" />
     </txp:if_article_list>
 </txp:if_search>
+
 <txp:article />
 ~~~
 
 If the visitor is searching for articles, it will show the number of articles that matched the search term (e.g. 5) as follows: `5 articles found`. Otherwise, if Textpattern is displaying an article list, it will display the number of articles like this: `42 articles`.
 
-Note: The [if_search](/tags/if_search) conditional tag is required to recognize actual search results. Without them, the number of articles is returned by default.
+Note: The [if_search](/tags/if_search) conditional tag is required to recognize actual search results. Without it, the number of articles is returned by default.
 {: .alert-block .information}
 
 Other tags used: [article](/tags/article), [if_search](/tags/if_search), [if_article_list](/tags/if_article_list).
