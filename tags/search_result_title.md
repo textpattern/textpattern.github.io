@@ -32,12 +32,10 @@ This tag has no attributes of its own. It accepts only the {% include atts-globa
 ### Example 1: Display a hyperlinked title to an article
 
 ~~~ html
-<h3>
-    <txp:search_result_title />
-    <txp:search_result_date />
-</h3>
+<txp:search_result_title wraptag="h3" />
+<txp:posted wraptag="p" class="date" />
 ~~~
 
 In a search results form, this shows the title of an article that matched the visitor's search results, and its posted date.
 
-Other tags used: [search_result_date](/tags/search_result_date).
+Other tags used: [posted](/tags/posted).
