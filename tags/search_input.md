@@ -86,7 +86,7 @@ When using a customized form template, Textpattern doesn't automatically wrap th
 
 Other tags used: [site_url](/tags/site_url).
 
-Note: When displaying search results, Textpattern will use a user defined form named `search_results`, or an internally defined default form if no search result form is nominated/defined.
+Note: When displaying search results, Textpattern will use the form named `search_results`, unless another form is nominated/defined via the `form` attribute or the tag's container.
 {: .alert-block .information}
 
 ### Example 3: Minimal search input form without label or button (yet still accessible)
