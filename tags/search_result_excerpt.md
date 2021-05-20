@@ -27,10 +27,6 @@ The **search_result_excerpt** tag is a *single* tag that will show the occurrenc
 
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
-`break="tag"` <span class="footnote error">Deprecated v4.7.0</span>
-: Trailing string.
-: **Default:** `…` (ellipsis).
-
 `hilight="tag"`
 : HTML tag to be used for search term matches in excerpt text, without brackets.
 : **Default:** `strong`.
