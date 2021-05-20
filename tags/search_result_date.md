@@ -44,13 +44,13 @@ The **search_result_date** tag is a *single* tag. This tag will provide the arti
     </txp:permlink>
 </h3>
 <p>
-    <txp:search_result_date /> | <txp:posted />
+    <txp:search_result_date />
 </p>
 ~~~
 
-Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted.
+Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted. The `<txp:search_result_date />` should be replaced with `<txp:posted />`: they perform identically.
 
-Other tags used: [title](/tags/title), [permlink](/tags/permlink), [posted](/tags/posted).
+Other tags used: [title](/tags/title), [permlink](/tags/permlink).
 
 ## Genealogy
 
