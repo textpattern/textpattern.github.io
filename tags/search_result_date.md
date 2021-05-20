@@ -10,6 +10,9 @@ tags:
 
 # Search result date
 
+**Deprecated in Textpattern 4.8.6** (use the [posted](/tags/posted) tag instead)
+{: .alert-block .error}
+
 **Contents**
 
 * Table of contents
@@ -48,3 +51,9 @@ The **search_result_date** tag is a *single* tag. This tag will provide the arti
 Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted.
 
 Other tags used: [title](/tags/title), [permlink](/tags/permlink), [posted](/tags/posted).
+
+## Genealogy
+
+### Version 4.8.6
+
+Tag support removed - use [posted](/tags/posted) tag instead.

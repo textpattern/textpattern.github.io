@@ -340,7 +340,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [search_input](/tags/search_input)
 * [search_result_count](/tags/search_result_count)
-* [search_result_date](/tags/search_result_date)
+* [search_result_date](/tags/search_result_date) <span class="footnote error">**Deprecated**</span>
 * [search_result_excerpt](/tags/search_result_excerpt)
 * [search_result_title](/tags/search_result_title)
 * [search_result_url](/tags/search_result_url)
