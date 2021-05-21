@@ -14,6 +14,11 @@
     <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items).</dd>
     <dd><strong>Default:</strong> {% if include.breakby == null %}1 (unset){% else %}{{ include.breakby }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakby">breakby cross-reference</a>). </dd>
 {% endunless %}
+{% unless include.breakform == "" %}
+    <dt><code>breakform="form name"</code></dt>
+    <dd>A form to be used as `break`, generally jointly with `breakby` attribute. The special `<+>` pattern in this form will be replaced with the list "chunk" accumulated when break happens.</dd>
+    <dd><strong>Default:</strong> {% if include.breakform == null %}unset{% else %}{{ include.breakform }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakform">breakform cross-reference</a>). </dd>
+{% endunless %}
     <dt><code>class="class name"</code></dt>
     <dd>HTML <code>class</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
