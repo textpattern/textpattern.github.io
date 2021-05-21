@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Article
-description: The basic article tag is used to output one or more articles depending on the attributes used.
+description: The context-sensitive article tag is used to output one or more articles.
 tags:
   - Article tags
 ---
@@ -21,7 +21,7 @@ tags:
 <txp:article />
 ~~~
 
-The basic **article** tag can be used as either a *single* tag or *container* tag and used to output one or more articles depending on the attributes used. Default attributes will be used when nothing specific is assigned.
+The powerful **article** tag can be used as either a *single* tag or *container* tag and used to output one or more articles depending on the context it is used and its attributes. Default attributes will be used when nothing specific is assigned.
 
 It may be used as a *container* tag, in which case it must be specified as an opening and closing pair of tags, like this:
 
@@ -35,28 +35,19 @@ This is equivalent to putting the contained statements into a form named `my_for
 
 The tag is context-sensitive, which means it will grab articles from the currently viewed section/category/author, etc.
 
-When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the Sections panel for more information).
+When used on the front page, article's context will include articles from all sections set to display via 'Section appears on default page?' settings (see the Sections panel for more information).
 
-Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you can [check out the differences of that tag](/tags/article_custom) if you're unsure of the differences!
+Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you can [check out how that tag differs](/tags/article_custom) if you're unsure of the differences!
 {: .alert-block .information}
 
 ## Attributes
 
-Tag will accept content/behaviour and presentation attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
+The tag will accept the following content/behaviour and presentation attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `allowoverride="boolean"`
 : Whether to use override forms for the generated article list.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
-
-`breakby="integer or string"` <span class="footnote warning">v4.7.2+</span>
-: Used to group list items when separating by `break`. If its value is a list of integers, they will be used as groups size. For example, `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes (see Example 7).
-: **Default:** `1` (actually unset).
-
-`breakform="form name"` <span class="footnote warning">v4.7.2+</span>
-: A form to be used as `break`, generally jointly with `breakby` attribute. The special `<+>` pattern in this form will be replaced with the list "chunk" accumulated when break happens (see Example 7).
-: **Default:** unset.
 
 `customfieldname="value"`
 : Restrict to articles with specified value for specified custom field name. Replace `customfieldname` with the actual name of the custom field.
@@ -81,6 +72,10 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 `listform="form name"`
 : Use specified form when page is displaying an article list.
 : **Default:** `article_listing`.
+
+`match="field"` <span class="footnote warning">v4.8.6+</span>
+: Use comma-separated field(s) to match articles to the given URL parameters. Incoming variable names may be remapped by specifying the variable after an '=' sign. See Example 8.
+: **Default:** unset.
 
 `offset="integer"`
 : The number of articles to skip.
@@ -143,33 +138,9 @@ Each field in the `textpattern` database table can be used as a sort key.
 : **Values:** `past`, `future`, `any` (both `past` and `future`) or a [PHP-compatible date format](https://secure.php.net/manual/en/datetime.formats.php). In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
 : **Default:** `past`.
 
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`break="value"` <span class="footnote warning">v4.0.7+</span>
-: Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `br` (but see [break cross-reference](/tags/tag-attributes-cross-reference#break) for exceptions).
-
-`class="class name"`
-: HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`label="text"`
-: Label prepended to item.
-: **Default:** unset (but see [label cross-reference](/tags/tag-attributes-cross-reference#label) for exceptions).
-
-`labeltag="element"`
-: HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: **Default:** unset.
-
-`wraptag="element"` <span class="footnote warning">v4.0.7+</span>
-: HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
-
 ### Note on 'article list' vs. 'individual article' context
 
-The **article** tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e. a page with a URL like `https://example.com/archives/24/my-article`).
+The **article** tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section landing pages, and category pages. Individual-article context applies on an article page (i.e. a page with a URL like `https://example.com/archives/24/my-article`).
 
 ## Examples
 
@@ -292,7 +263,26 @@ In Textpattern [Page templates](/themes/page-templates-explained), add this tag 
 
 Other tags used: [section](/tags/section), [title](/tags/title).
 
+### Example 8: Filter articles from the URL (v4.8.6+)
+
+Adding `<input>` elements to your page in an HTML `<form>` allows you to search and filter articles by various parameters when the form is submitted. For example, you could send `?c=cat&keywords=some,keywords,list` to the URL and interpret it with this tag:
+
+~~~ html
+<txp:article match="category, keywords" />
+~~~
+
+Or, if you need to fine-tune, you can remap the `key` URL parameter first by passing `?c=cat&key[]=some&key[]=keywords&key[]=list` and then interpreting it with:
+
+~~~ html
+<txp:article match="category1, keywords=key" />
+~~~
+
+
 ## Genealogy
+
+### Version 4.8.6
+
+`match="keywords"` added.
 
 ### Version 4.7.2
 
