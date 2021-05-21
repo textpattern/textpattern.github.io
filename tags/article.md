@@ -53,6 +53,10 @@ The tag will accept the following content/behaviour and presentation attributes 
 : Restrict to articles with specified value for specified custom field name. Replace `customfieldname` with the actual name of the custom field.
 : Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
 
+`exclude="article id(s) or field(s)"` <span class="footnote warning">v4.6.0+</span>
+: Exclude a specific article or list of articles (each ID separated by a comma), or the articles with matching fields (author, category, etc.).
+: **Default:** unset.
+
 `form="form name"`
 : Use specified form template to process each article.
 : **Default:** `default`.
@@ -73,7 +77,7 @@ The tag will accept the following content/behaviour and presentation attributes 
 : Use specified form when page is displaying an article list.
 : **Default:** `article_listing`.
 
-`match="field"` <span class="footnote warning">v4.8.6+</span>
+`match="field"` <span class="footnote warning">v4.6.0+</span>
 : Use comma-separated field(s) to match articles to the given URL parameters. Incoming variable names may be remapped by specifying the variable after an '=' sign. See Example 8.
 : **Default:** unset.
 
@@ -290,7 +294,11 @@ Or, if you need to fine-tune, you can remap the `key` URL parameter first by pas
 
 ### Version 4.7.0
 
-`breakby` attribute added.
+`breakby` attribute added, `exclude` attribute modified.
+
+### Version 4.6.0
+
+`exclude` and `match` attributes added.
 
 ### Version 4.0.7
 
