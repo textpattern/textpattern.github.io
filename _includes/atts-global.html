@@ -11,7 +11,7 @@
 {% endunless %}
 {% unless include.breakby == "" %}
     <dt><code>breakby="integer(s)"</code></dt>
-    <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items).</dd>
+    <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items). Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes.</dd>
     <dd><strong>Default:</strong> {% if include.breakby == null %}1 (unset){% else %}{{ include.breakby }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakby">breakby cross-reference</a>). </dd>
 {% endunless %}
 {% unless include.breakform == "" %}
