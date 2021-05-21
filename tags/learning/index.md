@@ -467,6 +467,9 @@ Will output:
 `escape="url"`
 : URL-encode all characters except `.-_`.
 
+`escape="db"` <span class="footnote warning">v4.8.6+</span>
+: Encode the content so it can safely be used as part of a database query.
+
 `escape="json"`
 : JSON-encode, without the surrounding `""` quotes.
 
