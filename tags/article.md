@@ -79,6 +79,12 @@ The tag will accept the following content/behaviour and presentation attributes 
 
 `match="field"` <span class="footnote warning">v4.6.0+</span>
 : Use comma-separated field(s) to match articles to the given URL parameters. Incoming variable names may be remapped by specifying the variable after an '=' sign. See Example 8.
+: **Values:** \\
+`category`. \\
+`category1`. \\
+`category2`. \\
+`keywords`. \\
+any custom field.
 : **Default:** unset.
 
 `offset="integer"`
