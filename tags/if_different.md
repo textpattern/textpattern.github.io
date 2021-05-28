@@ -40,6 +40,7 @@ Note: `if_different` can contain several HTML and Textpattern tag.
 : An identifier for the contained statement value storage.
 : **Values:** any string.
 : **Default:** unset (the contained statement hash).
+
 `test="value"` <span class="footnote warning">v4.7.2+</span>
 : If set, the contained statement will be output when the value of `test` changes.
 : **Values:** generally a combination of Textpattern tags.
