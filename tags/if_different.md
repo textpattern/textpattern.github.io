@@ -36,6 +36,10 @@ Note: `if_different` can contain several HTML and Textpattern tag.
 
 ## Attributes
 
+`id="string"` <span class="footnote warning">v4.8.6+</span>
+: An identifier for the contained statement value storage.
+: **Values:** any string.
+: **Default:** unset (the contained statement hash).
 `test="value"` <span class="footnote warning">v4.7.2+</span>
 : If set, the contained statement will be output when the value of `test` changes.
 : **Values:** generally a combination of Textpattern tags.
@@ -137,3 +141,7 @@ Other tags used: [article_custom](/tags/article_custom), [if_first_article](/tag
 ### Version 4.7.2
 
 `test` attribute added.
+
+### Version 4.8.6
+
+`id` attribute added.
