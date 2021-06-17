@@ -381,7 +381,7 @@ See also `authors_deleted`.
 * **What it allows:** To do any additional processing after user metadata has been modified.
 * **Additional parameter:** An array containing a list of the `user` names affected and new privilege level they have been assigned.
 
-### Plugins panel
+#### Plugins panel
 
 `txp.plugin > data.fetch`
 * **When it occurs:** As a plugin's internal data is fetched from the database.
