@@ -185,7 +185,7 @@ GD Graphics Library
 : The version number of your GD Graphics Library install.
 
 Server TZ
-: The server's 'default timezone'; determined by a [specific order of preferences](https://secure.php.net/manual/en/function.date-default-timezone-get.php).
+: The server's 'default time zone'; determined by a [specific order of preferences](https://secure.php.net/manual/en/function.date-default-timezone-get.php).
 
 Server local time
 : The local date/time of your web server (`yyyy-mm-dd hh:mm:ss`).
