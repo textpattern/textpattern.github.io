@@ -116,7 +116,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e. the root of your web domain). For many hosts, the path to the root looks like this: */users/home/{username}/web/public/*, where {username} is your user account name. You would upload the Textpattern package to the `/public` directory (equal to `yourexample.com`).
 
-You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](/installation/moving-textpattern) later).
+You may, of course, install it in a subdirectory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](/installation/moving-textpattern) later).
 
 You will use FTP, or Secure-FTP (SFTP) if your web host requires it, to upload the package to your desired web server location. Two capable clients are WinSCP for Windows and Transmit for Mac.
 
@@ -136,7 +136,7 @@ You should now be looking at the default installation screen, which shows the Te
 
 Choose the language you want and select the **Submit** button.
 
-[^3]: If you don't see this screen, check your URL path. Should it be `https` or `www.`? Did you install in a sub-directory? Is there a typo?
+[^3]: If you don't see this screen, check your URL path. Should it be `https` or `www.`? Did you install in a subdirectory? Is there a typo?
 
 [^4]: You can change the UI language any time after setup in the [Preferences panel](/administration/preferences-panel).
 

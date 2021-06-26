@@ -123,7 +123,7 @@ In this section:
 
 `admin_side > footer`
 * **When it occurs:** When the theme's footer bar is rendered.
-* **What it allows:** Alteration of the footer area of each panel. Theme authors do this by writing a `footer()` function in their theme's PHP file. 
+* **What it allows:** Alteration of the footer area of each panel. Theme authors do this by writing a `footer()` function in their theme's PHP file.
 
 ### UI elements
 
