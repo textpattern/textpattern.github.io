@@ -38,11 +38,17 @@ Textpattern version
 Last update
 : The date/time you last updated your installation.
 
+Site URL
+: Your domain name and top-level domain (i.e. `example.com`). Corresponds with 'Site URL' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#site-url).
+
+Admin URL
+: The Textpattern admin interface URL. This is typically the `/textpattern` directory from the Site URL (i.e. `example.com/textpattern`).
+
 Document root
 : The path to the web server's public (document root) directory, specifically.
 
 $path_to_site
-: The path to wherever your installation is (e.g. in document root or in a sub-directory thereof).
+: The path to wherever your installation is (e.g. in document root or in a subdirectory thereof).
 
 Textpattern path
 : The path to your installation's `/textpattern` directory.
@@ -50,14 +56,14 @@ Textpattern path
 Article URL pattern
 : The pattern of URL type you set. Corresponds with the 'Article URL pattern' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#article-url-pattern).
 
+Production status
+: The status of your site: Live, Testing or Debugging.
+
 Temporary directory path
 : The path of your `/tmp` directory relative to document root.
 
-Site URL
-: Your domain name and top-level domain (i.e. `example.com`). Corresponds with 'Site URL' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#site-url).
-
 PHP version
-: The version number of your PHP install.</td>
+: The version number of your PHP instance.</td>
 
 GD Graphics Library
 : The version number of your GD Graphics Library install.
@@ -68,26 +74,44 @@ Server time zone
 Server local time
 : The local date/time of your web server (`yyyy-mm-dd hh:mm:ss`).
 
-Automatically adjust Daylight Saving Time setting?
-: Whether Textpattern will adjust DST automatically (`0`=no, `1`=yes). Corresponds with the 'Automatically adjust Daylight Saving Time setting?' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#automatically-adjust-daylight-saving-time-setting).
-
 Daylight Savings Time enabled?
 : Whether Daylight Savings Time is enabled (`0`=no, `1`=yes). Corresponds with the 'Daylight Savings Time enabled?' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#daylight-savings-time-enabled).
 
-Time zone
+Automatically adjust Daylight Saving Time setting?
+: Whether Textpattern will adjust DST automatically (`0`=no, `1`=yes). Corresponds with the 'Automatically adjust Daylight Saving Time setting?' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#automatically-adjust-daylight-saving-time-setting).
+
+Time zone (GMT offset in seconds)
 : Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the 'Time zone' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#time-zone). The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated [tz database](https://en.wikipedia.org/wiki/Tz_database).
 
 MySQL
-: The version number and build of your MySQL database server.
+: The version number and build of your MySQL (or derivative) database server.
+
+Database server time
+: The database server time. Note this can be the same as the server local time, or different if the database is located on another host.
+
+Database server time offset
+: The time offset between the database server and the server local time.
+
+Database server time zone
+: todo:explanation
+
+Database session time zone
+: todo:explanation
 
 Locale
 : The language and character set you have configured.
 
-Server
+Site / Admin language
+: Language designations for the front-side and admin-side areas.
+
+Web server
 : Your web server type (e.g. Apache, Nginx).
 
 PHP server API
-: todo:explanation
+: How the web server interfaces with PHP. For Apache servers, this may me `mod_php` or similar. For Nginx, this may be `fpm-fcgi` (PHP-FPM or FastCGI).
+
+PHP SSL version
+: The SSL/TLS library used by PHP. Note this may differ from the sytem SSL/TLS library.
 
 RFC 2616 headers
 : todo:explanation
@@ -95,24 +119,25 @@ RFC 2616 headers
 Server OS
 : The name and version number of the server's operating system.
 
-Active plugins
-: A comma-separated list of all plugins (with version numbers) that are installed *and<* turned on.
-
 Admin-side theme
 : The name and version number of the active administration side theme. The default is 'Hive'.
 
-The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/main/.htaccess) below:
+Active plugins
+: A comma-separated list of all plugins (with version numbers) that are installed *and<* turned on.
+
+For Apache servers (and derivatives), the installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/main/.htaccess) below:
 
 ~~~ apacheconf
 # BEGIN Textpattern
-#DirectoryIndex index.php index.html
 
-#Options +FollowSymLinks
-#Options -Indexes
-#ErrorDocument 403 default
+#DirectoryIndex index.php index.html
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # Enable the `FollowSymLinks` option below if it isn't already.
+    #Options +FollowSymlinks
+
     #RewriteBase /relative/web/path/
 
     RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -122,20 +147,23 @@ The installation and server data is followed by the contents of your `.htaccess`
     RewriteCond %{REQUEST_URI} !=/favicon.ico
     RewriteRule ^(.*) index.php
 
-    RewriteCond %{HTTP:Authorization} !^$
+    RewriteCond %{HTTP:Authorization}  !^$
     RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
 </IfModule>
-
-#php_value register_globals 0
 
 <IfModule mod_mime.c>
     AddType image/svg+xml  svg svgz
     AddEncoding gzip       svgz
 </IfModule>
+
+# For additional Apache-compatible web server configuration settings to enhance
+# site performance and security, we recommend:
+# https://github.com/h5bp/server-configs-apache/blob/master/dist/.htaccess
+
 # END Textpattern
 ~~~
 
-Over time your `.htaccess` file will change as you add your own `mod_rewrite` rules, or whatever, and the changes will reflect in the diagnostics info display.
+Over time your `.htaccess` file may change as you add your own `mod_rewrite` rules, or whatever, and the changes will reflect in the diagnostics info display.
 
 ### High info display
 
