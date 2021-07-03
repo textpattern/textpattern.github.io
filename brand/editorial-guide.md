@@ -8,9 +8,9 @@ description: Editorial guidelines for content published on Textpattern platforms
 
 # Editorial style guide
 
-Use these guidelines to write and format all written content published in, or downloadable from, Textpattern project websites. Textpattern uses the *Oxford Style Manual* and *Oxford English Dictionary* as baseline references, therefor this guide is intentionally brief. Specifics are only added here as it becomes clear what guidelines are actually needed. 
+Use these guidelines to write and format all written content published in, or downloadable from, Textpattern project websites. Textpattern uses the *Oxford Style Manual* and *Oxford English Dictionary* as baseline references, therefor this guide is intentionally brief. Specifics are only added here as it becomes clear what guidelines are actually needed.
 
-For documentation development, the accompanying [docs development guidelines](/brand/user-docs-guide) must also be used, which is specifically written for that platform. 
+For documentation development, the accompanying [docs development guidelines](/brand/user-docs-guide) must also be used, which is specifically written for that platform.
 
 **Contents**
 
@@ -21,19 +21,19 @@ For documentation development, the accompanying [docs development guidelines](/b
 
 The Textpattern project uses two notable references for guiding how project content is styled:
 
-* *Oxford Style Manual* (*OSM*) for structure, style, and punctuation (also available as *New Hart’s Rules*)
+* *Oxford Style Manual* (*OSM*) for structure, style, and punctuation (also available as *New Hart's Rules*)
 * *Oxford English Dictionary* (*OED*) for spelling (any abridged version will do).
 
 Therefore current guidelines only attempt to detail conventions that:
 
 1. address the most common situations that trip up authors
-2. are overridden by Textpattern’s own rules for handling a situation if different from the baseline references.
+2. are overridden by Textpattern's own rules for handling a situation if different from the baseline references.
 
 **You are not expected to own the Oxford references in order to contribute to Textpattern content**. Rather, [pose questions](https://github.com/textpattern/textpattern.github.io/issues/17) you have about style conventions, and they will be answered here with new guidelines. In this way we develop guidelines together that are catered to collaborator needs, rather than start with a big, bloated mess that is hard to write, wade through, and maintain.
 
 ## Author perspective
 
-Author perspective refers to what point of view is used when writing for the reader thus what pronouns to use in writing. 
+Author perspective refers to what point of view is used when writing for the reader thus what pronouns to use in writing.
 
 <div class="tabular-data" tabindex="0" aria-labelledby="tablen-caption" itemscope itemtype="https://schema.org/Table">
 <table>
@@ -73,11 +73,11 @@ Perspective is dictated by what platform and audience the content is for.
 
 ### Textpattern perspective
 
-The main [Textpattern](https://textpattern.com) site primarily uses persuasive marketing and promotion types of content, and a little general steering to help people along. The audience is principally the general public. The voice is collectively  Textpattern, and the tone friendly and inviting. Thus The perspectives to use are first person plural and second person singular and plural.
+The main [Textpattern](https://textpattern.com) site primarily uses persuasive marketing and promotion types of content, and a little general steering to help people along. The audience is principally the general public. The voice is collectively Textpattern, and the tone friendly and inviting. Thus the perspectives to use are first person plural and second person singular and plural.
 
 ### User Docs perspective
 
-The [User Documentation](https://docs.textpattern.com) site is largely general expository/explanatory information. This content is Textpattern’s voice, but it does not have the same personable tone as the marketing-speak on the origin site. Content here impartially helps and explains, but otherwise keeps an arm’s distance.
+The [User Documentation](https://docs.textpattern.com) site is largely general expository/explanatory information. This content is Textpattern's voice, but it does not have the same personable tone as the marketing-speak on the origin site. Content here impartially helps and explains, but otherwise keeps an arm's distance.
 
 There are four distinctive audiences of user docs based on the reasons people might read documentation:
 
@@ -88,15 +88,15 @@ There are four distinctive audiences of user docs based on the reasons people mi
 
 **For all four audiences, second person singular and plural will be relevant**. After that it depends:
 
-* Site administrators: possibly third person plural in rare occasions (e.g. using *they* in context of the administrator’s own site’s users)
+* Site administrators: possibly third person plural in rare occasions (e.g. using *they* in context of the administrator's own site's users)
 * Plugin developers: first person plural is warranted
-* Collaborators: Well, here *we* are, so first person plural is  certainly acceptable.
+* Collaborators: Well, here *we* are, so first person plural is certainly acceptable.
 
-Don’t get carried away with pronouns in user docs. Second person works well enough.
+Don't get carried away with pronouns in user docs. Second person works well enough.
 
 ### Plugins and Themes perspective
 
-The [Plugins](https://plugins.textpattern.com) and [Themes](https://theme.textpattern.com) websites use minimal content, but it’s directed at end users who have already committed to using Textpattern, so second person singular and plural is appropriate, if any pronouns are needed at all.
+The [Plugins](https://plugins.textpattern.com) and [Themes](https://theme.textpattern.com) websites use minimal content, but it's directed at end users who have already committed to using Textpattern, so second person singular and plural is appropriate, if any pronouns are needed at all.
 
 ## Spelling
 
@@ -106,9 +106,9 @@ In the head of all platform web pages, you will find the following:
 <html lang="en-GB-oxendict">
 ```
 
-That’s literally telling machines (and observant humans) that Textpattern websites use words as defined and spelled in the *Oxford English Dictionary* (*OED*). You should always use the *OED* conventions when writing Textpattern content.
+That's literally telling machines (and observant humans) that Textpattern websites use words as defined and spelled in the *Oxford English Dictionary* (*OED*). You should always use the *OED* conventions when writing Textpattern content.
 
-Table 2 shows some representative examples and comparisons. 
+Table 2 shows some representative examples and comparisons.
 
 <div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
@@ -183,29 +183,29 @@ For example, American authors will be comfortable with words ending in *-ize* be
 
 Watch out for these.
 
-**Log in vs. login**: *Log in* is a verb form (e.g. 'after you log in’ or 'after logging in’), whereas *login* is a noun form (e.g. 'the login location’). Same handling for 'logout’ (noun) and 'log out’ (verb).
+**Log in vs. login**: *Log in* is a verb form (e.g. 'after you log in' or 'after logging in'), whereas *login* is a noun form (e.g. 'the login location'). Same handling for 'logout' (noun) and 'log out' (verb).
 
-**Administration-side vs. administration side**: *Administration-side* is an adjective form (e.g. 'the administration-side login form’), whereas *administration side* is a noun form (e.g. 'the login to the administration side’). Also, do not abbreviate _administration_ in either context (see [Normal word abbreviations](#normal-word-abbreviations)).
+**Administration-side vs. administration side**: *Administration-side* is an adjective form (e.g. 'the administration-side login form'), whereas *administration side* is a noun form (e.g. 'the login to the administration side'). Also, do not abbreviate _administration_ in either context (see [Normal word abbreviations](#normal-word-abbreviations)).
 
 ## Brand name
 
-Software, project… It’s all the same.
+Software, project… It's all the same.
 
 ### The project
 
 Textpattern is spelled "*Textpattern*". Look at that closely. That is not two words, and there is no camel-case capital P. This isn't WordPress.
 
-When you need to use the brand name at all, write ’Textpattern’. Do not tack on 'CMS’ (i.e. 'Textpattern CMS’). Should anyone insist, because they feel strongly about SEO ranking, direct them to the metadata where they can have fun for machines. You're not offending the good human readers.
+When you need to use the brand name at all, write 'Textpattern'. Do not tack on 'CMS' (i.e. 'Textpattern CMS'). Should anyone insist, because they feel strongly about SEO ranking, direct them to the metadata where they can have fun for machines. You're not offending the good human readers.
 
 Do not abbreviate the brand name in copy. (See the [Brand abbreviations](#brand-abbreviations) section.)
 
-When distinguishing between the software and the project, the name becomes a proper adjective: ’Textpattern software’ or the 'Textpattern project’. Perfectly fine.
+When distinguishing between the software and the project, the name becomes a proper adjective: 'Textpattern software' or the 'Textpattern project'. Perfectly fine.
 
 ### Project platforms
 
-When referring to one of the Textpattern platforms, use the proper name once the first time to establish a clear context (e.g. 'Textpattern user documentation’), thereafter feel free to simply write 'user documentation’. Readers will thank you.
+When referring to one of the Textpattern platforms, use the proper name once the first time to establish a clear context (e.g. 'Textpattern user documentation'), thereafter feel free to simply write 'user documentation'. Readers will thank you.
 
-Never refer to any of the project websites by their domain (e.g. 'textpattern.com’). Keep that in hyperlinks where it belongs.
+Never refer to any of the project websites by their domain (e.g. 'textpattern.com'). Keep that in hyperlinks where it belongs.
 
 ## Abbreviations
 
@@ -217,15 +217,15 @@ Never abbreviate normal words as shortcut reference for people, places, or thing
 
 **Admin**:
 
-Avoid using 'admin’ as an abbreviation unless you are specifically referring to one of the following locations in the administration side of the software (context is 'Hive’ and ’Hive (Flat Neutral)’ themes):
+Avoid using 'admin' as an abbreviation unless you are specifically referring to one of the following locations in the administration side of the software (context is 'Hive' and 'Hive (Flat Neutral)' themes):
 
-* The top-level Admin section, as labeled in the navigation for it. (In the 'Classic’ theme, this defaults to the Users panel.)
+* The top-level Admin section, as labeled in the navigation for it. (In the 'Classic' theme, this defaults to the Users panel.)
 * The Admin section of the Preferences panel.
 * The Admin-side theme preference in the Admin section of the Preferences panel.
 
-Any other use of 'admin’ can lead to confusion about what is meant. Whether you mean *administration* or *administrator*, write it out fully every time so the meaning and context is perfectly clear.
+Any other use of 'admin' can lead to confusion about what is meant. Whether you mean *administration* or *administrator*, write it out fully every time so the meaning and context is perfectly clear.
 
-This includes writing 'administration side’ (noun form) and 'administration-side’ (adjective form) when referring to that side of the software.
+This includes writing 'administration side' (noun form) and 'administration-side' (adjective form) when referring to that side of the software.
 
 ### Brand abbreviations
 
@@ -234,9 +234,9 @@ Abbreviations like TXP, Txp, TxP, tXp, and txp are inconsistent and non-intuitiv
 1. You are specifically referencing TXP Magazine.
 2. You are writing a code element showing tags (e.g. `<txp:else />`.
 
-Always spell 'Textpattern’ out fully, when you need to use the brand name at all. (See [Brand name](#brand-name).)
+Always spell 'Textpattern' out fully, when you need to use the brand name at all. (See [Brand name](#brand-name).)
 
-History has shown that most people still can’t spell 'Textpattern’ correctly, so don’t make it worse by using nonsensical inventions.
+History has shown that most people still can't spell 'Textpattern' correctly, so don't make it worse by using nonsensical inventions.
 
 ## Latin and foreign expressions
 
@@ -247,7 +247,7 @@ Except for single words that have become common in English, and Latin idioms use
 Single words that have long since become common in English, and are not italicized for that reason, are perfectly fine to use, for example:
 
 * ergo
-* versus (always write it out; don’t abbreviate it as 'vs.’)
+* versus (always write it out; don't abbreviate it as 'vs.')
 * via
 * and so on.
 
@@ -258,23 +258,23 @@ Common Latin idioms, notably those below, are also recommended for use, but _onl
 *exempli gratia*
 : Meaning: for example
 : Abbreviation: e.g.
-: Example of use: '(e.g. [the thing(s) you are demonstrating]).’
+: Example of use: '(e.g. [the thing(s) you are demonstrating]).'
 
 *id est*
 : Meaning: in other words
 : Abbreviation: i.e.
-: Example of use: '(i.e. [the thing(s) you are clarifying]).’
+: Example of use: '(i.e. [the thing(s) you are clarifying]).'
 
 *et cetera*
 : Meaning: and the others, and so on
 : Abbreviation: etc.
-: Example of use: '([one thing], [another thing], etc.).’
+: Example of use: '([one thing], [another thing], etc.).'
 
 Also…
 
 * Do not bother italicizing the Latin abbreviations.
 * Do not follow the leading abbreviations with a comma.
-* Do not use two abbreviations in the same parenthetical note. Either change 'etc.’ to an ellypsis (…), or use an English text equivalent, or, best of all, refine the note to avoid the problem entirely.
+* Do not use two abbreviations in the same parenthetical note. Either change 'etc.' to an ellipsis (…), or use an English text equivalent, or, best of all, refine the note to avoid the problem entirely.
 
 This example is wrong by all three of the points above:
 
@@ -288,7 +288,7 @@ These are correct alternatives:
 >
 > . . . (i.e. [a more specific thing]).
 
-Finally, never use the Latin abbreviations in the main part of sentences, outside of a parenthetical note. Instead, write English equivalents like 'for example’, 'in other words’, 'and so on’, 'and so forth’… But the whole point of using parenthetical notes is to be less word-bloaty when needing such idioms.
+Finally, never use the Latin abbreviations in the main part of sentences, outside of a parenthetical note. Instead, write English equivalents like 'for example', 'in other words', 'and so on', 'and so forth'… But the whole point of using parenthetical notes is to be less word-bloaty when needing such idioms.
 
 ## Punctuation
 
@@ -296,7 +296,7 @@ Punctuation is business as usual, for the most part. However, there are two conv
 
 ### Commas
 
-Use a serial comma (a.k.a. 'Oxford comma’).
+Use a serial comma (a.k.a. 'Oxford comma').
 
 A serial comma is one that comes between the last two items in a series, and before the _and_, for example:
 
@@ -306,29 +306,29 @@ That sentence still makes sense if you forget the serial comma. But consider thi
 
 > I saw Bob's uncle, a boozer and a cruiser in the park, climb into that cardboard hut.
 
-That’s not indicative of copy used by Textpattern, but, man, poor Bob's uncle. He's described there as being a boozer and a cruiser because of a missing serial comma. Add the missing comma and you realize the sentence is about three different people, though the story is still a bit dark.
+That's not indicative of copy used by Textpattern, but, man, poor Bob's uncle. He's described there as being a boozer and a cruiser because of a missing serial comma. Add the missing comma and you realize the sentence is about three different people, though the story is still a bit dark.
 
-The point is, more important than consistency, is ensuring your sentences are grammatically correct and make sense. If you use serial commas every time, you won't be wrong, even if you don't need one. If you write a sentence without a serial comma and an editor adds one later, don’t argue.
+The point is, more important than consistency, ensuring your sentences are grammatically correct and make sense. If you use serial commas every time, you won't be wrong, even if you don't need one. If you write a sentence without a serial comma and an editor adds one later, don't argue.
 
 ### Quotations marks
 
-The *Oxford Style Manual* (remember, [we use that](#baseline-references)) defines a 'modern British practice’ of enclosing quoted text inside single quotation marks, and to use double quotation marks for a quotation within a quotation.[^quotes]
+The *Oxford Style Manual* (remember, [we use that](#baseline-references)) defines a 'modern British practice' of enclosing quoted text inside single quotation marks, and to use double quotation marks for a quotation within a quotation.[^quotes]
 
 Textpattern also uses this convention for public-facing material in official projects. The convention may not be what most of the English-speaking world uses when it writes (including British news media), but Oxford is not wrong on the clarity and logic of its choice.
 
 Consider this curious and purely hypothetical example:
 
-'Select “'Testing’” for the **Production status** preference to put your site in testing mode.’
+'Select “'Testing'” for the **Production status** preference to put your site in testing mode.'
 {: .example-text}
 
-The good news is, you are unlikely to need quotations inside quotations, because all Textpattern material is boring ol’ expository, not narrative. You are not a story narrator conveying complex dialogue between characters, so there’s no need to use nested quotations, or to remember the associated punctuation rules, most logical as they are, that go along with the British quotation system.
+The good news is, you are unlikely to need quotations inside quotations, because all Textpattern material is boring ol' expository, not narrative. You are not a story narrator conveying complex dialogue between characters, so there's no need to use nested quotations, or to remember the associated punctuation rules, most logical as they are, that go along with the British quotation system.
 
 If the example above was a line in user documentation and not being quoted here, it would look like this instead:
 
-Select 'Testing’ for the **Production status** preference to put your site in testing mode.
+Select 'Testing' for the **Production status** preference to put your site in testing mode.
 {: .example-text}
 
-Now 'Testing’ is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That’s why it appears as “'Testing’” when being quoted in the first example.
+Now 'Testing' is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That's why it appears as “'Testing'” when being quoted in the first example.
 
 Should the marketing team want to get fancy in prose… Punctuation rules for the British quotation system are straight forward: the quotation marks go inside sentence punctuation unless the punctuation is part of the quoted text. In the first example, the full point is part of the text being quoted.
 
@@ -336,29 +336,29 @@ Should the marketing team want to get fancy in prose… Punctuation rules for th
 
 ## Writing tips
 
-Writing is a wonderfully varied craft. Doing it well hinges on knowing the audience, and the genre and type of writing needed; having a knack for syntax and diction, to say nothing of grammar; and having a set of guidelines like these at hand to spot check one’s progress.
+Writing is a wonderfully varied craft. Doing it well hinges on knowing the audience, and the genre and type of writing needed; having a knack for syntax and diction, to say nothing of grammar; and having a set of guidelines like these at hand to spot check one's progress.
 
 Good use of syntax (sentence structure) and diction (word choice) will make even the driest topics and eye-glazing expository more pleasant to read. Improve the readability of text by mixing sentence structures to break repetitive patterns and cutting needless words.
 
 ### Compound sentences
 
-Compound sentences are a fine item in the writer’s bag of tricks. But that’s often not the case, and that _is_ a problem.
+Compound sentences are a fine item in the writer's bag of tricks. But that's often not the case, and that _is_ a problem.
 
-Again, not always good advice for other types of writing, but for expository like documentation, it’s generally a good idea. Careful, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Having multiple shorter sentences does not mean end up having choppy, stilted reading. Use your best judgement.
+Again, not always good advice for other types of writing, but for expository like documentation, it's generally a good idea. Careful, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Having multiple shorter sentences does not mean end up having choppy, stilted reading. Use your best judgement.
 
-Clauses and phrases can appear anywhere in a sentence: beginning, middle, or end. When clauses are used in the middle, adverbs, idioms, and other excesses often end up flapping on the ends. That’s not a bad thing, per se, but too much flapping becomes unbearable reading. Be careful with the following:
+Clauses and phrases can appear anywhere in a sentence: beginning, middle, or end. When clauses are used in the middle, adverbs, idioms, and other excesses often end up flapping on the ends. That's not a bad thing, per se, but too much flapping becomes unbearable reading. Be careful with the following:
 
 **Adverbs and adverb phrases**:
 
 Adverbs, like *however*, *meanwhile*, and so on can load paragraphs down quick if used too often, for example:
 
-> 'However, if you click this one . . .’ Or, 'Don’t use that one, however.’
+> 'However, if you click this one . . .' Or, 'Don't use that one, however.'
 
 **Idioms** like *in other words*, *in any case*, *on the other hand*, and so on can also overburden paragraphs if used too frequently at ends of sentences, for example:
 
- > In other words, don’t do this.
+ > In other words, don't do this.
 
-One idiom that you will need a lot when writing documentation is _for example_ (as the two previous paragraphs might suggest). Because documentation rely heavily on this particular idiom, it’s especially important to subdue it as much as possible. Using the idiom at the end of a paragraph, as used above, just before an actual example, is one good way to employ it.
+One idiom that you will need a lot when writing documentation is _for example_ (as the two previous paragraphs might suggest). Because documentation rely heavily on this particular idiom, it's especially important to subdue it as much as possible. Using the idiom at the end of a paragraph, as used above, just before an actual example, is one good way to employ it.
 
 Another good and appropriate way of using idioms like *for example* and *in other words* is as Latin abbreviations (i.e. *e.g.* and *i.e.*, respectively). See what just happened there? Latin abbreviations should **only** be used in parenthetical notation, and there is no need to make them italic, for example:
 
@@ -368,19 +368,19 @@ Another good and appropriate way of using idioms like *for example* and *in othe
 
 Conjunctions like _but_ and _and_ are fine to use infrequently at beginnings of sentences, but conjunctions like _therefore_, that require a following comma, should be avoided, for example:
 
-> Therefore, don’t do this.
+> Therefore, don't do this.
 
 **Avoid useless adverbs**:
 
 Adverbs like _very_, _really_, _only_, and others are commonly used in speech when we talk to each other, and in that context are easily overlooked, but they look and read terrible in writing, and add considerable bloat to documents when all tallied up.
 
-For example, 'the really large code block’ or 'only copy the lines between x and y’ are bloated ways of writing 'the large code block’ and 'copy the lines between x and y’. There’s no loss of meaning or instruction by dropping the needless adverbs, and it reads a lot better too.
+For example, 'the really large code block' or 'only copy the lines between x and y' are bloated ways of writing 'the large code block' and 'copy the lines between x and y'. There's no loss of meaning or instruction by dropping the needless adverbs, and it reads a lot better too.
 
-**Avoid passive verb structures**. Verb structures like _to be/have_, _could be/have_, _should be/have_, _might be/have_, and so forth are not only miserable to read, but they bloat copy with unnecessary words. You are the expert giving the sound advice, so assume the role. Find a more direct and active way of word phrases. Using a generic structure as example: 'put this thing there’ is far cleaner and direct than either 'you should put this thing there’ or 'that thing should be put there’. Both are lousy. If a reader doesn’t want to put something somewhere, they won’t, but they’ll appreciate you weren’t wishy-washy about the instruction. Kill the passive verb structures.
+**Avoid passive verb structures**. Verb structures like _to be/have_, _could be/have_, _should be/have_, _might be/have_, and so forth are not only miserable to read, but they bloat copy with unnecessary words. You are the expert giving the sound advice, so assume the role. Find a more direct and active way of word phrases. Using a generic structure as example: 'put this thing there' is far cleaner and direct than either 'you should put this thing there' or 'that thing should be put there'. Both are lousy. If a reader doesn't want to put something somewhere, they won't, but they'll appreciate you weren't wishy-washy about the instruction. Kill the passive verb structures.
 
-**Question every use of 'that’ and 'just’**:
+**Question every use of 'that' and 'just'**:
 
-It's easy to abuse both words. Every time you use 'that’ or 'just’ in a sentence, read the sentence without using the words and see if it still makes sense. Most of the time it will. If it does, leave the words out.
+It's easy to abuse both words. Every time you use 'that' or 'just' in a sentence, read the sentence without using the words and see if it still makes sense. Most of the time it will. If it does, leave the words out.
 
 
 ### Capitalizations

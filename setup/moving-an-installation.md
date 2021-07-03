@@ -17,7 +17,7 @@ Moving Textpattern means relocating the installation between two directories; ei
 
 ## Moving installation to a different directory
 
-A common scenario here is when a new user of Textpattern initially installs the software as a blog in a subdirectory (i.e. <i>example.com/subdirectory</i>) at side of the person’s existing website, then later decides to move it to root (<i>example.com</i>) when they realize Textpattern can run the entire thing.
+A common scenario here is when a new user of Textpattern initially installs the software as a blog in a subdirectory (i.e. <i>example.com/subdirectory</i>) at side of the person's existing website, then later decides to move it to root (<i>example.com</i>) when they realize Textpattern can run the entire thing.
 
 Moving to a new directory is easy; it involves correcting important paths in relation to the new location then physically moving the installation files. Proceed in the following order.
 
@@ -43,7 +43,7 @@ Save changes.
 
 #### File and Temporary directory paths
 
-Switch to the Admin view of Preferences and change the two paths for **File directory path** and **Temporary directory path**. Again, this is simply a matter of removing the subdirectory from the paths already existing. Don’t change anything else about the paths.
+Switch to the Admin view of Preferences and change the two paths for **File directory path** and **Temporary directory path**. Again, this is simply a matter of removing the subdirectory from the paths already existing. Don't change anything else about the paths.
 
 For example, this hypothetical file directory path:
 
@@ -59,7 +59,7 @@ Do the same for the temporary directory path, then save the changes and log out 
 
 ### 2. Change database reference path in configuration file
 
-This path is the most important one to change, though it doesn’t matter if you do it before the move or after. If this one is not right you won’t be able to log in. But again, it’s easy.
+This path is the most important one to change, though it doesn't matter if you do it before the move or after. If this one is not right you won't be able to log in. But again, it's easy.
 
 Use an (S)FTP client to access your web server. Navigate to <i>/textpattern/config.php</i> and open the file. Look for the following line:
 
@@ -87,13 +87,13 @@ This process is also valid for moving installations in the other direction, from
 
 Inevitably you will change web hosts; it is a fact of owning a website. Moving your installation to a new host is just like changing directories described above, but involves the additional steps of migrating your database, which is critical.  
 
-In short, you will backup your installation files and database export file from your old host to your local machine; then transfer everything back up again to your new web host’s servers, reinstalling, correcting paths in the configuration file, etc.
+In short, you will backup your installation files and database export file from your old host to your local machine; then transfer everything back up again to your new web host's servers, reinstalling, correcting paths in the configuration file, etc.
 
 ### System requirements
 
 The instructions that follow assume your installation of Textpattern is up-to-date, including the recommended [system requirements](https://textpattern.com/about/119/system-requirements) for MySQL and PHP. If not, and especially if more than two versions outdated, it may be better to upgrade these software packages on the current host and ensure everything works properly before migrating to a new host. (Unless they are truly terrible hosts and you really need to leave them ASAP, then do it.)
 
-If your web host is not running the minimum versions of MySQL and PHP, contact the host and ask them to upgrade these resources. After they do, upgrade Textpattern to the [latest stable release](https://textpattern.com/start). If your site 'breaks’ after upgrading, it likely means you have to adjust some things in relation to the new PHP and/or MySQL versions. In that case, see [Troubleshooting common problems](/setup/troubleshooting-common-problems).
+If your web host is not running the minimum versions of MySQL and PHP, contact the host and ask them to upgrade these resources. After they do, upgrade Textpattern to the [latest stable release](https://textpattern.com/start). If your site 'breaks' after upgrading, it likely means you have to adjust some things in relation to the new PHP and/or MySQL versions. In that case, see [Troubleshooting common problems](/setup/troubleshooting-common-problems).
 
 If your current installation of Textpattern is up-to-date, proceed with the following migration process.
 
@@ -133,10 +133,10 @@ $txpcfg['doc_root'] = '/home/.some_name/site_username/example.com/';
 
 ## Change password
 
-Changing your password after migrating your installation or upgrading MySQL is optional, but never a bad idea. And if you forgot your administrator password, then you’ll need to do this anyway.
+Changing your password after migrating your installation or upgrading MySQL is optional, but never a bad idea. And if you forgot your administrator password, then you'll need to do this anyway.
 
 1. When in phpMyAdmin, from the drop down menu on the left select your `txp_` database. A list of tables in that database will appear directly below the drop down menu. Near the bottom of that list you should see your `txp_user` table. Select that table. All the information for that table will now occupy the main content area of your screen.
-2. There are a row of tabs at the top. Select the **’Structure'** tab.
+2. There are a row of tabs at the top. Select the **'Structure'** tab.
 3. In the main content area look for the row called `pass`, and select the little pencil to the far right.
 4. At the top of the main content area you will see 'Field', 'Type', 'Length/Values', 'Collation', etc. Retype the 128 in the 'Length/Values' box with 128 then select **'Save'**.
 5. Select the **'Browse'** tab

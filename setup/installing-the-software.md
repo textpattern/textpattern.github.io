@@ -51,7 +51,7 @@ Sometimes the /public directory is /public_html. The {username} implies your act
 
 ### Essential installation elements
 
-Using your (S)FTP client to connect to your web host’s server. Navigate to your web root directory and upload at least the following directories and files from the Textpattern installation package:
+Using your (S)FTP client to connect to your web host's server. Navigate to your web root directory and upload at least the following directories and files from the Textpattern installation package:
 
 * {:.directory--open} /
   * {:.document} .htaccess
@@ -65,7 +65,7 @@ Using your (S)FTP client to connect to your web host’s server. Navigate to you
 
 Again, do not rearrange files in the tree or change their names. Doing so will render Textpattern useless.
 
-If you are *not* using an Apache web server (e.g. you are using [Nginx](/setup/configuring-a-web-server)), you may exclude the .htaccess file; otherwise, it will be needed.[^htaccess] The .htaccess file is important for handling many things on Apache web servers, such as default URL formatting, 301 redirects, specific use (or not) of 'www.’, and so forth. You can add additional content to the file, but you should not alter or remove what is there; Textpattern relies on it.
+If you are *not* using an Apache web server (e.g. you are using [Nginx](/setup/configuring-a-web-server)), you may exclude the .htaccess file; otherwise, it will be needed.[^htaccess] The .htaccess file is important for handling many things on Apache web servers, such as default URL formatting, 301 redirects, specific use (or not) of 'www.', and so forth. You can add additional content to the file, but you should not alter or remove what is there; Textpattern relies on it.
 
 The /files directory is empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go if you upload them in the Files panel. Later, when logging in for the first time, you may see a warning about the directory's `chmod` status (editing rights) in the Files or Diagnostics panels. This is normal, and you will fix that when the time comes. [First log in checks](#first-log-in-checks).
 
@@ -75,7 +75,7 @@ The /textpattern directory contains all the core scripting and functionality. Al
 
 The /textpattern/plugins directory contains all the plugin code installed. You may see a warning about the directory's `chmod` status (editing rights) in the Plugins or Diagnostics panels when first logging in. [First log in checks](#first-log-in-checks).
 
-The /themes directory is empty by default, but it’s an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory’s `chmod` status (editing rights) in the Themes or Diagnostics panels when first logging in. See [First log in checks](#first-log-in-checks).
+The /themes directory is empty by default, but it's an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory's `chmod` status (editing rights) in the Themes or Diagnostics panels when first logging in. See [First log in checks](#first-log-in-checks).
 
 The css.php file negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files, then this file can be removed. If you store CSS in the database then this file is required.
 
@@ -102,7 +102,7 @@ Now you'll walk through the setup process, which is a series of screens. Assumin
 
 ### Select language
 
-You will see the default installation screen, with the Textpattern logo, a language selection menu, and a **Submit** button. If you don't see this screen, check your URL path. Should it be 'https’ or 'www.’? Did you install in a subdirectory? Is there a typo?
+You will see the default installation screen, with the Textpattern logo, a language selection menu, and a **Submit** button. If you don't see this screen, check your URL path. Should it be 'https' or 'www.'? Did you install in a subdirectory? Is there a typo?
 
 The language you select will be used for the remainder of the setup process, and become the default in the interface of the administration side. You may change the interface language any time after setup in the Languages panel.
 
@@ -131,9 +131,9 @@ The first part of the next screen shows if Textpattern has successfully communic
 <span class="success">Connected</span> \\
 <span class="success">Using {database} ({encoding})</span>
 
-Where `{database}` is the name of your database and `{encoding}` is the character encoding your database is configured to use, ideally 'utf8’ or 'utf8mb4’. You should change the character encoding in the database now if it is not how you wish.
+Where `{database}` is the name of your database and `{encoding}` is the character encoding your database is configured to use, ideally 'utf8' or 'utf8mb4'. You should change the character encoding in the database now if it is not how you wish.
 
-Beneath the connection verification is a text box containing the contents needed for your configuration file. Here is a hypothetical example of the file’s contents:
+Beneath the connection verification is a text box containing the contents needed for your configuration file. Here is a hypothetical example of the file's contents:
 
 ~~~ php
 <?php
@@ -153,7 +153,7 @@ You need a config.php file in your /textpattern directory with that generated co
 
 One way is to use the Download button beneath the textbox in the browser screen to download the pre-filled config.php. You would then use your (S)FTP client to upload it to your web server and into the /textpattern directory.
 
-The other common way is to use the config-dist.php file (which is otherwise needless). The file is already in the /textpattern directory. Open this file, paste the contents generated from above into it, making sure to replace *everything* in the file, then save and close the file. Then rename it to config.php (i.e. remove the '-dist’ part from the name).
+The other common way is to use the config-dist.php file (which is otherwise needless). The file is already in the /textpattern directory. Open this file, paste the contents generated from above into it, making sure to replace *everything* in the file, then save and close the file. Then rename it to config.php (i.e. remove the '-dist' part from the name).
 
 Once done, either way, return to the **Add config file** screen in your browser and select the **I did it** button.
 
@@ -199,6 +199,6 @@ Textpattern is simply letting you know to change the `chmod` permissions on thos
 
 When done, reload the Diagnostics panel. You should then see a satisfying green message saying <span class="success">All checks pass!</span> If you happen to have any other warnings — blue, yellow, or red — see [Troubleshooting diagnostics](/setup/troubleshooting-diagnostics).
 
-Finally, if you do not intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have 'No’ selected for 'Enable XML-RPC server?’.
+Finally, if you do not intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have 'No' selected for 'Enable XML-RPC server?'.
 
 [^chmod]: {% include component-chmod.html %}

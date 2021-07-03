@@ -55,7 +55,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 <txp:comments wraptag="ol" break="li" />
 <txp:if_comments_preview>
     <li>
-        <p>This is a preview of what your comment will look like. Please don’t forget to scroll down and actually press the 'submit’ button!</p>
+        <p>This is a preview of what your comment will look like. Please don't forget to scroll down and actually press the 'submit' button!</p>
         <txp:comments_preview wraptag="" />
     </li>
 </txp:if_comments_preview>

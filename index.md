@@ -8,7 +8,7 @@ search_omit: true
 
 # Textpattern user documentation
 
-Documentation for Textpattern’s out-of-the-box functionality. [Editorial contributions](https://github.com/textpattern/textpattern.github.io/blob/master/README.md) appreciated.
+Documentation for Textpattern's out-of-the-box functionality. [Editorial contributions](https://github.com/textpattern/textpattern.github.io/blob/master/README.md) appreciated.
 
 {::options parse_block_html="true" /}
 

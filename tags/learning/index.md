@@ -3,7 +3,7 @@ layout: landing
 category: Tags and attributes
 published: true
 title: Learning about tags
-description: Textpattern tags are shorthand method for calling functions defined inside Textpattern core. Modelled after standard HTML tag syntax, Textpattern’s native tags are easy to learn and work interchangeably with HTML.
+description: Textpattern tags are shorthand method for calling functions defined inside Textpattern core. Modelled after standard HTML tag syntax, Textpattern's native tags are easy to learn and work interchangeably with HTML.
 ---
 
 # Learning about tags
@@ -629,7 +629,7 @@ Consider the following block of standard HTML markup, which defines displaying a
 </figure>
 ~~~  
 
-That’s great, but the reason you're using Textpattern is to automate content output and make things more dynamic. So let’s add in some relevant Textpattern tags in a mixed way:
+That's great, but the reason you're using Textpattern is to automate content output and make things more dynamic. So let's add in some relevant Textpattern tags in a mixed way:
 
 ~~~ html
 <figure>
@@ -642,7 +642,7 @@ That’s great, but the reason you're using Textpattern is to automate content o
 </figure>
 ~~~
 
-Let’s walk through the markup for clarity. Immediately within the HTML `<figure>` tags is a Textpattern [images](/tags/images) container tag:
+Let's walk through the markup for clarity. Immediately within the HTML `<figure>` tags is a Textpattern [images](/tags/images) container tag:
 
 ~~~ html
 …
@@ -652,7 +652,7 @@ Let’s walk through the markup for clarity. Immediately within the HTML `<figur
 …
 ~~~
 
-We need to add this extra tag container to make use of the corresponding [image_info](/tags/image_info) tag functionality. That’s the only reason. A lot of Textpattern tags work in relation to one another like that, where a containing parent tag enables certain child tags, or iterates over lists of things.
+We need to add this extra tag container to make use of the corresponding [image_info](/tags/image_info) tag functionality. That's the only reason. A lot of Textpattern tags work in relation to one another like that, where a containing parent tag enables certain child tags, or iterates over lists of things.
 
 We first see the `<txp:image_info />` tag used in this line multiple times:
 
@@ -678,11 +678,11 @@ And again in the block after:
 …
 ~~~
 
-In each instance of `<txp:image_info />`, the tag is pulling a specific data value for the image in context - the one with id 9. The first line returns the image’s ID number and file extension. Note there’s no `.` added between the ID and extension values because the `ext` value for the `type=""` attribute already includes the required period.
+In each instance of `<txp:image_info />`, the tag is pulling a specific data value for the image in context - the one with id 9. The first line returns the image's ID number and file extension. Note there's no `.` added between the ID and extension values because the `ext` value for the `type=""` attribute already includes the required period.
 
-In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the image edit panel area for each image.
+In the second line, `<txp:image_info />` is pulling the image's caption value, which you should _always_ include in the image edit panel area for each image.
 
-While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.
+While the mixed markup is more functionally dynamic, it's also a bigger block of markup overall because there's no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.
 
 ### Integrated markup example: image and caption
 
@@ -703,9 +703,9 @@ Next, which *is* an example of integrated notation, we've added the `wraptag` at
 
 Notice we have also reduced the image file path to a single instance of `<txp:image_info />` by declaring both the image ID and file extension attribute together. You can't do this arbitrarily with all tag attribute parameters, but in this case it is possible, and the shortening result is obvious.
 
-Finally, yet again, we eliminate the explicit use of the HTML `<figcaption>` tags by using Textpattern’s presentational `wraptag` attribute in `image_info`. The attribute is one of several global presentational attributes of all Textpattern tags.
+Finally, yet again, we eliminate the explicit use of the HTML `<figcaption>` tags by using Textpattern's presentational `wraptag` attribute in `image_info`. The attribute is one of several global presentational attributes of all Textpattern tags.
 
-The resulting character count of this block of markup, which is functionally identical to the long-form version previously, is 149 characters. Slightly shorter than the mixed markup notation, but with the added benefit of skipping the entire chunk if the image is missing, compared with leaving bits of empty markup in the mixed method. Either way, it’s definitely longer than the full HTML version, but that's the price for having dynamic functionality. More signficant gains can be made in more complicated structures.
+The resulting character count of this block of markup, which is functionally identical to the long-form version previously, is 149 characters. Slightly shorter than the mixed markup notation, but with the added benefit of skipping the entire chunk if the image is missing, compared with leaving bits of empty markup in the mixed method. Either way, it's definitely longer than the full HTML version, but that's the price for having dynamic functionality. More signficant gains can be made in more complicated structures.
 
 ## Reduce typing with short-tags
 
@@ -715,11 +715,11 @@ To benefit from this facility, you must enable the short-tag functionality in th
 
 ### Short-tag structure
 
-First let’s review some Textpattern tag basics, which includes how plugin tags are used too. Textpattern tag names can be single words (i.e. `name`), or compound names with underscores (i.e. `compound_name`). Tags can also be either [self-closing or container tags](#anatomy-of-a-tag).
+First let's review some Textpattern tag basics, which includes how plugin tags are used too. Textpattern tag names can be single words (i.e. `name`), or compound names with underscores (i.e. `compound_name`). Tags can also be either [self-closing or container tags](#anatomy-of-a-tag).
 
 Short-tag structure only concerns tags (including plugin tags) with compound names, whether self-closing or used as containers.
 
-**Here’s the general rule:**
+**Here's the general rule:**
 If short-tags are enabled and the tag has a compound name, you can:
 
 1. Remove the `txp:` prefix.
@@ -827,7 +827,7 @@ Using `not` negates the result of the entire tag including any combination of at
 
 When [short-tags are enabled](#reduce-typing-with-short-tags) is enabled, you can also generate custom short-tags by creating specific reusable Form templates, which we dub “shortcodes”. You can use any Form type when creating a shortcode form.
 
-A shortcode is like any other partial of code you may develop in a Textpattern Form, but it’s designed with the intention of using in relation to an associated custom short-tag. This new functionality is similar in concept to the smd_macro or rah_beacon plugins, both of which are now obsolete against this new custom short-tags/shortcode functionality.
+A shortcode is like any other partial of code you may develop in a Textpattern Form, but it's designed with the intention of using in relation to an associated custom short-tag. This new functionality is similar in concept to the smd_macro or rah_beacon plugins, both of which are now obsolete against this new custom short-tags/shortcode functionality.
 
 The one difference between the core short-tags and custom short-tags is in relation to the `<txp:output_form>` tag. Whenever you create a Textpattern Form intended as a shortcode form, it automatically makes a custom short-tag available having the same name as the form.
 
@@ -878,7 +878,7 @@ The `if_yield` container tag (and the `else` tag) can be used to determine if th
 <txp:if_yield name="your-attribute"> … </txp:if_yield>
 ~~~
 
-That’s it!
+That's it!
 
 ## The parser and its passes
 
@@ -928,11 +928,11 @@ Actually, `<txp:link_to_next />` tag "knows" it needs the current article data, 
 
 ## Options, options… What do I do?
 
-With what's been discussed, it may seem you must learn more advanced ways of working with Textpattern tags. That’s not true. There is no right or wrong way, only the way that makes it easier for you to understand. There’s nothing wrong with writing mixed markup if that’s what makes sense.
+With what's been discussed, it may seem you must learn more advanced ways of working with Textpattern tags. That's not true. There is no right or wrong way, only the way that makes it easier for you to understand. There's nothing wrong with writing mixed markup if that's what makes sense.
 
 The natural tendency for people is to start with a mixed markup approach, then tighten up the their markup over time by leaning more on Textpattern tags. The result is often less markup overall. This can help offset the additional markup from plugin tags, when such functionality is used.
 
-But that’s not a given. Sometimes more characters are needed to get really sophisticated things done — real Textpattern wizardry. So take the integrated advantages with a grain of salt.
+But that's not a given. Sometimes more characters are needed to get really sophisticated things done — real Textpattern wizardry. So take the integrated advantages with a grain of salt.
 
 More important than character count is your understanding of the resulting markup — or that of your client's, if you're building a website and handing it over to a different administrator — regardless of how markup is written. As long as the markup separates content from static constructs and you (or the client) understands it, you're doing well.
 

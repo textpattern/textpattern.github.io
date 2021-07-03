@@ -77,7 +77,7 @@ Somewhere at the very beginning of a template you would define names and values,
 <txp:else />
     <txp:if_category>
         <title>Blog category: <txp:category title="1" /></title>
-        <meta name="description" content="Blog article '<txp:category title="1" />’ category archive.">
+        <meta name="description" content="Blog article '<txp:category title="1" />' category archive.">
         <meta name="robots" content="noindex, follow">
     <txp:else />
         <title>My blog homepage</title>

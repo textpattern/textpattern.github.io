@@ -86,11 +86,11 @@ Sections can be given any arbitrary name, except for a few labels already reserv
                 <td>Used by Textpattern to serve Atom feed content</td>
             </tr>
             <tr>
-                <th scope="row"><code>author</code> (or the equivalent in the site’s public-wide language)</th>
+                <th scope="row"><code>author</code> (or the equivalent in the site's public-wide language)</th>
                 <td>Used to generate per-author landing pages containing articles from a the given author</td>
             </tr>
             <tr>
-                <th scope="row"><code>category</code> (or the equivalent in the site’s public-wide language)</th>
+                <th scope="row"><code>category</code> (or the equivalent in the site's public-wide language)</th>
                 <td>Used to generate category landing pages containing articles from a the given category</td>
             </tr>
             <tr>
@@ -114,7 +114,7 @@ Sections can be given any arbitrary name, except for a few labels already reserv
                 <td>Used by Textpattern to serve RSS feed content</td>
             </tr>
             <tr>
-                <th scope="row"><code>section</code> (or the equivalent in the site’s public-wide language)</th>
+                <th scope="row"><code>section</code> (or the equivalent in the site's public-wide language)</th>
                 <td>Used internally by Textpattern</td>
             </tr>
         </tbody>

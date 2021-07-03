@@ -46,7 +46,7 @@ The rest of this document is primarily concerned with these roles.
 
 [^users]: The [smd_user_manager](https://github.com/Bloke/smd_user_manager) and [smd_bio](https://github.com/Bloke/smd_bio) plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
 
-[^custom]: The administrator can modify roles and privileges via plugins. For example, [rah_privileges](https://github.com/jools-r/rah_privileges/releases/tag/0.1.3) ([background](https://forum.textpattern.com/viewtopic.php?pid=310537#p310537)) can easily and quickly change a role’s access rights. And [smd_user_manager](https://github.com/Bloke/smd_user_manager) can modify the default role titles, altogether creating new role types and associated rights, as well create custom user groups for even finer control over roles and privileges. Follow the instructions that come with the plugins.
+[^custom]: The administrator can modify roles and privileges via plugins. For example, [rah_privileges](https://github.com/jools-r/rah_privileges/releases/tag/0.1.3) ([background](https://forum.textpattern.com/viewtopic.php?pid=310537#p310537)) can easily and quickly change a role's access rights. And [smd_user_manager](https://github.com/Bloke/smd_user_manager) can modify the default role titles, altogether creating new role types and associated rights, as well create custom user groups for even finer control over roles and privileges. Follow the instructions that come with the plugins.
 
 ### Frozen accounts
 
@@ -412,7 +412,7 @@ Table 4 represents the two extended regions. Unlike with default panels, the ext
     </table>
 </div>
 
-It is possible that a given administration plugin may introduce finer rights control, which would alter the access pattern suggested in Table 4. For example, a developer may design an administration plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a panel under Extensions, those two lower user roles will see the [Extensions region](/administration/extensions-region)  and only the associated plugin’s panel.
+It is possible that a given administration plugin may introduce finer rights control, which would alter the access pattern suggested in Table 4. For example, a developer may design an administration plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a panel under Extensions, those two lower user roles will see the [Extensions region](/administration/extensions-region)  and only the associated plugin's panel.
 
 ## Limited access specifications
 

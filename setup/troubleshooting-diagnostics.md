@@ -8,7 +8,7 @@ description: The Textpattern Diagnostics panel is an important area for troubles
 
 # Diagnostics troubleshooting
 
-Troubleshooting web technology is an inherent fact of being online, and especially if you run your own website. Textpattern’s Diagnostics panel (Admin > Diagnostics) helps make troubleshooting easier. This document describes the functionality and how to use it.
+Troubleshooting web technology is an inherent fact of being online, and especially if you run your own website. Textpattern's Diagnostics panel (Admin > Diagnostics) helps make troubleshooting easier. This document describes the functionality and how to use it.
 
 **Contents**
 
@@ -38,13 +38,13 @@ There are other coloured alerts to be aware of: blue (information), yellow (warn
 In certain situations it may not be possible to get the green confirmation message, but it does not mean your site is not configured correctly. The following blue (information) alert messages, for example, are nothing to worry about if they appear by themselves.
 
 <span class="information">There was a problem connecting to the Textpattern update server. Please try again later.</span>
-: This alert means your Textpattern installation cannot connect with Textpattern’s servers (e.g. a web connection was lost), thus cannot check if a new stable release of the software is available. This message will persist until your installation attempts the connection again. At that time (at most, once an hour) if there were no updates available, the message would disappear and you’d see the green 'All checks pass!’.
+: This alert means your Textpattern installation cannot connect with Textpattern's servers (e.g. a web connection was lost), thus cannot check if a new stable release of the software is available. This message will persist until your installation attempts the connection again. At that time (at most, once an hour) if there were no updates available, the message would disappear and you'd see the green 'All checks pass!'.
 
 <span class="information">New Textpattern version {number} available for download.</span>
-: If there was a new stable release, as described in the previous alert, you’d see this message instead, which would persist until you updated your installation with the new release (always recommended).
+: If there was a new stable release, as described in the previous alert, you'd see this message instead, which would persist until you updated your installation with the new release (always recommended).
 
 <span class="information">There was a problem trying to connect to the RPC server. Please try again later.</span>
-: This blue alert is similar to the first one; your connection to Textpattern’s servers is broken for whatever reason. But in this case your system is trying to ping Textpattern’s RPC server. If you are *not* using RPC, which would be set in preferences (Admin > Preferences > Admin), this alert will never appear, even if the connection is broken.
+: This blue alert is similar to the first one; your connection to Textpattern's servers is broken for whatever reason. But in this case your system is trying to ping Textpattern's RPC server. If you are *not* using RPC, which would be set in preferences (Admin > Preferences > Admin), this alert will never appear, even if the connection is broken.
 
 <span class="information">File uploads are disabled.</span>
 : This alert appears if the permissions you have set on your /files folder is read only. The assumption is, you have made this choice, so you can ignore this message. If you make the files folder writable, the alert will go away.[^chmod]
@@ -74,7 +74,7 @@ Red messages mean something critical appears to be wrong and you need to trouble
 : If any of the directories in which Textpattern stores your images, downloadable files, themes or temporary files have their permissions set incorrectly, this alert will appear. {dirtype} will indicate which directory needs attention. [^chmod]
 
 <span class="error">Apache module mod_rewrite is not installed.</span>
-: This alert means the mod_rewrite module is not readable, possibly because it has not been uncommented in the php.ini file working on your website. You’ll need access to your web server to track this down and see, or contact your web host.
+: This alert means the mod_rewrite module is not readable, possibly because it has not been uncommented in the php.ini file working on your website. You'll need access to your web server to track this down and see, or contact your web host.
 
 <span class="error">Old placeholder file is in the way.</span>
 : This alert likely means you have created an actual folder in your server file tree that shares a name with a section you created in the Sections panel (Presentation > Sections), or vice versa. This can break your site. You need to rename or remove one or the other.
@@ -102,7 +102,7 @@ Yellow warning alerts are not critical, per se, and sometimes can even be cascad
 : Similar to the first yellow alert, this is suggesting the **Site URL** as set in Preferences (Admin > Preferences > Site) does not match the actual URL you use to visit your website.
 
 <span class="warning">Clean URL test failed.</span>
-: This alert could appear for different reasons and may not be a problem, per se. Troubleshoot other red and yellow alerts first and it may go away. If not, it might be caused by the PHP configuration setting of `allow_url_fopen`, or some other issue with your web host server’s configuration.
+: This alert could appear for different reasons and may not be a problem, per se. Troubleshoot other red and yellow alerts first and it may go away. If not, it might be caused by the PHP configuration setting of `allow_url_fopen`, or some other issue with your web host server's configuration.
 
 <span class="warning">{path} still exists.</span>
 : This alert means you need to remove the /textpattern/setup folder from the web server. The alert will show the actual folder path respective to your installation in place of {path}.
@@ -148,7 +148,7 @@ This output is first meant to help you troubleshoot issues by showing you a plet
 
 But another reason this output is provided, is so you can quickly copy and share it in the [troubleshooting forum](https://forum.textpattern.com/viewforum.php?id=67) where Textpattern developers and other experienced users can expertly spot where things might be going astray and give you advice about what to do.
 
-In the latter case, note the two controls at top of the output display. The first is the Detail selection menu for 'Low’ and 'High’ output. Toggle this and you will see the output difference is quite a lot. The other control is a checkbox for hiding private information. Make sure this is checked before copying the output for sharing in the forum. Share the 'Low’ amount of detail at first. Provide the 'High’ detail only if developers ask you for it later.
+In the latter case, note the two controls at top of the output display. The first is the Detail selection menu for 'Low' and 'High' output. Toggle this and you will see the output difference is quite a lot. The other control is a checkbox for hiding private information. Make sure this is checked before copying the output for sharing in the forum. Share the 'Low' amount of detail at first. Provide the 'High' detail only if developers ask you for it later.
 
 ### Low detail
 

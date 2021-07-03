@@ -25,7 +25,7 @@ Callbacks written with `pluggable_ui` have a different signature than those writ
 
 Argument | Parameters | What it does | Usage
 ---|---|---|---
-1 | `$event`| Name of the core _event_ for the panel you’re targeting. | Most of the time, these begin with the event name plus the `_ui` (for 'user interface') suffix. For example, on the Write panel the event is `article_ui`, and on the Files panel the event is `file_ui`.
+1 | `$event`| Name of the core _event_ for the panel you're targeting. | Most of the time, these begin with the event name plus the `_ui` (for 'user interface') suffix. For example, on the Write panel the event is `article_ui`, and on the Files panel the event is `file_ui`.
 2 | `$step`| Name of the core _step_ for the specific DOM element targeted. | Usually the part of the panel that contains the element or any of its controls you wish to change. For example, on the Write panel, the Article image control has a `$step` called `article_image` and the Custom fields element has one called `custom_fields`, and so on.
 3 | `$data`| The default data (content and/or markup); it's rendered as-is if not modified. | If applicable, this contains the default data (text, markup, both…). It will be used as-is if you don't modify it. Parsing this argument allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 4 | `$rs`| The returned 'record set' from the database. | If applicable, this is the *record set* returned from the database table that pertains to the named *event*.

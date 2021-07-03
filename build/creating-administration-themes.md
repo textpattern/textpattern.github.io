@@ -8,7 +8,7 @@ description: Administration themes allow Textpattern administrators (and publish
 
 # Creating a custom administration theme
 
-The recommended procedure for creating custom back-end themes is the same as it was prior to Textpattern 4.7. You can create a back-end theme from scratch, if you really like the hard way, but we strongly recommend the approach documented here, especially if it’s your first attempt at an administration theme.
+The recommended procedure for creating custom back-end themes is the same as it was prior to Textpattern 4.7. You can create a back-end theme from scratch, if you really like the hard way, but we strongly recommend the approach documented here, especially if it's your first attempt at an administration theme.
 
 **Contents**
 
@@ -41,15 +41,15 @@ A given subdirectory has the following contents:
 
 The child directories of the *assets* directory may vary, but it will likely include the *css* and *img* directories at the very least. The *js* directory is for JavaScript, should you need it. You may not even use images or JavaScript in your own theme, in which case you could remove these directories.
 
-The filename of the *themename.php* MUST be identical to the name of the theme’s directory.
+The filename of the *themename.php* MUST be identical to the name of the theme's directory.
 
 **Step 2:**
 
-Pick one of the core theme directories and duplicate it by whatever method you prefer. Often there is a Duplicate feature in your file manager’s right menu options. Using that will provide you with a duplicate directory called _themename copy_. So if you duplicated the _hive_ theme directory, you’d have _hive copy_.
+Pick one of the core theme directories and duplicate it by whatever method you prefer. Often there is a Duplicate feature in your file manager's right menu options. Using that will provide you with a duplicate directory called _themename copy_. So if you duplicated the _hive_ theme directory, you'd have _hive copy_.
 
 **Step 3:**
 
-Rename your copy directory to whatever theme name you want, but don’t try to be overly clever. The name must not have any blank spaces, and hyphens and underscores are the only non-alphanumeric character allowed. In addition, your theme may not start with a number. For example, these are acceptable:
+Rename your copy directory to whatever theme name you want, but don't try to be overly clever. The name must not have any blank spaces, and hyphens and underscores are the only non-alphanumeric character allowed. In addition, your theme may not start with a number. For example, these are acceptable:
 
 * _mytheme_
 * _my-theme_
@@ -72,7 +72,7 @@ Keeping everything contained in the theme directory makes it easy to switch back
 
 ## Future administration themes
 
-In the future, if you create another back-end theme, you can  duplicate your initial custom theme, or really start from scratch (a blank slate). Either way, you’ll be better informed, having learned from the duplication process originally.
+In the future, if you create another back-end theme, you can  duplicate your initial custom theme, or really start from scratch (a blank slate). Either way, you'll be better informed, having learned from the duplication process originally.
 
 ## Deeper diving
 

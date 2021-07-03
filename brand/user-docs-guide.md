@@ -8,7 +8,7 @@ description: Guidelines for the development of Textpattern user documentation.
 
 # Guidelines for documentation development
 
-These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of user documentation. Documentation authors, editors, and other interested contributors will want to read up here (as well review the [documentation collaboration procedures](https://github.com/textpattern/textpattern.github.io/issues/149)).
+These guidelines, an extension of Textpattern's baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of user documentation. Documentation authors, editors, and other interested contributors will want to read up here (as well review the [documentation collaboration procedures](https://github.com/textpattern/textpattern.github.io/issues/149)).
 
 **Contents**
 
@@ -17,7 +17,7 @@ These guidelines, an extension of Textpattern’s baseline [editorial style guid
 
 ## Audience
 
-The primary target audience of user documentation is new users of Textpattern, and notably the administrator (or 'Publisher’) role, since that role is acquired when installing Textpattern software for the first time.
+The primary target audience of user documentation is new users of Textpattern, and notably the administrator (or 'Publisher') role, since that role is acquired when installing Textpattern software for the first time.
 
 Secondary audiences are, to a lesser degree, experienced users and active [community](https://forum.textpattern.com/) participants using specific resources like the [Tags reference](/tags) or [developer documentation](/development).
 
@@ -27,7 +27,7 @@ The breadth of documentation spans the out-of-the-box functionality of Textpatte
 
 ## Depth of documentation
 
-Here is where collaborating authors and editors must be aware and aligned. Depth of documentation can be thought of in terms of a layered information system. There’s a maximum number of layers, but the fewer layers a user must descend, the better it is for everyone. Thus is the goal for maintaining user documentation over time: produce only what is needed and not more.
+Here is where collaborating authors and editors must be aware and aligned. Depth of documentation can be thought of in terms of a layered information system. There's a maximum number of layers, but the fewer layers a user must descend, the better it is for everyone. Thus is the goal for maintaining user documentation over time: produce only what is needed and not more.
 
 Achieving this goal means users are more capable of helping themselves (versus asking questions in the forum) and tasks done quicker (by being independent), while volunteer editors have less overhead to maintain.
 
@@ -37,7 +37,7 @@ The first point of contact in this layered support system is the usability of th
 
 Textpattern developers strive to make the software usable, intuitive, memorable, and enjoyable (a classic definition of software having good usability) by listening to [user feedback](https://forum.textpattern.com/viewforum.php?id=2), considering [issues for development](https://github.com/textpattern/textpattern/issues), and avoiding needless feature creep.
 
-So while some documentation is needed, we only need to explain what isn’t already clear from the software’s interface design, and that includes embedded interface help.
+So while some documentation is needed, we only need to explain what isn't already clear from the software's interface design, and that includes embedded interface help.
 
 ### Rely on embedded help tips
 
@@ -49,13 +49,13 @@ Though embedded help and user docs are both written for users of the software, t
 
 ### A single documentation page
 
-The third layer of the support system is the single documentation page that best expands on a given back-end panel concept or scenario. A given page may concern many pophelp items, and that’s okay; the need for fewer documentation pages, not more, is the goal.
+The third layer of the support system is the single documentation page that best expands on a given back-end panel concept or scenario. A given page may concern many pophelp items, and that's okay; the need for fewer documentation pages, not more, is the goal.
 
-When [docs collaboration procedures](/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus editorial attention. But for immediate purposes, it is better to draft new documentation only when there’s a clear need for the material. Let the writing needed be dictated by the community’s demand for specific information, or its struggle around a pernicious problem. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
+When [docs collaboration procedures](/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus editorial attention. But for immediate purposes, it is better to draft new documentation only when there's a clear need for the material. Let the writing needed be dictated by the community's demand for specific information, or its struggle around a pernicious problem. Monitor the forum for repeating gripes and you'll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
 
 ### Scope and depth of a page
 
-The scope and depth of a page’s subject matter can be what is needed and not necessarily more, even if more could be said for the sake of thoroughness, or repetition in context.
+The scope and depth of a page's subject matter can be what is needed and not necessarily more, even if more could be said for the sake of thoroughness, or repetition in context.
 
 Again, consider [software usability](#rely-on-software-usability) and [embedded help tips](#rely-on-embedded-help-tips) in relation to documenting back-end panel features. If the features of an otherwise intuitive panel, including what is revealed in panel help tips, are meticulously annotated in user documentation for the sake of doing it, then users wade through needless detail in search of what little may, in fact, need elaboration.
 
@@ -66,14 +66,14 @@ An example referral statement to see the software itself:
 See intuitive feature in software.
 {:.example}
 
-It is safe to assume that anyone reading that particular line will have installed the software, and thus can refer to it. And if not, the documentation wouldn’t matter to them anyway.
+It is safe to assume that anyone reading that particular line will have installed the software, and thus can refer to it. And if not, the documentation wouldn't matter to them anyway.
 
 Following is another example of a referral statement. Use this one if a given feature is only clear from the additional information conveyed via a help tip:
 
 See help tip for this feature.
 {:.example}
 
-Buy using statements like above in feature sections of page documentation, where the software or embedded help tips already make the feature’s purpose and function clear, we reduce needless information load on the page. This makes it easier for documentation users to scan pages for the instances when more elaboration is needed and provided.
+Buy using statements like above in feature sections of page documentation, where the software or embedded help tips already make the feature's purpose and function clear, we reduce needless information load on the page. This makes it easier for documentation users to scan pages for the instances when more elaboration is needed and provided.
 
 And when such elaboration is needed, it should augment embedded help information, not repeat it redundantly.
 
@@ -100,16 +100,16 @@ Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in u
 
 There is at least one exception to the 'second-person' rule. The third-person could be used in specific contexts, like when guiding the administrator on user accounts. Consider this hypothetical example:
 
-To change a user’s role, find and click their name in the Users panel . . .
+To change a user's role, find and click their name in the Users panel . . .
 {:.example}
 
 You are still in second-person mode, but you've introduced a third-party, the potential future collaborators of the reader. It could just as well be third-person singular (*his*, *her*). But for the vast majority of documentation, you will never need to do this.
 
-Another exception is with regard to materials like you are reading now, materials written by editors for other editorial collaborators. _We_ are speaking to each other, so use of 'we’ (first-person plural) can be appropriate in pages like this.
+Another exception is with regard to materials like you are reading now, materials written by editors for other editorial collaborators. _We_ are speaking to each other, so use of 'we' (first-person plural) can be appropriate in pages like this.
 
 ### Abbreviations
 
-Regarding user documentation, two topics are especially important to review in the [Abbreviations](/brand/editorial-style-guide#abbreviations) section of the editorial style guide: the avoidance of common-word abbreviations like 'admin’, and the recommended use of Latin idioms as abbreviations in parenthetical notes over English equivalents in regular text.
+Regarding user documentation, two topics are especially important to review in the [Abbreviations](/brand/editorial-style-guide#abbreviations) section of the editorial style guide: the avoidance of common-word abbreviations like 'admin', and the recommended use of Latin idioms as abbreviations in parenthetical notes over English equivalents in regular text.
 
 ### Brand name
 
@@ -119,7 +119,7 @@ Particularly in documentation, do not overuse the brand name. The context of bei
 
 Do not make reference to past or future Textpattern version numbers. This only makes it harder to maintain documentation as new versions are released. Write about the functionality of the current version without indicating in what versions the functionality changed. Totally unnecessary.
 
-The sole exception is in tag pages where 'Genealogy’ sections are maintained.
+The sole exception is in tag pages where 'Genealogy' sections are maintained.
 
 ## Formatting interface strings
 
@@ -140,20 +140,20 @@ Headers and labels that are single-word strings require no additional formatting
 The Write panel.
 {:.example}
 
-In this common-use example, the string is a proper adjective (i.e., a name being used as a adjective), which is always capitalized. The word 'panel’, a subject noun, is not part of the string; rather, it provides the general *what* and *where* context of 'Write’.
+In this common-use example, the string is a proper adjective (i.e., a name being used as a adjective), which is always capitalized. The word 'panel', a subject noun, is not part of the string; rather, it provides the general *what* and *where* context of 'Write'.
 
 Another example, albeit exaggerated, with all kinds of *what* and *where* context:
 
-Under the Presentation section of the back-end’s main navigation are five presentation panel links: Themes, Sections, Pages, Forms, and Styles.
+Under the Presentation section of the back-end's main navigation are five presentation panel links: Themes, Sections, Pages, Forms, and Styles.
 {:.example}
 
-In this example we have six single-word strings being named, easily identified by their capitalization. 'Presentation’ (a link label) is used as another proper adjective; in this case, modifying ’section’, a part of the main navigation. But the second instance of the word, 'presentation’, is just a regular adjective modifying 'panel links’. No capitalization is necessary there. And no specific presentation panel exists, anyway, so capitalizing it would be confusing. The remaining five strings are used as proper nouns of link labels.
+In this example we have six single-word strings being named, easily identified by their capitalization. 'Presentation' (a link label) is used as another proper adjective; in this case, modifying 'section', a part of the main navigation. But the second instance of the word, 'presentation', is just a regular adjective modifying 'panel links'. No capitalization is necessary there. And no specific presentation panel exists, anyway, so capitalizing it would be confusing. The remaining five strings are used as proper nouns of link labels.
 
 Note that panel names and headers under the Presentation section of the back end are different from the names of templates created in those respective panels. The latter is dealt with in [Presentation template names](#presentation-template-names).
 
 #### Multiple-words, no terminal punctuation
 
-Headers and labels also exist as multiple-word strings lacking terminal punctuation. But because of the sentence-case capitalization on interface strings, we can’t rely on capitalization alone to distinguish the entire string from regular text. To account for this, `**strong**` formatting is used, for example:
+Headers and labels also exist as multiple-word strings lacking terminal punctuation. But because of the sentence-case capitalization on interface strings, we can't rely on capitalization alone to distinguish the entire string from regular text. To account for this, `**strong**` formatting is used, for example:
 
 The **Date format** setting.
 {:.example}
@@ -164,7 +164,7 @@ Screen-readers will also pick up the strong format, which is appropriate here be
 
 These types of strings are uniquely preferences labels (a.k.a. settings) in the Site, Admin, Publish, and Feeds sections of the Preferences panel. Specifically, they are the settings with labels posed as questions. For these labels, `emphasis` is used to distinguish them easier from regular text, which screen-readers also pick up on, for example:
 
-Widowed words happen when the last word of a title wraps to a new line by itself. You may not like it. Prevent widowed words from happening by selecting 'Yes’ for the *Prevent widowed words in article titles?* preference in the Publish section of the Preferences panel.
+Widowed words happen when the last word of a title wraps to a new line by itself. You may not like it. Prevent widowed words from happening by selecting 'Yes' for the *Prevent widowed words in article titles?* preference in the Publish section of the Preferences panel.
 {:.example}
 
 As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string we're concerned with here is the preference label posed as a question, distinguished by emphasized text. Without the emphasis, the string would be much harder to see and understand.
@@ -173,10 +173,10 @@ As in earlier examples, additional strings are used (correctly) and lots of cont
 
 Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably fits a users mental model better: that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example:
 
-If you want URL titles to be hyphenated, select 'Hyphenated (title-like-this)’ from the select-box options for the preference, **Permalink title URL pattern**, in the Publish section of the Preferences panel.
+If you want URL titles to be hyphenated, select 'Hyphenated (title-like-this)' from the select-box options for the preference, **Permalink title URL pattern**, in the Publish section of the Preferences panel.
 {:.example}
 
-Again, this exaggerated example uses other string types and lots of context for demonstration. In actual documentation, much of the context will be clear, thus the exhausting specificity won’t be necessary. Ensure that it is clear, but only as much as needed.
+Again, this exaggerated example uses other string types and lots of context for demonstration. In actual documentation, much of the context will be clear, thus the exhausting specificity won't be necessary. Ensure that it is clear, but only as much as needed.
 
 ### Template name strings
 
@@ -277,7 +277,7 @@ Alert messages appear to software users as feedback dialogue in the Diagnostics 
     </table>
 </div>
 
-Use Kramdown’s [block element styling](#block-element-styling) syntax on a paragraph to apply the needed selectors, for example:
+Use Kramdown's [block element styling](#block-element-styling) syntax on a paragraph to apply the needed selectors, for example:
 
 ```
 Success alert.
@@ -300,7 +300,7 @@ OMFG, _no!_
 
 ### Free text strings
 
-Free-text strings are any other type of text in back-end panels not already described. These strings refer to words or paragraphs outside of navigation, forms, tables, widgets, and so on. Because free text strings can be short (a few words) or long (a full paragraph) it’s most appropriate to treat them as embedded (inline) quotations or displayed (block quote) quotations, accordingly.
+Free-text strings are any other type of text in back-end panels not already described. These strings refer to words or paragraphs outside of navigation, forms, tables, widgets, and so on. Because free text strings can be short (a few words) or long (a full paragraph) it's most appropriate to treat them as embedded (inline) quotations or displayed (block quote) quotations, accordingly.
 
 #### Embedded quotations
 
@@ -311,7 +311,7 @@ A few such strings are scattered around the administration side of the software.
 At bottom of every back-end panel are two short strings. One informs you of the software version used: <q>[Textpattern CMS](#embedded-quotations) (v4.8.0)</q>. The other provides a link to the top of the panel: <q>[Back to top](#embedded-quotations)</q>.
 {:.example}
 
-It’s appropriate to mark up the embedded quotations using a `q` element, which adds the quotation marks automatically, for example:
+It's appropriate to mark up the embedded quotations using a `q` element, which adds the quotation marks automatically, for example:
 
 ```
 <q>Textpattern CMS (v4.8.0)</q>
@@ -321,9 +321,9 @@ Do not bother adding a `cite` attribute to the `q` element when quoting short, f
 
 #### Displayed quotations
 
-When, and only when, a free-text string is long enough to warrant being a 'displayed quotation’ (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown’s `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
+When, and only when, a free-text string is long enough to warrant being a 'displayed quotation' (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown's `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
-There are only two situations that you might ever use a block quote; if quoting a popup help tip, or if quoting the only free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](/administration/languages-panel), under the panel header, and reads:
+There are only two situations that you might ever use a block quote; if quoting a popup help tip, or if quoting the only free-text string in the back-end interface that's long enough to warrant this markup. It's a paragraph in the [Languages panel](/administration/languages-panel), under the panel header, and reads:
 
 > **You can help us improve Textpattern!** We welcome additional translations (and corrections to current translations) by our user community. Please visit Textpattern language translations (opens an external link in a new window) for further details.
 
@@ -343,7 +343,7 @@ URIs, directory paths, and file names used inline are not formatted with italic 
 
 Wrong:
 : *example.com*
-: The 'Sites’ directory.
+: The 'Sites' directory.
 : */Users/name/Sites*
 : `~/Sites`
 : **index.php**
@@ -358,7 +358,7 @@ Correct:
 : index.php
 : .htaccess
 
-Always include the file extensions on file names and make sure it’s the correct extension for the file you mean (i.e. index.php, index.html, index.md…).
+Always include the file extensions on file names and make sure it's the correct extension for the file you mean (i.e. index.php, index.html, index.md…).
 
 Always use a true root-relative path when referring to file tree locations. For example:
 
@@ -383,9 +383,9 @@ Again, never style URIs, directory paths, or file names inline as `code`.
 
 Try to keep a big-picture perspective on documentation and add logical bridges between related, helpful topics. This can be done by cross-linking between documentation pages and anchor-linking within a given page.
 
-There’s a side benefit from this too: as one becomes familiar with the big-picture, it gets easier to spot ROT (redundancy, outdated, trivial) material, and easier to see how to revise and refine documentation as a whole.
+There's a side benefit from this too: as one becomes familiar with the big-picture, it gets easier to spot ROT (redundancy, outdated, trivial) material, and easier to see how to revise and refine documentation as a whole.
 
-That said, there’s a point where too much linking can be distracting, so don’t fill a page up with a lot of links like a Wikipedia page. Likewise, refrain from adding bridge links too soon after creating new material. It never fails that several rounds of page editing are needed, and in-page anchor links, especially, are repeatedly broken before the content stabilizes.
+That said, there's a point where too much linking can be distracting, so don't fill a page up with a lot of links like a Wikipedia page. Likewise, refrain from adding bridge links too soon after creating new material. It never fails that several rounds of page editing are needed, and in-page anchor links, especially, are repeatedly broken before the content stabilizes.
 
 ### Cross-links
 
@@ -456,7 +456,7 @@ Table 2 shows what Markdown syntax provides for inline formatting; either emphas
             <tr>
                 <td colspan="4">
                     <ol class="list--refmarks">
-                        <li>This isn’t Textile, and never will be on GitHub.</li>
+                        <li>This isn't Textile, and never will be on GitHub.</li>
                     </ol>
                 </td>
             </tr>
@@ -466,19 +466,19 @@ Table 2 shows what Markdown syntax provides for inline formatting; either emphas
 
 But the lack of true (semantic) italic and bold formatting in Markdown is only unfortunate if we care about screen-readers and people who rely on them, because the inherent emphasis/strength of text marked up with `em` and `strong` is picked up by this technology.
 
-Recall from the [paths, directories and file names](#paths-directories-and-file-names) guidelines that such text elements, whether representing back end strings or not, should be formatted as italic. But if we easily rely on Markdown, which only adds `em`, rather than take the extra two seconds to type `i` tags, then such strings appear italic but deliver the emphasized punch, too, to anyone *listening* via a screen-reader. That would be pretty annoying for a lot of paths and file names. That’s why the guideline there suggests adding the HTML instead of using Markdown, if one can be bothered.
+Recall from the [paths, directories and file names](#paths-directories-and-file-names) guidelines that such text elements, whether representing back end strings or not, should be formatted as italic. But if we easily rely on Markdown, which only adds `em`, rather than take the extra two seconds to type `i` tags, then such strings appear italic but deliver the emphasized punch, too, to anyone *listening* via a screen-reader. That would be pretty annoying for a lot of paths and file names. That's why the guideline there suggests adding the HTML instead of using Markdown, if one can be bothered.
 
-Similarly, the [template names strings](#template-name-strings) section counsels using italic-strong or emphasis-bold, but not emphasis-strong, which otherwise gives screen-reading technology a needless double-hit. It’s definitely quicker to hit your italic and bold keys in succession, of course, which Markdown will add as `***emphasis-strong***` — but you should not, if you care.
+Similarly, the [template names strings](#template-name-strings) section counsels using italic-strong or emphasis-bold, but not emphasis-strong, which otherwise gives screen-reading technology a needless double-hit. It's definitely quicker to hit your italic and bold keys in succession, of course, which Markdown will add as `***emphasis-strong***` — but you should not, if you care.
 
 The strong formatting for [multiple-word strings with no terminal punctuation](#multiple-words-no-terminal-punctuation), however, is appropriate for screen-readers, or listeners would not know where the multi-word string ends in regular text.
 
-So this business with inline formatting is tricky, and why the golden rule of thumb is: don’t use inline formatting unless you are documenting [interface strings](#formatting-interface-strings), and the necessary like.
+So this business with inline formatting is tricky, and why the golden rule of thumb is: don't use inline formatting unless you are documenting [interface strings](#formatting-interface-strings), and the necessary like.
 
-The sole exception is when emphasizing a word as a part of regular text (e.g. 'You *really* don’t want to do that.’), But this should rarely be necessary.
+The sole exception is when emphasizing a word as a part of regular text (e.g. 'You *really* don't want to do that.'), But this should rarely be necessary.
 
 ### Inline-text styling
 
-In contrast to simple [inline-text formatting](#inline-text-formatting), Kramdown enables specific styling using its 'inline attributes list’ (IAL) notation.[^ial]
+In contrast to simple [inline-text formatting](#inline-text-formatting), Kramdown enables specific styling using its 'inline attributes list' (IAL) notation.[^ial]
 
 For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text as:
 
@@ -487,7 +487,7 @@ For example we can use the predefined selectors for alert colours (`.success`, `
 * **yellow**{: .warning} = `**yellow**{: .warning}`
 * **red**{: .error} = `**red**{: .error}`
 
-The IAL notation only works if it has an element to apply to. In this case the `strong` element is used because it’s easily added with Markdown and makes the colours **stand out more**{: .warning}, *compared to emphasis*{: .warning}. Regardless of what format, though, avoid using blue (`.information`); it looks too much like a link and could be confusing.
+The IAL notation only works if it has an element to apply to. In this case the `strong` element is used because it's easily added with Markdown and makes the colours **stand out more**{: .warning}, *compared to emphasis*{: .warning}. Regardless of what format, though, avoid using blue (`.information`); it looks too much like a link and could be confusing.
 
 [^ial]: https://kramdown.gettalong.org/syntax.html#inline-attribute-lists
 
@@ -498,7 +498,7 @@ A small variety of block-level elements and specialized content types are employ
 * Markdown enables easy addition of paragraphs and (un)ordered lists. No demonstration is needed. You know them.
 * Kramdown enables easy use of [definition lists](#definition-lists) and [notes](#notes) (i.e. endnotes).
 * HTML must be used for [tables](#tables), due to a specialized wrapper requirement.
-* Predefined class selectors, applied using Kramdown’s 'inline attributes list’ notation, enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
+* Predefined class selectors, applied using Kramdown's 'inline attributes list' notation, enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
 
 This small set of block elements and content types is enough for Textpattern user documentation.
 
@@ -596,7 +596,7 @@ Table 3 presents the entities to use, and demonstrates the notes as well, from w
                 <td colspan="3">
                     <ol class="list--refmarks">
                         <li>Unicode entities may be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
-                        <li>Known as the 'paragraph sign’ in layman’s terms.</li>
+                        <li>Known as the 'paragraph sign' in layman's terms.</li>
                         <li>And so on.</li>
                     </ol>
                 </td>
@@ -624,9 +624,9 @@ Then, at bottom of that section, just before the next document header, add the c
 [^marker]: Start of corresponding note . . .
 ```
 
-If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are first marked in text. Not because they have to be that way (Kramdown will render the correct order automatically), but because it’s logical convention, and it makes it easier for collaborators to follow.
+If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are first marked in text. Not because they have to be that way (Kramdown will render the correct order automatically), but because it's logical convention, and it makes it easier for collaborators to follow.
 
-[^notes]: While many markup languages, like Markdown, Kramdown, Textile, and so on call their notes functionality 'footnotes’, it’s a misnomer, because what they really create are *endnotes*. Every English style manual, like the one we use, will explain it. The *foot-* and *end-* prefixes merely indicate *where* the notes are placed in published material, regardless of medium. The style manuals also refer to both types more generally as 'notes’. So if you can’t be specific, be general.
+[^notes]: While many markup languages, like Markdown, Kramdown, Textile, and so on call their notes functionality 'footnotes', it's a misnomer, because what they really create are *endnotes*. Every English style manual, like the one we use, will explain it. The *foot-* and *end-* prefixes merely indicate *where* the notes are placed in published material, regardless of medium. The style manuals also refer to both types more generally as 'notes'. So if you can't be specific, be general.
 
 ### Tables
 
@@ -636,7 +636,7 @@ Use the following guidelines to make tables well-structured and useful:
 
 1. **HTML only**. Tables must be marked up with HTML in user docs. Ensure the markup is complete with `caption`, `thead`, `tbody`, `tfoot` (see #4), including the `div` container. Copy/paste the markup below to make it easier.
 2. **Tabular data**. Use tables as much as appropriate for tabular data sets. Avoid tables if data is mostly long strings of text (sentences, paragraphs, lists), in which case one or more [definition lists](#definition-lists) will work better.
-3. **Captions**. Unlike figure captions, which function more like descriptions, a table’s `caption` is really its title. Use it to number and title tables (e.g. 'Table 1. Caption of table.’, 'Table 2. Caption of table.’, and so on) even if only one table is used. This makes it easy to refer to tables in the main text.
+3. **Captions**. Unlike figure captions, which function more like descriptions, a table's `caption` is really its title. Use it to number and title tables (e.g. 'Table 1. Caption of table.', 'Table 2. Caption of table.', and so on) even if only one table is used. This makes it easy to refer to tables in the main text.
 4. **Notes**. Table notes are optional (see [Notes in tables](#notes-in-tables)), but can help convey meaning and understanding from table headers and data. If notes are not needed, or a table footer at all, remove the entire `tfoot` region and ensure the three example reference marks in the HTML below (added as `sup` elements) are removed from table cells.
 
 ``` html
@@ -681,7 +681,7 @@ Use the following guidelines to make tables well-structured and useful:
 
 Example blocks are paragraphs and, more rarely, lists, of hypothetical text used for showing examples in documentation. They are especially useful for the kind of documentation you are reading now, where examples need made about writing examples.
 
-The styling, added via Kramdown’s 'inline attributes list’ notation, helps distinguish these blocks so there's no confusion to the reader about what is regular text and what is example material.
+The styling, added via Kramdown's 'inline attributes list' notation, helps distinguish these blocks so there's no confusion to the reader about what is regular text and what is example material.
 
 Use these when block code, [displayed quotations](#displayed-quotations), or [file tree components](#file-tree-components)) are not appropriate for distinguishing example text.
 
@@ -725,7 +725,7 @@ As before, add the notation on a new line directly under the list block:
 
 ### File-tree components
 
-There may be times you want to show the contents of a directory, or more of the package tree itself. Marking up content like this as `code` is inappropriate. And when marked up as regular lists, it’s hard to know for sure how to format the lists or their child items. And regular lists are a lost opportunity to add distinction.
+There may be times you want to show the contents of a directory, or more of the package tree itself. Marking up content like this as `code` is inappropriate. And when marked up as regular lists, it's hard to know for sure how to format the lists or their child items. And regular lists are a lost opportunity to add distinction.
 
 You now can style such lists using specific selectors:
 
@@ -754,7 +754,7 @@ File tree scope implies showing one or more open directories and all or some of 
   * . . .
 {:.list--files}
 
-Using the selectors provided for this type of content, apply them using Kramdown’s inline attributes notation like this:
+Using the selectors provided for this type of content, apply them using Kramdown's inline attributes notation like this:
 
 ```
 * {:.directory--open} parent_directory
@@ -773,7 +773,7 @@ Again, make sure file names include their type extensions, and do not add format
 
 #### Single directory scope
 
-Single directory scope implies all or some of the contents of one directory only. While you could include the parent directory at the top, as demonstrated in the previous example, it’s easier to exclude it in this case to avoid needing a nested list, thus the parent-child relationship lines are dropped as well:
+Single directory scope implies all or some of the contents of one directory only. While you could include the parent directory at the top, as demonstrated in the previous example, it's easier to exclude it in this case to avoid needing a nested list, thus the parent-child relationship lines are dropped as well:
 
 * . . .
 * {:.directory} subdirectory2

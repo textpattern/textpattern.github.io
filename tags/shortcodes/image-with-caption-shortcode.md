@@ -26,9 +26,9 @@ Consider the following raw HTML example:
 </figure>
 ~~~
 
-Writing that block of nested markup each time you want a figure is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to later, notably the caption.
+Writing that block of nested markup each time you want a figure is tedious, and a messy distraction in your article copy when editing. It's also a pain to find and edit such markup when you need to later, notably the caption.
 
-Let’s do better.
+Let's do better.
 
 ## Form to use
 

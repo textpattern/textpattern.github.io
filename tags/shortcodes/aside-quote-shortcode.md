@@ -80,7 +80,7 @@ Create a new Form of type _Miscellaneous_ called **linkquote**, paste the follow
 </aside>
 ~~~
 
-You can remove the top comment hidden with `<txp:hide> … </txp:hide>` if you want to, but it’s useful as a reminder about how to use the associated short-tag when needed.
+You can remove the top comment hidden with `<txp:hide> … </txp:hide>` if you want to, but it's useful as a reminder about how to use the associated short-tag when needed.
 
 ## Short-tag and attributes
 
@@ -100,13 +100,13 @@ There are three attributes defined:
 
 The shortcode was conceived to be flexible enough for adding various types of quotations, or, rather, from various sources. The idea is they are not directly part of the main content, or else they would be more appropriate as blockquotes, not asides.
 
-The only similarity with pullquotes, perhaps, is how you might style them to appear; floating left or right in relation to surrounding content. But there is no rule that asides styled this way _have_ to be “pullquotes” by definition. Pullquotes are stupidly redundant, in fact. Aside-quotes, as described here, are where it’s at!
+The only similarity with pullquotes, perhaps, is how you might style them to appear; floating left or right in relation to surrounding content. But there is no rule that asides styled this way _have_ to be “pullquotes” by definition. Pullquotes are stupidly redundant, in fact. Aside-quotes, as described here, are where it's at!
 
-The process is described using Tweets, but as long as whatever you’re quoting can be structured as a Textpattern link, the sky’s the limit — other social media posts, blog comments, platform bios, taglines, those reviewer quotes you find at the front of books, and so forth.
+The process is described using Tweets, but as long as whatever you're quoting can be structured as a Textpattern link, the sky's the limit — other social media posts, blog comments, platform bios, taglines, those reviewer quotes you find at the front of books, and so forth.
 
 ### Tweet links
 
-Tweets are essentially short quotations from people that can be brought into context of a story as asides without being part of the main text. And by adding links purely with Textpattern, you’re not poisoning your site with Twitter code injections and tracking BS.
+Tweets are essentially short quotations from people that can be brought into context of a story as asides without being part of the main text. And by adding links purely with Textpattern, you're not poisoning your site with Twitter code injections and tracking BS.
 
 Create the link categories:
 
@@ -129,7 +129,7 @@ In the Links panel, create your Tweets using this association to the Textpattern
         <tbody>
             <tr>
                 <th scope="row">Title</th>
-                <td>Date of Tweet (e.g. '23 August 2009’)</td>
+                <td>Date of Tweet (e.g. '23 August 2009')</td>
             </tr>
             <tr>
                 <th scope="row">Sort value</th>
@@ -141,7 +141,7 @@ In the Links panel, create your Tweets using this association to the Textpattern
             </tr>
             <tr>
                 <th scope="row">Category</th>
-                <td>Select 'Tweets’</td>
+                <td>Select 'Tweets'</td>
             </tr>
             <tr>
                 <th scope="row">Description</th>
@@ -153,7 +153,7 @@ In the Links panel, create your Tweets using this association to the Textpattern
 
 ## Usage
 
-Now you’re all set to add Tweets (in this case) as aside-quotes in your articles.
+Now you're all set to add Tweets (in this case) as aside-quotes in your articles.
 
 Open your article draft in the Write panel, and use the short-tag between two paragraphs, where desired, as follows:
 
@@ -177,11 +177,11 @@ The above hypothetical tag might output a Tweet as follows, depending on how you
 
 The `escape="tidy,textile,ltrim"` attribute used in the link description tag allows using Textile formatting in your link descriptions (notably the `tidy,textile` values). For example, to get the bold formatting on the word “SMASHED,” as depicted above, the description could be written as `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](/tags/learning/#tag-escaping) doc to learn about all `escape=“”` attribute uses.)
 
-The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
+The `p` element and it's two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
 
-By writing in a value for the `name=""` attribute, you can choose to use a person’s twitter name, like in this case: “Drunk Hulk”. Or their Tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want, which makes this attribute flexible for other quote source types besides Tweets.
+By writing in a value for the `name=""` attribute, you can choose to use a person's twitter name, like in this case: “Drunk Hulk”. Or their Tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want, which makes this attribute flexible for other quote source types besides Tweets.
 
-Because the `name=""` attribute is optional, no name will appear under the quoted Tweet if you leave it out of the short-tag. The date will still appear as a link to the actual Tweet location because that’s hard-coded in the shortcode (unless you modify it).
+Because the `name=""` attribute is optional, no name will appear under the quoted Tweet if you leave it out of the short-tag. The date will still appear as a link to the actual Tweet location because that's hard-coded in the shortcode (unless you modify it).
 
 The `class=""` attribute can take multiple values, as you would expect (e.g. `class="value1 value2 etc"`).
 
@@ -208,7 +208,7 @@ Where:
 
 The only advantage to that in this particular shortcode is a savings of **10 characters**. Other shortcodes may be different.
 
-Also, it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](/administration/preferences-panel#site-preferences). So if you have that preference disabled, don’t use this version of the shortcode.
+Also, it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](/administration/preferences-panel#site-preferences). So if you have that preference disabled, don't use this version of the shortcode.
 
 ## The shortcode using tag integration concept
 
@@ -223,9 +223,9 @@ For example, the following is yet another way to build the aside-quote form:
 </txp:linklist>
 ~~~
 
-(Note we’re not using core short-tags in this case, as described previously, but you could just as readily.)
+(Note we're not using core short-tags in this case, as described previously, but you could just as readily.)
 
-That block of markup is fewer characters overall. In this case we’ve used a different combination of Textpattern tags to target the data values we want from the links, notably the `linklist` container tag, and we’ve removed the wrapping `aside` tags (HTML tags).
+That block of markup is fewer characters overall. In this case we've used a different combination of Textpattern tags to target the data values we want from the links, notably the `linklist` container tag, and we've removed the wrapping `aside` tags (HTML tags).
 
 But we need those wrapping HTML tags, so we need to use the concept of markup integration on the associated output tag to define the HTML as a global attribute (i.e. `wraptag="aside"`):
 
@@ -233,16 +233,16 @@ But we need those wrapping HTML tags, so we need to use the concept of markup in
 <txp::linkquote id="" name="" wraptag="aside" class="" />
 ~~~
 
-One advantage of this shortcode/tag variation: if you forget to add a link ID, or add one that doesn’t exist by accident, no output will occur at all, not even an empty `aside` container, which is what you’d get with earlier examples. 
+One advantage of this shortcode/tag variation: if you forget to add a link ID, or add one that doesn't exist by accident, no output will occur at all, not even an empty `aside` container, which is what you'd get with earlier examples. 
 
-Of course, you should always verify your front-end result whenever adding output tags like this, and there would never be an issue. You’d see the problem and fix it.
+Of course, you should always verify your front-end result whenever adding output tags like this, and there would never be an issue. You'd see the problem and fix it.
 
-In summary, we’ve made a trade-off this this version of the shortcode. There’s less markup in the shortcode, but:
+In summary, we've made a trade-off this this version of the shortcode. There's less markup in the shortcode, but:
 
-* there’s more markup in your article due to the longer short-tag (maybe more of an eye-sore too)
+* there's more markup in your article due to the longer short-tag (maybe more of an eye-sore too)
 * the short-tag is maybe harder to remember, and
-* there’s a hit on PHP processing due to integrating the markup as a global HTML attribute.
+* there's a hit on PHP processing due to integrating the markup as a global HTML attribute.
 
-Whether that is easier to grasp than earlier examples is subjective to the individual. And if you’re working on a collaborative site, you have even more opinions to take into account.
+Whether that is easier to grasp than earlier examples is subjective to the individual. And if you're working on a collaborative site, you have even more opinions to take into account.
 
 Options are good.

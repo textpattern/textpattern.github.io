@@ -8,7 +8,7 @@ description: Since Textpattern 4.7.0, all Textpattern tags can be written and us
 
 # Core short-tags
 
-Beginning with Textpattern release 4.7.0, it’s possible to further reduce — on top of [integrated notation](/tags/tag-basics/integrated-tag-notation) — the amount of typing involved when writing Textpattern tags.
+Beginning with Textpattern release 4.7.0, it's possible to further reduce — on top of [integrated notation](/tags/tag-basics/integrated-tag-notation) — the amount of typing involved when writing Textpattern tags.
 
 **Contents**
 
@@ -17,11 +17,11 @@ Beginning with Textpattern release 4.7.0, it’s possible to further reduce — 
 
 ## Short-tag structure
 
-First let’s review some Textpattern tag basics, which includes how plugin tags are used too. Textpattern tag names can be single words (i.e. `name`), or compound names with underscores (i.e. `compound_name`). Tags can also be either [self-closing or container tags](/tags/tag-basics/self-closed-versus-container-tags).
+First let's review some Textpattern tag basics, which includes how plugin tags are used too. Textpattern tag names can be single words (i.e. `name`), or compound names with underscores (i.e. `compound_name`). Tags can also be either [self-closing or container tags](/tags/tag-basics/self-closed-versus-container-tags).
 
 Short-tag structure only concerns tags (including plugin tags) with compound names, whether self-closing or used as containers.
 
-**Here’s the general rule:** 
+**Here's the general rule:** 
 If the short-tag functionality is enabled in the [Preferences panel](/administration/preferences-panel#enable-short-tag-support), which it is by default, and the tag has a compound name, you can:
 
 1. Remove the `txp:` prefix.

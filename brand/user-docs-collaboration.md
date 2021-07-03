@@ -24,8 +24,8 @@ The Forum has a history of serving many roles for the community, some more relev
 The ideal relationship between the [Forum](https://forum.textpattern.com/) and [User Documentation](https://docs.textpattern.com/) is represented in the following scenario:
 
 1. Someone has a question or problem and looks for a help doc that will address their enquiry. If the doc exists, is sufficiently detailed, and clearly written, it may be all anyone needs to troubleshoot and move on without needing to seek additional help in the Forum. **Most ideal**.
-2. If a help doc is not found, either because it does not exist in User Documentation, or is too hard to find in the website’s structure, the person will likely post in the Forum about their problem. A perfectly normal and expected course of action.
-3. A friendly veteran member of the community briefly replies to the poster’s enquiry with a link to the appropriate page in user documentation, perhaps indicating the relevant topic subsection, too. Again, the expected course of action. (Avoid adding links in the forum to document subsections. Such deep links are easily broken when user docs are edited. Point to the doc’s main URL instead and say what section to look at.)
+2. If a help doc is not found, either because it does not exist in User Documentation, or is too hard to find in the website's structure, the person will likely post in the Forum about their problem. A perfectly normal and expected course of action.
+3. A friendly veteran member of the community briefly replies to the poster's enquiry with a link to the appropriate page in user documentation, perhaps indicating the relevant topic subsection, too. Again, the expected course of action. (Avoid adding links in the forum to document subsections. Such deep links are easily broken when user docs are edited. Point to the doc's main URL instead and say what section to look at.)
 4. If no such user doc exists, the knowledgeable community member must provide descriptive help details in the forum thread itself — a necessary response, and perhaps even enjoyed by some, but **least ideal** from a productivity standpoint.
 5. The topic gap in docs, realized from the previous step, is [listed for documentation development](#identifying-potential-topics) so similar questions are not repeatedly answered in the Forum in the future.
 
@@ -80,7 +80,7 @@ Writing good titles for documentation is not terribly hard, but does need attent
 2. `h1` title, for humans
 3. URL-only titles, mostly for humans (especially editors)
 
-The third is not really a title, but a file name based on the  document’s title to make the document’s URL unique.
+The third is not really a title, but a file name based on the  document's title to make the document's URL unique.
 
 The grammar rules and syntax tricks for titles and associated file-names are not exactly the same. Document titles must be grammatically correct, while file-name titles can be written however is needed, so long as they still suggest what document they concern.
 
@@ -94,13 +94,13 @@ Keep topic titles grammatically correct and as concise as possible while still b
 
 With regard to being concise, avoid needless terms that only benefit search engines. We are writing for humans, not bots.
 
-One obvious word to avoid in titles is 'Textpattern’ (or 'Textpattern CMS’). The brand name is never needed in human readable topic titles because the context of Textpattern is already clear by the website’s header logo and other cues. Nobody will be confused about whether or not a doc topic concerns Textpattern, thus using the brand name in the human-readable `h1` title is pointless and distracting.
+One obvious word to avoid in titles is 'Textpattern' (or 'Textpattern CMS'). The brand name is never needed in human readable topic titles because the context of Textpattern is already clear by the website's header logo and other cues. Nobody will be confused about whether or not a doc topic concerns Textpattern, thus using the brand name in the human-readable `h1` title is pointless and distracting.
 
-Other terms not to use in titles include useless genre flags like 'how to’, 'tutorial’, 'walkthrough’, 'doc’, and so forth. These terms do nothing to convey topic and scope; rather, the bloat and confuse titles.
+Other terms not to use in titles include useless genre flags like 'how to', 'tutorial', 'walkthrough', 'doc', and so forth. These terms do nothing to convey topic and scope; rather, the bloat and confuse titles.
 
 An exception to the above is if one of those terms is, in fact, a subject in the topic or scope, like the current document, where the subject *is* on user documentation.
 
-Fortunately, topic titles can be changed anytime to improve the clarity and usability of them, even if already published. We don’t break links by changing topic titles. When making title changes like this, however, attempt to find and edit link text in relation, wherever it exists. Likewise, **titles must be updated on their dedicated Issues**.
+Fortunately, topic titles can be changed anytime to improve the clarity and usability of them, even if already published. We don't break links by changing topic titles. When making title changes like this, however, attempt to find and edit link text in relation, wherever it exists. Likewise, **titles must be updated on their dedicated Issues**.
 
 ### URL-only titles
 
@@ -108,21 +108,21 @@ Unlike topic titles, URL-only titles (document file names based off of topic tit
 
 Use your best judgement for document file names, thus their URLs, but consider the following guides to help:
 
-* Cut words that are not directly focused on the topic or scope of material (e.g. never use 'textpattern’, 'tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on)
+* Cut words that are not directly focused on the topic or scope of material (e.g. never use 'textpattern', 'tutorial', etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on)
 * Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned
-* Use abbreviations if they are commonly used in the domain (e.g. the current doc uses 'docs’ instead of 'documentation’)
+* Use abbreviations if they are commonly used in the domain (e.g. the current doc uses 'docs' instead of 'documentation')
 * Front-load subject terms when feasible (i.e. put these terms at the start of the file name)
 * Use front-loading and shortening patterns strategically to group related files together alphabetically in shared directories
 
-You could look at the file names of many existing docs in the file tree and find poorly conceived examples; either too long, having poor syntactic structure, or both. This very document, for instance, could have been named 'docs-collaboration’, dropping *user*. But it’s never to late to do better with new documentation.
+You could look at the file names of many existing docs in the file tree and find poorly conceived examples; either too long, having poor syntactic structure, or both. This very document, for instance, could have been named 'docs-collaboration', dropping *user*. But it's never to late to do better with new documentation.
 
-While we generally don’t want to mess with existing file names already published and indexed (and likely linked to from other documentation pages, Forum threads, and elsewhere), sometimes it is necessary to improve information architecture, especially if file names are particularly long or not clearly indicative of their document’s topic. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document. 
+While we generally don't want to mess with existing file names already published and indexed (and likely linked to from other documentation pages, Forum threads, and elsewhere), sometimes it is necessary to improve information architecture, especially if file names are particularly long or not clearly indicative of their document's topic. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document. 
 
-Make URL redirect requests for documents by using their dedicated repository issues (or create one if necessary) address redirect requests to @petecooper (in GitHub), Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects at a relatively close point in time. 
+Make URL redirect requests for documents by using their dedicated repository issues (or create one if necessary) address redirect requests to @petecooper (in GitHub), Textpattern's systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects at a relatively close point in time. 
 
 ## Repository protocols
 
-Collaboration on documentation largely centres around using Issues in the website’s file-tree repository. The repository keeps the files under version control while dedicated documentation Issues provide a means for coordinating tasks among collaborators so they don’t step on each others’ toes. 
+Collaboration on documentation largely centres around using Issues in the website's file-tree repository. The repository keeps the files under version control while dedicated documentation Issues provide a means for coordinating tasks among collaborators so they don't step on each others' toes. 
 
 ### Issues
 
@@ -139,7 +139,7 @@ For purposes here, issues are created for one of two reasons only:
 
 When creating new Issues, one is faced with three [template options](https://github.com/textpattern/textpattern.github.io/issues/new/choose) to choose from. Two are relevant to the above, and one (regarding author prefixes) should be ignored.
 
-Before setting out to use an issue template, do a search in both [open issues](https://github.com/textpattern/textpattern.github.io/issues) and [closed issues](https://github.com/textpattern/textpattern.github.io/issues?q=is%3Aissue+is%3Aclosed) for either the page you are interested in, by its title (in the case of existing pages), or any open issue that might exist having similar subject terms (in the case of new pages). In the latter case, it’s not impossible, though unlikely under these collaboration procedures, that someone else started an issue on a similar topic but by a different title; you should see what might surface just in case and proceed to communicate with them about the best way forward.
+Before setting out to use an issue template, do a search in both [open issues](https://github.com/textpattern/textpattern.github.io/issues) and [closed issues](https://github.com/textpattern/textpattern.github.io/issues?q=is%3Aissue+is%3Aclosed) for either the page you are interested in, by its title (in the case of existing pages), or any open issue that might exist having similar subject terms (in the case of new pages). In the latter case, it's not impossible, though unlikely under these collaboration procedures, that someone else started an issue on a similar topic but by a different title; you should see what might surface just in case and proceed to communicate with them about the best way forward.
 
 #### Issue template generalities
 
@@ -149,13 +149,13 @@ Title fields of each template will be pre-filled with title prefixes. Leave the 
 
 The body fields of each template (effectively the head post of the issue once created) will indicate where and what type of information should be added to the issue.
 
-In both cases, the issue body should begin with the full URLs for the expected/existing backend and front-end document locations. Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add the URLs at this point so it’s done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. If you ever change document file names (for any issue), update these URLs in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files.
+In both cases, the issue body should begin with the full URLs for the expected/existing backend and front-end document locations. Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it's convenient to add the URLs at this point so it's done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. If you ever change document file names (for any issue), update these URLs in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files.
 
 One important difference to be aware of is that file names for tag pages — specifically for a Textpattern tag in the [Tags Reference](/tags/) — are constructed using underscores (like_this), not hyphens. All other pages in user documentation use hyphens (like-this). 
 
 After the URLs should be *brief* commentary on what the point of the issue is. The info requested depends on which issue template is used. See next sections for template specifics.
 
-Finally, you’ll be given sections for listing helpful resources and making checkbox to-dos, if  warranted, to guide the task of the open issue, especially for new documents needing developed.
+Finally, you'll be given sections for listing helpful resources and making checkbox to-dos, if  warranted, to guide the task of the open issue, especially for new documents needing developed.
 
 #### Issue template: New page
 
@@ -167,23 +167,23 @@ The explanation section should make clear what the topic scope  is, and, if poss
 
 The resources section should be used to list all resources, Forum and otherwise, that would help an author draft the document. Add more bulleted list items as needed.
 
-The final to-dos section is a checkbox list to be used later. It’s often useful after a draft is read to list to-dos that then need fixed.
+The final to-dos section is a checkbox list to be used later. It's often useful after a draft is read to list to-dos that then need fixed.
 
 #### Issue template: Existing page
 
 Only use this template for existing doc pages **that do not already have a dedicated Issue**. So be sure to search in open and closed issues for such an issue first.
 
-The title for this issue always has the prefix `page:` with the document’s title after it.
+The title for this issue always has the prefix `page:` with the document's title after it.
 
 The explanation section should make clear what the immediate task needs to be (presumably some kind of editing, but not solely), and provide any other info that will help guide the task. This explanation should be revised or appended to each time the Issue is opened for new tasks.
 
 The resources listing can be used, if warranted, or deleted to keep the head post concise. Ditto with the final to-dos section.
 
-*Nota*, this template is relevant until all existing docs have dedicated issues. Once achieved, if ever, this template will be removed from the repository and the ’New page’ template described previously will be the only one used. (This collaboration doc will need revised in relation.)
+*Nota*, this template is relevant until all existing docs have dedicated issues. Once achieved, if ever, this template will be removed from the repository and the 'New page' template described previously will be the only one used. (This collaboration doc will need revised in relation.)
 
 #### Other issues
 
-You may happen to notice other kinds of issues created in the documentation repository that don’t reflect the above situations. Issues not easily identified by titles having `page:` or `proposed:` prefixes will undoubtedly concern systems-related tasks, or other tasks dealing with platform architecture. If you ever need to start a new issue for such concerns, you can use a [blank issue](https://github.com/textpattern/textpattern.github.io/issues/new) and fill it in as you think best.  
+You may happen to notice other kinds of issues created in the documentation repository that don't reflect the above situations. Issues not easily identified by titles having `page:` or `proposed:` prefixes will undoubtedly concern systems-related tasks, or other tasks dealing with platform architecture. If you ever need to start a new issue for such concerns, you can use a [blank issue](https://github.com/textpattern/textpattern.github.io/issues/new) and fill it in as you think best.  
 
 ### Assignees and labels for docs issues
 
@@ -201,15 +201,15 @@ There is only one assignee at a time for documentation Issues, and they will rem
 
 There should be no assignee on an Issue if nobody can take immediate responsibility of the current task on it. This makes it clear that anyone can self-assign the issue if/when it becomes possible.
 
-You should *never* remove anyone from an issue except yourself. If someone else is assigned an issue, leave it alone and don’t work on that document. This ensures nobody will work on the same thing, which can lose work and cause conflicts in the repository.
+You should *never* remove anyone from an issue except yourself. If someone else is assigned an issue, leave it alone and don't work on that document. This ensures nobody will work on the same thing, which can lose work and cause conflicts in the repository.
 
 Only remove yourself from an issue when you have completed the task you were assigned, or you did not start the work you signed up for. As long as you are working on an Issue, you must remain assigned to it so other collaborations know not to interfere. When your immediate task is finished, then remove yourself and change the status of the issue accordingly.  
 
 #### Labels
 
-In the previous section there was a lot of mention of *status* and *tasks*. The terms merely reflect what [Labels](https://github.com/textpattern/textpattern.github.io/labels) may be applied to an issue. Labels are necessary to help communicate an issue’s status and what tasks the assignee is working on in relation.
+In the previous section there was a lot of mention of *status* and *tasks*. The terms merely reflect what [Labels](https://github.com/textpattern/textpattern.github.io/labels) may be applied to an issue. Labels are necessary to help communicate an issue's status and what tasks the assignee is working on in relation.
 
-Labels do not do all the communicating, though, it is just as important for assignees to keep the head post of an issue up-to-date with changes, too. This may include updating titles, URLs, task explanations, resource links, or whatever it takes to keep collaborators aware of an open issue’s status.
+Labels do not do all the communicating, though, it is just as important for assignees to keep the head post of an issue up-to-date with changes, too. This may include updating titles, URLs, task explanations, resource links, or whatever it takes to keep collaborators aware of an open issue's status.
 
 Ensuring labels on an issue are current is largely the responsibility of the last person working on the issue. As assignees come and go on issues, they are responsible for make sure to change the labels accordingly.
 
@@ -226,7 +226,7 @@ The Assignees and Labels will expectedly change on Issues as a document proceeds
 5. editing
 6. publishing (i.e. made live on docs website)
 
-This isn’t a well-oiled machine and nobody is especially diligent about the workflow, but we try to fall into line for the sake of courtesy and not stepping on toes.
+This isn't a well-oiled machine and nobody is especially diligent about the workflow, but we try to fall into line for the sake of courtesy and not stepping on toes.
 
 #### Proposing
 
@@ -250,7 +250,7 @@ The person who volunteers to draft a new doc (of revise an existing doc) will na
 
 Depending on the topic and scope of a document being drafted, it may need a different pair of eyes to do the technical review, namely a core developer, though anyone with the sufficient knowledge of the functionality in question. This may happen during the draft process as a kind of back and forth, while keeping running commentary in the associated issue, or it can happen after the author is done with the first draft.
 
-If the author requests technical assistance while drafting, the reviewer’s name is added along with the authors as Assignees, and that is enough since the doc is still being drafted and the **drafting** label suffices in that case.
+If the author requests technical assistance while drafting, the reviewer's name is added along with the authors as Assignees, and that is enough since the doc is still being drafted and the **drafting** label suffices in that case.
 
 However, if the author finishes the draft and then requests the technical review, the **drafting** label is removed and the **technical review needed** label is added. The author should also un-assign themselves and wait for a reviewer to self-assign the issue, or add the name of a reviewer if one is already worked out and willing to be assigned.
 
@@ -264,7 +264,7 @@ If the drafting author did not need a technical review for technical information
 
 In this case the same process applies but with different labels. When the author is done drafting, they remove the **drafting** label, add the **editing needed** label, and un-assign themselves while they wait. Or, if they know who the editor will be, they can assign that person.
 
-On the editor’s side, one may self-assign after seeing the **editing needed** status, but either way, an editor will change the label to **editing** to show they are busy doing that.
+On the editor's side, one may self-assign after seeing the **editing needed** status, but either way, an editor will change the label to **editing** to show they are busy doing that.
 
 #### Publishing
 
@@ -282,7 +282,7 @@ On the other hand, should an existing doc ever need to go through extensive deve
 
 #### Editorial tips and reminders
 
-* Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue.
+* Don't work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue.
 * Consider the big picture [linking strategy](/brand/user-docs-guide#linking-strategy) for documentation as a whole.
 * Double check your link changes before pushing changes live; both links across document pages and in-page anchor links. All links within the documentation website should be relative URLs:
    * across-pages: `[other page](/directory/file-name)`
@@ -339,7 +339,7 @@ And the supporting details provided were:
 
 #### Explanation
 
-A doc for learning to build a custom blog by unpacking and understanding the default Textpattern theme, addressing other 'how to’ type questions people often have, and provide opportunities to segue into using themes and link to that documentation.
+A doc for learning to build a custom blog by unpacking and understanding the default Textpattern theme, addressing other 'how to' type questions people often have, and provide opportunities to segue into using themes and link to that documentation.
 
 #### Resources list
 

@@ -17,7 +17,7 @@ Textpattern and HTML tags can be mixed together to achieve various objectives. W
 
 ## Mixed markup notation
 
-Mixed markup notation means using HTML tags and Texpattern tags together but distinctly. You can readily see each tag type, thus the role it’s playing in the markup. Add plugin tags to the mix and markup can get lengthy and complex, even if you can see the different tag types.
+Mixed markup notation means using HTML tags and Texpattern tags together but distinctly. You can readily see each tag type, thus the role it's playing in the markup. Add plugin tags to the mix and markup can get lengthy and complex, even if you can see the different tag types.
 
 Despite the lengthier result, character-wise, writing markup this way can be easier for new users of Textpattern, and especially those already familiar with HTML. In fact, this is often how people write their markup without giving it much thought.
 
@@ -30,7 +30,7 @@ Consider the following block of standard HTML markup, which defines displaying a
 </figure>
 ~~~  
 
-That’s great, but the reason you're using Textpattern is to automate content output and make things more dynamic. So let’s add in some relevant Textpattern tags in a mixed way:
+That's great, but the reason you're using Textpattern is to automate content output and make things more dynamic. So let's add in some relevant Textpattern tags in a mixed way:
 
 ~~~ html
 <figure>
@@ -43,7 +43,7 @@ That’s great, but the reason you're using Textpattern is to automate content o
 </figure>
 ~~~
 
-Let’s walk through the markup for clarity. Immediately within the HTML `<figure>` tags are containing Textpattern [images](/tags/images) tags:
+Let's walk through the markup for clarity. Immediately within the HTML `<figure>` tags are containing Textpattern [images](/tags/images) tags:
 
 ~~~ html
 …
@@ -53,7 +53,7 @@ Let’s walk through the markup for clarity. Immediately within the HTML `<figur
 …
 ~~~
 
-We need to add this extra tag container to make use of the corresponding [image_info](/tags/image_info) tag functionality. That’s the only reason. A lot of Textpattern tags work in relation to one another like that, where a containing parent tag allows child tags to do their thing.
+We need to add this extra tag container to make use of the corresponding [image_info](/tags/image_info) tag functionality. That's the only reason. A lot of Textpattern tags work in relation to one another like that, where a containing parent tag allows child tags to do their thing.
 
 We first see the `<txp:image_info />` tag used in this line multiple times:
 
@@ -79,11 +79,11 @@ And again in the line after:
 …
 ~~~
 
-In each instance of `<txp:image_info />`, the tag is pulling a specific data value for the image in context. The first line pulls the image’s ID number and file extension. Note there’s no `.` added between the ID and extension values because the `ext` value for the `type=""` attribute already includes the required period.
+In each instance of `<txp:image_info />`, the tag is pulling a specific data value for the image in context. The first line pulls the image's ID number and file extension. Note there's no `.` added between the ID and extension values because the `ext` value for the `type=""` attribute already includes the required period.
 
-In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the Image edit panel area for the image.
+In the second line, `<txp:image_info />` is pulling the image's caption value, which you should _always_ include in the Image edit panel area for the image.
 
-While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.
+While the mixed markup is more functionally dynamic, it's also a bigger block of markup overall because there's no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.
 
 ## Integrated markup notation
 
@@ -124,7 +124,7 @@ Next, which *is* an example of integrated notation, we've reduced the image file
 …
 ~~~
 
-Finally, we eliminate the explicit use of the HTML `<figcaption>` tags by using Textpattern’s presentational `wraptag` attribute in `image_info`. The attribute is one of several common presentational attributes of many Textpattern tags. It allows you to declare any HTML element you want, Textpattern style:
+Finally, we eliminate the explicit use of the HTML `<figcaption>` tags by using Textpattern's presentational `wraptag` attribute in `image_info`. The attribute is one of several common presentational attributes of many Textpattern tags. It allows you to declare any HTML element you want, Textpattern style:
 
 ~~~ html
 …
@@ -135,7 +135,7 @@ Finally, we eliminate the explicit use of the HTML `<figcaption>` tags by using 
 …
 ~~~
 
-The resulting character count of this block of markup, which is functionally identical to the long-form version previously, is 149 characters, and that's even with the additional use of the wrapping `<txp:images>` tag. All-in-all shorter than the mixed markup notation, but not by a lot. It’s definitely longer than the full HTML version, but that's the price for having dynamic functionality.
+The resulting character count of this block of markup, which is functionally identical to the long-form version previously, is 149 characters, and that's even with the additional use of the wrapping `<txp:images>` tag. All-in-all shorter than the mixed markup notation, but not by a lot. It's definitely longer than the full HTML version, but that's the price for having dynamic functionality.
 
 ## Further shortening with short-tags
 
@@ -143,11 +143,11 @@ Beginning with Textpattern 4.7.0, you can use [core short-tag structure](/tags/t
 
 ## Option, options… What do I do?
 
-This doc might make it seem you must learn more advanced ways of working with Textpattern tags. That’s not true. There is no right or wrong way, only the way that makes it easier for you to understand. There’s nothing wrong with writing mixed markup if that’s what makes sense.
+This doc might make it seem you must learn more advanced ways of working with Textpattern tags. That's not true. There is no right or wrong way, only the way that makes it easier for you to understand. There's nothing wrong with writing mixed markup if that's what makes sense.
 
 The natural tendency for people is to start with a mixed markup approach, then tighten up the their markup over time by leaning more on Textpattern tags. The result is often less markup overall. This can help offset the additional markup from plugin tags, when such functionality is used.
 
-But that’s not a hard-fast given. Sometimes more characters are needed to get really sophisticated things done — real Textpattern wizardry. So take the integrated advantages with a grain of salt. Two grains if you use [short-tags](/tags/tag-basics/core-short-tags) too.
+But that's not a hard-fast given. Sometimes more characters are needed to get really sophisticated things done — real Textpattern wizardry. So take the integrated advantages with a grain of salt. Two grains if you use [short-tags](/tags/tag-basics/core-short-tags) too.
 
 More important than character count is your understanding of the resulting markup — or that of your client's, if you're building a website and handing it over to a different administrator — regardless of how markup is written. As long as the markup separates content from static constructs and you (or the client) understands it, you're doing well.
 

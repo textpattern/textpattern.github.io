@@ -3,18 +3,18 @@ layout: document
 category: Construction and Presentation
 published: true
 title: Common panel functionality
-description: Descriptions of secondary functionality common to many panels. Once you learn it, you don’t forget it.
+description: Descriptions of secondary functionality common to many panels. Once you learn it, you don't forget it.
 ---
 
 # Common panel functionality
 
-Functionality described on this page is common across the following back-end panels, where tables are used to present and manage a panel’s given item types:
+Functionality described on this page is common across the following back-end panels, where tables are used to present and manage a panel's given item types:
 
 * Content section: [Articles](/administration/articles-panel), [Images](/administration/images-panel), [Files](/administration/files-panel), [Links](/administration/links-panel), [Comments](/administration/comments-panel)
 * Presentation section: [Themes](/administration/themes-panel), [Sections](/administration/sections-panel)
 * Admin section: [Users](/administration/users-panel), [Plugins](/administration/plugins-panel)
 
- This common functionality is secondary to the principle features for creating and using a panel’s given type elements. Once you learn these secondary features — described here in the order they are found on panels, top to bottom — you don’t forget them, so explaining them repeatedly across panel documentation is pointless.
+ This common functionality is secondary to the principle features for creating and using a panel's given type elements. Once you learn these secondary features — described here in the order they are found on panels, top to bottom — you don't forget them, so explaining them repeatedly across panel documentation is pointless.
 
 **Contents**
 
@@ -23,7 +23,7 @@ Functionality described on this page is common across the following back-end pan
 
 ## Panel search
 
-The search function appears at the top-right of a relevant panel’s default view. It only appears on the Plugins panel after you’ve added the first plugin, because there is no default plugin.
+The search function appears at the top-right of a relevant panel's default view. It only appears on the Plugins panel after you've added the first plugin, because there is no default plugin.
 
 ### Scope of search
 
@@ -41,7 +41,7 @@ After entering search criteria, click the Search button. The main table display 
 
 ## List handling
 
-The relevant panels describe this functionality in relation to main item lists, but the lists are actually structured with tables, so understand that 'lists’ and 'tables’ means the same thing here.
+The relevant panels describe this functionality in relation to main item lists, but the lists are actually structured with tables, so understand that 'lists' and 'tables' means the same thing here.
 
 Tables represent the main content areas of default panel displays. They are used to _list_ panel items, whatever item type is relevant in context (i.e. articles, images, themes, users, and so on).
 
@@ -69,7 +69,7 @@ The first checkbox in the column header will toggle all check boxes on or off, w
 
 You can also quickly select ranges of items by checking the box of the first item in a range, then press and hold the Shift key, then check the box of the last item in the range. All items between will then check themselves. You can add checked ranges to your selection by repeating these steps.
 
-By default, when no boxes are checked, the associated drop-down menu under the table reads: 'With 0 selected…’. When one or more boxes are check, the menu reads: 'With selected…’.
+By default, when no boxes are checked, the associated drop-down menu under the table reads: 'With 0 selected…'. When one or more boxes are check, the menu reads: 'With selected…'.
 
 The options you see in the menu reflect possible actions you can take, one at a time. The options are dependent on a given panel; or rather, the type of items a panel is concerned with.
 
@@ -81,9 +81,9 @@ The overall idea and process, then, is simple:
 2. Select the action from the primary drop-down menu.
 3. If a second menu appears, select the appropriate option.
 4. Click the Go button.
-5. Click the Yes (or Cancel) button when the popup confirmation asks you, 'Are you sure?’.
+5. Click the Yes (or Cancel) button when the popup confirmation asks you, 'Are you sure?'.
 
-At that point, if you clicked 'Yes’, whatever action you initiated will happen and a system feedback message will appear at bottom of screen informing you of the result.
+At that point, if you clicked 'Yes', whatever action you initiated will happen and a system feedback message will appear at bottom of screen informing you of the result.
 
 ## Item count and pagination
 
