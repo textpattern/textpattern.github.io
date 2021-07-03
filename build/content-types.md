@@ -123,7 +123,7 @@ In: **Categories** area.
 
 Up to two categories may be assigned to an article to indicate what its content represents. This information can be used to filter articles grouped by category that may be from many sections.
 
-Select a category from the dropdown lists for either Category 1 or 2. The nearby 'Edit' link will jump to the [Categories panel](#Categories) so the category tree may be manipulated.
+Select a category from the drop-down lists for either Category 1 or 2. The nearby 'Edit' link will jump to the [Categories panel](#Categories) so the category tree may be manipulated.
 
 #### Article images
 
@@ -150,7 +150,7 @@ In: **Sort and display** area.
 
 When articles are displayed on the front-end website, they are processed through a page template linked to that section, which usually contains an [article tag](/tags/article). That tag passes its contents to a form for rendering article components as a list or an individual article. The form the tag uses is set by the site designer, but if you wish to override this and use a different form, you can do so using the Override form selector.
 
-As long as the preference **Allow form override?** is on, and at least one of the entries in the **Override form types** select list is chosen, authors will see a dropdown list of available forms on the Write panel beneath **Override form**. Whichever one you select will be used to process the article.
+As long as the preference **Allow form override?** is on, and at least one of the entries in the **Override form types** select list is chosen, authors will see a drop-down list of available forms on the Write panel beneath **Override form**. Whichever one you select will be used to process the article.
 
 A simple example of how to use this: imagine in your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body, etc. On every first day of the month however, you publish a photo of your garden. For this, you need the [article_image](/tags/article_image) tag in your form. So you create a form called `garden_image` which, among other tags, contains `<txp:article_image />`. Whenever you want to publish a photo along with your text, you choose 'Override form' and then `garden_image` from the drop-down list. This way, just this article will use the form `garden_image` for being displayed whereas all other articles will continue to use the default form.
 
@@ -182,7 +182,7 @@ If an article has yet to be published (i.e. it is Draft, Pending or Hidden) clic
 There are two ways to duplicate an article:
 
 1. *Individually*. Open an article you wish to duplicate in the Write panel, and click the Duplicate link near the Save button. This will copy the article as it is, with any changes you have made and append the new article's ID so it is easily distinguishable from the original. It will also set it to Draft status, ready for immediate editing.
-2. *En masse*. From the Articles panel, select one or more article checkboxes. Using the **With selected** dropdown, select Duplicate. The selected articles will all be cloned, have their new IDs appended to the titles so they are easily distinguishable from the originals, and have their status set to Draft. Click to edit as normal.
+2. *En masse*. From the Articles panel, select one or more article checkboxes. Using the **With selected** drop-down, select Duplicate. The selected articles will all be cloned, have their new IDs appended to the titles so they are easily distinguishable from the originals, and have their status set to Draft. Click to edit as normal.
 
 You should remove the article ID from the title field prior to publishing the cloned articles.
 
@@ -265,4 +265,3 @@ Also, there are certain names **reserved** by Textpattern, which should *not* be
 A symptom of a name clash is when you go to check or display the contents of a custom field in an article and receive unexpected (or no) output. In this case, make sure your custom field names are not any of the reserved names listed above.
 
 To remove a custom field, simply clear its name and save the changes.
-
