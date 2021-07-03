@@ -30,7 +30,7 @@ For more general purpose access to URLs and their components, please see the [pa
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `type="admin"` <span class="footnote warning">v4.7.0+</span>
-: Specify this if you wish to return the URL to the admin-side instead of the public site.
+: Specify this if you wish to return the URL to the administration-side instead of the public site.
 : **Default:** unset.
 
 ## Examples
@@ -66,7 +66,7 @@ In the `<head>` section of your HTML pages you might have a variety of links to 
 <a href="<txp:site_url />download.zip">Download</a>
 ~~~
 
-### Example 4: Link to the admin side
+### Example 4: Link to the administration side
 
 ~~~ html
 <a href="<txp:site_url type="admin" />">Login to Textpattern here</a>

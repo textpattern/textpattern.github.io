@@ -232,7 +232,7 @@ Column | Type | Description
 id      |INT         |Unique auto-incremented ID of this language string
 lang    |VARCHAR(16) |Language code (for example: fr for French, en-gb for British English, and so on)
 name    |VARCHAR(64) |Unique name that identifies the language string. This acts as a key that ties strings together across languages
-event   |VARCHAR(64) |The part of Textpattern where this piece of text is used. This not only helps to keep the language strings organized for the translators, it also means only the required strings are loaded where they are needed. On the front-end only the language strings with event `public` and `common` are loaded. On the back-end, the events `admin-side`, `common`, plus the panel-specific event are loaded on any given panel
+event   |VARCHAR(64) |The part of Textpattern where this piece of text is used. This not only helps to keep the language strings organized for the translators, it also means only the required strings are loaded where they are needed. On the front-end only the language strings with event `public` and `common` are loaded. On the back-end, the events `administration-side`, `common`, plus the panel-specific event are loaded on any given panel
 owner   |VARCHAR(64) |Mandatory for non-core strings to group language strings for ease of management (e.g. deletion when a plugin is uninstalled). Core strings have no owner set. Every other string is given the designated owner, or `site` if omitted
 data    |TEXT        |Translation of the language string
 lastmod |TIMESTAMP   |Modification data and time of the language string
@@ -437,7 +437,7 @@ name        |VARCHAR(64)  |Login name
 pass        |VARCHAR(128) |Password
 RealName    |VARCHAR(255) |Real name
 email       |VARCHAR(254) |Email address (used for sending passwords and comment notifications)
-privs       |TINYINT      |Privilege level (0 = none, 1 = publisher, 2 = managing editor, 3 = copy editor, 4 = staff writer, 5 = freelancer, 6 = designer). Indicates what the user is allowed to do, once logged in on the admin side
+privs       |TINYINT      |Privilege level (0 = none, 1 = publisher, 2 = managing editor, 3 = copy editor, 4 = staff writer, 5 = freelancer, 6 = designer). Indicates what the user is allowed to do, once logged in on the administration side
 last_access |DATETIME     |Date and time when the user last logged in by entering a valid username and password combination
 nonce       |VARCHAR(64)  |Unique identifier used for cookie authentication (do NOT touch this in plugins!)
 

@@ -18,7 +18,7 @@ On this page:
   * [Administrator controls](#administrator-controls)
 * [User data form](#user-data-form)
 * [Extending user account functionality](#extending-user-account-functionality)
-  * [Admin-side management and data extension](#admin-side-management-and-data-extension)
+  * [Administration-side management and data extension](#administration-side-management-and-data-extension)
   * [Autonomous registration, log in, and data access/submission](#autonomous-registration-log-in-and-data-accesssubmission)
 
 ## User accounts table
@@ -61,19 +61,19 @@ It's common for site owners of multi-user sites to extend Textpattern's core fun
 
 There are two convenient contexts for talking about user accounts extension:
 
-1. Admin-side management and data extension
+1. Administration-side management and data extension
 2. Autonomous (self) registration, log in, and data access/submission
 
-### Admin-side management and data extension
+### Administration-side management and data extension
 
-The most popular approach for admin-side extension of user accounts, indeed what should nearly be core functionality, is to install and use two plugins that work together:
+The most popular approach for administration-side extension of user accounts, indeed what should nearly be core functionality, is to install and use two plugins that work together:
 
 * [smd_user_manager](https://forum.textpattern.com/viewtopic.php?id=36558) - This plugin provides a much richer set of features for managing user accounts, including modifying the core user roles and privileges.
 * [smd_bio](https://forum.textpattern.com/viewtopic.php?id=31496) - This plugin extends the user account data itself, so you can create user bios or profiles having any data structure you want and display that data on the front-side of a website.[^5]
 
 ### Autonomous registration, log in, and data access/submission
 
-There are situations (membership communities, employee intranets, magazine article contributions, etc.) where people may not need physical access to the admin-side, but still need user accounts to access specific information, contribute content, or edit their own account details. Various plugins can help with the initial setup of this front-side access, which effectively abstracts the admin-side UI panels away from such users. Depending on what you need or want to do, there are various plugins to try:
+There are situations (membership communities, employee intranets, magazine article contributions, etc.) where people may not need physical access to the administration-side, but still need user accounts to access specific information, contribute content, or edit their own account details. Various plugins can help with the initial setup of this front-side access, which effectively abstracts the administration-side UI panels away from such users. Depending on what you need or want to do, there are various plugins to try:
 
 * [cbe_frontauth](https://forum.textpattern.com/viewtopic.php?id=36552) - A plugin that enables front-side log in abilities for *existing* account holders. This plugin is often used in combination with [cbe_members](https://forum.textpattern.com/viewtopic.php?id=37760).
 * [mem_self_register](https://forum.textpattern.com/viewtopic.php?id=8520) - A plugin similar to cbe_frontauth, but also enables the ability to register an account too. This plugin is often used in combination with [mem_form](https://forum.textpattern.com/viewtopic.php?id=25247).

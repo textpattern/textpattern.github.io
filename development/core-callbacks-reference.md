@@ -8,7 +8,7 @@ description: This comprehensive reference provides detailed information about al
 
 # Core callbacks reference
 
-This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](/development/admin-side-events-and-steps).
+This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](/development/administration-side-events-and-steps).
 
 **Contents**
 
@@ -98,11 +98,11 @@ As long as *Logging* is switched on from the [Preferences panel](/administration
 * **When it occurs:** Just before a log message is recorded in the 'txp_log' table.
 * **What it allows:** Alteration of the log message.
 
-## Admin-side callbacks
+## Administration-side callbacks
 
-Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you select any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you select any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
+Administration-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you select any administration-side panel link, you'll see the URL contains `?event=panelname`, and if you select any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
 
-If you wish to utilise such core hooks, consult the [admin-side events and steps](/development/admin-side-events-and-steps) document, which lists them all.
+If you wish to utilise such core hooks, consult the [administration-side events and steps](/development/administration-side-events-and-steps) document, which lists them all.
 
 The second type of callback relate to actions that occur in response to various page-level signals. These could be when certain parts of the administration interface are rendered or when actions (such as deletion) complete, and are listed below.
 
@@ -113,7 +113,7 @@ The final type of callback is `pluggable_ui()`. These deal with specific chunks 
 These callbacks relate to the `<head>` and `<footer>` sections, and navigation area of each admin panel. Raising callbacks on these `event > step` combinations will call your plugin on _every_ panel. Check the global `$event` if you only wish to target a specific panel.
 
 `admin_side > head_end`
-* **When it occurs:** Just before the closing `</head>` tag on every admin-side panel.
+* **When it occurs:** Just before the closing `</head>` tag on every administration-side panel.
 * **What it allows:** Injecting JavaScript or style rules into the page's header.
 
 `admin_side > pagetop`
@@ -244,7 +244,7 @@ These callbacks are raised when input elements or constructs are rendered. They 
 
 #### Themes panel
 
-See [Admin-side theme callbacks](#admin-side-theme-callbacks).
+See [Administration-side theme callbacks](#administration-side-theme-callbacks).
 
 #### Sections panel
 
@@ -400,7 +400,7 @@ See also `authors_deleted`.
 * **What it allows:** To fetch the Textpack from somewhere other than the database column.
 * **Additional parameter:** The name of the plugin.
 
-### Admin-side criteria callbacks
+### Administration-side criteria callbacks
 
 These callbacks allow you to alter the criteria used in the various panels. You can append SQL to the criteria to apply additional
 filtering.
@@ -427,7 +427,7 @@ Themes | `skin_list`
 Users | `author_list`
 Visitor logs | `log_list`
 
-### Admin-side validation callbacks
+### Administration-side validation callbacks
 
 These callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
 
@@ -447,7 +447,7 @@ Files    | `file_ui`    | `validate_save`
 Images   | `image_ui`   | `validate_save`
 Links    | `link_ui`    | `validate_save`
 
-### Admin-side theme callbacks
+### Administration-side theme callbacks
 
 When performing theme operations such as import and export, you can intercept or alter the content. These allow you to do additional processing or file system operations, such as importing prefs and additional content when a theme is updated or installed.
 

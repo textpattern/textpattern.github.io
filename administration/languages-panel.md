@@ -22,11 +22,11 @@ On this page:
 
 ## Site language
 
-The primary language that the website will be targeted at. You can choose from any of the installed language packs. This is used on the public site and as the default admin-side language for users (unless changed in the 'User language' option - see below).
+The primary language that the website will be targeted at. You can choose from any of the installed language packs. This is used on the public site and as the default administration-side language for users (unless changed in the 'User language' option - see below).
 
 ## User language
 
-From Textpattern version 4.7 onwards, each user within the admin-side can be choose their specific language for the admin panels. You can choose from any of the installed language packs. This does not affect the 'Site language'.
+From Textpattern version 4.7 onwards, each user within the administration-side can be choose their specific language for the admin panels. You can choose from any of the installed language packs. This does not affect the 'Site language'.
 
 ## List of available languages
 

@@ -36,7 +36,7 @@ h4(#utf-8_support_in_textpattern). UTF-8 support in Textpattern
 
 Textpattern supports UTF-8 as best as is possible under the circumstances (also see the explanation under the _The Quick Guide for the End-User_ section above). What this currently means is when you install Textpattern it will (if you are using MySQL4.1 and above) create the tables in the database as UTF-8 (with the default UTF-8 collation of utf8_general_ci). Textpattern uses MySQL's fulltext indexing to provide its search-functionality, this means if you are using characters outside of the ASCII range your search will likely only function properly with MySQL4.1 and above (but Textpattern will still work with MySQL versions 4.0.x and 3.x in general).
 
-Currently Textpattern tries to be as conservative as possible in the use of PHP's string-functions. So articles are only processed by Textile which only replaces distinct syntax that it recognizes and otherwise leaves the text alone. The i18n-strings that Textpattern uses for the admin-side (and some parts of the public-side) are also in UTF-8 and stay mostly untouched.
+Currently Textpattern tries to be as conservative as possible in the use of PHP's string-functions. So articles are only processed by Textile which only replaces distinct syntax that it recognizes and otherwise leaves the text alone. The i18n-strings that Textpattern uses for the administration-side (and some parts of the public-side) are also in UTF-8 and stay mostly untouched.
 
 *Note:* Textpattern does not rely on the mb_strings extension for PHP. Future versions may well take advantage of it where available, but it won't be a requirement.
 

@@ -165,6 +165,6 @@ The [Extensions](/administration/extensions-region) region is one you may see in
 
 ## Changing default login panel
 
-The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the [Write](/administration/write-panel) panel from that point on, which is the default panel under the Content region.
+The default administration-side landing location changes once you initially set your language preferences. You'll find yourself landing on the [Write](/administration/write-panel) panel from that point on, which is the default panel under the Content region.
 
 You can change the default landing panel to whichever one you want using the **Default panel** preference under the Admin area of the [Preferences](/administration/preferences-panel) panel.

@@ -102,7 +102,7 @@ Locale
 : The language and character set you have configured.
 
 Site / Admin language
-: Language designations for the front-side and admin-side areas.
+: Language designations for the front-side and administration-side areas.
 
 Web server
 : Your web server type (e.g. Apache, Nginx).

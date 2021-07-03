@@ -225,7 +225,7 @@ To create the administrator account and generate the database tables, add the fo
 
 #### Site configuration
 
-Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive. You can change the admin-side theme choice at any time in [Preferences](/administration/preferences-panel) after logging in.
+Under this area, you're asked to select the administration-side theme you want to use. The default theme is Hive. You can change the administration-side theme choice at any time in [Preferences](/administration/preferences-panel) after logging in.
 
 When ready select the **Next** button.
 
@@ -240,4 +240,4 @@ The screen will also suggest deleting the `/setup` directory for security reason
 1. Use your S/FTP client to connect to your web server. Go to the `/textpattern/setup` directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
 2. Return to your browser screen and select the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like.
 3. Proceed to the [Diagnostics panel](/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
-4. Go to the public side of your website (the homepage), easy to do by selecting its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
+4. Go to the public side of your website (the homepage), easy to do by selecting its name in the navigation bar of any administration-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.

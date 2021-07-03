@@ -220,7 +220,7 @@ Server OS
 Active plugins
 : A comma-separated list of all plugins (with version numbers) that are installed *and* turned on.
 
-Admin-side theme
+Administration-side theme
 : The name and version number of the active administration side theme. The default is 'Hive'.
 
 The installation and server data is followed by the contents of your .htaccess file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/main/.htaccess) below:

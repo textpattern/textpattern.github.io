@@ -8,7 +8,7 @@ description: The pluggable_ui function's main purpose is to provide additional e
 
 # The pluggable_ui function
 
-The main purpose of the `pluggable_ui` function is to provide additional event/step hooks to modify or extend the administration side user interface. Whereas [core callbacks](/development/core-callbacks-reference) and [admin-side events and steps](/development/admin-side-events-and-steps) are more general hooks that allow you to intercept the entire form submission process or to rewrite an entire page using search/replace, `pluggable_ui()` is far more granular. Each callback point allows the developer or theme designer to tweak a single or block-based visual element of the user interface.
+The main purpose of the `pluggable_ui` function is to provide additional event/step hooks to modify or extend the administration side user interface. Whereas [core callbacks](/development/core-callbacks-reference) and [administration-side events and steps](/development/administration-side-events-and-steps) are more general hooks that allow you to intercept the entire form submission process or to rewrite an entire page using search/replace, `pluggable_ui()` is far more granular. Each callback point allows the developer or theme designer to tweak a single or block-based visual element of the user interface.
 
 **Contents**
 
@@ -17,7 +17,7 @@ The main purpose of the `pluggable_ui` function is to provide additional event/s
 
 ## Caution
 
-Though it's possible to completely redesign the HTML markup within an admin-side panel, you are advised not to do it with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to `display:none` via CSS.
+Though it's possible to completely redesign the HTML markup within an administration-side panel, you are advised not to do it with a plugin. Removing and changing administration-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to `display:none` via CSS.
 
 ## Function definition
 
@@ -34,7 +34,7 @@ Argument | Parameters | What it does | Usage
 ## Examples
 ### Example 1: Raising a pluggable_ui callback in your plugin
 
-In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
+In this example we have a basic administration-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
 
 ~~~ php
 add_privs('abc_hello', '1,2');
@@ -46,7 +46,7 @@ function abc_hello_world($evt, $stp) {
     echo '<p>Hello, World!</p>';
 ~~~
 
-So far `pluggable_ui()` is not used at all in the plugin. Instead, `register_callback()` has been used to add the plugin's preferences under the [Extensions administration region](/administration/extensions-region), like we could use it to do most everything else to admin-side panels.
+So far `pluggable_ui()` is not used at all in the plugin. Instead, `register_callback()` has been used to add the plugin's preferences under the [Extensions administration region](/administration/extensions-region), like we could use it to do most everything else to administration-side panels.
 
 But if you wished to allow other plugins to alter the output of abc_hello, you could replace `echo '<p>Hello, World!</p>';` part with:
 
@@ -86,7 +86,7 @@ We've used `register_callback()` to define our callback function, and in this ca
 
 ## Events and steps reference
 
-The admin side has many places where plugins and themes can inject or replace content on a block-by-block basis. These are all listed here as _event > step_ and are grouped by panel or functional area for convenience.
+The administration side has many places where plugins and themes can inject or replace content on a block-by-block basis. These are all listed here as _event > step_ and are grouped by panel or functional area for convenience.
 
 In this section:
 
@@ -110,8 +110,8 @@ In this section:
 * **What it allows:** Alteration of the main panel navigation area. Theme authors do this by writing a `header()` function in their theme's PHP file.
 
 `admin_side > html_title`
-* **When it occurs:** Every admin-side panel.
-* **What it allows:** Altering the HTML `<title>` tag contents for an admin-side page.
+* **When it occurs:** Every administration-side panel.
+* **What it allows:** Altering the HTML `<title>` tag contents for an administration-side page.
 * **Argument \#3:** The default title markup.
 * **Argument \#4:** The raw title passed in as arguments to the function: `pagetitle`.
 

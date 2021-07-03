@@ -24,7 +24,7 @@ contains the following:
 
 -   *zem_tpl.php* - Contains the code to compile plugins into the format required by the Textpattern plugin installer.
 -   *zem_plugin.php* - Is the template itself. Make a copy of this file and edit it to write your plugin.
--   *zem_example.php* - Is an example plugin that demonstrates both public-side tags and admin-side user interface features.
+-   *zem_example.php* - Is an example plugin that demonstrates both public-side tags and administration-side user interface features.
 
 ## Typical template use
 

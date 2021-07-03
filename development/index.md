@@ -72,7 +72,7 @@ Plugins can be categorized in three functional ways:
 
 The most practical (and most popular) plugins fall into more than one category, because a plugin is really nothing more than a container for code. If it provides functionality in multiple ways, it's likely providing more benefit to the user.
 
-Plugins can also be public-side or admin-side, or be one of several types that correspond to all of the above (see [How plugins are loaded](#how-plugins-are-loaded)).
+Plugins can also be public-side or administration-side, or be one of several types that correspond to all of the above (see [How plugins are loaded](#how-plugins-are-loaded)).
 
 ### Front-end plugins
 
@@ -82,11 +82,11 @@ Public-side (aka 'client-side' or 'front-side') plugins are those that enable co
 
 ### Back-end plugins
 
-Admin-side plugins provide site administrators and designers the ability to alter the [administration](/administration/) UI and/or functionality in some way.
+Administration-side plugins provide site administrators and designers the ability to alter the [administration](/administration/) UI and/or functionality in some way.
 
-Admin-side plugins often make use of the [Extensions administration region](/administration/extensions-region). In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the **Extensions** region.
+Administration-side plugins often make use of the [Extensions administration region](/administration/extensions-region). In other words, if an administration-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the **Extensions** region.
 
-* [Admin-side plugin tutorial](/development/admin-side-plugin-tutorial) - A basic tutorial to get acquainted with the tricker kinds of plugins to build.
+* [Administration-side plugin tutorial](/development/administration-side-plugin-tutorial) - A basic tutorial to get acquainted with the tricker kinds of plugins to build.
 
 ## Register your plugin developer prefix
 
@@ -94,7 +94,7 @@ All hopeful plugin developers must [register an 'author' prefix](/brand/author-p
 
 ## How plugins are loaded
 
-Plugins are loaded very early during script execution. It happens in `textpattern/publish.php` (public-side) and in `textpattern/index.php` (admin-side). Look out for `load_plugins` to see where it is happening.
+Plugins are loaded very early during script execution. It happens in `textpattern/publish.php` (public-side) and in `textpattern/index.php` (administration-side). Look out for `load_plugins` to see where it is happening.
 
 Type value | Type name | What it means
 ---|---|---
@@ -113,11 +113,11 @@ Understanding how plugins are loaded, also shows how you can write â€œon demandâ
 
 A callback is essentially an instruction (written as a function) that your plugin follows to execute some *events* (and *steps*) - either `$event` by itself or combined with a `$step`. You hook into these known points to choose where and when your plugins run.
 
-The [Core callbacks reference](/development/core-callbacks-reference) provides complete details for all callback actions used in Textpattern, organized by public-side, admin-side, plugin, and function- and tag-based callbacks.[^2]
+The [Core callbacks reference](/development/core-callbacks-reference) provides complete details for all callback actions used in Textpattern, organized by public-side, administration-side, plugin, and function- and tag-based callbacks.[^2]
 
 ### Function: register_callback()
 
-There are many [functions used in Textpattern](http://phpcrossref.com/xref/textpattern/_functions/) that may be relevant to your plugin development aims.[^3] In particular, the `register_callback()` function is important for writing [callbacks](#callbacks) (especially admin-side callbacks).[^4] This is the full function definition:
+There are many [functions used in Textpattern](http://phpcrossref.com/xref/textpattern/_functions/) that may be relevant to your plugin development aims.[^3] In particular, the `register_callback()` function is important for writing [callbacks](#callbacks) (especially administration-side callbacks).[^4] This is the full function definition:
 
 ~~~ php
 function register_callback($func, $event, $step, $pre=0)
@@ -134,27 +134,27 @@ Argument 2
 : Name of the core *event* you wish to hook into. For the administration side, this is usually the `?event` name found in the URL.
 
 Argument 3
-: **Parameter:** `$step` (admin-side only)
+: **Parameter:** `$step` (administration-side only)
 : Name of the associated core step, or action (such as `save`, `create`, `copy`, `duplicate`, etc). Not always required.
 
 Argument 4
-: **Parameter:** `$pre=` (admin-side only)
+: **Parameter:** `$pre=` (administration-side only)
 : Designates when `$func` is called. Values are `0` (default, after the core action has completed) or `1` (before the core action does its job). Not always required, and not all callbacks have both.
 
-**Argument \#3:** In admin-side situations, the `$event` (argument \#2) is (disjunctively) divided into *steps*, with each `$step` pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls).
+**Argument \#3:** In administration-side situations, the `$event` (argument \#2) is (disjunctively) divided into *steps*, with each `$step` pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls).
 
-**Argument \#4:** In admin-side situations, this argument determines when the function is called, with implications for what you can do:
+**Argument \#4:** In administration-side situations, this argument determines when the function is called, with implications for what you can do:
 
 -   If `$pre=0` (default), the function is called *after* the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM.
--   If `$pre=1`, the function is called *before* any part of the page is rendered or executed, allowing you to replace existing panels on the admin-side or manipulate variables or content before core code does its part.
+-   If `$pre=1`, the function is called *before* any part of the page is rendered or executed, allowing you to replace existing panels on the administration-side or manipulate variables or content before core code does its part.
 
 Let's look a few `register_callback()` examples.
 
 ### Adding your own administration panel elements
 
-Elements can be added to admin-side panels in two ways: as *new* elements, or as modifications to existing elements. Each panel has its
-own set of core callback parameters to work with, which are detailed in the [Admin-side user-interface
-callbacks](/development/core-callbacks-reference#admin-side-callbacks) section of the [Core callbacks reference](/development/core-callbacks-reference).
+Elements can be added to administration-side panels in two ways: as *new* elements, or as modifications to existing elements. Each panel has its
+own set of core callback parameters to work with, which are detailed in the [Administration-side user-interface
+callbacks](/development/core-callbacks-reference#administration-side-callbacks) section of the [Core callbacks reference](/development/core-callbacks-reference).
 
 #### Adding new elements (without altering existing markup)
 
@@ -198,9 +198,9 @@ function abc_append_item($event, $step, $data, $rs) {
 Here we return the default markup (`$data`) and tack on our own markup which we read from the record set (`$rs`) that was passed to our
 function.
 
-### Altering admin-side panel elements
+### Altering administration-side panel elements
 
-Most of the UI elements in the admin-side panels can be altered or removed, depending on how you write your functions. In this example, let's alter something by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times.
+Most of the UI elements in the administration-side panels can be altered or removed, depending on how you write your functions. In this example, let's alter something by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times.
 
 Consider this example, which adds a radio button to the existing button series in the **Write** panel's **Status** widget:
 
@@ -219,7 +219,7 @@ function abc_altered_status($event, $step, $data, $rs) {
 
 Again we've used `register_callback()` to define our callback function, and in this case we've employed the `$event`/`$step` combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list.
 
-### Removing admin-side panel elements
+### Removing administration-side panel elements
 
 In this case, let's say you wanted to remove the **Keywords** field.[^5] You could hook into the `keywords` step and return a single space character:
 
@@ -279,7 +279,7 @@ These resources are hosted at **phpcrossref.com**:
 Two basic plugin tutorials to put it all in perspective:
 
 * [Public-side plugin tutorial](/development/public-side-plugin-tutorial)
-* [Admin-side plugin tutorial](/development/admin-side-plugin-tutorial)
+* [Administration-side plugin tutorial](/development/administration-side-plugin-tutorial)
 
 ## Implementation resources
 
@@ -317,7 +317,7 @@ These may be useful depending on the kind of plugin you're building.
 
 -   [User role types and privileges](/administration/user-roles-and-privileges) (If your plugin will interact with user accounts.)
 -   [Database schema reference](/development/database-schema-reference) (If your plugin will need a database table.)
--   [**Extensions**](/administration/extensions-region) (If your admin-side plugin will provide *Publisher* controls in its own panel under **Extensions**.)
+-   [**Extensions**](/administration/extensions-region) (If your administration-side plugin will provide *Publisher* controls in its own panel under **Extensions**.)
 
 **Miscellaneous tools:**
 
@@ -340,10 +340,10 @@ Additional third-party reading you may find insightful. The information may be o
 
 [^1]: You can see the code for any installed plugin by selecting its name in the table on the Plugins panel, or by installing and using [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
 
-[^2]: There's also the [Admin-side events and steps](/development/admin-side-events-and-steps) listing for admin-side plugins specifically. This would correspond with the various [admin-side callbacks](/development/core-callbacks-reference#admin-side-callbacks) in the **Core callbacks reference**, but it doesn't provide the explanatory details like the callbacks reference does.
+[^2]: There's also the [Administration-side events and steps](/development/administration-side-events-and-steps) listing for administration-side plugins specifically. This would correspond with the various [administration-side callbacks](/development/core-callbacks-reference#administration-side-callbacks) in the **Core callbacks reference**, but it doesn't provide the explanatory details like the callbacks reference does.
 
 [^3]: As you learn about functions, be aware of the helper functions found in the [/lib](https://github.com/textpattern/textpattern/tree/main/textpattern/lib) folder. Some examples: The [txplib_db.php](https://github.com/textpattern/textpattern/blob/main/textpattern/lib/txplib_db.php) file for interacting with the Textpattern database; [txplib_forms.php](https://github.com/textpattern/textpattern/blob/main/textpattern/lib/txplib_forms.php) to help build different HTML form controls; [txplib_html.php](https://github.com/textpattern/textpattern/blob/main/textpattern/lib/txplib_html.php) to help build various other types of HTML elements; and [txplib_misc.php](https://github.com/textpattern/textpattern/blob/main/textpattern/lib/txplib_misc.php) to help build various 'miscellaneous' functions.
 
-[^4]: Another function, `pluggable_ui()`, was introduced in 2009, which provides additional event/step hooks for the admin-side panels. But this is for the advanced Textpattern user and developer, not the beginner. This function is not needed 99.9% of the time. See [The pluggable_ui function](/development/the-pluggable-ui-function) page for more.
+[^4]: Another function, `pluggable_ui()`, was introduced in 2009, which provides additional event/step hooks for the administration-side panels. But this is for the advanced Textpattern user and developer, not the beginner. This function is not needed 99.9% of the time. See [The pluggable_ui function](/development/the-pluggable-ui-function) page for more.
 
 [^5]: **Attention!** Removing elements like this is a little drastic, because other plugins exist that target most UI elements, including the **Keywords** field. Such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using `display: none` would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e. greater than "5") so other plugins could render their markup *before* you remove your targeted element.

@@ -26,7 +26,7 @@ On this page:
 
 ## The Tag Trace
 
-Whether you're experiencing site slowdowns, bugs in your site templates, or looking for misbehaving plugins, the Tag Trace is an essential diagnostics tool. To switch it on, set the [Production Status](/administration/preferences-panel#site-preferences) on the Preferences panel to 'Debugging'. Whenever this mode is on, Textpattern appends a Tag Trace to the HTML output of each page - both on the admin side and public website. This is your key to working out which Textpattern tags are being executed and their outcome.
+Whether you're experiencing site slowdowns, bugs in your site templates, or looking for misbehaving plugins, the Tag Trace is an essential diagnostics tool. To switch it on, set the [Production Status](/administration/preferences-panel#site-preferences) on the Preferences panel to 'Debugging'. Whenever this mode is on, Textpattern appends a Tag Trace to the HTML output of each page - both on the administration side and public website. This is your key to working out which Textpattern tags are being executed and their outcome.
 
 View the HTML source of the page, and scroll to the bottom. The trace looks something like this:
 

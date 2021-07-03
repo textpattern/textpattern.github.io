@@ -124,11 +124,11 @@ Note that some operating systems (such as macOS) do not always merge the content
 
 If you are running an Apache web server and wish to prohibit direct access to your downloadable files (i.e. by someone manually entering `http://site.com/files/name_of_file`) you may rename the `/files/.htaccess-dist` file to `/files/.htaccess`.
 
-For better security, however, we recommend moving the entire folder and its contents **outside** your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Preference when you log back into the admin side. The same advice stands for the `tmp` directory.
+For better security, however, we recommend moving the entire folder and its contents **outside** your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Preference when you log back into the administration side. The same advice stands for the `tmp` directory.
 
 ## Update
 
-Open a web browser and visit the admin-side location (usually `example.org/textpattern`). Log in. That's it! Easy, huh? There are no update scripts to run or anything else; by simply going to the normal admin-side location, Textpattern will recognize the need to update and do so automatically.
+Open a web browser and visit the administration-side location (usually `example.org/textpattern`). Log in. That's it! Easy, huh? There are no update scripts to run or anything else; by simply going to the normal administration-side location, Textpattern will recognize the need to update and do so automatically.
 
 ## Fine-tune
 

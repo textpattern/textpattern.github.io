@@ -2,13 +2,13 @@
 layout: document
 category: Development
 published: true
-title: Admin-side plugin tutorial
-description: This tutorial walks you through the basics of creating and admin-side plugin.
+title: Administration-side plugin tutorial
+description: This tutorial walks you through the basics of creating and administration-side plugin.
 ---
 
-# Admin-side plugin tutorial
+# Administration-side plugin tutorial
 
-This tutorial walks you through the basics of creating an admin-side plugin; it covers functions, callbacks, and the concept of *events* and *steps*.
+This tutorial walks you through the basics of creating an administration-side plugin; it covers functions, callbacks, and the concept of *events* and *steps*.
 
 You might also like to see the [Public-side plugin tutorial](/development/public-side-plugin-tutorial).
 
@@ -30,13 +30,13 @@ The plugin in this tutorial will:
 Since all plugins must use a three-character alphanumeric [prefix](/brand/author-prefixes-and-registration),
 we're using **abc** in this tutorial, which is reserved for documentation purposes.
 
-## Targeting the admin side
+## Targeting the administration side
 
 Log into Textpattern and open the [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer) plugin. Start a new plugin, give it a name, ensure its type is set to *Admin* and open the code panel.
 
-We'll be using a Class to keep the admin-side of your plugin encapsulated and not pollute PHP's global space with too many functions, which requires a little scaffolding to be set up first in the form of a Class and a constructor. You call this class to run your plugin when users perform any admin-side action.
+We'll be using a Class to keep the administration-side of your plugin encapsulated and not pollute PHP's global space with too many functions, which requires a little scaffolding to be set up first in the form of a Class and a constructor. You call this class to run your plugin when users perform any administration-side action.
 
-To begin your admin plugin, you need to target the back-end of Textpattern - the 'admin' side (as opposed to the 'public' site). You do that by checking the `txpinterface` constant to see whether the current user is on the admin-side or not, then instantiate your class if they are:
+To begin your admin plugin, you need to target the back-end of Textpattern - the 'admin' side (as opposed to the 'public' site). You do that by checking the `txpinterface` constant to see whether the current user is on the administration-side or not, then instantiate your class if they are:
 
 ~~~ php
 if (txpinterface === 'admin') {
@@ -44,7 +44,7 @@ if (txpinterface === 'admin') {
 }
 
 /**
- * Admin-side plugin to say hello.
+ * Administration-side plugin to say hello.
  */
 class abc_admin_hello_world
 {
@@ -85,7 +85,7 @@ If you visit the **Extensions** region, you'll see your plugin panel link, **My 
 
 You've created a new **Extensions** sub-panel for your plugin, but now you need to give the plugin a function to execute when that sub-panel is selected. To understand what goes on here let's take some time out to reveal Textpattern *events* and *steps*.
 
-For the purposes here, think of an event as a menu item under the **Extensions** region in the Textpattern admin-side UI (i.e. a
+For the purposes here, think of an event as a menu item under the **Extensions** region in the Textpattern administration-side UI (i.e. a
 sub-panel). Every menu item has its own `event` and there are some built-in ones under each of the menus. For example, the **Content** menu item houses events 'article', 'file' and 'image'; the **Presentation** menu has events 'section' and 'page', and so on.
 
 There are no built-in panels on the **Extensions** panel so you define them. In this case, we've told the system, using `register_tab()`, that your panel (your *event*) is known as **abc_admin_hello_world** (what users will see as **My hello plugin**). So when you target a particular event inside some PHP in the plugin, you tell Textpattern to execute code when someone visits your panel.
@@ -108,7 +108,7 @@ public function hw_panel($evt, $stp)
 
 Now you're getting somewhere! You've just told Textpattern to call the `hw_panel()` function when someone visits the abc_admin_hello_world sub-panel (what users will see labeled as "My hello plugin").
 
-The `pagetop()` function is another Textpattern function that renders the primary navigation regions (**Content**, **Presentation**, **Admin**, etc.) of the admin-side interface. The function's mandatory first argument is the name to display in the browser's `<title>` tag. After that, you can display anything you like; draw buttons, UI elements, text, whatever. The trick then is to make it do something.
+The `pagetop()` function is another Textpattern function that renders the primary navigation regions (**Content**, **Presentation**, **Admin**, etc.) of the administration-side interface. The function's mandatory first argument is the name to display in the browser's `<title>` tag. After that, you can display anything you like; draw buttons, UI elements, text, whatever. The trick then is to make it do something.
 
 ## Responding to a plugin step
 
@@ -125,7 +125,7 @@ Here's the new architecture, with a couple of hyperlinks in your `list()` functi
 public function hw_panel($evt, $stp)
 {
     // Only the following steps are valid. The 'false' just states that we are
-    // not using admin-side injection defences (CSRF). Steps that commit things
+    // not using administration-side injection defences (CSRF). Steps that commit things
     // to the database or make changes (as opposed to just displaying content)
     // should use 'true'. You must then add a tInput() or form_token() to the
     // payload or your request will be rejected.
@@ -186,7 +186,7 @@ When you select a link you'll see (above pagetop) that the relevant function is 
 
 ## Final plugin code
 
-Here's the final code for the admin side example:
+Here's the final code for the administration side example:
 
 ~~~ php
 if (txpinterface === 'admin') {
@@ -194,7 +194,7 @@ if (txpinterface === 'admin') {
 }
 
 /**
- * Admin-side plugin to say hello.
+ * Administration-side plugin to say hello.
  */
 class abc_admin_hello_world
 {
@@ -221,7 +221,7 @@ class abc_admin_hello_world
     public function hw_panel($evt, $stp)
     {
         // Only the following steps are valid. The 'false' just states that we are
-        // not using admin-side injection defences (CSRF). Steps that commit things
+        // not using administration-side injection defences (CSRF). Steps that commit things
         // to the database or make changes (as opposed to just displaying content)
         // should use 'true'. You must then add a tInput() or form_token() to the
         // payload or your request will be rejected.
@@ -275,6 +275,6 @@ class abc_admin_hello_world
 
 Now go and create something cool for Textpattern!
 
-[^1]: The term "panel" here is synonymous with the term "tab" (as you'll see used in code examples later with `register_tab()`), which is an older term for the admin-side navigation links and their associated views. "Tab" comes from the concept of folder tabs, which is what the admin-side was originally designed to look like - a series of primary and secondary folders with "tab" links for navigating the admin-side. In documentation we now call these locations "panels" (moving away from the folder tabs concept), but there are still artefacts in the code. Just think of "panels" and "tabs" as the same thing.
+[^1]: The term "panel" here is synonymous with the term "tab" (as you'll see used in code examples later with `register_tab()`), which is an older term for the administration-side navigation links and their associated views. "Tab" comes from the concept of folder tabs, which is what the administration-side was originally designed to look like - a series of primary and secondary folders with "tab" links for navigating the administration-side. In documentation we now call these locations "panels" (moving away from the folder tabs concept), but there are still artefacts in the code. Just think of "panels" and "tabs" as the same thing.
 
 [^2]: The Textpattern presentational style guide defines using sentence-case for all user-interface titles, headings, and labels. In other words, "My hello plugin" is correct, but "My Hello Plugin" (capital-case), would be incorrect. If you don't follow this guideline, your plugin will produce UI content that's inconsistent with the rest of the UI, and won't look very professional.

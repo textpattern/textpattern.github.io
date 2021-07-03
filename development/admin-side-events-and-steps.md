@@ -2,13 +2,13 @@
 layout: document
 category: Development
 published: true
-title: Admin-side events and steps
-description: These are the main events and steps that Textpattern uses as you interact with the admin-side interface.
+title: Administration-side events and steps
+description: These are the main events and steps that Textpattern uses as you interact with the administration-side interface.
 ---
 
-# Admin-side events and steps
+# Administration-side events and steps
 
-These are the main events and steps that Textpattern uses as you interact with the admin-side interface. An *event* is usually the panel or plugin name, e.g. `prefs` or `image`. A *step* is Textpattern terminology for an action that occurs on that panel, for example `save` or `image_edit`.
+These are the main events and steps that Textpattern uses as you interact with the administration-side interface. An *event* is usually the panel or plugin name, e.g. `prefs` or `image`. A *step* is Textpattern terminology for an action that occurs on that panel, for example `save` or `image_edit`.
 
 Although they are not direct [callbacks](/development/core-callbacks-reference), you may hook into these events and steps from a plugin to perform an action.
 

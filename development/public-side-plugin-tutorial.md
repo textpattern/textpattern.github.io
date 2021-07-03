@@ -10,7 +10,7 @@ description: This tutorial will walk you through the basics of creating a simple
 
 This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.
 
-You might also like to see the [Admin-side plugin tutorial](/development/admin-side-plugin-tutorial).
+You might also like to see the [Administration-side plugin tutorial](/development/administration-side-plugin-tutorial).
 
 **Contents**
 

@@ -62,7 +62,7 @@ Delete the _screenshot.png_ file if not needed, or replace it with one you will 
 
 **Step 4:**
 
-Log in to the back-end. Go to Admin > Preferences > Admin, look for the **Admin-side theme** preference and select the newly added theme (step 3).
+Log in to the back-end. Go to Admin > Preferences > Admin, look for the **Administration-side theme** preference and select the newly added theme (step 3).
 
 **Step 5:**
 

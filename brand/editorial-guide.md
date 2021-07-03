@@ -221,7 +221,7 @@ Avoid using 'admin' as an abbreviation unless you are specifically referring to 
 
 * The top-level Admin section, as labeled in the navigation for it. (In the 'Classic' theme, this defaults to the Users panel.)
 * The Admin section of the Preferences panel.
-* The Admin-side theme preference in the Admin section of the Preferences panel.
+* The Administration-side theme preference in the Admin section of the Preferences panel.
 
 Any other use of 'admin' can lead to confusion about what is meant. Whether you mean *administration* or *administrator*, write it out fully every time so the meaning and context is perfectly clear.
 
@@ -419,15 +419,15 @@ Keep links in body copy to a minimum. Ensure links that are used are focused on 
 
 ## Terminology
 
-Textpattern terms as admin-side panel and link references
-When using the name of any admin-side panel to mean the location of that panel, it should always be a non-italicised link to the given wiki page it's referring to, and the link should only be on the word itself, i.e. the link text should be the same as the name of the wiki page it's pointing to.
+Textpattern terms as administration-side panel and link references
+When using the name of any administration-side panel to mean the location of that panel, it should always be a non-italicised link to the given wiki page it's referring to, and the link should only be on the word itself, i.e. the link text should be the same as the name of the wiki page it's pointing to.
 
 Correct → Most of your content is created in the Write panel.
 
 Wrong → Most of your content is created in the Write panel.
 
 Wrong → Most of your content is created in the Write panel.
- There are two exceptions to the rule in bold above. Wiki pages for the Images and Comments panels are titled "Images (panel)" and "Comments (admin-side)", respectively. These are necessary (though inconsistently named) titles to avoid wiki page title conflicts with Tag pages having the same names. But they are unattractive, so we use custom links to these pages via wiki syntax.
+ There are two exceptions to the rule in bold above. Wiki pages for the Images and Comments panels are titled "Images (panel)" and "Comments (administration-side)", respectively. These are necessary (though inconsistently named) titles to avoid wiki page title conflicts with Tag pages having the same names. But they are unattractive, so we use custom links to these pages via wiki syntax.
 
 Correct → Photos and other images are uploaded in the Images panel.
 
@@ -435,7 +435,7 @@ Correct → You can edit article comments in the Comments panel.
 
 Wrong → Photos and other images are uploaded in the Images (panel).
 
-Wrong → You can edit article comments in the Comments (admin-side) panel.
+Wrong → You can edit article comments in the Comments (administration-side) panel.
 
 Textpattern terms as semantical (non-linked) references
 Certain panel names—often considered to be Textpattern's semantical features—have a lot of similarity with general web terms, and thus can be easily confused if not clearly distinguished in documentation. Textpattern terms used in context of semantics, but not linked to panel documentation pages, should be capitalised and italicised.
