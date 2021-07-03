@@ -40,7 +40,7 @@ Beneath the search area there is the table, or list, of existing visitor logs. E
 
 In the first column you will find a checkbox for each visitor log. Here you can select visitor logs you want to delete in a bulk manner. You can mark visitor logs by checking the checkbox or you can use the checkbox in the head bar of the list to mark all visitor logs on that page.
 
-In order to quickly select ranges of visitor logs select the checkbox of the first visitor log you want to mark, press and hold the shift key, then select the checkbox of the last visitor log in the range. All visitor logs between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of visitor logs select the checkbox of the first visitor log you want to mark, press and hold the Shift key, then select the checkbox of the last visitor log in the range. All visitor logs between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected…' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 

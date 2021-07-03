@@ -146,7 +146,7 @@ By default, the search will find matches for all fields in a row. You can perfor
 
 In the first column you will find a checkbox for each section. Here you can select sections you want to change in a bulk manner. You can mark sections by checking the checkbox or you can use the checkbox in the head bar of the list to mark all sections on that page.
 
-In order to quickly select ranges of sections select the checkbox of the first section you want to mark, press and hold the shift key, then select the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of sections select the checkbox of the first section you want to mark, press and hold the Shift key, then select the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes, go to the drop-down list 'With selected…' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to apply the changes.
 

@@ -98,7 +98,7 @@ Beneath the 'Create link' button and search area there is the table, or list, of
 
 In the first column you will find a checkbox for each link. Here you can select links you want to change in a bulk manner. You can mark links by checking the checkbox or you can use the checkbox in the head bar of the list to mark all links on that page.
 
-In order to quickly select ranges of links select the checkbox of the first link you want to mark, press and hold the shift key, then select the checkbox of the last link in the range. All links between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of links select the checkbox of the first link you want to mark, press and hold the Shift key, then select the checkbox of the last link in the range. All links between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected…' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 

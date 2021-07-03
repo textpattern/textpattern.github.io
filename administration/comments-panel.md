@@ -74,7 +74,7 @@ By default Textpattern will hide comments which are automatically identified and
 
 In the first column you will find a checkbox for each comment. Here you can select comments you want to change in a bulk manner. You can mark comments by checking the checkbox or you can use the checkbox in the head bar of the list to mark all comments on that page.
 
-In order to quickly select ranges of comments select the checkbox of the first comment you want to mark, press and hold the shift key, then select the checkbox of the last comment in the range. All comments between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of comments select the checkbox of the first comment you want to mark, press and hold the Shift key, then select the checkbox of the last comment in the range. All comments between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected…' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 
