@@ -221,7 +221,7 @@ Avoid using 'admin' as an abbreviation unless you are specifically referring to 
 
 * The top-level Admin section, as labeled in the navigation for it. (In the 'Classic' theme, this defaults to the Users panel.)
 * The Admin section of the Preferences panel.
-* The Administration-side theme preference in the Admin section of the Preferences panel.
+* The Administration-side preferences in the Admin section of the Preferences panel.
 
 Any other use of 'admin' can lead to confusion about what is meant. Whether you mean *administration* or *administrator*, write it out fully every time so the meaning and context is perfectly clear.
 
