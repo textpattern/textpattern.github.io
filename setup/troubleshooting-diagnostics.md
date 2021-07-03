@@ -38,7 +38,7 @@ There are other coloured alerts to be aware of: blue (information), yellow (warn
 In certain situations it may not be possible to get the green confirmation message, but it does not mean your site is not configured correctly. The following blue (information) alert messages, for example, are nothing to worry about if they appear by themselves.
 
 <span class="information">There was a problem connecting to the Textpattern update server. Please try again later.</span>
-: This alert means your Textpattern installation cannot connect with Textpattern’s servers (e.g. a web connection was lost), thus cannot check if a new stable release of the software is available. This message will persist until your installation attempts the connection again. At that time (at most, once an hour) if there were no updates available, the message would disappear and you’d see the green ‘All checks pass!’.
+: This alert means your Textpattern installation cannot connect with Textpattern’s servers (e.g. a web connection was lost), thus cannot check if a new stable release of the software is available. This message will persist until your installation attempts the connection again. At that time (at most, once an hour) if there were no updates available, the message would disappear and you’d see the green 'All checks pass!’.
 
 <span class="information">New Textpattern version {number} available for download.</span>
 : If there was a new stable release, as described in the previous alert, you’d see this message instead, which would persist until you updated your installation with the new release (always recommended).
@@ -148,7 +148,7 @@ This output is first meant to help you troubleshoot issues by showing you a plet
 
 But another reason this output is provided, is so you can quickly copy and share it in the [troubleshooting forum](https://forum.textpattern.com/viewforum.php?id=67) where Textpattern developers and other experienced users can expertly spot where things might be going astray and give you advice about what to do.
 
-In the latter case, note the two controls at top of the output display. The first is the Detail selection menu for ‘Low’ and ‘High’ output. Toggle this and you will see the output difference is quite a lot. The other control is a checkbox for hiding private information. Make sure this is checked before copying the output for sharing in the forum. Share the ‘Low’ amount of detail at first. Provide the ‘High’ detail only if developers ask you for it later.
+In the latter case, note the two controls at top of the output display. The first is the Detail selection menu for 'Low’ and 'High’ output. Toggle this and you will see the output difference is quite a lot. The other control is a checkbox for hiding private information. Make sure this is checked before copying the output for sharing in the forum. Share the 'Low’ amount of detail at first. Provide the 'High’ detail only if developers ask you for it later.
 
 ### Low detail
 

@@ -94,9 +94,9 @@ Keep topic titles grammatically correct and as concise as possible while still b
 
 With regard to being concise, avoid needless terms that only benefit search engines. We are writing for humans, not bots.
 
-One obvious word to avoid in titles is ‘Textpattern’ (or ‘Textpattern CMS’). The brand name is never needed in human readable topic titles because the context of Textpattern is already clear by the website’s header logo and other cues. Nobody will be confused about whether or not a doc topic concerns Textpattern, thus using the brand name in the human-readable `h1` title is pointless and distracting.
+One obvious word to avoid in titles is 'Textpattern’ (or 'Textpattern CMS’). The brand name is never needed in human readable topic titles because the context of Textpattern is already clear by the website’s header logo and other cues. Nobody will be confused about whether or not a doc topic concerns Textpattern, thus using the brand name in the human-readable `h1` title is pointless and distracting.
 
-Other terms not to use in titles include useless genre flags like ‘how to’, ‘tutorial’, ‘walkthrough’, ‘doc’, and so forth. These terms do nothing to convey topic and scope; rather, the bloat and confuse titles.
+Other terms not to use in titles include useless genre flags like 'how to’, 'tutorial’, 'walkthrough’, 'doc’, and so forth. These terms do nothing to convey topic and scope; rather, the bloat and confuse titles.
 
 An exception to the above is if one of those terms is, in fact, a subject in the topic or scope, like the current document, where the subject *is* on user documentation.
 
@@ -108,13 +108,13 @@ Unlike topic titles, URL-only titles (document file names based off of topic tit
 
 Use your best judgement for document file names, thus their URLs, but consider the following guides to help:
 
-* Cut words that are not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on)
+* Cut words that are not directly focused on the topic or scope of material (e.g. never use 'textpattern’, 'tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on)
 * Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned
-* Use abbreviations if they are commonly used in the domain (e.g. the current doc uses ‘docs’ instead of ‘documentation’)
+* Use abbreviations if they are commonly used in the domain (e.g. the current doc uses 'docs’ instead of 'documentation’)
 * Front-load subject terms when feasible (i.e. put these terms at the start of the file name)
 * Use front-loading and shortening patterns strategically to group related files together alphabetically in shared directories
 
-You could look at the file names of many existing docs in the file tree and find poorly conceived examples; either too long, having poor syntactic structure, or both. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*. But it’s never to late to do better with new documentation.
+You could look at the file names of many existing docs in the file tree and find poorly conceived examples; either too long, having poor syntactic structure, or both. This very document, for instance, could have been named 'docs-collaboration’, dropping *user*. But it’s never to late to do better with new documentation.
 
 While we generally don’t want to mess with existing file names already published and indexed (and likely linked to from other documentation pages, Forum threads, and elsewhere), sometimes it is necessary to improve information architecture, especially if file names are particularly long or not clearly indicative of their document’s topic. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document. 
 
@@ -339,7 +339,7 @@ And the supporting details provided were:
 
 #### Explanation
 
-A doc for learning to build a custom blog by unpacking and understanding the default Textpattern theme, addressing other ‘how to’ type questions people often have, and provide opportunities to segue into using themes and link to that documentation.
+A doc for learning to build a custom blog by unpacking and understanding the default Textpattern theme, addressing other 'how to’ type questions people often have, and provide opportunities to segue into using themes and link to that documentation.
 
 #### Resources list
 

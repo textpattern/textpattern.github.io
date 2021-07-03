@@ -233,11 +233,11 @@ Disable your plugins one by one, until you find the culprit. If the cause is ind
 
 This is usually an Apache web server issue.
 
-These and similar problems happen when you use an **Article URL pattern**, as set in the Site section of the Preferences panel, as anything other than ‘?=messy’ on a web server that does not support `mod_rewrite` rules in the *.htaccess* file, or requires additional configuration in order to work. The *.htaccess* file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
+These and similar problems happen when you use an **Article URL pattern**, as set in the Site section of the Preferences panel, as anything other than '?=messy’ on a web server that does not support `mod_rewrite` rules in the *.htaccess* file, or requires additional configuration in order to work. The *.htaccess* file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
 
 The Textpattern [Diagnostics](/administration/diagnostics-panel) panel will attempt to warn you if it can determine that clean URLs are not supported on your system. However, it doesn't detect all incompatible servers. The absence of a warning does *not* mean that your server supports clean URLs.
 
-The simplest solution is to select ‘?=messy’ for the 'Article URL pattern' preference, and remove or move aside the *.htaccess* file.
+The simplest solution is to select '?=messy’ for the 'Article URL pattern' preference, and remove or move aside the *.htaccess* file.
 
 Some servers support `mod_rewrite`, but require some additional configuration in order to make it work properly.
 
@@ -281,7 +281,7 @@ If you are configuring your own Apache server, or using a hosting arrangement th
 AllowOverride FileInfo
 ```
 
-If none of those changes work, or if they cause a [500 server error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), you will need to use ‘?=messy’ URLs as described earlier, or ask your hosting provider for help.
+If none of those changes work, or if they cause a [500 server error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), you will need to use '?=messy’ URLs as described earlier, or ask your hosting provider for help.
 
 ## How to reset an admin password
 
@@ -290,7 +290,7 @@ Your options for resetting a forgotten Textpattern account password.
 ### Simple reset procedure
 
 1. Go to the login page of the website’s back-end; usually located at *example.com/textpattern*.
-2. Click the ‘Forgot password?’ link.
+2. Click the 'Forgot password?’ link.
 3. Enter your login name (username) in the resulting Name field.
 4. Hit the **Reset password** button.
 

@@ -8,7 +8,7 @@ description: Anyone in the community wanting to build and share themes and/or pl
 
 # Author prefixes and registration
 
-Anyone in the Textpattern community who wants to build and share themes and/or plugins must register and use an ‘author’ prefix. A prefix is a three-character (alphanumeric) indication of who the author is, and precedes a theme or plugin name as an assurance that no two themes or plugins will have the same Name value and trip up the software.
+Anyone in the Textpattern community who wants to build and share themes and/or plugins must register and use an 'author’ prefix. A prefix is a three-character (alphanumeric) indication of who the author is, and precedes a theme or plugin name as an assurance that no two themes or plugins will have the same Name value and trip up the software.
 
 **Contents**
 
@@ -23,7 +23,7 @@ Guidelines, courtesies, and points of fact about choosing and registering an aut
 
 **You must have a [Textpattern community forum](https://forum.textpattern.com/) account**. Provide the link to your forum profile when registering a prefix.
 
-**You can only have one prefix.** *One*. (You may see two or three people in the lists having multiple prefixes. Ignore it. Housecleaning is coming eventually.) In other cases, an author will adopt the themes or plugins of another that has abandoned or ‘retired’ from the community and their products are still considered useful. Adoption means the adopter is willing to maintain the themes or plugins, as appropriate, for community use. This is the preferred, respectful practice against simply changing plugin names.
+**You can only have one prefix.** *One*. (You may see two or three people in the lists having multiple prefixes. Ignore it. Housecleaning is coming eventually.) In other cases, an author will adopt the themes or plugins of another that has abandoned or 'retired’ from the community and their products are still considered useful. Adoption means the adopter is willing to maintain the themes or plugins, as appropriate, for community use. This is the preferred, respectful practice against simply changing plugin names.
 
 **Your prefix should be three alphanumeric characters.** Not less and not more. (Ignore any you see in the lists that defy this convention.)
 
@@ -57,7 +57,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * A **(?)** next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the '?'. **These prefixes can be challenged for new ownership.**
 * A **(!)** next to a username means the indicated author has adopted all the original authors’ abandoned/orphaned themes and/or plugins, whichever the adopter is qualified to maintain.
 * <span class="success">Green</span> prefixes mean the author has long since left the community *and* no themes or plugins remain usable or adopted with that prefix anymore. **These prefixes can be claimed by a new author.**
-* <span class="error">Red</span> prefixes are off limits until further notice (notably ‘foo’ and ‘dca’).
+* <span class="error">Red</span> prefixes are off limits until further notice (notably 'foo’ and 'dca’).
 * <span class="warning">Yellow</span> prefixes are used internally by Textpattern and are off limits.
 
 {::options parse_block_html="true" /}

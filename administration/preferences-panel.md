@@ -21,7 +21,7 @@ Site preferences are global settings for your Textpattern site. They include set
 
 ### Site name
 
-**Site name** is the title of your website. By default, Textpattern fills this field with ‘My Site’, though it can be changed to your preference.
+**Site name** is the title of your website. By default, Textpattern fills this field with 'My Site’, though it can be changed to your preference.
 
 A travel-centric website, for example, might be:
 
@@ -37,12 +37,12 @@ Brewster's Java Joint
 
 **Site URL** is the homepage address where your Textpattern site is viewed. This should be set to your domain or hostname without the <i>http(s)://</i> protocol and without the trailing forward slash (<i>/</i>).
 
-If you use ‘<i>www</i>’, then use this pattern:
+If you use '<i>www</i>’, then use this pattern:
 
 www.example.com
 {:.example}
 
-If you enforce dropping the ‘<i>www</i>’ by way of a rewrite rule, use this pattern:
+If you enforce dropping the '<i>www</i>’ by way of a rewrite rule, use this pattern:
 
 example.com
 {:.example}
@@ -70,15 +70,15 @@ Use plain text only (i.e. no markup), as it is HTML-escaped before output.
 
 The **Production status** choice defines the level of error reporting and diagnostic information provided by Textpattern. There are three options:
 
-‘Live’ is best suited for production (live) websites and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
+'Live’ is best suited for production (live) websites and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
 
-‘Testing’ is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
+'Testing’ is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
 * the time it took the server to build the page ("Runtime")
 * the number of database queries executed
 * approximate peak memory usage
 
-‘Debugging’ is best suited for diagnosing problems in Textpattern pages, forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in 'Testing' mode. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
+'Debugging’ is best suited for diagnosing problems in Textpattern pages, forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in 'Testing' mode. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
 * the time it took the server to build the page ("Runtime")
 * the number of database queries executed
@@ -125,11 +125,11 @@ Select which HTML [doctype](https://www.w3.org/wiki/Doctypes_and_markup_styles) 
 
 The Logging preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](/administration/visitor-logs-panel) for you to review. The selection menu has three options.
 
-Select ‘None’ if you don’t want Textpattern to log visitor information at all. This is the default selection. When ‘None’ is selected, all logging functionality throughout the back end will be hidden in the interface and the **Visitor logs** panel link will be removed from the list of panel options in the Admin region. This helps keep unwanted functionality from being a distraction. The logging functionality all comes back again if the preference is changed to ‘Yes’.
+Select 'None’ if you don’t want Textpattern to log visitor information at all. This is the default selection. When 'None’ is selected, all logging functionality throughout the back end will be hidden in the interface and the **Visitor logs** panel link will be removed from the list of panel options in the Admin region. This helps keep unwanted functionality from being a distraction. The logging functionality all comes back again if the preference is changed to 'Yes’.
 
-Select ‘All hits’ if you want the logger to collect information for all site visits.
+Select 'All hits’ if you want the logger to collect information for all site visits.
 
-Select ‘Referrers only’ if you only want to log information about visitors from another location. This option allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site (e.g. while making any site updates; generally you do not need to see your own activity on your site).
+Select 'Referrers only’ if you only want to log information about visitors from another location. This option allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site (e.g. while making any site updates; generally you do not need to see your own activity on your site).
 
 ### Logs expire after how many days?
 
@@ -137,7 +137,7 @@ When you are using Textpattern for logging (see above), you can set how long (in
 
 ### Accept comments?
 
-This is a global setting for whether or not you want to allow your articles to accept comments. When set to ‘No’, all comments functionality throughout the administration side will be hidden from view in the interface, and the Comments panel link will be removed from the list of panel options in the Content region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to ‘Yes’. 
+This is a global setting for whether or not you want to allow your articles to accept comments. When set to 'No’, all comments functionality throughout the administration side will be hidden from view in the interface, and the Comments panel link will be removed from the list of panel options in the Content region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to 'Yes’. 
 
 ## Admin preferences
 
@@ -217,11 +217,11 @@ This preference setting does not affect the status or articles created or edited
 
 Setting this preference to 'Yes' will ensure that long article titles lines never have only the last word on a new line. Instead, the two last words will appear on a new line.
 
-This setting can prove problematic in responsive pages at smaller page widths, because the non-breaking space character between the last two words may cause titles to overspill their parent container. In that case, set this preference to ‘No’.
+This setting can prove problematic in responsive pages at smaller page widths, because the non-breaking space character between the last two words may cause titles to overspill their parent container. In that case, set this preference to 'No’.
 
 ### Use excerpts on articles?
 
-By choosing ‘No’ the excerpt field will not be shown to authors on the [Write panel](/administration/write-panel#excerpt).
+By choosing 'No’ the excerpt field will not be shown to authors on the [Write panel](/administration/write-panel#excerpt).
 
 ### Allow form override?
 

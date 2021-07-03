@@ -18,7 +18,7 @@ Your options for resetting a forgotten Textpattern account password.
 ## Simple reset procedure
 
 1. Go to the login page of the website’s back-end; usually located at *example.com/textpattern* (unless the site administrator changed the default location).
-2. Click the ‘Forgot password?’ link.
+2. Click the 'Forgot password?’ link.
 3. Enter your login name (username) in the resulting Name field.
 4. Hit the **Reset password** button.
 

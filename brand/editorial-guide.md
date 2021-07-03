@@ -183,9 +183,9 @@ For example, American authors will be comfortable with words ending in *-ize* be
 
 Watch out for these.
 
-**Log in vs. login**: *Log in* is a verb form (e.g. ‘after you log in’ or ‘after logging in’), whereas *login* is a noun form (e.g. ‘the login location’). Same handling for ‘logout’ (noun) and ‘log out’ (verb).
+**Log in vs. login**: *Log in* is a verb form (e.g. 'after you log in’ or 'after logging in’), whereas *login* is a noun form (e.g. 'the login location’). Same handling for 'logout’ (noun) and 'log out’ (verb).
 
-**Administration-side vs. administration side**: *Administration-side* is an adjective form (e.g. ‘the administration-side login form’), whereas *administration side* is a noun form (e.g. ‘the login to the administration side’). Also, do not abbreviate _administration_ in either context (see [Normal word abbreviations](#normal-word-abbreviations)).
+**Administration-side vs. administration side**: *Administration-side* is an adjective form (e.g. 'the administration-side login form’), whereas *administration side* is a noun form (e.g. 'the login to the administration side’). Also, do not abbreviate _administration_ in either context (see [Normal word abbreviations](#normal-word-abbreviations)).
 
 ## Brand name
 
@@ -195,17 +195,17 @@ Software, project… It’s all the same.
 
 Textpattern is spelled "*Textpattern*". Look at that closely. That is not two words, and there is no camel-case capital P. This isn't WordPress.
 
-When you need to use the brand name at all, write ’Textpattern’. Do not tack on ‘CMS’ (i.e. ‘Textpattern CMS’). Should anyone insist, because they feel strongly about SEO ranking, direct them to the metadata where they can have fun for machines. You're not offending the good human readers.
+When you need to use the brand name at all, write ’Textpattern’. Do not tack on 'CMS’ (i.e. 'Textpattern CMS’). Should anyone insist, because they feel strongly about SEO ranking, direct them to the metadata where they can have fun for machines. You're not offending the good human readers.
 
 Do not abbreviate the brand name in copy. (See the [Brand abbreviations](#brand-abbreviations) section.)
 
-When distinguishing between the software and the project, the name becomes a proper adjective: ’Textpattern software’ or the ‘Textpattern project’. Perfectly fine.
+When distinguishing between the software and the project, the name becomes a proper adjective: ’Textpattern software’ or the 'Textpattern project’. Perfectly fine.
 
 ### Project platforms
 
-When referring to one of the Textpattern platforms, use the proper name once the first time to establish a clear context (e.g. ‘Textpattern user documentation’), thereafter feel free to simply write ‘user documentation’. Readers will thank you.
+When referring to one of the Textpattern platforms, use the proper name once the first time to establish a clear context (e.g. 'Textpattern user documentation’), thereafter feel free to simply write 'user documentation’. Readers will thank you.
 
-Never refer to any of the project websites by their domain (e.g. ‘textpattern.com’). Keep that in hyperlinks where it belongs.
+Never refer to any of the project websites by their domain (e.g. 'textpattern.com’). Keep that in hyperlinks where it belongs.
 
 ## Abbreviations
 
@@ -217,15 +217,15 @@ Never abbreviate normal words as shortcut reference for people, places, or thing
 
 **Admin**:
 
-Avoid using ‘admin’ as an abbreviation unless you are specifically referring to one of the following locations in the administration side of the software (context is ‘Hive’ and ’Hive (Flat Neutral)’ themes):
+Avoid using 'admin’ as an abbreviation unless you are specifically referring to one of the following locations in the administration side of the software (context is 'Hive’ and ’Hive (Flat Neutral)’ themes):
 
-* The top-level Admin section, as labeled in the navigation for it. (In the ‘Classic’ theme, this defaults to the Users panel.)
+* The top-level Admin section, as labeled in the navigation for it. (In the 'Classic’ theme, this defaults to the Users panel.)
 * The Admin section of the Preferences panel.
 * The Admin-side theme preference in the Admin section of the Preferences panel.
 
-Any other use of ‘admin’ can lead to confusion about what is meant. Whether you mean *administration* or *administrator*, write it out fully every time so the meaning and context is perfectly clear.
+Any other use of 'admin’ can lead to confusion about what is meant. Whether you mean *administration* or *administrator*, write it out fully every time so the meaning and context is perfectly clear.
 
-This includes writing ‘administration side’ (noun form) and ‘administration-side’ (adjective form) when referring to that side of the software.
+This includes writing 'administration side’ (noun form) and 'administration-side’ (adjective form) when referring to that side of the software.
 
 ### Brand abbreviations
 
@@ -234,9 +234,9 @@ Abbreviations like TXP, Txp, TxP, tXp, and txp are inconsistent and non-intuitiv
 1. You are specifically referencing TXP Magazine.
 2. You are writing a code element showing tags (e.g. `<txp:else />`.
 
-Always spell ‘Textpattern’ out fully, when you need to use the brand name at all. (See [Brand name](#brand-name).)
+Always spell 'Textpattern’ out fully, when you need to use the brand name at all. (See [Brand name](#brand-name).)
 
-History has shown that most people still can’t spell ‘Textpattern’ correctly, so don’t make it worse by using nonsensical inventions.
+History has shown that most people still can’t spell 'Textpattern’ correctly, so don’t make it worse by using nonsensical inventions.
 
 ## Latin and foreign expressions
 
@@ -247,7 +247,7 @@ Except for single words that have become common in English, and Latin idioms use
 Single words that have long since become common in English, and are not italicized for that reason, are perfectly fine to use, for example:
 
 * ergo
-* versus (always write it out; don’t abbreviate it as ‘vs.’)
+* versus (always write it out; don’t abbreviate it as 'vs.’)
 * via
 * and so on.
 
@@ -258,23 +258,23 @@ Common Latin idioms, notably those below, are also recommended for use, but _onl
 *exempli gratia*
 : Meaning: for example
 : Abbreviation: e.g.
-: Example of use: ‘(e.g. [the thing(s) you are demonstrating]).’
+: Example of use: '(e.g. [the thing(s) you are demonstrating]).’
 
 *id est*
 : Meaning: in other words
 : Abbreviation: i.e.
-: Example of use: ‘(i.e. [the thing(s) you are clarifying]).’
+: Example of use: '(i.e. [the thing(s) you are clarifying]).’
 
 *et cetera*
 : Meaning: and the others, and so on
 : Abbreviation: etc.
-: Example of use: ‘([one thing], [another thing], etc.).’
+: Example of use: '([one thing], [another thing], etc.).’
 
 Also…
 
 * Do not bother italicizing the Latin abbreviations.
 * Do not follow the leading abbreviations with a comma.
-* Do not use two abbreviations in the same parenthetical note. Either change ‘etc.’ to an ellypsis (…), or use an English text equivalent, or, best of all, refine the note to avoid the problem entirely.
+* Do not use two abbreviations in the same parenthetical note. Either change 'etc.’ to an ellypsis (…), or use an English text equivalent, or, best of all, refine the note to avoid the problem entirely.
 
 This example is wrong by all three of the points above:
 
@@ -288,7 +288,7 @@ These are correct alternatives:
 >
 > . . . (i.e. [a more specific thing]).
 
-Finally, never use the Latin abbreviations in the main part of sentences, outside of a parenthetical note. Instead, write English equivalents like ‘for example’, ‘in other words’, ‘and so on’, ‘and so forth’… But the whole point of using parenthetical notes is to be less word-bloaty when needing such idioms.
+Finally, never use the Latin abbreviations in the main part of sentences, outside of a parenthetical note. Instead, write English equivalents like 'for example’, 'in other words’, 'and so on’, 'and so forth’… But the whole point of using parenthetical notes is to be less word-bloaty when needing such idioms.
 
 ## Punctuation
 
@@ -296,7 +296,7 @@ Punctuation is business as usual, for the most part. However, there are two conv
 
 ### Commas
 
-Use a serial comma (a.k.a. ‘Oxford comma’).
+Use a serial comma (a.k.a. 'Oxford comma’).
 
 A serial comma is one that comes between the last two items in a series, and before the _and_, for example:
 
@@ -312,23 +312,23 @@ The point is, more important than consistency, is ensuring your sentences are gr
 
 ### Quotations marks
 
-The *Oxford Style Manual* (remember, [we use that](#baseline-references)) defines a ‘modern British practice’ of enclosing quoted text inside single quotation marks, and to use double quotation marks for a quotation within a quotation.[^quotes]
+The *Oxford Style Manual* (remember, [we use that](#baseline-references)) defines a 'modern British practice’ of enclosing quoted text inside single quotation marks, and to use double quotation marks for a quotation within a quotation.[^quotes]
 
 Textpattern also uses this convention for public-facing material in official projects. The convention may not be what most of the English-speaking world uses when it writes (including British news media), but Oxford is not wrong on the clarity and logic of its choice.
 
 Consider this curious and purely hypothetical example:
 
-‘Select “‘Testing’” for the **Production status** preference to put your site in testing mode.’
+'Select “'Testing’” for the **Production status** preference to put your site in testing mode.’
 {: .example-text}
 
 The good news is, you are unlikely to need quotations inside quotations, because all Textpattern material is boring ol’ expository, not narrative. You are not a story narrator conveying complex dialogue between characters, so there’s no need to use nested quotations, or to remember the associated punctuation rules, most logical as they are, that go along with the British quotation system.
 
 If the example above was a line in user documentation and not being quoted here, it would look like this instead:
 
-Select ‘Testing’ for the **Production status** preference to put your site in testing mode.
+Select 'Testing’ for the **Production status** preference to put your site in testing mode.
 {: .example-text}
 
-Now ‘Testing’ is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That’s why it appears as “‘Testing’” when being quoted in the first example.
+Now 'Testing’ is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That’s why it appears as “'Testing’” when being quoted in the first example.
 
 Should the marketing team want to get fancy in prose… Punctuation rules for the British quotation system are straight forward: the quotation marks go inside sentence punctuation unless the punctuation is part of the quoted text. In the first example, the full point is part of the text being quoted.
 
@@ -352,7 +352,7 @@ Clauses and phrases can appear anywhere in a sentence: beginning, middle, or end
 
 Adverbs, like *however*, *meanwhile*, and so on can load paragraphs down quick if used too often, for example:
 
-> ‘However, if you click this one . . .’ Or, ‘Don’t use that one, however.’
+> 'However, if you click this one . . .’ Or, 'Don’t use that one, however.’
 
 **Idioms** like *in other words*, *in any case*, *on the other hand*, and so on can also overburden paragraphs if used too frequently at ends of sentences, for example:
 
@@ -374,13 +374,13 @@ Conjunctions like _but_ and _and_ are fine to use infrequently at beginnings of 
 
 Adverbs like _very_, _really_, _only_, and others are commonly used in speech when we talk to each other, and in that context are easily overlooked, but they look and read terrible in writing, and add considerable bloat to documents when all tallied up.
 
-For example, ‘the really large code block’ or ‘only copy the lines between x and y’ are bloated ways of writing ‘the large code block’ and ‘copy the lines between x and y’. There’s no loss of meaning or instruction by dropping the needless adverbs, and it reads a lot better too.
+For example, 'the really large code block’ or 'only copy the lines between x and y’ are bloated ways of writing 'the large code block’ and 'copy the lines between x and y’. There’s no loss of meaning or instruction by dropping the needless adverbs, and it reads a lot better too.
 
-**Avoid passive verb structures**. Verb structures like _to be/have_, _could be/have_, _should be/have_, _might be/have_, and so forth are not only miserable to read, but they bloat copy with unnecessary words. You are the expert giving the sound advice, so assume the role. Find a more direct and active way of word phrases. Using a generic structure as example: ‘put this thing there’ is far cleaner and direct than either ‘you should put this thing there’ or ‘that thing should be put there’. Both are lousy. If a reader doesn’t want to put something somewhere, they won’t, but they’ll appreciate you weren’t wishy-washy about the instruction. Kill the passive verb structures.
+**Avoid passive verb structures**. Verb structures like _to be/have_, _could be/have_, _should be/have_, _might be/have_, and so forth are not only miserable to read, but they bloat copy with unnecessary words. You are the expert giving the sound advice, so assume the role. Find a more direct and active way of word phrases. Using a generic structure as example: 'put this thing there’ is far cleaner and direct than either 'you should put this thing there’ or 'that thing should be put there’. Both are lousy. If a reader doesn’t want to put something somewhere, they won’t, but they’ll appreciate you weren’t wishy-washy about the instruction. Kill the passive verb structures.
 
-**Question every use of ‘that’ and ‘just’**:
+**Question every use of 'that’ and 'just’**:
 
-It's easy to abuse both words. Every time you use ‘that’ or ‘just’ in a sentence, read the sentence without using the words and see if it still makes sense. Most of the time it will. If it does, leave the words out.
+It's easy to abuse both words. Every time you use 'that’ or 'just’ in a sentence, read the sentence without using the words and see if it still makes sense. Most of the time it will. If it does, leave the words out.
 
 
 ### Capitalizations

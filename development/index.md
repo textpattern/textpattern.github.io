@@ -90,7 +90,7 @@ Admin-side plugins often make use of the [Extensions administration region](/adm
 
 ## Register your plugin developer prefix
 
-All hopeful plugin developers must [register an ‘author’ prefix](/brand/author-prefixes-and-registration), and use it in the appropriate locations.
+All hopeful plugin developers must [register an 'author’ prefix](/brand/author-prefixes-and-registration), and use it in the appropriate locations.
 
 ## How plugins are loaded
 

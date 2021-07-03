@@ -17,7 +17,7 @@ These guidelines, an extension of Textpattern’s baseline [editorial style guid
 
 ## Audience
 
-The primary target audience of user documentation is new users of Textpattern, and notably the administrator (or ‘Publisher’) role, since that role is acquired when installing Textpattern software for the first time.
+The primary target audience of user documentation is new users of Textpattern, and notably the administrator (or 'Publisher’) role, since that role is acquired when installing Textpattern software for the first time.
 
 Secondary audiences are, to a lesser degree, experienced users and active [community](https://forum.textpattern.com/) participants using specific resources like the [Tags reference](/tags) or [developer documentation](/development).
 
@@ -105,11 +105,11 @@ To change a user’s role, find and click their name in the Users panel . . .
 
 You are still in second-person mode, but you've introduced a third-party, the potential future collaborators of the reader. It could just as well be third-person singular (*his*, *her*). But for the vast majority of documentation, you will never need to do this.
 
-Another exception is with regard to materials like you are reading now, materials written by editors for other editorial collaborators. _We_ are speaking to each other, so use of ‘we’ (first-person plural) can be appropriate in pages like this.
+Another exception is with regard to materials like you are reading now, materials written by editors for other editorial collaborators. _We_ are speaking to each other, so use of 'we’ (first-person plural) can be appropriate in pages like this.
 
 ### Abbreviations
 
-Regarding user documentation, two topics are especially important to review in the [Abbreviations](/brand/editorial-style-guide#abbreviations) section of the editorial style guide: the avoidance of common-word abbreviations like ‘admin’, and the recommended use of Latin idioms as abbreviations in parenthetical notes over English equivalents in regular text.
+Regarding user documentation, two topics are especially important to review in the [Abbreviations](/brand/editorial-style-guide#abbreviations) section of the editorial style guide: the avoidance of common-word abbreviations like 'admin’, and the recommended use of Latin idioms as abbreviations in parenthetical notes over English equivalents in regular text.
 
 ### Brand name
 
@@ -119,7 +119,7 @@ Particularly in documentation, do not overuse the brand name. The context of bei
 
 Do not make reference to past or future Textpattern version numbers. This only makes it harder to maintain documentation as new versions are released. Write about the functionality of the current version without indicating in what versions the functionality changed. Totally unnecessary.
 
-The sole exception is in tag pages where ‘Genealogy’ sections are maintained.
+The sole exception is in tag pages where 'Genealogy’ sections are maintained.
 
 ## Formatting interface strings
 
@@ -140,14 +140,14 @@ Headers and labels that are single-word strings require no additional formatting
 The Write panel.
 {:.example}
 
-In this common-use example, the string is a proper adjective (i.e., a name being used as a adjective), which is always capitalized. The word ‘panel’, a subject noun, is not part of the string; rather, it provides the general *what* and *where* context of ‘Write’.
+In this common-use example, the string is a proper adjective (i.e., a name being used as a adjective), which is always capitalized. The word 'panel’, a subject noun, is not part of the string; rather, it provides the general *what* and *where* context of 'Write’.
 
 Another example, albeit exaggerated, with all kinds of *what* and *where* context:
 
 Under the Presentation section of the back-end’s main navigation are five presentation panel links: Themes, Sections, Pages, Forms, and Styles.
 {:.example}
 
-In this example we have six single-word strings being named, easily identified by their capitalization. ‘Presentation’ (a link label) is used as another proper adjective; in this case, modifying ’section’, a part of the main navigation. But the second instance of the word, ‘presentation’, is just a regular adjective modifying ‘panel links’. No capitalization is necessary there. And no specific presentation panel exists, anyway, so capitalizing it would be confusing. The remaining five strings are used as proper nouns of link labels.
+In this example we have six single-word strings being named, easily identified by their capitalization. 'Presentation’ (a link label) is used as another proper adjective; in this case, modifying ’section’, a part of the main navigation. But the second instance of the word, 'presentation’, is just a regular adjective modifying 'panel links’. No capitalization is necessary there. And no specific presentation panel exists, anyway, so capitalizing it would be confusing. The remaining five strings are used as proper nouns of link labels.
 
 Note that panel names and headers under the Presentation section of the back end are different from the names of templates created in those respective panels. The latter is dealt with in [Presentation template names](#presentation-template-names).
 
@@ -164,7 +164,7 @@ Screen-readers will also pick up the strong format, which is appropriate here be
 
 These types of strings are uniquely preferences labels (a.k.a. settings) in the Site, Admin, Publish, and Feeds sections of the Preferences panel. Specifically, they are the settings with labels posed as questions. For these labels, `emphasis` is used to distinguish them easier from regular text, which screen-readers also pick up on, for example:
 
-Widowed words happen when the last word of a title wraps to a new line by itself. You may not like it. Prevent widowed words from happening by selecting ‘Yes’ for the *Prevent widowed words in article titles?* preference in the Publish section of the Preferences panel.
+Widowed words happen when the last word of a title wraps to a new line by itself. You may not like it. Prevent widowed words from happening by selecting 'Yes’ for the *Prevent widowed words in article titles?* preference in the Publish section of the Preferences panel.
 {:.example}
 
 As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string we're concerned with here is the preference label posed as a question, distinguished by emphasized text. Without the emphasis, the string would be much harder to see and understand.
@@ -173,7 +173,7 @@ As in earlier examples, additional strings are used (correctly) and lots of cont
 
 Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably fits a users mental model better: that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example:
 
-If you want URL titles to be hyphenated, select ‘Hyphenated (title-like-this)’ from the select-box options for the preference, **Permalink title URL pattern**, in the Publish section of the Preferences panel.
+If you want URL titles to be hyphenated, select 'Hyphenated (title-like-this)’ from the select-box options for the preference, **Permalink title URL pattern**, in the Publish section of the Preferences panel.
 {:.example}
 
 Again, this exaggerated example uses other string types and lots of context for demonstration. In actual documentation, much of the context will be clear, thus the exhausting specificity won’t be necessary. Ensure that it is clear, but only as much as needed.
@@ -321,7 +321,7 @@ Do not bother adding a `cite` attribute to the `q` element when quoting short, f
 
 #### Displayed quotations
 
-When, and only when, a free-text string is long enough to warrant being a ‘displayed quotation’ (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown’s `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
+When, and only when, a free-text string is long enough to warrant being a 'displayed quotation’ (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown’s `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
 There are only two situations that you might ever use a block quote; if quoting a popup help tip, or if quoting the only free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](/administration/languages-panel), under the panel header, and reads:
 
@@ -343,7 +343,7 @@ URIs, directory paths, and file names used inline are not formatted with italic 
 
 Wrong:
 : *example.com*
-: The ‘Sites’ directory.
+: The 'Sites’ directory.
 : */Users/name/Sites*
 : `~/Sites`
 : **index.php**
@@ -474,11 +474,11 @@ The strong formatting for [multiple-word strings with no terminal punctuation](#
 
 So this business with inline formatting is tricky, and why the golden rule of thumb is: don’t use inline formatting unless you are documenting [interface strings](#formatting-interface-strings), and the necessary like.
 
-The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), But this should rarely be necessary.
+The sole exception is when emphasizing a word as a part of regular text (e.g. 'You *really* don’t want to do that.’), But this should rarely be necessary.
 
 ### Inline-text styling
 
-In contrast to simple [inline-text formatting](#inline-text-formatting), Kramdown enables specific styling using its ‘inline attributes list’ (IAL) notation.[^ial]
+In contrast to simple [inline-text formatting](#inline-text-formatting), Kramdown enables specific styling using its 'inline attributes list’ (IAL) notation.[^ial]
 
 For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text as:
 
@@ -498,7 +498,7 @@ A small variety of block-level elements and specialized content types are employ
 * Markdown enables easy addition of paragraphs and (un)ordered lists. No demonstration is needed. You know them.
 * Kramdown enables easy use of [definition lists](#definition-lists) and [notes](#notes) (i.e. endnotes).
 * HTML must be used for [tables](#tables), due to a specialized wrapper requirement.
-* Predefined class selectors, applied using Kramdown’s ‘inline attributes list’ notation, enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
+* Predefined class selectors, applied using Kramdown’s 'inline attributes list’ notation, enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
 
 This small set of block elements and content types is enough for Textpattern user documentation.
 
@@ -596,7 +596,7 @@ Table 3 presents the entities to use, and demonstrates the notes as well, from w
                 <td colspan="3">
                     <ol class="list--refmarks">
                         <li>Unicode entities may be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
-                        <li>Known as the ‘paragraph sign’ in layman’s terms.</li>
+                        <li>Known as the 'paragraph sign’ in layman’s terms.</li>
                         <li>And so on.</li>
                     </ol>
                 </td>
@@ -626,7 +626,7 @@ Then, at bottom of that section, just before the next document header, add the c
 
 If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are first marked in text. Not because they have to be that way (Kramdown will render the correct order automatically), but because it’s logical convention, and it makes it easier for collaborators to follow.
 
-[^notes]: While many markup languages, like Markdown, Kramdown, Textile, and so on call their notes functionality ‘footnotes’, it’s a misnomer, because what they really create are *endnotes*. Every English style manual, like the one we use, will explain it. The *foot-* and *end-* prefixes merely indicate *where* the notes are placed in published material, regardless of medium. The style manuals also refer to both types more generally as ‘notes’. So if you can’t be specific, be general.
+[^notes]: While many markup languages, like Markdown, Kramdown, Textile, and so on call their notes functionality 'footnotes’, it’s a misnomer, because what they really create are *endnotes*. Every English style manual, like the one we use, will explain it. The *foot-* and *end-* prefixes merely indicate *where* the notes are placed in published material, regardless of medium. The style manuals also refer to both types more generally as 'notes’. So if you can’t be specific, be general.
 
 ### Tables
 
@@ -636,7 +636,7 @@ Use the following guidelines to make tables well-structured and useful:
 
 1. **HTML only**. Tables must be marked up with HTML in user docs. Ensure the markup is complete with `caption`, `thead`, `tbody`, `tfoot` (see #4), including the `div` container. Copy/paste the markup below to make it easier.
 2. **Tabular data**. Use tables as much as appropriate for tabular data sets. Avoid tables if data is mostly long strings of text (sentences, paragraphs, lists), in which case one or more [definition lists](#definition-lists) will work better.
-3. **Captions**. Unlike figure captions, which function more like descriptions, a table’s `caption` is really its title. Use it to number and title tables (e.g. ‘Table 1. Caption of table.’, ‘Table 2. Caption of table.’, and so on) even if only one table is used. This makes it easy to refer to tables in the main text.
+3. **Captions**. Unlike figure captions, which function more like descriptions, a table’s `caption` is really its title. Use it to number and title tables (e.g. 'Table 1. Caption of table.’, 'Table 2. Caption of table.’, and so on) even if only one table is used. This makes it easy to refer to tables in the main text.
 4. **Notes**. Table notes are optional (see [Notes in tables](#notes-in-tables)), but can help convey meaning and understanding from table headers and data. If notes are not needed, or a table footer at all, remove the entire `tfoot` region and ensure the three example reference marks in the HTML below (added as `sup` elements) are removed from table cells.
 
 ``` html
@@ -681,7 +681,7 @@ Use the following guidelines to make tables well-structured and useful:
 
 Example blocks are paragraphs and, more rarely, lists, of hypothetical text used for showing examples in documentation. They are especially useful for the kind of documentation you are reading now, where examples need made about writing examples.
 
-The styling, added via Kramdown’s ‘inline attributes list’ notation, helps distinguish these blocks so there's no confusion to the reader about what is regular text and what is example material.
+The styling, added via Kramdown’s 'inline attributes list’ notation, helps distinguish these blocks so there's no confusion to the reader about what is regular text and what is example material.
 
 Use these when block code, [displayed quotations](#displayed-quotations), or [file tree components](#file-tree-components)) are not appropriate for distinguishing example text.
 

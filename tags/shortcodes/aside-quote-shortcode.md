@@ -129,7 +129,7 @@ In the Links panel, create your Tweets using this association to the Textpattern
         <tbody>
             <tr>
                 <th scope="row">Title</th>
-                <td>Date of Tweet (e.g. ‘23 August 2009’)</td>
+                <td>Date of Tweet (e.g. '23 August 2009’)</td>
             </tr>
             <tr>
                 <th scope="row">Sort value</th>
@@ -141,7 +141,7 @@ In the Links panel, create your Tweets using this association to the Textpattern
             </tr>
             <tr>
                 <th scope="row">Category</th>
-                <td>Select ‘Tweets’</td>
+                <td>Select 'Tweets’</td>
             </tr>
             <tr>
                 <th scope="row">Description</th>
