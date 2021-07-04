@@ -71,7 +71,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `textpattern`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it's for:** Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.
+: **What it's for:** Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front-side.
 
 `themes`
 : **Type:** directory.
