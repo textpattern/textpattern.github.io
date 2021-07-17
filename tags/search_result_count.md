@@ -63,7 +63,7 @@ Other tags used: [article](/tags/article), [if_search](/tags/if_search), [if_art
 ~~~ html
 <txp:if_search_results>
     <txp:search_result_count text="hits" />
-</txp:if_search_results />
+</txp:if_search_results>
 ~~~
 
 Displays the number of articles returned (e.g. 5) as follows: `5 hits`.
@@ -76,7 +76,7 @@ Other tags used: [if_search_results](/tags/if_search_results).
 <txp:if_article_list>
     <txp:search_result_count text="articles" />
     <txp:article limit="20" />
-</txp:if_article_list />
+</txp:if_article_list>
 ~~~
 
 Displays the number of articles in the current section, then displays them as an article listing, 20 per page.
