@@ -43,7 +43,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : **Default:** `1`.
 
 `exclude="category name(s)"` <span class="footnote warning">v4.0.4+</span>
-: List of category names which will be excluded from the list. `categories` takes precedence over `exclude`.
+: List of category names which will be excluded from the list.
 : **Default:** unset.
 
 `form="form name"` <span class="footnote warning">v4.0.7+</span>
