@@ -58,7 +58,7 @@ This tag has no attributes of its own. It accepts only the {% include atts-globa
 
 <txp:if_article_list>
     <p>
-        <txp:olde>
+        <txp:older>
             Previous
         </txp:older>
         <txp:newer>
