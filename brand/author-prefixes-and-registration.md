@@ -312,6 +312,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * klp: kelp
 * kml: [kimili](https://forum.textpattern.com/profile.php?id=1440)
 * krl: vitch
+* ktd: [kaitje](https://forum.textpattern.com/profile.php?id=206152)
 * kuo: [kuopassa](https://forum.textpattern.com/profile.php?id=22289)
 
 </div>
