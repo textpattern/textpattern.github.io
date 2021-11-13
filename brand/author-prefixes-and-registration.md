@@ -175,6 +175,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * e26: edduddiee
 * ebl: TheEric
 * eck: ecklesroad
+* ect: [lenatime](https://forum.textpattern.com/profile.php?id=206175)
 * ede: edeverett
 * egg: yatil.de
 * <span class="warning">end</span>
