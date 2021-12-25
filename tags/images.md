@@ -103,7 +103,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `caption`. \\
 `category`. \\
 `date`. \\
-`extension` (image extension). \\
+`ext` (image extension). \\
 `h` (image `height` attribute). \\
 `id` (image id#). \\
 `name` (image name). \\
