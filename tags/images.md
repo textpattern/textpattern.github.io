@@ -59,7 +59,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : Filter the images by this list of category names as defined in the Categories panel.
 
 `extension=".extension"`
-: Filter the images by this list of image extensions, including the leading dot. Example: `extension=".jpg, .png"`.
+: Filter the images by this list of image file extension(s), including the leading dot. Example: `extension=".avif, .jpg, .png, .webp"`.
 : **Default:** unset.
 
 `form="form name"`
@@ -103,7 +103,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `caption`. \\
 `category`. \\
 `date`. \\
-`ext` (image extension). \\
+`ext` (image file extension). \\
 `h` (image `height` attribute). \\
 `id` (image id#). \\
 `name` (image name). \\
