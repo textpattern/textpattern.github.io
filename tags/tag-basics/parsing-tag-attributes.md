@@ -261,4 +261,20 @@ Note that if a tag already _has_ an attribute with the same name as a global one
 : HTML `class` and `id` attributes of the wrapper tag.
 : **Values:** any valid string.
 
+`break="tag or pattern"`
+: HTML tag or any other string used to join list items.
+: **Values:** HTML tag name or any valid string.
+
+`breakby="string|regex"`
+: The pattern used to split the output.
+: **Values:** any valid string or regex.
+
+`sort="nat|case asc|desc|rand"`
+: Used to reorder list items.
+: **Values:** a combination of type (`nat`, `case`) and direction (`asc`, `desc`).
+
+`limit, offset`
+: Used to extract a sublist.
+: **Values:** any integer.
+
 [Next: Incorrect tag contexts](/tags/tag-basics/incorrect-tag-contexts)
