@@ -27,6 +27,11 @@ The **expires** tag is a *single* tag used to indicate when an article should no
 
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
+`calendar="calendar string"`
+: Set the calendar (for example, `chinese`).
+: **Values:** any valid ICU calendar string.
+: **Default:** unset.
+
 `format="format string"`
 : Override the default date format set in the Preferences panel.
 : **Values:** any valid [strftime](https://secure.php.net/strftime) string values.
