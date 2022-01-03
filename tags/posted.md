@@ -27,6 +27,11 @@ The **posted** tag is a *single* tag which is used to return the publication dat
 
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
+`calendar="calendar string"`
+: Set the calendar (for example, `chinese`).
+: **Values:** any valid ICU calendar string.
+: **Default:** unset.
+
 `format="format string"`
 : Override the default date format set in the Preferences panel.
 : **Values:** any valid [strftime](https://secure.php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](https://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](https://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](https://www.w3.org/Protocols/rfc822/#z28)).
