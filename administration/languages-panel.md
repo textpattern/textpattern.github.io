@@ -30,11 +30,11 @@ From Textpattern version 4.7 onwards, each user within the administration-side c
 
 ## List of available languages
 
-A complete list of the [available langauges within Textpattern](https://textpattern.com/about/301/languages). By default, the language chosen at installation will be active and the primary language for 'Site language' and 'User language'. Using this list you can add or remove additional languages for use within the CMS.
+A complete list of the [available langauges within Textpattern](https://textpattern.com/about/languages). By default, the language chosen at installation will be active and the primary language for 'Site language' and 'User language'. Using this list you can add or remove additional languages for use within the CMS.
 
 Any languages packs that have been updated (for example after upgrade to a more recent release of Textpattern) will be highlighted and allow you to update the language within the CMS.
 
-Additional language Textpacks may be added in future Textpattern releases, as they become available. They will be automatically added to the list of languages. If you'd like to help with the translation of Textpattern, please visit the [Language translations](https://textpattern.com/about/301/languages) page for details of how to get involved (we love additional translations!).
+Additional language Textpacks may be added in future Textpattern releases, as they become available. They will be automatically added to the list of languages. If you'd like to help with the translation of Textpattern, please visit the [Language translations](https://textpattern.com/about/languages) page for details of how to get involved (we love additional translations!).
 
 ## Adding Textpacks manually
 

@@ -17,7 +17,7 @@ Textpattern will function with any appropriate HTTP (web) server running PHP and
 
 ### Apache with PHP
 
-Textpattern runs faster on current mainline versions of Apache, MySQL, and PHP than end-of-life legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current mainline versions of Apache, MySQL, and PHP than end-of-life legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/system-requirements) is enough to run Textpattern.
 
 The method of enabling PHP extensions varies between versions of PHP and Apache, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have questions.
 
@@ -33,7 +33,7 @@ Textpattern-specific directives are provided by the .htaccess file in the root d
 
 ### Nginx with PHP-FPM
 
-Textpattern runs faster on current mainline versions of Nginx, MySQL, and PHP than legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current mainline versions of Nginx, MySQL, and PHP than legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/system-requirements) is enough to run Textpattern.
 
 The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and Nginx, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
 
@@ -159,6 +159,6 @@ More options and further information can be found in the [Hiawatha manual](https
 
 ### LiteSpeed with PHP
 
-Textpattern runs faster on current versions of LiteSpeed, MySQL, and PHP than end-of-life legacy versions. Typically, an existing production LiteSpeed web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current versions of LiteSpeed, MySQL, and PHP than end-of-life legacy versions. Typically, an existing production LiteSpeed web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/system-requirements) is enough to run Textpattern.
 
 Note that [OpenLiteSpeed support for `.htaccess`](https://openlitespeed.org/kb/how-to-autoload-htaccess-with-openlitespeed/) file directives was added in OpenLiteSpeed version 1.4.38. Releases prior to this will require `.htaccess` directives to be entered manually using the WebAdmin Console. For further information on rewrite rules, please refer to [this document](https://openlitespeed.org/kb/migrate-apache-rewrite-rules-to-openlitespeed/).

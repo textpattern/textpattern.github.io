@@ -14,7 +14,7 @@ You will find abbreviated upgrade instructions in the `README.txt` file of every
 
 These instructions follow a process of using an (S)FTP application, which you presumably have (for example [Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or [FileZilla](https://filezilla-project.org/) for all platforms).
 
-Before you begin, ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you are installing.
+Before you begin, ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/system-requirements) for the version you are installing.
 
 ## Upgrading from very old versions
 

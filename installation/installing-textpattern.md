@@ -15,7 +15,7 @@ On this page:
 
 ## Install the software for the first time
 
-1. Ensure your web server meets the [Textpattern CMS system requirements](https://textpattern.com/about/119/system-requirements).
+1. Ensure your web server meets the [Textpattern CMS system requirements](https://textpattern.com/about/system-requirements).
 2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
 3. Create a new directory (e.g. `textpattern-archive`) on your local drive, move the downloaded archive file from step 2. into it, and unpack [the file tree contents](https://github.com/textpattern/textpattern).
 4. Open a file transfer connection to your destination server and upload the unpacked file tree to your web root, a subdomain or subdirectory. This destination directory should contain `css.php`, `index.php`, plus the `files`, `images`, `themes` and `textpattern` directories as a minimum. The `.htaccess` file is required if your web server is Apache httpd or a derivative. The `sites` subdirectory is only required for optional multi-site functionality and the `rpc` directory is only required for optional XML-RPC functionality. `README.txt` and `HISTORY.txt` are optional.

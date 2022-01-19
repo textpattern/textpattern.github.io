@@ -8,7 +8,7 @@ description: From download to log in — a complete guide to installing Textpatt
 
 # Installing Textpattern
 
-These instructions follow a process of using an (S)FTP application, and we assume you have one.[^sftp] If you are familiar with installing CMS software and prefer a quick guide, see [these tidbits at download](https://textpattern.com/start#installation), or  the [README](https://github.com/textpattern/textpattern/blob/dev/README.md#install-textpattern) included in the download package. And, before you begin, ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you are installing.
+These instructions follow a process of using an (S)FTP application, and we assume you have one.[^sftp] If you are familiar with installing CMS software and prefer a quick guide, see [these tidbits at download](https://textpattern.com/start#installation), or  the [README](https://github.com/textpattern/textpattern/blob/dev/README.md#install-textpattern) included in the download package. And, before you begin, ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/system-requirements) for the version you are installing.
 
 **Contents**
 

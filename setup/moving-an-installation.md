@@ -91,7 +91,7 @@ In short, you will backup your installation files and database export file from 
 
 ### System requirements
 
-The instructions that follow assume your installation of Textpattern is up-to-date, including the recommended [system requirements](https://textpattern.com/about/119/system-requirements) for MySQL and PHP. If not, and especially if more than two versions outdated, it may be better to upgrade these software packages on the current host and ensure everything works properly before migrating to a new host. (Unless they are truly terrible hosts and you really need to leave them ASAP, then do it.)
+The instructions that follow assume your installation of Textpattern is up-to-date, including the recommended [system requirements](https://textpattern.com/about/system-requirements) for MySQL and PHP. If not, and especially if more than two versions outdated, it may be better to upgrade these software packages on the current host and ensure everything works properly before migrating to a new host. (Unless they are truly terrible hosts and you really need to leave them ASAP, then do it.)
 
 If your web host is not running the minimum versions of MySQL and PHP, contact the host and ask them to upgrade these resources. After they do, upgrade Textpattern to the [latest stable release](https://textpattern.com/start). If your site 'breaks' after upgrading, it likely means you have to adjust some things in relation to the new PHP and/or MySQL versions. In that case, see [Troubleshooting common problems](/setup/troubleshooting-common-problems).
 
