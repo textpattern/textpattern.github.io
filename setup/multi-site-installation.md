@@ -8,7 +8,7 @@ description: Installing Textpattern CMS as a multi-site installation.
 
 # Multi-site installation guide
 
-A multi-site installation allows you to use a single Textpattern CMS installation to run multiple websites. Each site has its own website design and separate admin login, but you have only one copy of Textpattern to maintain and update.
+A multi-site installation allows a single Textpattern CMS installation to power multiple websites. Each site can have its own website theme and separate admin login, but only one instance of Textpattern to maintain.
 
 On this page:
 
@@ -28,26 +28,26 @@ On this page:
 A multi-site installation can be suitable if:
 
 * You have multiple websites/domains hosted on the same server and want to update them all easily and efficiently.
-* You want to keep your admin area separate from your public site and all config infos private. This is also suitable for single sites.
-* You want to use a custom login address for the admin area.
+* You want to keep your admin area separate from your public site and all config settings private. This is also suitable for single sites.
+* You want to use a custom login URL for the admin area.
 * You work with theme templates as files and want to keep your templates and assets for each site separate from the Textpattern installation, for example to manage your sites as separate repositories using a versioning system (see [Alternative multi-site scenarios](#alternative-multi-site-scenarios)).
 * You run multiple sites with different versions of Textpattern, or experiment with several versions of Textpattern (see [Alternative multi-site scenarios](#alternative-multi-site-scenarios)).
 
-If none of the above apply, follow the instructions for installing a regular [Textpattern installation](/installation/).
+If none of the above apply, follow the instructions for installing a single-site [Textpattern installation](/installation/).
 
 ## Additional system requirements
 
-In addition to the regular [Textpattern CMS system requirements](https://textpattern.com/about/119/system-requirements), your web host must support:
+In addition to the regular [Textpattern CMS system requirements](https://textpattern.com/about/system-requirements), your web server must support:
 
-- **the creation of subdomains**, e.g. `www.example.com` and `admin.example.com` and point them to directories. Most web hosts provide a means of managing domains and subdomains through their control panel. For self-managed hosts that offer root access, you can create your own virtual hosts (see @@creating virtual hosts@@).
-- **symbolic links** (soft links). Symbolic links, also called symlinks, cannot be transferred via FTP, however even if your host doesn't provide an SSH connection, the multi-site installer will attempt to (re)create the symbolic links. If this fails, you may still be able to create the symlinks manually via your host's control panel. Consult your host as necessary.
+- **the creation of subdomains**, e.g. `www.example.com` and `admin.example.com` and assign them to directories. Many web hosts provide a means of managing domains and subdomains through their control panel. For self-managed hosts that offer root access, you can create your own virtual hosts (see creating virtual hosts).
+- **symbolic links**. Symbolic links, also called soft links or symlinks, cannot typically be transferred via SFTP. If your host doesn't provide an SSH connection, the multi-site installer will attempt to (re)create the required symbolic links. If this fails, you will need to create the symlinks manually. This can often be done via your host's control panel. Consult your host as necessary.
 
 ## Installing Textpattern
 
-1. Ensure your web server meets the above [system requirements](#extra-system-requirements).
-2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
+1. Ensure your web server meets or exceeds the [Textpattern system requirements](#extra-system-requirements).
+2. [Download](https://textpattern.com/download) the latest Textpattern `.tar.gz` archive.
 3. Unpack the downloaded archive file in a directory on your local drive.
-4. Open an SSH connection to your server and transfer the unpacked file tree to the web root on your webserver (see [Transferring files via SSH](#)). If your host does not permit SSH access, upload the files via (S)FTP. Don't worry if you receive an error that the symlinks could not be transferred; the multi-site installer will (re)create these later.
+4. Open an SSH connection to your server and transfer the unpacked file tree to the web root on your webserver (see [Transferring files via SSH](#)). If your host does not permit SSH access, upload the files via SFTP. Don't worry if you receive an error that the symlinks could not be transferred; the multi-site installer will (re)create these later.
 
 These instructions only need to be followed once, or when updating Textpattern at a later date. Use the following instructions for each site in your multi-site installation.
 
@@ -58,9 +58,9 @@ Follow these instructions for each new site in your multi-site installation:
 1. Go into the `sites` directory and duplicate the entire `site1` directory. Rename the copy to match your site, e.g. `mydomain` (avoid spaces or special characters).
 2. Create a new MySQL database as per your web host's instructions and note its associated username and password credentials. If you are using a single MySQL database for several sites, choose an unused prefix for this site.
 3. In your web host's control panel, setup a subdomain `www.example.com` and set its document root to the `/sites/mydomain/public/` directory. If you prefer, you can use another subdomain instead of www, e.g. `dev`, `beta`, `v2`, etc. This will be the URL your website visitors will use.
-4. In your web host's control panel, setup the subdomain `admin.example.com` and set its document root to the `/sites/mydomain/admin/` directory. If you prefer, you can use another subdomain instead of admin, e.g. `edit`, `login`, `manage`, etc. This will be the URL your website content managers or editors will use and replaces the regular */textpattern* login address.
-5. Open a web browser and go to `admin.example.com/setup/`. If you chose another subdomain in step 4, enter that manually in place of *admin* in the web address.
-6. Follow the instructions in the web browser. The setup routine follows the same procedure as a [regular Textpattern installation](/installation/#setup-and-configuration) but asks for two pieces of additional information:
+4. In your web host's control panel, setup the subdomain `admin.example.com` and set its document root to the `/sites/mydomain/admin/` directory. If you prefer, you can use another subdomain instead of admin, e.g. `edit`, `login`, `manage`, etc. This will be the URL your website content managers or editors will use and replaces the regular `/textpattern` login URL.
+5. Open a web browser and go to `admin.example.com/setup/`. If you chose another subdomain in step 4, enter that manually in place of `admin` in the web address.
+6. Follow the instructions in the web browser. The setup routine follows the same procedure as a regular [Textpattern installation](/installation/#setup-and-configuration) but asks for two pieces of additional information:
   * **Admin subdomain**: This should be the subdomain you chose above in step 4, e.g. `admin.example.com`.
   * **Cookie domain**: This is usually the main domain name, e.g. `example.com`.
   * Reminder: If you chose a database prefix and are using one database for several Textpattern installations, remember to enter it during configuration.
@@ -74,11 +74,11 @@ The *root directory* contains `index.php`, `css.php` and the `images`, `files` a
 
 The multi-site installer will then create the missing symlinks and you should be able to proceed with Step 6 above and follow the regular setup and configuration routine.
 
-If the installer is still unable to create the necessary symlinks, you may need to create your symlinks manually. The installer will display the necessary commands. If you don't have command line access, make a note of these instructions and see if your web host provides a facility to create symlinks manually (sometimes found in the control panel's website file browser). Use the details provided to create the symlinks according to your host's instructions. If this is not possible, your web host may not support the [additional system requirements](#additional-system-requirements) in your current hosting plan.
+If the installer is still unable to create the necessary symlinks, you will need to create your symlinks manually. The installer will display the necessary commands. If you don't have command line access, make a note of these instructions and see if your web host provides a facility to create symlinks manually (sometimes found in the control panel's website file browser). Use the details provided to create the symlinks according to your host's instructions. If this is not possible, your web host may not support the [additional system requirements](#additional-system-requirements) in your current hosting plan.
 
 ## The multi-site folder structure
 
-Each site comprises three folders:
+Each site comprises three directories:
 
 ~~~
 mydomain/
@@ -87,7 +87,7 @@ mydomain/
     public/
 ~~~
 
-Place all the files you need for your site in these three folders and leave the corresponding folders in the textpattern directories untouched.
+Place all the files you need for your site in these three directories. Leave the corresponding subdirectories in the `textpattern` directory untouched.
 
 * **admin**: Store site-specific admin-themes or non-standard plugins (e.g. if loading plugins from files using ied_plugin_composer) in this folder.
 * **private**: This folder is not accessible from the web and contains only `config.php` as standard. You can use this folder for items that should stay out of sight, such as database backup files, custom site templates (e.g. using flat-file plugins), source files that are compiled and internal setup notes.
@@ -98,7 +98,7 @@ Place all the files you need for your site in these three folders and leave the 
 
 Multi-site installations can be useful for a range of different scenarios:
 
-### Separate sites and textpattern directories
+### Separate `sites` and `textpattern` directories
 
 In the standard Textpattern file tree, the `sites` directory and the individual website directories are located inside the base Textpattern installation.
 
@@ -134,11 +134,11 @@ In such cases, you can extend the principle of the previous example ([separate s
 
 1. Download the installer package or repository for the desired version of Textpattern to your computer.
 2. Upload it to your web server in a separate directory next to your existing Textpattern installation using SSH or FTP, as described above.
-3. Give the directory a suitable name, e.g. `textpattern_v462`.
+3. Give the directory a suitable name, e.g. `textpattern_latest`.
 
 You only need to do this once. Now you can connect the sites you need to the respective version of Textpattern via symlinks.
 
-To reconnect the symlinks of a multi-site to a different textpattern directory, either reset your symlinks manually via the command line (or via your web host's control panel) so that they point to the new directory, or do the following:
+To reconnect the symlinks of a multi-site to a different `textpattern` directory, either reset your symlinks manually via the command line (or via your web host's control panel) so that they point to the new directory, or do the following:
 
 * Copy the `setup` folder from your Textpattern `sites/site1/admin/setup` directory into your respective site's `mydomain/admin` directory.
 * In the `mydomain/admin` directory, delete the `vendors` symlink.
@@ -163,15 +163,15 @@ sites/
         admin/
         private/
         public/
-textpattern_v470/
-textpattern_v462/
+textpattern_previous/
+textpattern_latest/
 ~~~
 
 ### Alternative theme setups
 
-In the standard multi-site setup there is a `themes` folder in the `public` directory. This allows you to have separate themes for separate sites. The themes folder in the `textpattern` directory is unused.
+In the standard multi-site setup there is a `themes` subdirectory in the `public` directory. This allows you to have separate themes for separate sites. The themes folder in the `textpattern` directory is unused.
 
-If you wish to have a central store of all your themes, you can replace the `themes` *folder* in the `public` directory(ies) of your respective sites with a manually created *symlink* to the `themes` folder in the central Textpattern installation. You should then place all your themes in the `themes` folder of your Textpattern *root directory*.
+If you wish to have a central store of all your themes, you can replace the `themes` subdirectory in the `public` directory of your respective sites with a manually created symlink to the `themes` directory in the central Textpattern installation. You should then place all your themes in the `themes` folder of your Textpattern *root directory*.
 
 **Note:** With this setup, any changes you make to a theme in a site and then export back to disk will be saved centrally, overwriting the theme for all other sites. Changes to other sites will, however, only come into effect once you reimport that theme in the other sites.
 
