@@ -124,6 +124,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 
 <div class="layout-text4col">
 
+* cad: [cad](https://forum.textpattern.com/profile.php?id=206348)
 * cbe: [CeBe](https://forum.textpattern.com/profile.php?id=76735)
 * cbs: cbeyls
 * cfm: [aeonflux](https://forum.textpattern.com/profile.php?id=8082)
