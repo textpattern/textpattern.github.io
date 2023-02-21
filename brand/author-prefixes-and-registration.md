@@ -431,7 +431,7 @@ None at this time.
 * rpg: leralle
 * <span class="warning">rsd</span>
 * rss: wilshire
-* <span class="success">rsx</span>: [ramanan](https://github.com/funkaoshi): 
+* <span class="success">rsx</span>: [ramanan](https://github.com/funkaoshi)
 * <span class="success">rtr</span>: [rob_roy](https://forum.textpattern.com/profile.php?id=4307)
 * rvm: [ruud](https://forum.textpattern.com/profile.php?id=9348)
 
