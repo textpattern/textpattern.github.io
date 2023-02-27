@@ -279,7 +279,7 @@ These resources are hosted at **phpcrossref.com**:
 Two basic plugin tutorials to put it all in perspective:
 
 * [Public-side plugin tutorial](/development/public-side-plugin-tutorial)
-* [Administration-side plugin tutorial](/development/administration-side-plugin-tutorial)
+* [Administration-side plugin tutorial](/development/admin-side-plugin-tutorial)
 
 ## Implementation resources
 
