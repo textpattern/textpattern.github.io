@@ -29,11 +29,17 @@ Textpattern developers do their part to keep core code as secure as they can. It
 
 * Update your installation to the [latest stable release version](https://textpattern.com/download) whenever new releases are available.
 * Check the Diagnostics panel for security warnings.
+* Visit the Admin>Preferences panel (then the _Admin_ subpanel) and alter both the _File directory path_ and _Temporary directory path_ to reference locations outside of your website's docroot.
+* Turn off the _Allow PHP in article/pages_ settings (found in Admin>Preferences, on the _Publish_ subpanel), unless you’re actively using those features.
+* In the Admin>Preferences (_Advanced options_ subpanel, which is hidden by default so you need to vist the _Admin_ subpanel first and enable it) set the _Number of extra parser sweeps_ to 0. If you find pages or plugins that don’t work as well, restore it to 1 and please notify us of any issues so we can try and address them in future versions.
 * Ensure you use a very strong password for *all* accounts.
 * Only create Textpattern user accounts for people who require them, and ensure their access level is set to only the functionality they require. Don't just create admin-level accounts because it is easier! Each one is a potential avenue of attack if a password is compromised.
 
 **With regard to Textpattern plugins:**
 
+* Ensure you enable .htaccess security in the /path/to/your-site/textpattern/plugins directory. Textpattern ships with an .htaccess-dist file in this directory, so at the very least rename it. If you’re using Nginx or another flavour of web server, take a similar approach and clamp down read/write/execute permissions and ownership to that directory as tight as you can. This prevents plugin code from being accessed and executed directly.
+* Consider moving the plugins directory outside of your website's docroot. To do this, move the entire copntent of the plugins directory to the new location and edit your config.php file, adding a line: `define('PLUGINPATH', '/path/to/your/plugins');`
+* If you're using the _Plugin cache directory path_ (Admin>Preferences, on the _Admin_ subpanel) then consider moving it outside of your website's publicly-accessible docroot. This prevents development code from being executed directly. If this location is within your website's docroot, enable an .htaccess file (or your chosen web server equivalent) to limit access permissions to the directory.
 * Regularly verify the plugins you've uploaded and *turned on* are the latest versions.[^plugins]
 * Remove plugins you have turned off and don't rely on anymore (you can always reinstall them if ever needed again).
 
