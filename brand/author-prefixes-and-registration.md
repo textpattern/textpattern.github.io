@@ -76,6 +76,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * <span class="warning">add</span>
 * adi: [gomedia](https://forum.textpattern.com/profile.php?id=15145)
 * afa: Anton
+* ais: [Alien Internet Services](https://forum.textpattern.com/profile.php?id=206460)
 * ajt: segfault
 * ajw: Andrew
 * aka: AkaScooter
