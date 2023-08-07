@@ -286,6 +286,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * jgp: Rufnex
 * jjj: jascha
 * jk: Jeff_K
+* jks: [code365](https://forum.textpattern.com/profile.php?id=45643)
 * jmc: jufemaiz
 * jmd: jm
 * jmr: jmrhoades
