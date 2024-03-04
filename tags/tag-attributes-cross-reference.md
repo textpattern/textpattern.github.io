@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: document--without-toc
 category: Tags
 published: true
 title: Tag attributes cross-reference
