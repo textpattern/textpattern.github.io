@@ -115,7 +115,7 @@ Pages are your web page templates, primarily built with HTML and [Textpattern ta
 
 #### Form assets 
 
-[Forms](/build/form-templates-explained.md) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such 'Russian doll' construction of your website's architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain.
+[Forms](/build/form-templates-explained) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such 'Russian doll' construction of your website's architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain.
 
 All form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. custom_form_name.txp).
 
