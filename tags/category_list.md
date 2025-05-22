@@ -39,7 +39,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 
 `children="integer"` <span class="footnote warning">v4.7.0+</span>
 : Can limit the list depth to defined levels below the parent category.
-: **Values:** `0` (no children, i.e. only show one level below the parent) or `n` (show all nested categories and 'flatten' the list at the level `n`).
+: **Values:** `0` (no children, i.e. only show one level below the parent) or `n` (show all nested categories and 'flatten' the list at the level `n`). Use the attribute without a value to mimic the nested structure of the categories.
 : **Default:** `1`.
 
 `exclude="category name(s)"` <span class="footnote warning">v4.0.4+</span>
@@ -132,6 +132,13 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ~~~ html
 <txp:category_list break="li" wraptag="ul" />
 ~~~
+
+Or as a nested unordered list, starting at the "product-type" node:
+
+~~~ html
+<txp:category_list break="li" wraptag="ul" parent="prodyct-type" children />
+~~~
+
 
 ### Example 3: Set active class using the container tag
 
