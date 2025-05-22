@@ -136,7 +136,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 Or as a nested unordered list, starting at the "product-type" node:
 
 ~~~ html
-<txp:category_list break="li" wraptag="ul" parent="prodyct-type" children />
+<txp:category_list break="li" wraptag="ul" parent="product-type" children />
 ~~~
 
 
