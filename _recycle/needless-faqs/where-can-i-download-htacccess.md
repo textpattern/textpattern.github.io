@@ -1,4 +1,4 @@
-h1. Where can I download .htacccess? [todo]
+h1. Where can I download .htaccess? [todo]
 
 The .htaccess file is inside the main directory in both the .zip and .tar.gz downloads.  Some file browsers (particularly on macOS) don't display files beginning with a '.' by default, but it's there, honest.
 
