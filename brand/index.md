@@ -21,7 +21,7 @@ The baseline resources for *all* Textpattern platforms and project initiatives.
 
 ### Editorial style
 
-* [Editorial style guide](/brand/editorial-style-guide) (for all Textpattern project content)
+* [Editorial style guide](/brand/editorial-guide) (for all Textpattern project content)
 
 ### Visual identity and style
 
