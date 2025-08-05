@@ -72,6 +72,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * aba: aba
 * <span class="warning">abc</span> (for user docs only)
 * abl: [developr](https://forum.textpattern.com/profile.php?id=160386)
+* abu: [abu](https://forum.textpattern.com/profile.php?id=206672)
 * act: angryCat (?)
 * <span class="warning">add</span>
 * adi: [gomedia](https://forum.textpattern.com/profile.php?id=15145)
