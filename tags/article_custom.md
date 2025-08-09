@@ -96,7 +96,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : **Values:** `0` (no, don't include expired articles) or `1` (yes, include expired articles) or some English date.
 : **Default:** Setting of preference 'Publish expired articles'.
 
-`fields="list"`
+`fields="list"` <span class="footnote warning">v4.8.4+</span>
 : Retrieve only these (distinct) article fields, aggregated if necessary.
 : **Default:** unset (all fields).
 
@@ -128,10 +128,6 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 
 `month="yyyy"/"yyyy-mm"/"yyyy-mm-dd"/"date"` <span class="footnote warning">v4.7.0+</span>
 : Restrict to articles posted within the specified year/month/day or between the given date and the `time` attribute.
-: **Default:** unset.
-
-`fields` <span class="footnote warning">v4.8.0+</span>
-: Restrict articles by field name.
 : **Default:** unset.
 
 `offset="integer"`
