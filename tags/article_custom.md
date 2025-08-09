@@ -337,12 +337,10 @@ Outputs recently active authors with their latest article publish dates
 ### Example 9a: filter field
 
 ~~~ html
-<txp:article_custom time="-1 year" fields="authorid" sort="Posted DESC">
-    <txp:author /> (<txp:posted />)
-</txp:article_custom>
+<txp:article_custom section="my,sections" custom_field2 fields="list(thisid)"><txp:article_id /></txp:article_custom>
 ~~~
 
-Outputs recently active authors with their latest article publish dates
+Outputs a list of article ids belonging to particular sections, and having the custom_field2 populated.
 
 ## Genealogy
 
