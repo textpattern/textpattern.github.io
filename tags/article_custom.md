@@ -126,6 +126,10 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : Restrict to articles posted within the specified year/month/day or between the given date and the `time` attribute.
 : **Default:** unset.
 
+`fields` <span class="footnote warning">v4.8.0+</span>
+: Restrict articles by field name.
+: **Default:** unset.
+
 `offset="integer"`
 : The number of articles to skip.
 : **Default:** `0`.
@@ -318,6 +322,27 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 ~~~
 
 Outputs the number of live articles belonging to the current section.
+
+
+### Example 9: filter field
+
+~~~ html
+<txp:article_custom time="-1 year" fields="authorid, posted=max" sort="Posted DESC">
+    <txp:author /> (<txp:posted />)
+</txp:article_custom>
+~~~
+
+Outputs recently active authors with their latest article publish dates
+
+### Example 9a: filter field
+
+~~~ html
+<txp:article_custom time="-1 year" fields="authorid" sort="Posted DESC">
+    <txp:author /> (<txp:posted />)
+</txp:article_custom>
+~~~
+
+Outputs recently active authors with their latest article publish dates
 
 ## Genealogy
 
