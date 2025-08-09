@@ -96,6 +96,10 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : **Values:** `0` (no, don't include expired articles) or `1` (yes, include expired articles) or some English date.
 : **Default:** Setting of preference 'Publish expired articles'.
 
+`fields="list"`
+: Retrieve only these (distinct) article fields, aggregated if necessary.
+: **Default:** unset (all fields).
+
 `form="form name"`
 : Use specified form template to process each article.
 : **Default:** `default`.
@@ -327,7 +331,7 @@ Outputs the number of live articles belonging to the current section.
 ### Example 9: filter field
 
 ~~~ html
-<txp:article_custom time="-1 year" fields="authorid, posted=max" sort="Posted DESC">
+<txp:article_custom time="-1 year" fields="authorid, max(posted)" sort="Posted DESC">
     <txp:author /> (<txp:posted />)
 </txp:article_custom>
 ~~~
