@@ -181,6 +181,11 @@ Each field in the `textpattern` database table can be used as a sort key.
 : **Values:** `past`, `future`, `any` (both `past` and `future`) or a [PHP-compatible date format](https://secure.php.net/manual/en/datetime.formats.php). In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
 : **Default:** `past`.
 
+custom_field name <span class="footnote warning">v4.7.0+</span>
+: Restrict to articles that have a particular custom_field polulated.
+: **Values:** Just enter the custom field name in the `article_custom` tag.
+: **Default:** `none`.
+
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
