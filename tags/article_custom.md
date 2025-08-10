@@ -182,7 +182,7 @@ Each field in the `textpattern` database table can be used as a sort key.
 : **Default:** `past`.
 
 custom_field name <span class="footnote warning">v4.7.0+</span>
-: Restrict to articles that have a particular custom_field polulated.
+: Restrict to articles that have a particular custom_field populated.
 : **Values:** Just enter the custom field name in the `article_custom` tag.
 : **Default:** `none`.
 
