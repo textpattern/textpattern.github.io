@@ -328,7 +328,6 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 
 Outputs the number of live articles belonging to the current section.
 
-
 ### Example 9: filter field
 
 ~~~ html
