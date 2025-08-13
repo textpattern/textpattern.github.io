@@ -1,6 +1,6 @@
 > [!CAUTION]
 > There is active work underway to resolve some issues.
-> Please refer to https://github.com/textpattern/textpattern.github.io/issues/212 and https://github.com/textpattern/textpattern.github.io/issues/218 for further information.
+> Please refer to https://github.com/textpattern/textpattern.github.io/issues/212 for further information.
 
 # Textpattern user documentation repository
 
