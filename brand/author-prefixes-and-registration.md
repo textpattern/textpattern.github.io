@@ -495,6 +495,7 @@ None at this time.
 * tru: [truist](https://forum.textpattern.com/profile.php?id=2952)
 * tsw: mwaldtha
 * tuk: paradotsky
+* txb: TxpBuilders
 * <span class="warning">txp</span>
 
 </div>
