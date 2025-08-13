@@ -1,5 +1,5 @@
 > [!CAUTION]
-> There is active work underway to resolve some issues.
+> Work is underway to resolve some issues related to docs site hosting.
 > Please refer to https://github.com/textpattern/textpattern.github.io/issues/212 for further information.
 
 # Textpattern user documentation repository
