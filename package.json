@@ -4,10 +4,10 @@
   "version": "1.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/textpattern/textpattern-docs-website"
+    "url": "https://github.com/textpattern/textpattern.github.io"
   },
   "bugs": {
-    "url": "https://github.com/textpattern/textpattern-docs-website/issues"
+    "url": "https://github.com/textpattern/textpattern.github.io/issues"
   },
   "devDependencies": {
     "grunt": "1.6.1",
