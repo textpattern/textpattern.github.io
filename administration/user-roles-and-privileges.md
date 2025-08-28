@@ -133,7 +133,7 @@ Default panels represent all existing panels in a fresh install of the software.
             <tr>
                 <th scope="row">Designer</th>
                 <td><span class="warning">Limited</span></td>
-                <td><span class="success">Full</span></td>
+                <td><span class="warning">Limited</span></td>
                 <td><span class="success">Full</span></td>
                 <td><span class="error">Blocked</span></td>
                 <td><span class="error">Blocked</span></td>
