@@ -45,9 +45,10 @@ Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you ca
 The tag will accept the following content/behaviour and presentation attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `allowoverride="boolean"`
-: Whether to use override forms for the generated article list.
+: Whether to allow override forms to determine the display of individual articles and article lists.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
+: To allow override forms to only affect the output of an individual article but not the article list, set the attribute to `allowoverride='<txp:if_individual_article />'`.
 
 `customfieldname="value"`
 : Restrict to articles with specified value for specified custom field name. Replace `customfieldname` with the actual name of the custom field.
