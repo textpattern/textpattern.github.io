@@ -54,9 +54,10 @@ However, you can have the added features and functionality of `<txp:article_cust
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `allowoverride="boolean"`
-: Whether to use override forms for the generated article list.
+: Whether to allow override forms to determine the display of individual articles and article lists.
 : **Values:** `0` (no) or `1` (yes).
-: **Default:** `0`.
+: **Default:** `1`.
+: To allow override forms to only affect the output of an individual article but not the article list, set the attribute to `allowoverride='<txp:if_individual_article />'`.
 
 `author="author name"`
 : Restrict to articles by specified author(s) **login name**.
