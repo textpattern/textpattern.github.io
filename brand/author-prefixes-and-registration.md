@@ -516,6 +516,7 @@ None at this time.
 
 * vag: vagari
 * vdh: larf
+* vis: [vistopher](https://forum.textpattern.com/profile.php?id=206706)
 * vg: Vincent Grouls (?) INVALID
 
 </div>
