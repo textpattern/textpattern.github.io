@@ -32,7 +32,7 @@ At its most basic level when used as a container, this tag wraps content you wan
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `query="expression"`
-: A numerical, logical or string [XPath](https://www.edankert.com/xpathfunctions.html) expression to evaluate.
+: A numerical, logical or string [XPath](https://developer.mozilla.org/en-US/docs/Web/XML/XPath/Reference/Functions) expression to evaluate.
 : **Values:** `2 * 2`, `string-length("Textpattern") < 10`, and so on.
 : **Default:** unset.
 
