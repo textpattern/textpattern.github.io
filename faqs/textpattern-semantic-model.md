@@ -32,7 +32,7 @@ Pages and Styles (described next) are associated to Sections to provide an HTML 
 
 ### Forms
 
-[Forms](/administration/pages-panel), conceptually speaking, are like PHP includes or any other kind of code insertion process you may be aware of that enables you to create a predefined chunk of content once and reuse it in multiple places. In fact, Forms can be used in a variety of ways, including nesting Form templates within each other.
+[Forms](/administration/forms-panel), conceptually speaking, are like PHP includes or any other kind of code insertion process you may be aware of that enables you to create a predefined chunk of content once and reuse it in multiple places. In fact, Forms can be used in a variety of ways, including nesting Form templates within each other.
 
 ### Tags
 
@@ -46,7 +46,7 @@ Pages and Styles (described next) are associated to Sections to provide an HTML 
 
 Let's walkthrough the creation and assembly of the building blocks for a hypothetical website called 'Example Organization' (`example.org`)…
 
-All building block panels are accessed in your [administration-side](/administration/). For purposes of this example, we are only focusing on [Sections](/administration/sections-panel), [Pages](/administration/pages-panel), [Styles](/administration/styles-panel), [Forms](/administration/pages-panel), and [Categories](/administration/categories-panel). The Tags don't have their own panel; rather you simply type them up like you would HTML markup, or use one of the contextual Tag builders located at the top of the left column in the Forms and Pages panels.
+All building block panels are accessed in your [administration-side](/administration/). For purposes of this example, we are only focusing on [Sections](/administration/sections-panel), [Pages](/administration/pages-panel), [Styles](/administration/styles-panel), [Forms](/administration/forms-panel), and [Categories](/administration/categories-panel). The Tags don't have their own panel; rather you simply type them up like you would HTML markup, or use one of the contextual Tag builders located at the top of the left column in the Forms and Pages panels.
 
 ### Sections need Pages and Styles
 
