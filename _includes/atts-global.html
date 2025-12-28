@@ -6,11 +6,11 @@
 <dl>
 {% unless include.break == "" %}
     <dt><code>break="value"</code></dt>
-    <dd>Where value is an HTML element, specified without brackets (e.g. <code>break="li"</code>) or some string to separate list items.</dd>
+    <dd>Where value is an HTML element, specified without angle brackets (e.g. <code>break="li"</code>) or some string to separate list items.</dd>
     <dd><strong>Default:</strong> {% if include.break == null %}br{% else %}{{ include.break }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#break">break cross-reference</a>).</dd>
 {% endunless %}
 {% unless include.breakby == "" %}
-    <dt><code>breakby="integer(s)"</code></dt>
+    <dt><code>breakby="integer(s)"</code> <span class="footnote warning">v4.7.0+</span></dt>
     <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items). Otherwise, the value is evaluated on each loop and <code>break</code> happens as soon as it changes. Note that <code>string</code> must be enclosed in *double* quotes.</dd>
     <dd><strong>Default:</strong> {% if include.breakby == null %}1 (unset){% else %}{{ include.breakby }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakby">breakby cross-reference</a>). </dd>
 {% endunless %}
