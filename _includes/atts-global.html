@@ -32,22 +32,24 @@
     <dt><code>escape="list, of, transforms"</code></dt>
     <dd>The transforms to apply to the output. See <a href="/tags/learning/#tag-escaping">tag escaping</a> for details.</dd>
     <dd><strong>Values:</strong>
+        <code>db</code>,
+        <code>float</code>,
         <code>html</code>,
+        <code>integer</code>,
         <code>js</code>,
         <code>json</code>,
-        <code>url</code>,
-        <code>float</code>,
-        <code>integer</code>,
+        <code>lower</code>,
         <code>number</code>,
         <code>ordinal</code>,
-        <code>spell</code>,
-        <code>lower</code>,
-        <code>upper</code>,
-        <code>title</code>,
-        <code>[r|l]trim</code>,
         <code>quote</code>,
+        <code>[r|l]trim</code>,
+        <code>spell</code>,
         <code>tags</code>,
         <code>textile</code>,
+        <code>tidy</code>,
+        <code>title</code>,
+        <code>upper</code>,
+        <code>url</code>,
         _any tag_</dd>
     <dd><strong>Default:</strong> {% if include.escape == null %}html{% else %}{{ include.escape }}{% endif %}.</dd>
 {% endunless %}
