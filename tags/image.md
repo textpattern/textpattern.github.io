@@ -31,6 +31,16 @@ The tag is also context-sensitive: if an `id` or `name` attribute is not specifi
 
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
+`crop="crop value"` <span class="footnote warning">v4.9.0+</span>
+: When using automatic thumbnails, specifies a cropping ratio and optional cropper.
+: **Values:** A width-to-height ratio, specified as two numbers separated by either `x`, `:` or `.` (e.g. `4x3`, `16:9`, `1.1`).
+: A third parameter can be added after another `x`, `:` or `.` to specify which cropper to use:
+`centered` (the default). Crop the edges on all four sides. Fast.
+`topcentered`. Crop the bottom, left and right edges only. Fast.
+`smart`. Automatically crop based on analysis of the image to try and keep the subject as the focus. Slowest, and results may vary depending on the image.
+For example: `crop="2:3.smart"` applies a smart cropper in the portrait 2-to-3 ratio.
+: **Default:** unset (thumbnails will be scaled only).
+
 `escape="html"` <span class="footnote warning">v4.0.4+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
 : **Values:** See the [tag escaping](/tags/learning/#tag-escaping) documentation for all possible values.
@@ -39,10 +49,6 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `height="integer"` <span class="footnote warning">v4.3.0+</span>
 : Specify an image `height` which overrides the value stored in the database. Use `height="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the height if a width is used).
 : **Default:** height of image stored in the database.
-
-`html_id="id"` <span class="footnote warning">v4.0.4+</span>
-: The HTML `id` attribute applied to the `wraptag`, if set, otherwise to the `<img>` tag.
-: **Default:** unset.
 
 `id="integer"`
 : Specifies the `id`, assigned at upload of the image, to display. Can be found on the Images panel. If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](/tags/images) tag or form.
@@ -55,13 +61,17 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `name="image name"`
 : Specifies which image to display by its image `name` as shown on the Images panel.
 
+`quality="percentage"`
+: The thumbnail quality percentage value from 1 to 100. In general, the higher the number, the better quality the image, the larger the image size.
+: Only applicable to PNG, JPG, WEBP, and AVIF files. Has no effect on other file formats.
+
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via the `class` attribute instead.
 : **Default:** unset.
 
-`thumbnail="boolean"` <span class="footnote warning">v4.8.0+</span>
-: Whether to display the full-size (0) or thumbnail-size (1) image.
-: **Default:** 0.
+`thumbnail="number"` <span class="footnote warning">v4.8.0+</span>
+: Whether to display the full-size (0), custom thumbnail-size (1), or an automatically-sized (2) image.
+: **Default:** The thumbnail flavour chosen for this image during upload.
 
 `title="boolean|title text"` <span class="footnote warning">v4.8.0+</span>
 : Adds the given text as an HTML 'title' attribute to the image. If used as a valueless attribute, will use the caption as text.
@@ -70,7 +80,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
 : **Default:** width of image stored in the database.
 
-{% include atts-global.html %}
+{% include atts-global.html sort="" limit="" offset="" %}
 
 ## Examples
 
@@ -102,7 +112,22 @@ Had the `wraptag` attribute been used, the `class="promoted"` attribute/value wo
 
 Displays full-size images for all images found by the [images](/tags/images) tag.
 
+### Example 4: Display an automatic thumbnail
+
+Automatically crop it using the smart cropper in a square aspect ratio at 50% quality:
+
+~~~ html
+<txp:image name="wolverine.jpg" thumbnail="2" width="500" crop="1:1.smart" quality="50" />
+~~~
+
+If the thumbnail of that particular image is already set as 'automatic' then the `thumbnail` attribute value can be omitted (i.e. `thumbnail` can be used on its own).
+
 ## Genealogy
+
+### Version 4.9.0
+
+`crop` attribute added. \\
+`thumbnail` supports `2` (automatic).
 
 ### Version 4.8.3
 
