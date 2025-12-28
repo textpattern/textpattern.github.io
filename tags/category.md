@@ -39,6 +39,10 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the Categories panel. Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
 : **Default:** unset (use current category).
 
+`parent="level"` <span class="footnote warning">v4.9.0+</span>
+: Display specific parent category information. Use valueless to display the immediate parent, or specify a 'level' value (0=top, 1=first child, etc) to fetch the specific parent. Use negative numbers to traverse 'up' from the current category.
+: **Default:** unset (use current category).
+
 `section="section name"`
 : Restrict to articles from specified section(s).
 : **Values:** (comma separated list of) section name(s).
