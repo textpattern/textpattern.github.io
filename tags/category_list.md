@@ -150,6 +150,28 @@ Or as a nested unordered list, starting at the "product-type" node:
 </txp:category_list>
 ~~~
 
+### Example 4: Nested list of locations
+
+Given a category tree:
+
+* Location
+  * Europe
+    * London
+    * Paris
+    * Rome
+  * North America
+    * Los Angeles
+    * New York
+    * Texas
+
+To output the above list of locations (excluding the top level) as a hyperlinkable, nested <code>ul/li</code> list, use a valueless <code>children</code> attribute:
+
+~~~ html
+<txp:category_list parent="location" children label="All locations" labeltag="h2" wraptag="ul" break="li" exclude="location">
+   <txp:category title link />
+</txp:category_list>
+~~~
+
 This code will add `class="active"` to the `<li>` element around the current viewed category in the list, allowing your to style it with CSS as desired.
 
 Other tags used: [category](/tags/category), [if_category](/tags/if_category).
