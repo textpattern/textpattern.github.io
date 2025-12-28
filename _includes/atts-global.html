@@ -76,6 +76,7 @@
     <dd><strong>Values:</strong> 0 (no) or 1 (yes).</dd>
     <dd><strong>Default:</strong> {% if include.not == null %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
 {% endunless %}
+
     <dt><code>replace="string"</code></dt>
     <dd>Replace the content stripped via the <code>trim</code> attribute.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
@@ -85,7 +86,12 @@
     <dd>Remove the matching patterns from the output.</dd>
     <dd><strong>Values:</strong> Any. Use <code>/value/</code> to trigger regular expression matching, otherwise the value will be treated verbatim as a set of characters to trim.</dd>
     <dd><strong>Default:</strong> {% if include.trim == null %}unset{% else %}{{ include.trim }}{% endif %}.</dd>
-
+{% unless include.variable == "" %}
+    <dt><code>variable="value"</code></dt>
+    <dd>Assign the output of the tag to the named variable, instead of displaying it.</dd>
+    <dd><strong>Values:</strong> Any valid string to be used as a variable name.</dd>
+    <dd><strong>Default:</strong> unset.</dd>
+{% endunless %}
     <dt><code>wrapform="form name"</code></dt>
     <dd>The form to be used as <code>wraptag</code>. Handy if the wraptag pattern is too long, or is reused.</dd>
     <dd><strong>Values:</strong> Any defined form name.</dd>
