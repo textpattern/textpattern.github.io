@@ -72,7 +72,7 @@
     <dd><strong>Default:</strong> {% if include.labeltag == null %}unset{% else %}{{ include.labeltag }}{% endif %}.</dd>
 {% unless include.limit == "" %}
     <dt><code>limit="number"</code> <span class="footnote warning">v4.8.8+</span></dt>
-    <dd>The maximum number of items top display per page in lists.</dd>
+    <dd>The maximum number of items to display per page in lists.</dd>
     <dd><strong>Values:</strong> Any integer.</dd>
     <dd><strong>Default:</strong> {% if include.limit == null %}unset{% else %}{{ include.limit }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#limit">limit cross-reference</a>).</dd>
 {% endunless %}
