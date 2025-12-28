@@ -88,16 +88,24 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 <txp:category />
 ~~~
 
+or its parent, if nested:
+
+~~~ html
+<txp:category parent />
+~~~
+
 ### Example 2: Display hyperlinked category title
 
 ~~~ html
 <txp:category title="1" link="1" />
+or
+<txp:category title link />
 ~~~
 
 ### Example 3: Display a specific category's title, hyperlinked
 
 ~~~ html
-<txp:category name="article" title="1" link="1" wraptag="p" />
+<txp:category name="article" title link wraptag="p" />
 ~~~
 
 ### Example 4: Container example
@@ -107,6 +115,10 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ~~~
 
 ## Genealogy
+
+### Version 4.9.0
+
+`parent` attribute added.
 
 ### Version 4.0.7
 
