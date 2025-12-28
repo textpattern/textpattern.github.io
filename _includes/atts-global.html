@@ -87,7 +87,7 @@
     <dd><strong>Values:</strong> Any. Use <code>/value/</code> to trigger regular expression matching, otherwise the value will be treated verbatim as a set of characters to trim.</dd>
     <dd><strong>Default:</strong> {% if include.trim == null %}unset{% else %}{{ include.trim }}{% endif %}.</dd>
 {% unless include.variable == "" %}
-    <dt><code>variable="value"</code></dt>
+    <dt><code>variable="value"</code> <span class="footnote warning">v4.9.0+</span></dt>
     <dd>Assign the output of the tag to the named variable, instead of displaying it.</dd>
     <dd><strong>Values:</strong> Any valid string to be used as a variable name.</dd>
     <dd><strong>Default:</strong> unset.</dd>
