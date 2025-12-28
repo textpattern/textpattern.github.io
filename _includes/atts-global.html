@@ -11,12 +11,12 @@
 {% endunless %}
 {% unless include.breakby == "" %}
     <dt><code>breakby="integer(s)"</code></dt>
-    <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items). Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes.</dd>
+    <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items). Otherwise, the value is evaluated on each loop and <code>break</code> happens as soon as it changes. Note that <code>string</code> must be enclosed in *double* quotes.</dd>
     <dd><strong>Default:</strong> {% if include.breakby == null %}1 (unset){% else %}{{ include.breakby }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakby">breakby cross-reference</a>). </dd>
 {% endunless %}
 {% unless include.breakform == "" %}
     <dt><code>breakform="form name"</code></dt>
-    <dd>A form to be used as `break`, generally jointly with `breakby` attribute. The special `<+>` pattern in this form will be replaced with the list "chunk" accumulated when break happens.</dd>
+    <dd>A form to be used as <code>break</code>, generally jointly with <code>breakby</code> attribute. The special <code><+></code> pattern in this form will be replaced with the list "chunk" accumulated when break happens.</dd>
     <dd><strong>Default:</strong> {% if include.breakform == null %}unset{% else %}{{ include.breakform }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakform">breakform cross-reference</a>). </dd>
 {% endunless %}
     <dt><code>class="class name"</code></dt>
@@ -28,7 +28,7 @@
     <dd>The value to display if the tag's output is blank.</dd>
     <dd><strong>Values:</strong> Any.</dd>
     <dd><strong>Default:</strong> {% if include.default == null %}unset{% else %}{{ include.default }}{% endif %}.</dd>
-
+{% unless include.escape == "" %}
     <dt><code>escape="list, of, transforms"</code></dt>
     <dd>The transforms to apply to the output. See <a href="/tags/learning/#tag-escaping">tag escaping</a> for details.</dd>
     <dd><strong>Values:</strong>
@@ -50,7 +50,7 @@
         <code>textile</code>,
         _any tag_</dd>
     <dd><strong>Default:</strong> {% if include.escape == null %}html{% else %}{{ include.escape }}{% endif %}.</dd>
-
+{% endunless %}
     <dt><code>evaluate="number list"</code></dt>
     <dd>Alter the processing order of top-level tags inside a form/container. Tags are normally executed from top to bottom. If you wish to change this order, imagine Textpattern tags are numbered incrementally from 1 inside a container. To process tags 3 and 5 first, then 1, 2, and 4, specify <code>evaluate="3, 5"</code> in your container tag.</dd>
     <dd><strong>Values:</strong> Any comma-separated numbers corresponding with the numerical position of primary (top-level) tags inside the container.</dd>
@@ -70,13 +70,32 @@
     <dd>The tag (without angle brackets) to wrap the label.</dd>
     <dd><strong>Values:</strong> Any valid HTML tag, e.g. <code>h3</code> or <code>div</code>.</dd>
     <dd><strong>Default:</strong> {% if include.labeltag == null %}unset{% else %}{{ include.labeltag }}{% endif %}.</dd>
+{% unless include.limit == "" %}
+    <dt><code>limit="number"</code> <span class="footnote warning">v4.8.8+</span></dt>
+    <dd>The maximum number of items top display per page in lists.</dd>
+    <dd><strong>Values:</strong> Any integer.</dd>
+    <dd><strong>Default:</strong> {% if include.limit == null %}unset{% else %}{{ include.limit }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#limit">limit cross-reference</a>).</dd>
+{% endunless %}
 {% unless include.not == "" %}
     <dt><code>not="boolean"</code></dt>
     <dd>Switch <code><txp:else /></code> parts.</dd>
     <dd><strong>Values:</strong> 0 (no) or 1 (yes).</dd>
     <dd><strong>Default:</strong> {% if include.not == null %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
 {% endunless %}
-
+{% unless include.offset == "" %}
+    <dt><code>offset="number"</code> <span class="footnote warning">v4.8.8+</span></dt>
+    <dd>Apply the given pagination offset to the (list of) things being iterated. May be set by URL parameters.</dd>
+    <dd><strong>Values:</strong> Any integer.</dd>
+    <dd><strong>Default:</strong> {% if include.offset == null %}0{% else %}{{ include.offset }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#offset">offset cross-reference</a>).</dd>
+{% endunless %}
+{% unless include.sort == "" %}
+    <dt><code>sort="column direction"</code> <span class="footnote warning">v4.8.8+</span></dt>
+    <dd>Sort the output by the given column(s) and order direction(s).</dd>
+    <dd><strong>Values:</strong> Specify any valid column name{% if include.sortvals != null %} from the ones given below{% endif %}, followed by a space and then either <code>asc</code> or <code>desc</code> to sort in ascending or descending order, respectively. Use <code>rand()</code> for [random sorting order](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand).
+    {% if include.sortvals != null %}{{ include.sortvals }}{% endif %}
+    </dd>
+    <dd><strong>Default:</strong> {% if include.sort == null %}0{% else %}{{ include.sort }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#sort">sort cross-reference</a>).</dd>
+{% endunless %}
     <dt><code>replace="string"</code></dt>
     <dd>Replace the content stripped via the <code>trim</code> attribute.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
