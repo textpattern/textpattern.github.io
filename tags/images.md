@@ -110,19 +110,18 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : **Default:** unset.
 
 {% capture svals %}
-`alt`. \\
-`author`. \\
-`caption`. \\
-`category`. \\
-`date`. \\
-`ext` (image file extension). \\
-`h` (image `height` attribute). \\
-`id` (image id#). \\
-`name` (image name). \\
-`rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
-`thumb_h` (image thumbnail `height` attribute). \\
-`thumb_w` (image thumbnail `width` attribute). \\
-`w` (image `width` attribute).
+<code>alt</code>.<br>
+<code>author</code>.<br>
+<code>caption</code>.<br>
+<code>category</code>.<br>
+<code>date</code>.<br>
+<code>ext</code> (image file extension).<br>
+<code>h</code> (image `height` attribute).<br>
+<code>id</code> (image id#).<br>
+<code>name</code> (image name).<br>
+<code>thumb_h</code> (image thumbnail <code>height</code> attribute).<br>
+<code>thumb_w</code> (image thumbnail <code>width</code> attribute).<br>
+<code>w</code> (image <code>width</code> attribute).
 {% endcapture %}
 {% include atts-global.html class="tag name **or** unset" offset="0" limit="0" sort="name asc" sortvals=svals %}
 
