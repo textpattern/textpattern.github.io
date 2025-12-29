@@ -58,6 +58,9 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `category="image category"`
 : Filter the images by this list of category names as defined in the Categories panel.
 
+`exclude="attributes"`
+: List of IDs or attributes to 'negate'. For attributes, choose from one or more of: `name`, `category`, `author`, `realname`, `extension`, `size`, `month`, `time`, or `id`.
+
 `extension=".extension"`
 : Filter the images by this list of image file extension(s), including the leading dot. Example: `extension=".avif, .jpg, .png, .webp"`.
 : **Default:** unset.
@@ -75,19 +78,16 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : The order of the ids overrides the default `sort` attribute.
 : **Default:** unset.
 
-`limit="integer"`
-: The number of images to display per page.
-: **Default:** `0` (unlimited).
+`month="date"`
+: Filter the images using this starting time point, e.g. `month="2025-10"` for all images with dates in October 2025.
+: See also: `time` attribute for further filtering range options.
+: **Default:** unset.
 
 `name="image name"`
 : Filter the images by this list of image names as shown on the Images panel.
 : **Default:** unset.
 
-`offset="integer"`
-: The number of images to skip.
-: **Default:** `0` (only effective if `limit` is set).
-
-`pageby="integer" (or "limit")"`
+`pageby="integer" (or "limit")`
 : The number of images to jump forward or back when an [older](/tags/older) or [newer](/tags/newer) link is selected. Without this attribute, pagination is not available; you will simply see `limit` images. You may specify `pageby="limit"` to allow pagination to automatically follow the value of the `limit` attribute. Note: [newer](/tags/newer) and [older](/tags/older) will paginate all content types at once.
 : **Default:** unset.
 
@@ -95,9 +95,21 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : Filter the image list so it only includes images uploaded by this list of author real names. The author names may be URL encoded (e.g. `realname="John+Smith"`) and thus could be read from the current `example.com/author/author+name` URL. Note that this attribute may incur one extra query per name, so if it is possible to use the raw author instead it will be faster.
 : **Default:** unset.
 
-`sort="sort value(s)"`
-: How to sort the resulting image list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively.
-: **Values:** \\
+`size="portrait|landscape|square|value|ratio"`
+: Filter the image list so it only includes images matching certain dimensions. Use `portrait`, `landscape` or `square` to filter images with that aspect ratio. Alternatively, specify a single value to 2 decimal places of the desired aspect (e.g. 1.33 for 4:3) or a pair of values representing an aspect ratio such as `16:9`. Finally, by including just one 'side' of the aspect ratio, it's possible to filter by images with that particular dimension, e.g. `size="800:` would match all images with a width of 800px. Or `size=":1024"` would match all images with a height of 1024px.
+: **Default:** unset.
+
+`thumbnail="number"`
+: Filter the image list to only include images that have a thumbnail of a certain type, or none.
+: **Values:** unset (i.e. all images), `2` (images that have automatic thumbnails), `1` (images that have a custom thumbnail) or `0` (images that do not have a thumbnail).
+: **Default:** unset.
+
+`time="offset"`
+: Filter the images using this time range. e.g. `time="-1 month"` would find all images with timestamps within the last month of 'now'.
+: See also: `month` attribute to alter the starting point from which to apply the `time` offset.
+: **Default:** unset.
+
+{% capture svals %}
 `alt`. \\
 `author`. \\
 `caption`. \\
@@ -111,40 +123,8 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 `thumb_h` (image thumbnail `height` attribute). \\
 `thumb_w` (image thumbnail `width` attribute). \\
 `w` (image `width` attribute).
-: **Default:** `name asc`.
-
-`thumbnail="boolean"`
-: Filter the image list to only include images that have a thumbnail, or not.
-: **Values:** unset (i.e. all images), `1` (images that have a thumbnail) or `0` (images that do not have a thumbnail).
-: **Default:** unset.
-
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`break="value"`
-: Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `br` (but see [break cross-reference](/tags/tag-attributes-cross-reference#break) for exceptions).
-
-`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
-: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: **Default:** `1` (actually unset).
-
-`class="class name"`
-: CSS `class` attribute to apply to the image (or to the `wraptag`, if set).
-: **Default:** tag name **or** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`label="text"`
-: Label prepended to item.
-: **Default:** unset (but see [label cross-reference](/tags/tag-attributes-cross-reference#label) for exceptions).
-
-`labeltag="element"`
-: HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: **Default:** unset.
-
-`wraptag="tag"`
-: HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+{% endcapture %}
+{% include atts-global.html class="tag name **or** unset" offset="0" limit="0" sort="name asc" sortvals=svals %}
 
 ## Examples
 
@@ -259,13 +239,13 @@ All GIF images are displayed.
 <txp:images category="mammals, birds" thumbnail="1" />
 ~~~
 
-All images in the named categories that have thumbnails assigned to them are displayed.
+All images in the named categories that have custom thumbnails assigned to them are displayed.
 
 ~~~ html
 <txp:images thumbnail="1" />
 ~~~
 
-All images that have thumbnails assigned to them are displayed.
+All images that have custom thumbnails assigned to them are displayed.
 
 ~~~ html
 <txp:images thumbnail="0" />
@@ -288,30 +268,13 @@ All images that do not have thumbnails assigned to them are displayed.
 </txp:images>
 ~~~
 
-Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
+Shows the thumbnail of each image that has an assigned custom thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
 Other tags used: [if_different](/tags/if_different), [image_info](/tags/image_info), [thumbnail](/tags/thumbnail).
 
-### Example 3: Integration with third-party PHP resizing script (TimThumb)
+### Example 3: Dynamic srcset
 
-[TimThumb](https://www.binarymoon.co.uk/projects/timthumb/) is a simple, flexible, PHP script that resizes images directly on your web server. [Read the TimThumb documentation](https://www.binarymoon.co.uk/2010/08/timthumb/) for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
-
-~~~ html
-<txp:images limit="6" category="gallery">
-    <p>
-        <a href="<txp:image_url />" title="View original">
-            <img src="<txp:site_url />timthumb.php?src=<txp:image_url />&amp;w=160" alt="<txp:image_info type='alt' />">
-        </a>
-    </p>
-    <p>
-        Author: <txp:image_author />
-    </p>
-</txp:images>
-~~~
-
-Creates a small gallery of 6 images from the category 'gallery'. Uses the TimThumb script to proportionately resize a thumbnail version (160px wide) of the image automatically, and keep a cached version of the thumbnail for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
-
-Other tags used: [image_author](/tags/image_author), [image_info](/tags/image_info), [image_url](/tags/image_url), [site_url](/tags/site_url).
+TBD.
 
 ### Example 4: Using offset and limit for news pages
 
@@ -331,11 +294,15 @@ And then later on you could drop in…
 </txp:images>
 ~~~
 
-…to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
+…to skip the first and display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
 
 Other tags used: [article_image](/tags/article_image), [thumbnail](/tags/thumbnail).
 
 ## Genealogy
+
+### Version 4.9.0
+
+`thumbnail` attribute extended to automatic thumbs (`2`).
 
 ### Version 4.7.0
 
