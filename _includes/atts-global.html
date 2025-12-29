@@ -92,8 +92,8 @@
 {% endunless %}
 {% unless include.sort == "" %}
     <dt><code>sort="column direction"</code> <span class="footnote warning">v4.8.8+</span></dt>
-    <dd>Sort the output by the given column(s) and order direction(s).</dd>
-    <dd><strong>Values:</strong> Specify any valid column name{% if include.sortvals != null %} from the ones given below{% endif %}, followed by a space and then either <code>asc</code> or <code>desc</code> to sort in ascending or descending order, respectively. Use <code>rand()</code> for <a href="https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand">random sorting order</a>.
+    <dd>Sort the output by the given comma-separated column(s) and (optional) order direction(s).</dd>
+    <dd><strong>Values:</strong> Specify any valid column name{% if include.sortvals != null %} from the ones given below{% endif %}, followed by a space and then either <code>asc</code> or <code>desc</code> to sort that column in ascending or descending order. Use <code>rand()</code> for <a href="https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand">random sorting order</a>.
     {% if include.sortvals != null %}{{ include.sortvals }}{% endif %}
     </dd>
     <dd><strong>Default:</strong> {% if include.sort == null %}0{% else %}{{ include.sort }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#sort">sort cross-reference</a>).</dd>
