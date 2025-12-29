@@ -151,7 +151,7 @@ Each field in the `textpattern` database table can be used as a sort key.
 
 `url_title="value"` <span class="footnote warning">v4.9.0+</span>
 : Restrict to articles posted with the given url_title. Partial (wildcard) matches are permitted.
-: **Values:** Any valid string/SQL rege.
+: **Values:** Any valid string/SQL regex.
 : **Default:** unset.
 
 ### Note on 'article list' vs. 'individual article' context
