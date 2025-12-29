@@ -149,6 +149,11 @@ Each field in the `textpattern` database table can be used as a sort key.
 : **Values:** `past`, `future`, `any` (both `past` and `future`) or a [PHP-compatible date format](https://secure.php.net/manual/en/datetime.formats.php). In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
 : **Default:** `past`.
 
+`url_title="value"` <span class="footnote warning">v4.9.0+</span>
+: Restrict to articles posted with the given url_title. Partial (wildcard) matches are permitted.
+: **Values:** Any valid string/SQL rege.
+: **Default:** unset.
+
 ### Note on 'article list' vs. 'individual article' context
 
 The **article** tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section landing pages, and category pages. Individual-article context applies on an article page (i.e. a page with a URL like `https://example.com/archives/24/my-article`).

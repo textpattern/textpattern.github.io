@@ -187,6 +187,11 @@ custom_field name <span class="footnote warning">v4.7.0+</span>
 : **Values:** Just enter the custom field name in the `article_custom` tag.
 : **Default:** `none`.
 
+`url_title="value"` <span class="footnote warning">v4.9.0+</span>
+: Restrict to articles posted with the given url_title. Partial (wildcard) matches are permitted.
+: **Values:** Any valid string/SQL regex.
+: **Default:** unset.
+
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
