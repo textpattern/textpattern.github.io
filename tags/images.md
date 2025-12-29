@@ -110,18 +110,19 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : **Default:** unset.
 
 {% capture svals %}
-<code>alt</code>.<br>
-<code>author</code>.<br>
-<code>caption</code>.<br>
-<code>category</code>.<br>
-<code>date</code>.<br>
-<code>ext</code> (image file extension).<br>
-<code>h</code> (image `height` attribute).<br>
-<code>id</code> (image id#).<br>
-<code>name</code> (image name).<br>
-<code>thumb_h</code> (image thumbnail <code>height</code> attribute).<br>
-<code>thumb_w</code> (image thumbnail <code>width</code> attribute).<br>
-<code>w</code> (image <code>width</code> attribute).
+<br><code>alt</code>
+<br><code>author</code>
+<br><code>caption</code>
+<br><code>category</code>
+<br><code>date</code>
+<br><code>ext</code> (image file extension)
+<br><code>h</code> (image <code>height</code> attribute)
+<br><code>id</code> (image id#)
+<br><code>name</code> (image name)
+<br><code>thumb_h</code> (thumbnail <code>height</code> attribute)
+<br><code>thumb_w</code> (thumbnail <code>width</code> attribute)
+<br><code>w</code> (image <code>width</code> attribute)
+<br>
 {% endcapture %}
 {% include atts-global.html class="tag name **or** unset" offset="0" limit="0" sort="name asc" sortvals=svals %}
 
