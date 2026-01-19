@@ -16,7 +16,7 @@
     "load-grunt-tasks": "5.1.0"
   },
   "dependencies": {
-    "jquery": "3.7.1",
+    "jquery": "4.0.0",
     "lunr": "2.3.9",
     "simple-jekyll-search": "1.10.0"
   },
