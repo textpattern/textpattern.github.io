@@ -186,6 +186,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * esq: [cain-mi](https://forum.textpattern.com/profile.php?id=5716)
 * etc: [etc](https://forum.textpattern.com/profile.php?id=96820)
 * etz: Etz Haim
+* evj: [ladyF](https://forum.textpattern.com/profile.php?id=206743)
 * ext ('extension' - a module that hooks into another plugin)
 
 </div>
