@@ -117,6 +117,12 @@ The **Article URL pattern** selection control is intended to make it easier to e
 
 Getting clean URLs to work may take a combination of further steps. See [Clean URLs do not work](/faqs/clean-urls-do-not-work) for the best we can help you with.
 
+**'/breadcrumb/title'**, is cognisant of section and both article categories. If your article is called Wolverine and it’s in the Marvel section and categorised as X-Men and Deadpool, respectively, then your breadcrumb permlink will be:
+
+`example.com/marvel/x-men/deadpool/wolverine`
+
+With only one category defined (either category 1 or 2) the permlink will only contain the one category that’s assigned. And with no categories it behaves the same as '/section/title'.
+
 ### Doctype
 
 Select which HTML [doctype](https://www.w3.org/wiki/Doctypes_and_markup_styles) you wish to use (either HTML5 or XHTML).
