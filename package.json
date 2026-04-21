@@ -10,7 +10,7 @@
     "url": "https://github.com/textpattern/textpattern.github.io/issues"
   },
   "devDependencies": {
-    "grunt": "1.6.1",
+    "grunt": "1.6.2",
     "grunt-cli": "1.5.0",
     "grunt-contrib-uglify": "5.2.2",
     "load-grunt-tasks": "5.1.0"
