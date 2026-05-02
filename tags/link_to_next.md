@@ -25,6 +25,9 @@ The **link_to_next** tag can be used as a *single* tag or a *container* tag to r
 
 If used as a container tag, the HTML required to output a hyperlink is returned; if used as a single tag, only the URL itself is returned.
 
+Note: This tag is context-sensitive, meaning it will only fetch content from the section or category being viewed.
+{: .alert-block .information}
+
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
