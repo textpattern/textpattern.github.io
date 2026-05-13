@@ -82,7 +82,7 @@ This `server` block includes a basic web hosting setup and translates the Apache
 
 ### Hiawatha with PHP-FPM
 
-Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP legacy versions. Only a few settings are required in your Hiawatha [virtual host section](https://www.hiawatha-webserver.org/howto/websites), as a separate include file or in the main /etc/hiawatha/hiawatha.conf file itself:
+Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP legacy versions. Only a few settings are required in your Hiawatha [virtual host section](https://hiawatha.leisink.net/howto/websites), as a separate include file or in the main /etc/hiawatha/hiawatha.conf file itself:
 
 ~~~ nginx
 VirtualHost {
@@ -100,7 +100,7 @@ VirtualHost {
 
 Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host does not support PHP v7. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain, and automate renewing, Let's Encrypt! certificates according to your virtual host configuration.
 
-Hiawatha does not use .htaccess files. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main hiawatha.conf file itself:
+Hiawatha does not use .htaccess files. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://hiawatha.leisink.net/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main hiawatha.conf file itself:
 
 ~~~ nginx
 UrlToolkit {
@@ -112,7 +112,7 @@ UrlToolkit {
 }
 ~~~
 
-[URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit) can also be adapted for many other tasks, for example HTTP 301 redirection:
+[URL Toolkit](https://hiawatha.leisink.net/howto/url_toolkit) can also be adapted for many other tasks, for example HTTP 301 redirection:
 
 ~~~ nginx
 UrlToolkit {
@@ -155,7 +155,7 @@ VirtualHost {
 }
 ~~~
 
-More options and further information can be found in the [Hiawatha manual](https://www.hiawatha-webserver.org/manpages/hiawatha), [Hiawatha how-to guides](https://www.hiawatha-webserver.org/howto), [Hiawatha FAQs](https://www.hiawatha-webserver.org/faq) and the [Hiawatha user forum](https://www.hiawatha-webserver.org/forum).
+More options and further information can be found in the [Hiawatha manual](https://hiawatha.leisink.net/manpages/hiawatha), [Hiawatha how-to guides](https://hiawatha.leisink.net/howto), [Hiawatha FAQs](https://hiawatha.leisink.net/faq) and the [Hiawatha user forum](https://hiawatha.leisink.net/forum).
 
 ### LiteSpeed with PHP
 
