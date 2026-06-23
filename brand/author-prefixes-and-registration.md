@@ -196,6 +196,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 <div class="layout-text4col">
 
 * fab: [DA](https://forum.textpattern.com/profile.php?id=201199)
+* far: [far](https://forum.textpattern.com/profile.php?id=206757)
 * fgr: fathersGrave
 * fha: mamash
 * fly: [superfly](https://forum.textpattern.com/profile.php?id=20923)
