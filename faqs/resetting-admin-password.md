@@ -36,6 +36,9 @@ See above for forgotten login name.
 
 ## Reset procedure for administrators
 
+Note that this method _only_ works if the database supports the `SHA1()` function. Newer builds of MySQL (from 9.4.0 onwards) have deprecated and removed this function, so you will be unable to change the password using this meethod.
+{: .alert-block .warning}
+
 If you are the website's administrator and forgot your password, you'll need to access the database and change the password there.
 
 Most web hosting accounts provide direct access to a MySQL database via phpMyAdmin (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting provider's tech support.
