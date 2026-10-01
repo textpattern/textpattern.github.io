@@ -35,7 +35,9 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : The password the user has to enter.
 : **Default:** unset.
 
-## Examples
+privs="integer(s)"
+: A comma-separated list of privilege levels that are permitted to access the protected content.
+: **Default**: unset.
 
 ### Example 1: Cause Textpattern to prompt the user for a login
 
@@ -49,11 +51,13 @@ Note: It is not adequate to protect a single section. This is not due to the tag
 ### Example 2: Container tag
 
 ~~~ html
-<txp:password_protect>
+<txp:password_protect privs="1">
     <p>
-        This content is only visible to authenticated users.
+        This content is only visible to Publishers.
         <a>Free diamonds here</a>.
     </p>
+<txp:else />
+    <p>Not for your pay grade, sorry.</p>
 </txp:password_protect>
 ~~~
 
