@@ -35,7 +35,7 @@ Tag will accept the following attributes (**case-sensitive**) as well as the {% 
 : The password the user has to enter.
 : **Default:** unset.
 
-privs="integer(s)"
+`privs="integer(s)"`
 : A comma-separated list of privilege levels that are permitted to access the protected content.
 : **Default**: unset.
 
