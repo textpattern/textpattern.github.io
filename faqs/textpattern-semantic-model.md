@@ -3,12 +3,12 @@ layout: document
 category: FAQs
 published: true
 title: "The Textpattern semantic model"
-description: The system's six primary building blocks that make it possible to create and manage your site's structure, content and presentation.
+description: The system's primary building blocks that make it possible to create and manage your site's structure, content and presentation.
 ---
 
 # The Textpattern semantic model
 
-When we talk about Textpattern's semantic model, we're talking about the system's six primary building blocks that make it possible to create and manage your site's structure, content and presentation easily. All it takes is getting familiar with the blocks, and how they are associated to one another, which is what this page overviews.
+When we talk about Textpattern's semantic model, we're talking about the system's primary building blocks that make it possible to create and manage your site's structure, content and presentation easily. All it takes is getting familiar with the blocks, and how they are associated to one another, which is what this page overviews.
 
 ## Semantic model building blocks
 
@@ -22,25 +22,29 @@ Pages and Styles (described next) are associated to Sections to provide an HTML 
 
 ### Pages
 
-[Pages](/administration/pages-panel) are essentially HTML templates to which all content is added, usually as a combination of standard HTML and Textpattern Tags. As mentioned, Pages must be assigned to Sections, which is how a given section of your website receives the web template it will use.
+[Pages](/administration/pages-panel) are essentially HTML templates to which all content is added, usually as standard HTML (for the static framework) into which [Textpattern Tags](/tags/) are used to insert dynamic content from the database. Pages must be assigned to Sections, which is how a given section of your website receives the web template it will use.
 
 ### Styles
 
-[Styles](/administration/styles-panel) are the CSS style sheets that define the presentational layer of your web content. Like Pages, Styles are associated to Sections. A single Style can be associated to all Sections you create, or each Section can have it's own Style, depending on your website design objectives.
+[Styles](/administration/styles-panel) are the CSS style sheets that define the presentational layer of your web content. Like Pages, Styles are associated to Sections. A single Style can be associated to all Sections you create, or each Section can have its own Style, depending on your website design objectives.
 
 **Note:** Like all building blocks described on this page, Textpattern manages Styles in the database by default, not as files on the web server. However, you are not forced to manage your style sheets this way. e.g. you could still link your flat CSS files in the @<head>@ of a Page template in the standard way.
 
 ### Forms
 
-[Forms](/administration/forms-panel), conceptually speaking, are like PHP includes or any other kind of code insertion process you may be aware of that enables you to create a predefined chunk of content once and reuse it in multiple places. In fact, Forms can be used in a variety of ways, including nesting Form templates within each other.
+[Forms](/administration/forms-panel) are like 'includes' or 'snippets' of content. They enable you to create a predefined chunk of content once, and reuse it in multiple places, to ease the maintenance overhead of your website, and to facilitate easier future changes. Forms can be used in a variety of ways, including nesting Form templates within each other.
 
 ### Tags
 
-[Tags](/tags/) are Textpattern's own type of markup syntax that work interchangeably with HTML. There is a variety of Tag types, all of which provide a seemingly infinite number of ways to construct website architecture and content publishing behaviour. Not the least of which, Tags are the means for positioning and inserting Form content into your various Page template locations. The more you learn about Textpattern's Tags, the more adept at using Textpattern you will become.
+[Tags](/tags/) are Textpattern's own type of markup syntax that work interchangeably with HTML. Tags provide many ways to construct website architecture and govern content publishing behaviour. Their primary use is for positioning and inserting Form content into your various Page template locations. The more you learn about Textpattern's Tags, the more adept at using Textpattern you will become.
 
 ### Categories
 
 [Categories](/administration/categories-panel) are a method of organizing content (articles, images, files, links) by particular topics to which the content relates. The category associations with content can then be used to create various content outputs in the website.
+
+### Themes
+
+[Themes(/build/themes-creating-using-and-sharing)] are a combination of Pages, Styles and Forms (and optional other files), bundled into a shareable zip file that other users can install. They are also the primary mechanism by which you can seamlessly update your live site's look and feel in safety. You can clone your current theme into a _development lane_, work on it and refine it (only you can see the changes when logged in), then publish it to the _live lane_ when you're happy.
 
 ## Theoretical example for example.org
 
