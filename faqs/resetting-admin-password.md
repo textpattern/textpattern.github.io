@@ -36,7 +36,7 @@ See above for forgotten login name.
 
 ## Reset procedure for administrators
 
-Note that this method _only_ works if the database supports the `SHA1()` function. Newer builds of MySQL (from 9.4.0 onwards) have deprecated and removed this function, so you will be unable to change the password using this meethod.
+Note that this method _only_ works if the database supports the `SHA1()` function. Newer builds of MySQL (from 9.4.0 onwards) have deprecated and removed this function, so you will be unable to change the password using this method.
 {: .alert-block .warning}
 
 If you are the website's administrator and forgot your password, you'll need to access the database and change the password there.
